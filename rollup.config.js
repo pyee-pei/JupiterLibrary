@@ -5,11 +5,11 @@ export default {
     input: 'src/main.js',
     output: [
         {
-            file: 'bundle.js',
+            file: 'dist/bundle.js',
             format: 'cjs'
         },
         {
-            file: 'jupiter.min.js',
+            file: 'dist/jupiter.min.js',
             format: 'iife',
             name: 'jupiter',
             plugins: [terser()]
