@@ -2,8 +2,7 @@ import json from '@rollup/plugin-json';
 import terser from '@rollup/plugin-terser';
 
 export default {
-    input: 'src/main.js',
-    externals: ['jupiter.js'],
+    input: 'src/jupiter.js',
     output: [
         {
             file: 'dist/bundle.js',
@@ -12,10 +11,7 @@ export default {
         {
             file: 'dist/jupiter.min.js',
             format: 'iife',
-            name: 'jupiter',
-            globals: {
-                'jupiter.js': 'jupiter'
-            },
+            name: 'JupiterDoc',
             plugins: [terser()]
         }
     ],

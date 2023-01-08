@@ -1,12 +1,15 @@
 'use strict';
 
-var jupiter_js = require('jupiter.js');
+function Constructor(doc) {
+    this.doc = doc;
+}
 
-var version = "0.1";
-
-const jupiter = {
-    version: version,
-    DocumentInsights: jupiter_js.DocumentInsights
+Constructor.prototype.getId = function() {
+    return this.doc.id;
 };
 
-module.exports = jupiter;
+Constructor.prototype.getName = function() {
+    return this.doc.name;
+};
+
+module.exports = Constructor;

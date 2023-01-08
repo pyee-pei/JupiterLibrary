@@ -1,12 +1,14 @@
-import { DateTime } from 'luxon';
-
-const DocumentInsights = {
-
-    // test function
-    test: function() {
-        return 'test information in the return';
-    }
-
+function Constructor(doc) {
+    this.doc = doc;
 }
 
-export default DocumentInsights;
+Constructor.prototype.getId = function() {
+    return this.doc.id;
+}
+
+Constructor.prototype.getName = function() {
+    return this.doc.name;
+}
+
+
+export default Constructor;

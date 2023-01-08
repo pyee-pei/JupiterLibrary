@@ -1,9 +1,10 @@
-import { version } from '../package.json';
-import { DocumentInsights } from 'jupiter.js';
+//import { version } from '../package.json';
+import JupiterDoc from './jupiter.js';
 
-const jupiter = {
-    version: version,
-    DocumentInsights: DocumentInsights
-};
+const myDoc = new JupiterDoc({
+    id: 12345,
+    name: 'test',
+    //library_version: version
+});
 
-export default jupiter;
+console.log(myDoc.getId());
