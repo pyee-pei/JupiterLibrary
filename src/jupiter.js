@@ -8,3 +8,5 @@ const DocumentInsights = {
     }
 
 }
+
+export default DocumentInsights;

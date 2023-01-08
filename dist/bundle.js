@@ -1,9 +1,12 @@
 'use strict';
 
+var jupiter_js = require('jupiter.js');
+
 var version = "0.1";
 
-function main () {
-    console.log('jupiter library version:', version);
-}
+const jupiter = {
+    version: version,
+    DocumentInsights: jupiter_js.DocumentInsights
+};
 
-module.exports = main;
+module.exports = jupiter;
