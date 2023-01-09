@@ -1,12 +1,13 @@
 {
-    "version": "0.1",
-    "type": "module",
-    "scripts": {
-        "build": "rollup -c"
-    },
-    "devDependencies": {
-        "@rollup/plugin-json": "^6.0.0",
-        "@rollup/plugin-terser": "^0.2.1",
-        "luxon": "^3.2.1"
-    }
+  "version": "0.1",
+  "type": "module",
+  "scripts": {
+    "build": "rollup -c && jsdoc ./src/jupiter.js --destination ./docs"
+  },
+  "devDependencies": {
+    "@rollup/plugin-json": "^6.0.0",
+    "@rollup/plugin-terser": "^0.2.1",
+    "jsdoc": "^4.0.0",
+    "luxon": "^3.2.1"
+  }
 }
