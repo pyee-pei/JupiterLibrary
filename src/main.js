@@ -56,7 +56,8 @@ await getAllLookups();
 const documentsDiv = document.querySelector('.documents');
 
 docs.forEach((doc, index) => {
-    jupiterDocs.push(new JupiterDoc(doc, factTypes, docTypes, tags));
+    // jupiterDocs.push(new JupiterDoc(doc, factTypes, docTypes, tags));
+    jupiterDocs.push(new JupiterDoc(doc, factTypes, [], []));
 });
 
 // filter jupiter docs and iterate to display data

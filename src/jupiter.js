@@ -34,7 +34,8 @@ class JupiterDoc {
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
     // Document Type
-    this.document_type = docTypes.find((x) => x.id === doc.documentTypeId).name;
+    var docType = docTypes.find((x) => x.id === doc.documentTypeId);
+    this.document_type = docType ? docType.name : null;
 
     // Project ID
     this.project_id = utils.extractFactValue(
