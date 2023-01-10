@@ -1,6 +1,34 @@
 // Description: Utility functions for ThoughtTrace document objects
 
 /***
+ * get fact type id from name
+ */
+
+const getFactTypeId = (factTypeName, factTypes) => {
+  var factType = factTypes.find((x) => x.name === factTypeName);
+  return factType ? factType.id : null;
+};
+
+/***
+ * get fact field id from name
+ */
+
+const getFactFieldId = (factTypeName, factFieldName, factTypes) => {
+  var factType = factTypes.find((x) => x.name === factTypeName);
+
+  if (factType) {
+    var factField = factType.fieldTypes.find((x) => x.name === factFieldName);
+  }
+
+  return factField ? factField.id : null;
+}
+
+const getTagName = (tagId, tags) => {
+  var tag = tags.find((x) => x.id === tagId);
+  return tag ? tag.name : null;
+}
+
+/***
  * calculate periodic payments for a given term
  */
 
@@ -347,6 +375,9 @@ const cleanFieldNames = (str) => {
 };
 
 export default {
+  getFactTypeId,
+  getFactFieldId,
+  getTagName,
   calcPeriodicPayments,
   calcLeaseTermDates,
   addFactandFieldNames,

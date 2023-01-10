@@ -2,6 +2,8 @@ import JupiterDoc from "./jupiter.js";
 
 var docs = [];
 var factTypes = [];
+var docTypes = [];
+var tags = [];
 
 const jupiterDocs = [];
 
@@ -22,21 +24,51 @@ const getFactTypes = () => {
         });
 }
 
-// await both fetches to complete with Promise.all
+const getDocTypes = () => {
+    return fetch("../data/documentTypes.json")
+        .then(res => res.json())
+        .then((data) => {
+            return data;
+        });
+}
 
-const getDocsAndFactTypes = async () => {
+const getTags = () => {
+    return fetch("../data/tags.json")
+        .then(res => res.json())
+        .then((data) => {
+            return data;
+        });
+}
+
+// await all fetches to complete with Promise.all
+
+const getAllLookups = async () => {
     docs = await getDocs();
     factTypes = await getFactTypes();
-    return { docs, factTypes };
+    docTypes = await getDocTypes();
+    tags = await getTags();
+    return { docs, factTypes, docTypes };
 }
 
 // wait until arrays are filled
-await getDocsAndFactTypes();
+await getAllLookups();
 
-docs.forEach((doc) => {
-    jupiterDocs.push(new JupiterDoc(doc, factTypes));
+const documentsDiv = document.querySelector('.documents');
+
+docs.forEach((doc, index) => {
+    jupiterDocs.push(new JupiterDoc(doc, factTypes, docTypes, tags));
 });
 
-console.log(jupiterDocs);
+// filter jupiter docs and iterate to display data
+jupiterDocs
+    .filter(x => x.lease_terms.length >0)
+    .forEach((doc, index) => {
+        let p = document.createElement('p');
+        p.setAttribute('class', 'document');
+        p.innerHTML = index + ' - ' + doc.name;
+        documentsDiv.appendChild(p);
+    });
+
+console.log(jupiterDocs.filter(x => x.lease_terms.length >0));
 
 export default {};

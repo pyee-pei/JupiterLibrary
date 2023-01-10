@@ -1,0 +1,135 @@
+[
+    {
+        "id": "10287c20-f1d7-4302-8843-4606b352104d",
+        "name": "Farm and Ranch Contract",
+        "description": "",
+        "ontologyId": "WL",
+        "classificationIds": [],
+        "archived": false
+    },
+    {
+        "id": "32e75044-adb5-4c91-a5cf-9443b1a40fa5",
+        "name": "W9",
+        "description": "",
+        "ontologyId": null,
+        "classificationIds": [
+            "ed1ea42f-bd2b-4af6-b6a7-dff8a56948f5"
+        ],
+        "archived": false
+    },
+    {
+        "id": "4de7f183-ceb0-468e-b760-51df9b98378a",
+        "name": "Power of Attorney",
+        "description": "",
+        "ontologyId": null,
+        "classificationIds": [
+            "7a8385ff-09ca-4d94-919d-c7161cd2ac5f"
+        ],
+        "archived": false
+    },
+    {
+        "id": "632c8d78-e6cb-4420-b721-104cfad6a769",
+        "name": "Power Purchase Agreement",
+        "description": "",
+        "ontologyId": "PPA",
+        "classificationIds": [
+            "427c4e50-ee3e-4ee5-8a3b-2170513d5a9c"
+        ],
+        "archived": false
+    },
+    {
+        "id": "8a638832-d376-4905-b5a4-5ea562a2e720",
+        "name": "Operations & Maintenance Agreement",
+        "description": "",
+        "ontologyId": "SCA",
+        "classificationIds": [
+            "f109c6f3-9329-49bc-85fa-a1112b1246a9"
+        ],
+        "archived": false
+    },
+    {
+        "id": "96cf03e0-2634-461d-98fc-3dc1f79e7aa7",
+        "name": "Lease Option",
+        "description": "",
+        "ontologyId": "WL",
+        "classificationIds": [],
+        "archived": false
+    },
+    {
+        "id": "9b13f9ae-9505-4f62-8db3-0ecec07e31c2",
+        "name": "Master Service Agreement",
+        "description": "",
+        "ontologyId": null,
+        "classificationIds": [
+            "79edf59f-8c46-4b9e-a573-4994a7946963",
+            "eb0f31ea-c386-4a30-a8a2-9dab7587dc15"
+        ],
+        "archived": false
+    },
+    {
+        "id": "9fd76c9d-ec96-47af-8dd4-b6819473127e",
+        "name": "Assignment",
+        "description": "",
+        "ontologyId": null,
+        "classificationIds": [
+            "a32ac676-93da-4bdd-b33b-22c83415dbaf"
+        ],
+        "archived": false
+    },
+    {
+        "id": "a012c867-6cd8-4639-830f-5ad3a6ed29c3",
+        "name": "Lease",
+        "description": "",
+        "ontologyId": "WL",
+        "classificationIds": [
+            "c51cbf62-f193-45ee-81c2-5f99423e0a3b"
+        ],
+        "archived": false
+    },
+    {
+        "id": "a2063704-ad09-43c5-a773-914ea269d48e",
+        "name": "Purchase Option",
+        "description": "",
+        "ontologyId": "WL",
+        "classificationIds": [],
+        "archived": false
+    },
+    {
+        "id": "ab9755e3-2d5f-4570-9442-b05d7334b087",
+        "name": "Purchase and Sale Agreement",
+        "description": "",
+        "ontologyId": "WL",
+        "classificationIds": [],
+        "archived": false
+    },
+    {
+        "id": "e82be5ad-205e-4380-93d0-049e9d01fb88",
+        "name": "Interconnection Agreement",
+        "description": "",
+        "ontologyId": "ICA",
+        "classificationIds": [
+            "a9e6f705-7ac5-49f4-8cab-62f51cf8229a"
+        ],
+        "archived": false
+    },
+    {
+        "id": "f0f66551-db69-41ce-9a4f-ddb61034aacd",
+        "name": "Correspondence",
+        "description": "",
+        "ontologyId": null,
+        "classificationIds": [
+            "91c8d246-0791-4516-b9a9-a8b51ee43856"
+        ],
+        "archived": false
+    },
+    {
+        "id": "f9ae7647-97f7-43c4-846a-88a2dedfce91",
+        "name": "Easement",
+        "description": "",
+        "ontologyId": null,
+        "classificationIds": [
+            "0f99e37c-508d-4866-ac4e-d0656ebfa74e"
+        ],
+        "archived": false
+    }
+]

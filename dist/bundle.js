@@ -3,6 +3,34 @@
 // Description: Utility functions for ThoughtTrace document objects
 
 /***
+ * get fact type id from name
+ */
+
+const getFactTypeId = (factTypeName, factTypes) => {
+  var factType = factTypes.find((x) => x.name === factTypeName);
+  return factType ? factType.id : null;
+};
+
+/***
+ * get fact field id from name
+ */
+
+const getFactFieldId = (factTypeName, factFieldName, factTypes) => {
+  var factType = factTypes.find((x) => x.name === factTypeName);
+
+  if (factType) {
+    var factField = factType.fieldTypes.find((x) => x.name === factFieldName);
+  }
+
+  return factField ? factField.id : null;
+};
+
+const getTagName = (tagId, tags) => {
+  var tag = tags.find((x) => x.id === tagId);
+  return tag ? tag.name : null;
+};
+
+/***
  * calculate periodic payments for a given term
  */
 
@@ -349,6 +377,9 @@ const cleanFieldNames = (str) => {
 };
 
 var utils = {
+  getFactTypeId,
+  getFactFieldId,
+  getTagName,
   calcPeriodicPayments,
   calcLeaseTermDates,
   addFactandFieldNames,
@@ -358,28 +389,27 @@ var utils = {
   cleanFieldNames,
 };
 
-const FACT_TYPE_IDS = {
-  effective_date: "cc05d0b7-005b-4775-a84d-e7cc98a7241f",
-  lease_terms: "7601840f-8d47-4c0b-a2a1-2ad2a692bfb8",
-  periodic_payment_models: "e31c3090-21b0-4afd-877d-cf7eeed20673",
-};
-
-const FACT_FIELD_IDS = {
-  effective_date: "cb93b25d-8bed-4865-8402-b2b3ded62af5",
-};
-
 /**
  * Represents a Jupiter document.
  * @constructor
  * @param {Object} doc - The document object itself
  * @property {string} id - Unique identifier (ThoughtTrace)
  * @property {string} name - Document name
+ *
+ * @property {string} document_type - Document Type
+ * @property {string} project_id - Project ID
+ * @property {string} project_name - Project Name
  * @property {Date} effective_date - Effective date of the document
+ *
  * @property {Array} lease_terms - array of potential lease terms
+ * @property {Date} lease_terms.start_date - start date of lease term
+ * @property {Date} lease_terms.end_date - end date of lease term
+ *
  * @property {Array} periodic_payment_models - array of periodic payment models
+ * @property {Array} tags - array of tags
  */
 class JupiterDoc {
-  constructor(doc, factTypes) {
+  constructor(doc, factTypes, docTypes = [], tags = []) {
     // remove clutter
     utils.cleanDoc(doc);
     utils.addFactandFieldNames(doc, factTypes);
@@ -390,21 +420,59 @@ class JupiterDoc {
     this.name = doc.name;
 
     // set fact-based properties and arrays
-    this.effective_date = utils.extractFactValue(
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    // Document Type
+    this.document_type = docTypes.find((x) => x.id === doc.documentTypeId).name;
+
+    // Project ID
+    this.project_id = utils.extractFactValue(
       doc,
-      FACT_TYPE_IDS.effective_date,
-      FACT_FIELD_IDS.effective_date,
-      "date"
-    );
-    this.lease_terms = utils.extractMultiFactValues(
-      doc,
-      FACT_TYPE_IDS.lease_terms
-    );
-    this.periodic_payment_models = utils.extractMultiFactValues(
-      doc,
-      FACT_TYPE_IDS.periodic_payment_models
+      utils.getFactTypeId("Project ID", factTypes),
+      utils.getFactFieldId("Project ID", "Project ID", factTypes),
+      "string"
     );
 
+    // Project Name
+    this.project_name = utils.extractFactValue(
+      doc,
+      utils.getFactTypeId("Project Name", factTypes),
+      utils.getFactFieldId("Project Name", "Project Name", factTypes),
+      "string"
+    );
+
+    // Grantor/Lessor
+    this.grantor = utils.extractFactValue(
+      doc,
+      utils.getFactTypeId("Grantor/Lessor", factTypes),
+      utils.getFactFieldId("Grantor/Lessor", "Grantor/Lessor Name", factTypes),
+      "string"
+    );
+
+    // Effective Date
+    this.effective_date = utils.extractFactValue(
+      doc,
+      utils.getFactTypeId("Effective Date", factTypes),
+      utils.getFactFieldId("Effective Date", "Effective Date", factTypes),
+      "date"
+    );
+
+    // Lease Terms
+    this.lease_terms = utils.extractMultiFactValues(
+      doc,
+      utils.getFactTypeId("Lease Term", factTypes)
+    );
+
+    // Periodic Payment Models
+    this.periodic_payment_models = utils.extractMultiFactValues(
+      doc,
+      utils.getFactTypeId("Periodic Payment Model", factTypes)
+    );
+
+    // tags
+    this.tags = this.#getTags(tags);
+
+    // these may need to be methods in the class that we call in the constructor
     // calculate lease term dates
     utils.calcLeaseTermDates(this.lease_terms, this.effective_date);
 
@@ -426,6 +494,22 @@ class JupiterDoc {
    */
   getName() {
     return this.name;
+  }
+
+  /**
+   * creates array of tag names from tag ids
+   */
+  #getTags(tags) {
+    var result = [];
+    this.rawDoc.tagIds.forEach((id) => {
+      var tag = tags.find((x) => x.id === id);
+
+      if (tag) {
+        result.push(tags.find((x) => x.id === id).name);
+      }
+    });
+
+    return result;
   }
 }
 
