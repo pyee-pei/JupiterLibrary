@@ -80,7 +80,7 @@ const calcPeriodicPayments = (term, paymentModels) => {
 
     payments.push({
       payment_index: i,
-      payment_date: term.start_date
+      payment_date: current_payment_date
         .plus({
           days:
             i === 0 ? model.first_payment_due_days_after_term_start ?? 0 : 0,
