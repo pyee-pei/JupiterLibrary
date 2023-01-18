@@ -173,6 +173,8 @@ class JupiterDoc {
         } else {
             base = base + base * (term_escalation_rate ?? 0) * (previous_terms ?? 0);
         }
+
+        return base;
     }
 
     /***
@@ -227,7 +229,6 @@ class JupiterDoc {
         var payment_period_end;
         var term_escalation_rate = term.escalation_rate ?? 0;
         var periodic_escalation_rate = model.periodic_escalation_rate ?? 0;
-        var base_payment;
 
         if (model.prorated_first_period && i === 0) {
             // payment period ends on 12/31 of starting year
@@ -245,10 +246,11 @@ class JupiterDoc {
                 payment_period_end: payment_period_end.toLocaleString(),
                 prorata_years: prorata_years,
                 base_payment: periodic_payment,
-                total_payment_amount: utils.round(
-                    base_payment * (1 + (periodic_escalation_rate * (i + term.previous_periods)) / 100) * prorata_years,
-                    4
-                ),
+                total_payment_amount: utils.round(utils.calculateCompoundingGrowth(periodic_paymnet, periodic_escalation_rate, i + term.previous_periods) * 
+                // total_payment_amount: utils.round(
+                //     periodic_payment * (1 + (periodic_escalation_rate * (i + term.previous_periods)) / 100) * prorata_years,
+                //     4
+                // ),
             });
 
             current_payment_date = new luxon.DateTime.local(current_payment_date.year + 1, 1, 1); // jan 1 of next year
