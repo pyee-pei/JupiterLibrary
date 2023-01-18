@@ -1,6 +1,15 @@
 // Description: Utility functions for ThoughtTrace document objects
 
 /***
+ * round number to specified decimal places
+ * only works when @decimals is a positive integer
+ */
+
+const round = (value, decimals) => {
+    return Number(Math.round(value + 'e' + decimals) + 'e-' + decimals);
+};
+
+/***
  * get fact type id from name
  */
 
@@ -151,12 +160,29 @@ const extractMultiFactValues = (doc, factType) => {
 const cleanFieldNames = (str) => {
     // convert field name text to property names
     return str
-        .toLowerCase()
-        .replace(/[\s()]+/g, '_')
-        .replace(/_+$/, '');
+        ? str
+              .toLowerCase()
+              .replace(/[\s()]+/g, '_')
+              .replace(/_+$/, '')
+        : null;
+};
+
+/***
+ * calculate compounding growth
+ */
+const calculateCompoundingGrowth = (initial, rate, periods) => {
+    return initial * Math.pow(1 + rate, periods);
+};
+
+/***
+ * calculate standard growth
+ */
+const calculateGrowth = (initial, rate, periods) => {
+    return initial + initial * rate * periods;
 };
 
 export default {
+    round,
     getFactTypeId,
     getFactFieldId,
     getTagName,
@@ -164,4 +190,6 @@ export default {
     extractFactValue,
     extractMultiFactValues,
     cleanFieldNames,
+    calculateCompoundingGrowth,
+    calculateGrowth,
 };

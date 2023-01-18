@@ -140,6 +140,9 @@ class JupiterDoc {
                 term.previous_periods = leaseTerms
                     .filter((x) => x.term_ordinal < term.term_ordinal && x.payment_model === term.payment_model)
                     .reduce((accumulator, t) => accumulator + t.term_length_years, 0);
+
+                // calculate perevious terms for term escalation
+                term.previous_terms = leaseTerms.filter((x) => x.term_ordinal < term.term_ordinal && x.payment_model === term.payment_model).length;
             });
     }
 
@@ -147,18 +150,29 @@ class JupiterDoc {
      * calculates base periodic payment for a given model
      * largest of all possible ways to calculate payment
      */
-    periodicBasePayment(model) {
+    periodicBasePayment(model, compounding_escalation, term_escalation_rate, term_escalation_amount, previous_terms) {
         if (!model) {
             return 0;
         }
 
-        return Math.max(
+        // calculate max payment from different methods
+        var base = Math.max(
             model.minimum_payment ?? 0,
             (model.payment_per_mw ?? 0) * (model.mw ?? 0),
             (model.inverter_count ?? 0) * (model.inverter_rating_mvas ?? 0) * (model.payment_per_mva ?? 0),
             model.flat_payment_amount ?? 0,
             (model.payment_per_acre ?? 0) * (model.leased_acres ?? 0)
         );
+
+        // apply amount escalation
+        base = base + ((term_escalation_amount ?? 0) * previous_terms ?? 0);
+
+        // apply rate escalation
+        if (compounding_escalation) {
+            base = base * Math.pow(1 + (term_escalation_rate ?? 0), previous_terms ?? 0);
+        } else {
+            base = base + base * (term_escalation_rate ?? 0) * (previous_terms ?? 0);
+        }
     }
 
     /***
@@ -185,7 +199,13 @@ class JupiterDoc {
 
         // get payment model for this term
         const model = this.termPaymentModel(term, paymentModels);
-        const periodic_payment = this.periodicBasePayment(model);
+        const periodic_payment = this.periodicBasePayment(
+            model,
+            term.compounding_escalation,
+            term.escalation_rate,
+            term.escalation_amount,
+            term.previous_terms
+        );
 
         // exit if no model
         if (!model) {
@@ -193,38 +213,42 @@ class JupiterDoc {
         }
 
         // initialize variables
-        var current_payment_date = model.first_payment_date ?? term.start_date;
+        // var current_payment_date = term.extension ? term.start_date : model.first_payment_date ?? term.start_date;
+        if (!term.extension) {
+            // if not an extension, use first payment date or term start date + lag
+            var current_payment_date = model.first_payment_date ?? term.start_date.plus({ days: model.first_payment_due_days_after_term_start ?? 0 });
+        } else {
+            // if an extension, use term start date + lag
+            var current_payment_date = term.start_date;
+        }
         var payment_period_start = term.start_date;
         var i = 0;
         var prorata_years;
         var payment_period_end;
         var term_escalation_rate = term.escalation_rate ?? 0;
         var periodic_escalation_rate = model.periodic_escalation_rate ?? 0;
+        var base_payment;
 
         if (model.prorated_first_period && i === 0) {
             // payment period ends on 12/31 of starting year
-            payment_period_end = new luxon.DateTime.local(model.first_payment_date ? model.first_payment_date.year : term.start_date.year, 12, 31);
+            payment_period_end = new luxon.DateTime.local(current_payment_date.year, 12, 31);
 
             // calculate prorata years
             // add a day to the end (luxon diff math)
-            prorata_years = +payment_period_end.plus({ days: 1 }).diff(payment_period_start, 'years').years.toFixed(2);
+            prorata_years = utils.round(payment_period_end.plus({ days: 1 }).diff(payment_period_start, 'years').years, 2);
 
             // push initial payment
             payments.push({
                 payment_index: i,
-                payment_date: model.first_payment_date
-                    ? model.first_payment_date.toLocaleString()
-                    : term.start_date.plus({ days: model.first_payment_due_days_after_term_start ?? 0 }).toLocaleString(),
+                payment_date: current_payment_date.toLocaleString(),
                 payment_period_start: payment_period_start.toLocaleString(),
                 payment_period_end: payment_period_end.toLocaleString(),
                 prorata_years: prorata_years,
-                base_payment: +(periodic_payment * (1 + term_escalation_rate / 100)).toFixed(2),
-                total_payment_amount: +(
-                    periodic_payment *
-                    (1 + (term_escalation_rate * (term.term_ordinal - 1)) / 100) *
-                    (1 + (periodic_escalation_rate * (i + term.previous_periods)) / 100) *
-                    prorata_years
-                ).toFixed(2),
+                base_payment: periodic_payment,
+                total_payment_amount: utils.round(
+                    base_payment * (1 + (periodic_escalation_rate * (i + term.previous_periods)) / 100) * prorata_years,
+                    4
+                ),
             });
 
             current_payment_date = new luxon.DateTime.local(current_payment_date.year + 1, 1, 1); // jan 1 of next year
@@ -238,7 +262,7 @@ class JupiterDoc {
                 : current_payment_date.plus({ years: 1 }).minus({ days: 1 });
             payment_period_end = payment_period_end > term.end_date ? term.end_date : payment_period_end;
 
-            prorata_years = +payment_period_end.plus({ days: 1 }).diff(current_payment_date, 'years').years.toFixed(2);
+            prorata_years = utils.round(payment_period_end.plus({ days: 1 }).diff(current_payment_date, 'years').years, 4);
 
             payments.push({
                 payment_index: i,
@@ -250,13 +274,14 @@ class JupiterDoc {
                 payment_period_start: current_payment_date.toLocaleString(),
                 payment_period_end: payment_period_end.toLocaleString(),
                 prorata_years: prorata_years,
-                base_payment: +(periodic_payment * (1 + term_escalation_rate / 100)).toFixed(2),
-                total_payment_amount: +(
+                base_payment: utils.round(periodic_payment * (1 + term_escalation_rate / 100), 4),
+                total_payment_amount: utils.round(
                     periodic_payment *
-                    (1 + (term_escalation_rate * (term.term_ordinal - 1)) / 100) *
-                    (1 + (periodic_escalation_rate * (i + term.previous_periods)) / 100) *
-                    prorata_years
-                ).toFixed(2),
+                        (1 + (term_escalation_rate * (term.term_ordinal - 1)) / 100) *
+                        (1 + (periodic_escalation_rate * (i + term.previous_periods)) / 100) *
+                        prorata_years,
+                    4
+                ),
             });
 
             current_payment_date = payment_period_end.plus({ days: 1 });

@@ -16,6 +16,22 @@
         "archived": false
     },
     {
+        "id": "4691579c-8ad3-42f1-9d63-4ba695c46b19",
+        "name": "Closing Date",
+        "description": null,
+        "fieldTypes": [
+            {
+                "id": "8a8b77ff-6439-4d38-8fa8-fb6d5ee332b9",
+                "name": "Closing Date",
+                "dataType": "Date",
+                "measurementType": null,
+                "selectListValues": null
+            }
+        ],
+        "allowMultiple": false,
+        "archived": false
+    },
+    {
         "id": "3e9d9d24-5abc-461f-8186-1f0a9f63d5a0",
         "name": "Development Term (in Years)",
         "description": null,
@@ -150,14 +166,7 @@
                 "name": "Independent System Operator",
                 "dataType": "SelectList",
                 "measurementType": null,
-                "selectListValues": [
-                    "CAISO",
-                    "ERCOT",
-                    "ISONE",
-                    "MISO",
-                    "NYISO",
-                    "PJM"
-                ]
+                "selectListValues": ["CAISO", "ERCOT", "ISONE", "MISO", "NYISO", "PJM"]
             }
         ],
         "allowMultiple": true,
@@ -203,13 +212,7 @@
                 "name": "Term Type",
                 "dataType": "SelectList",
                 "measurementType": null,
-                "selectListValues": [
-                    "Option",
-                    "Development",
-                    "Construction",
-                    "Operations",
-                    "Extension"
-                ]
+                "selectListValues": ["Option", "Development", "Construction", "Operations"]
             },
             {
                 "id": "c4a9c0f2-ee0e-447f-a101-49e49e226dfc",
@@ -242,6 +245,20 @@
                     "Custom 4",
                     "Custom 5"
                 ]
+            },
+            {
+                "id": "f401c9de-d1c2-4102-907c-adeb3915745c",
+                "name": "Extension",
+                "dataType": "Boolean",
+                "measurementType": null,
+                "selectListValues": null
+            },
+            {
+                "id": "b5e0b70c-a194-4b9a-b9d9-6671a06ebf26",
+                "name": "Compounding Escalation",
+                "dataType": "Boolean",
+                "measurementType": null,
+                "selectListValues": null
             }
         ],
         "allowMultiple": true,
@@ -289,12 +306,7 @@
                 "name": "Payment Type",
                 "dataType": "SelectList",
                 "measurementType": null,
-                "selectListValues": [
-                    "Purchase",
-                    "Earnest",
-                    "Deposit",
-                    "Termination"
-                ]
+                "selectListValues": ["Purchase", "Signing Bonus", "Option Fee", "Earnest", "Deposit", "Termination"]
             },
             {
                 "id": "4d29d88d-75d5-4df0-959e-104f7b794bdf",
@@ -322,6 +334,13 @@
                 "name": "Applicable to Purchase",
                 "dataType": "Boolean",
                 "measurementType": null,
+                "selectListValues": null
+            },
+            {
+                "id": "d3d33352-0d88-42a5-b959-ef520b3c9dd2",
+                "name": "Payment Due (days after option period)",
+                "dataType": "Number",
+                "measurementType": "None",
                 "selectListValues": null
             }
         ],
@@ -354,11 +373,7 @@
                 "name": "Term Type",
                 "dataType": "SelectList",
                 "measurementType": null,
-                "selectListValues": [
-                    "Development",
-                    "Construction",
-                    "Operations"
-                ]
+                "selectListValues": ["Development", "Construction", "Operations"]
             },
             {
                 "id": "db7340fb-4d78-49fb-972d-ef768c60cab5",
@@ -419,6 +434,36 @@
         ],
         "allowMultiple": true,
         "archived": true
+    },
+    {
+        "id": "ad77da6a-4332-41df-8d3a-7ae96a6ad262",
+        "name": "Option Term",
+        "description": null,
+        "fieldTypes": [
+            {
+                "id": "569b2edf-de64-40f8-822c-ff57adb7b6e5",
+                "name": "Term (months)",
+                "dataType": "Number",
+                "measurementType": "None",
+                "selectListValues": null
+            },
+            {
+                "id": "519ce2f7-f5d9-4552-9b29-3480401e9f9e",
+                "name": "Term (days)",
+                "dataType": "Number",
+                "measurementType": "None",
+                "selectListValues": null
+            },
+            {
+                "id": "f82b674d-c629-4e2b-8c21-2b7371d0fdb0",
+                "name": "Term Ordinal",
+                "dataType": "Number",
+                "measurementType": "None",
+                "selectListValues": null
+            }
+        ],
+        "allowMultiple": true,
+        "archived": false
     },
     {
         "id": "7c2ef359-a385-4201-bdb8-246f3be383bc",
@@ -513,11 +558,7 @@
                 "name": "Payment frequency",
                 "dataType": "SelectList",
                 "measurementType": null,
-                "selectListValues": [
-                    "Monthly",
-                    "Quarterly",
-                    "Annually"
-                ]
+                "selectListValues": ["Monthly", "Quarterly", "Semiannually", "Annually"]
             },
             {
                 "id": "d8ad4c9c-6105-4407-8ef4-838826d32e9c",
@@ -577,7 +618,7 @@
             },
             {
                 "id": "cba28aa6-29dd-4f30-806b-db13887d050c",
-                "name": "Compunding Escalation",
+                "name": "Compounding Escalation",
                 "dataType": "Boolean",
                 "measurementType": null,
                 "selectListValues": null
@@ -644,12 +685,7 @@
                 "name": "Property Tax Responsibility",
                 "dataType": "SelectList",
                 "measurementType": null,
-                "selectListValues": [
-                    "Lessor",
-                    "Lessee",
-                    "Lessee Pays Increase",
-                    "Other (See Comments)"
-                ]
+                "selectListValues": ["Lessor", "Lessee", "Lessee Pays Increase", "Other (See Comments)"]
             }
         ],
         "allowMultiple": false,
@@ -697,15 +733,43 @@
                 "name": "Review Status",
                 "dataType": "SelectList",
                 "measurementType": null,
-                "selectListValues": [
-                    "Not Reviewed",
-                    "In Progress",
-                    "Complete"
-                ]
+                "selectListValues": ["Not Reviewed", "In Progress", "Complete"]
             },
             {
                 "id": "ce717681-a47f-4b34-af1b-835e4acc2ba3",
                 "name": "Notes",
+                "dataType": "String",
+                "measurementType": null,
+                "selectListValues": null
+            }
+        ],
+        "allowMultiple": false,
+        "archived": false
+    },
+    {
+        "id": "8c9dc1cf-9f35-4871-8ac1-0065b772e968",
+        "name": "RL: (TEST) Jupiter PM",
+        "description": null,
+        "fieldTypes": [
+            {
+                "id": "974ef599-38e5-458b-93af-f52efb8c4afa",
+                "name": "RL: (TEST) Jupiter PM",
+                "dataType": "SelectList",
+                "measurementType": null,
+                "selectListValues": ["Erika Brown", "Alex Spaulding", "Chris Brown"]
+            }
+        ],
+        "allowMultiple": false,
+        "archived": false
+    },
+    {
+        "id": "5f1a7666-52f1-4859-99fc-a22cf7d0e5e7",
+        "name": "RL: (TEST) Project Status",
+        "description": null,
+        "fieldTypes": [
+            {
+                "id": "e30316d2-b49e-46a2-884c-f87ec2ea5008",
+                "name": "RL: (TEST) Project Status",
                 "dataType": "String",
                 "measurementType": null,
                 "selectListValues": null
