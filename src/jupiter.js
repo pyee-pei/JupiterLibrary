@@ -53,13 +53,8 @@ class JupiterDoc {
             'string'
         );
 
-        // Grantor/Lessor
-        this.grantor = utils.extractFactValue(
-            doc,
-            utils.getFactTypeId('Grantor/Lessor', factTypes),
-            utils.getFactFieldId('Grantor/Lessor', 'Grantor/Lessor Name', factTypes),
-            'string'
-        );
+        // Grantor/Lessor - Multi-instance fact
+        this.grantor = utils.extractMultiFactValues(doc, utils.getFactTypeId('Grantor/Lessor', factTypes));
 
         // Effective Date
         this.effective_date = utils.extractFactValue(
@@ -76,6 +71,9 @@ class JupiterDoc {
             utils.getFactFieldId('Leased Acres', 'Leased Acres', factTypes),
             'number'
         );
+
+        // Operational Details
+        this.operational_details = utils.extractFactMultiFields(doc, utils.getFactTypeId('Operational Details', factTypes));
 
         // Lease Terms
         this.lease_terms = utils.extractMultiFactValues(doc, utils.getFactTypeId('Lease Term', factTypes));
@@ -107,7 +105,9 @@ class JupiterDoc {
 
         // calc payments in each term
         this.lease_terms.forEach((term) => {
-            this.calcPeriodicPayments(term, this.periodic_payment_models, this.leased_acres);
+            if (this.periodic_payment_models) {
+                this.calcPeriodicPayments(term, this.periodic_payment_models, this.leased_acres);
+            }
         });
     }
 
@@ -206,6 +206,32 @@ class JupiterDoc {
     }
 
     /***
+     * calculate payment period end
+     */
+    calcPaymentPeriodEnd(start_date, frequency, prorated, term_end) {
+        var payment_period_end;
+
+        if (prorated) {
+            // pro-rated payment dates
+            if (frequency === 'Annually') {
+                payment_period_end = new luxon.DateTime.local(start_date.year, 12, 31);
+            } else if (frequency === 'Quarterly') {
+                payment_period_end = new luxon.DateTime.local(start_date.year, start_date.month + 3, 1).minus({ days: 1 });
+            }
+        } else {
+            // anniversary payment dates
+            if (frequency === 'Annually') {
+                payment_period_end = start_date.plus({ years: 1 }).minus({ days: 1 });
+            } else if (frequency === 'Quarterly') {
+                payment_period_end = start_date.plus({ months: 3 }).minus({ days: 1 });
+            }
+        }
+
+        // if payment period end is after term end, return term end
+        return payment_period_end > term_end ? term_end : payment_period_end;
+    }
+
+    /***
      * calculate periodic payments for a given term
      */
 
@@ -231,85 +257,68 @@ class JupiterDoc {
         // initialize variables
         // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-        // calc first payment date for term
-        var current_payment_date;
-        switch (term.first_payment_start) {
-            case 'Start with Term (plus applicable lag)':
-                current_payment_date = term.start_date;
-                break;
-            case 'Start next Jan 1 after Term commencement':
-                var term_start_year = term.start_date.year;
-                current_payment_date = new luxon.DateTime.local(term_start_year + 1, 1, 1);
-                break;
-            // add more cases as they arise
-            default:
-                current_payment_date = term.start_date;
-        }
-
-        var payment_period_start = term.start_date;
         var i = 0;
-        var prorata_years;
+        var prorata_factor;
+        var term_payment_delay_days = term.term_payment_delay_days ?? 0;
+        var payment_period_start = term.start_date.plus({ days: term.term_payment_delay_days });
+        var payment_date;
         var payment_period_end;
         var lag_days;
+
         var term_escalation_rate = term.escalation_rate ?? 0;
         var periodic_escalation_rate = model.periodic_escalation_rate ?? 0;
 
-        if (model.prorated_first_period && i === 0) {
-            // payment period ends on 12/31 of starting year
-            payment_period_end = new luxon.DateTime.local(current_payment_date.year, 12, 31);
+        // calc first payment date for term
+        switch (term.first_payment_start) {
+            case 'Start with Term (plus applicable lag)':
+                payment_date = term.start_date.plus({ days: term_payment_delay_days });
+                break;
+            case 'Start next Jan 1 after Term commencement':
+                payment_date = new luxon.DateTime.local(term.start_date.year + 1, 1, 1).plus({ days: term_payment_delay_days });
+                break;
+            case 'Start 1st of month after commencement':
+                payment_date = new luxon.DateTime.local(payment_period_start.year, payment_period_start.month, 1).plus({ months: 1 });
+                break;
+            // add more cases as they arise
+            default:
+                payment_date = term.start_date;
+        }
 
-            // calculate prorata years
-            // add a day to the end (luxon diff math)
-            prorata_years = utils.round(payment_period_end.plus({ days: 1 }).diff(payment_period_start, 'years').years, 2);
+        // loop through remaining payments
+        while (payment_period_start < term.end_date) {
+            // calculate payment period end date
+            payment_period_end = this.calcPaymentPeriodEnd(payment_date, model.payment_frequency, term.prorated, term.end_date);
+
+            if (!payment_period_end) return;
+
+            // calculate pro rata periods
+            if (model.payment_frequency === 'Annually') {
+                prorata_factor = utils.round(payment_period_end.plus({ days: 1 }).diff(payment_period_start, 'years').years, 4);
+            } else if (model.payment_frequency === 'Quarterly') {
+                prorata_factor = utils.round(payment_period_end.plus({ days: 1 }).diff(payment_period_start, 'quarters').quarters, 4);
+            } else if (model.payment_frequency === 'Monthly') {
+                prorata_factor = utils.round(payment_period_end.plus({ days: 1 }).diff(payment_period_start, 'months').months, 4);
+            }
+
             lag_days = i === 0 ? term.first_payment_lag_days ?? 0 : 0;
 
-            // push initial payment
             payments.push({
                 payment_index: i,
-                payment_date: current_payment_date
+                payment_date: payment_date
                     .plus({
                         days: lag_days,
                     })
                     .toLocaleString(),
                 payment_period_start: payment_period_start.toLocaleString(),
                 payment_period_end: payment_period_end.toLocaleString(),
-                prorata_years: prorata_years,
-                base_payment: periodic_payment,
-                // TODO: add standard escalation case
-                total_payment_amount:
-                    utils.calculateCompoundingGrowth(periodic_payment, periodic_escalation_rate, i + term.previous_periods) * prorata_years,
-            });
-
-            current_payment_date = new luxon.DateTime.local(current_payment_date.year + 1, 1, 1); // jan 1 of next year
-            i++;
-        }
-
-        // loop through remaining payments
-        while (current_payment_date < term.end_date) {
-            payment_period_end = model.prorated_first_period
-                ? new luxon.DateTime.local(current_payment_date.year, 12, 31)
-                : current_payment_date.plus({ years: 1 }).minus({ days: 1 });
-            payment_period_end = payment_period_end > term.end_date ? term.end_date : payment_period_end;
-
-            prorata_years = utils.round(payment_period_end.plus({ days: 1 }).diff(current_payment_date, 'years').years, 4);
-            lag_days = i === 0 ? term.first_payment_lag_days ?? 0 : 0;
-
-            payments.push({
-                payment_index: i,
-                payment_date: current_payment_date
-                    .plus({
-                        days: lag_days,
-                    })
-                    .toLocaleString(),
-                payment_period_start: current_payment_date.toLocaleString(),
-                payment_period_end: payment_period_end.toLocaleString(),
-                prorata_years: prorata_years,
+                prorata_factor: prorata_factor,
                 base_payment: utils.round(periodic_payment * (1 + term_escalation_rate / 100), 4),
                 total_payment_amount:
-                    utils.calculateCompoundingGrowth(periodic_payment, periodic_escalation_rate, i + term.previous_periods) * prorata_years,
+                    utils.calculateCompoundingGrowth(periodic_payment, periodic_escalation_rate, i + term.previous_periods) * prorata_factor,
             });
 
-            current_payment_date = payment_period_end.plus({ days: 1 });
+            payment_period_start = payment_period_end.plus({ days: 1 });
+            payment_date = payment_period_end.plus({ days: 1 });
             i++;
         }
 

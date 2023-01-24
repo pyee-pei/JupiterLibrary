@@ -6,7 +6,7 @@
  */
 
 const round = (value, decimals) => {
-  return Number(Math.round(value + "e" + decimals) + "e-" + decimals);
+    return Number(Math.round(value + 'e' + decimals) + 'e-' + decimals);
 };
 
 /***
@@ -14,8 +14,8 @@ const round = (value, decimals) => {
  */
 
 const getFactTypeId = (factTypeName, factTypes) => {
-  var factType = factTypes.find((x) => x.name === factTypeName);
-  return factType ? factType.id : null;
+    var factType = factTypes.find((x) => x.name === factTypeName);
+    return factType ? factType.id : null;
 };
 
 /***
@@ -23,18 +23,18 @@ const getFactTypeId = (factTypeName, factTypes) => {
  */
 
 const getFactFieldId = (factTypeName, factFieldName, factTypes) => {
-  var factType = factTypes.find((x) => x.name === factTypeName);
+    var factType = factTypes.find((x) => x.name === factTypeName);
 
-  if (factType) {
-    var factField = factType.fieldTypes.find((x) => x.name === factFieldName);
-  }
+    if (factType) {
+        var factField = factType.fieldTypes.find((x) => x.name === factFieldName);
+    }
 
-  return factField ? factField.id : null;
+    return factField ? factField.id : null;
 };
 
 const getTagName = (tagId, tags) => {
-  var tag = tags.find((x) => x.id === tagId);
-  return tag ? tag.name : null;
+    var tag = tags.find((x) => x.id === tagId);
+    return tag ? tag.name : null;
 };
 
 /***
@@ -42,34 +42,32 @@ const getTagName = (tagId, tags) => {
  */
 
 const addFactandFieldNames = (doc, factTypes) => {
-  if (!doc.facts) {
-    return;
-  }
-
-  doc.facts.forEach((f) => {
-    const factType = factTypes.find((x) => x.id === f.factTypeId);
-
-    // add names to fact
-    if (factType) {
-      f.factTypeName = factType.name;
-      f.allowMultiple = factType.allowMultiple;
-      f.fieldCount = factType.fieldTypes.length;
+    if (!doc.facts) {
+        return;
     }
 
-    // add names to fact fields
-    if (f.fields) {
-      f.fields.forEach((ff) => {
-        const factFieldType = factTypes
-          .find((x) => x.id === f.factTypeId)
-          .fieldTypes.find((x) => x.id === ff.factFieldTypeId);
+    doc.facts.forEach((f) => {
+        const factType = factTypes.find((x) => x.id === f.factTypeId);
 
-        if (factFieldType) {
-          ff.factTypeFieldName = factFieldType.name;
-          ff.dataType = factFieldType.dataType;
+        // add names to fact
+        if (factType) {
+            f.factTypeName = factType.name;
+            f.allowMultiple = factType.allowMultiple;
+            f.fieldCount = factType.fieldTypes.length;
         }
-      });
-    }
-  });
+
+        // add names to fact fields
+        if (f.fields) {
+            f.fields.forEach((ff) => {
+                const factFieldType = factTypes.find((x) => x.id === f.factTypeId).fieldTypes.find((x) => x.id === ff.factFieldTypeId);
+
+                if (factFieldType) {
+                    ff.factTypeFieldName = factFieldType.name;
+                    ff.dataType = factFieldType.dataType;
+                }
+            });
+        }
+    });
 };
 
 /***
@@ -77,125 +75,166 @@ const addFactandFieldNames = (doc, factTypes) => {
  */
 
 const extractFactValue = (doc, factType, factTypeField, valueType) => {
-  // find fact by name
-  const fact = doc.facts
-    ? doc.facts.find((x) => x.factTypeId == factType)
-    : null;
+    // find fact by name
+    const fact = doc.facts ? doc.facts.find((x) => x.factTypeId == factType) : null;
 
-  if (fact) {
-    // fact exists, check fields by name
-    const field = fact.fields.find((x) => x.factFieldTypeId == factTypeField);
+    if (fact) {
+        // fact exists, check fields by name
+        const field = fact.fields.find((x) => x.factFieldTypeId == factTypeField);
 
-    if (field) {
-      switch (valueType) {
-        case "date":
-          return new luxon.DateTime.fromISO(field.dateValue);
-        case "number":
-          return field.numberValue;
-        case "string":
-          return field.stringValue;
-        case "bool":
-          return field.booleanValue;
-        default:
-          return null;
-      }
+        if (field) {
+            switch (valueType) {
+                case 'date':
+                    return new luxon.DateTime.fromISO(field.dateValue);
+                case 'number':
+                    return field.numberValue;
+                case 'string':
+                    return field.stringValue;
+                case 'bool':
+                    return field.booleanValue;
+                default:
+                    return null;
+            }
+        }
     }
-  }
 
-  return null;
+    return null;
 };
 
 /***
- * extract multiple facts from a fact type
+ * extract multiple fact instances from a fact type, with all fields
  */
 const extractMultiFactValues = (doc, factType) => {
-  const facts = doc.facts
-    ? doc.facts.filter((x) => x.factTypeId === factType)
-    : null;
+    const facts = doc.facts ? doc.facts.filter((x) => x.factTypeId === factType) : null;
 
-  // do not proceed if no facts found
-  if (!facts) {
-    return [];
-  }
-
-  const result = [];
-
-  facts.forEach((f) => {
-    const fact = {};
-    fact.id = f.id;
-
-    if (!f.fields) {
-      return fact;
+    // do not proceed if no facts found
+    if (!facts) {
+        return null;
     }
 
-    f.fields.forEach((field) => {
-      var property_name = cleanFieldNames(field.factTypeFieldName);
-      var value = "";
+    const result = [];
 
-      switch (field.dataType) {
-        case "Number":
-          value = field.numberValue;
-          break;
-        case "Date":
-          value = new luxon.DateTime.fromISO(field.dateValue);
-          break;
-        case "String":
-          value = field.stringValue;
-          break;
-        case "SelectList":
-          value = field.stringValue;
-          break;
-        case "Boolean":
-          value = field.booleanValue;
-          break;
-      }
+    facts.forEach((f) => {
+        const fact = {};
+        fact.id = f.id;
 
-      // create property and value based on results
-      fact[property_name] = value;
+        if (!f.fields) {
+            return fact;
+        }
+
+        f.fields.forEach((field) => {
+            var property_name = cleanFieldNames(field.factTypeFieldName);
+            var value = '';
+
+            switch (field.dataType) {
+                case 'Number':
+                    value = field.numberValue;
+                    break;
+                case 'Date':
+                    value = new luxon.DateTime.fromISO(field.dateValue);
+                    break;
+                case 'String':
+                    value = field.stringValue;
+                    break;
+                case 'SelectList':
+                    value = field.stringValue;
+                    break;
+                case 'Boolean':
+                    value = field.booleanValue;
+                    break;
+            }
+
+            // create property and value based on results
+            fact[property_name] = value;
+        });
+
+        result.push(fact);
     });
 
-    result.push(fact);
-  });
+    return result;
+};
 
-  return result;
+/***
+ * return single object from single instanct factType
+ */
+const extractFactMultiFields = (doc, factType) => {
+    const fact = doc.facts ? doc.facts.find((x) => x.factTypeId == factType) : null;
+
+    if (!fact || !fact.fields) {
+        return null;
+    }
+
+    const result = {};
+    result.fact_id = fact.id;
+
+    fact.fields.forEach((field) => {
+        var property_name = cleanFieldNames(field.factTypeFieldName);
+        var value = '';
+
+        switch (field.dataType) {
+            case 'Number':
+                value = field.numberValue;
+                break;
+            case 'Date':
+                value = new luxon.DateTime.fromISO(field.dateValue);
+                break;
+            case 'String':
+                value = field.stringValue;
+                break;
+            case 'SelectList':
+                value = field.stringValue;
+                break;
+            case 'Boolean':
+                value = field.booleanValue;
+                break;
+        }
+
+        // only create property and value if value is not null
+        if (value) {
+            result[property_name] = value;
+        }
+    });
+
+    return result;
 };
 
 /***
  * convert fact field names to be more javascript friendly
  */
 const cleanFieldNames = (str) => {
-  // convert field name text to property names
-  return str
-    ? str
-        .toLowerCase()
-        .replace(/[\s()]+/g, "_")
-        .replace(/_+$/, "")
-    : null;
+    // convert field name text to property names
+    return str
+        ? str
+              .toLowerCase()
+              .replace(/[\s()]+/g, '_')
+              .replace(/_+$/, '')
+        : null;
 };
 
 /***
  * calculate compounding growth
  */
 const calculateCompoundingGrowth = (initial, rate, periods) => {
-  return round(initial * Math.pow(1 + rate, periods), 4);
+    return round(initial * Math.pow(1 + rate, periods), 4);
 };
 
 /***
  * calculate standard growth
  */
 const calculateGrowth = (initial, rate, periods) => {
-  return round(initial + initial * rate * periods, 4);
+    return round(initial + initial * rate * periods, 4);
 };
 
 export default {
-  round,
-  getFactTypeId,
-  getFactFieldId,
-  getTagName,
-  addFactandFieldNames,
-  extractFactValue,
-  extractMultiFactValues,
-  cleanFieldNames,
-  calculateCompoundingGrowth,
-  calculateGrowth,
+    round,
+    getFactTypeId,
+    getFactFieldId,
+    getTagName,
+    addFactandFieldNames,
+    extractFactValue,
+    extractMultiFactValues,
+    extractFactMultiFields,
+    cleanFieldNames,
+    calculateCompoundingGrowth,
+    calculateGrowth,
 };
