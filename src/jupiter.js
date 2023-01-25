@@ -37,6 +37,14 @@ class JupiterDoc {
         var docType = docTypes.find((x) => x.id === doc.documentTypeId);
         this.document_type = docType ? docType.name : null;
 
+        // Agreement ID
+        this.agreement_id = utils.extractFactValue(
+            doc,
+            utils.getFactTypeId('Agreement ID', factTypes),
+            utils.getFactFieldId('Agreement ID', 'Agreement ID', factTypes),
+            'string'
+        );
+
         // Project ID
         this.project_id = utils.extractFactValue(
             doc,
@@ -61,6 +69,14 @@ class JupiterDoc {
             doc,
             utils.getFactTypeId('Effective Date', factTypes),
             utils.getFactFieldId('Effective Date', 'Effective Date', factTypes),
+            'date'
+        );
+
+        // Amendment Date
+        this.amendment_date = utils.extractFactValue(
+            doc,
+            utils.getFactTypeId('Amendment Date', factTypes),
+            utils.getFactFieldId('Amendment Date', 'Amendment Date', factTypes),
             'date'
         );
 

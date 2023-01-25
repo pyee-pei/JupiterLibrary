@@ -16,6 +16,22 @@
         "archived": false
     },
     {
+        "id": "8a874127-1425-457c-af96-d311f09034d6",
+        "name": "Amendment Date",
+        "description": null,
+        "fieldTypes": [
+            {
+                "id": "2e45d6a2-8eb3-435e-a6a8-ce90f93181e7",
+                "name": "Amendment Date",
+                "dataType": "Date",
+                "measurementType": null,
+                "selectListValues": null
+            }
+        ],
+        "allowMultiple": false,
+        "archived": false
+    },
+    {
         "id": "4691579c-8ad3-42f1-9d63-4ba695c46b19",
         "name": "Closing Date",
         "description": null,

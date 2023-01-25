@@ -1,5 +1,238 @@
 [
     {
+        "id": "2a004f02-1d0a-426e-a878-731db53415e5",
+        "name": "First Amendment to Lease Mud Run DLS.pdf",
+        "documentTypeId": "a012c867-6cd8-4639-830f-5ad3a6ed29c3",
+        "processingStatus": "Processed",
+        "pageManipulationStatus": null,
+        "createdBy": "f00c1746-8935-473c-4a94-08dac7d3ca42",
+        "createdOn": "2023-01-24T21:41:17.2496991+00:00",
+        "archivedBy": null,
+        "archivedOn": null,
+        "tagIds": ["c0677747-e33c-4a02-be2d-5b937105bfa7", "2814cd31-ec6f-4370-bd8f-0d77bbcde325"],
+        "userIds": [],
+        "thoughts": [],
+        "facts": [
+            {
+                "id": "d49b4352-0839-4dda-8b0b-6e96eb5dfde9",
+                "factTypeId": "cf7fc28f-823e-4af1-a3be-09b756c3952a",
+                "fields": [
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "39cb6776-fe9f-4251-af78-9b972466b902",
+                        "factFieldTypeId": "a7fdf688-839d-49f8-8e07-a55dc19cb521",
+                        "stringValue": "Liberty Mud Run DLS Lease 80 I",
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    }
+                ]
+            },
+            {
+                "id": "77461a25-e8e7-481c-bb19-c78b25c89741",
+                "factTypeId": "429fc170-2a94-4cc6-901f-2743897ed6c3",
+                "fields": [
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "c3bc7a75-875c-4ebe-b27e-dc457df07e4b",
+                        "factFieldTypeId": "09272207-6ba1-4a2a-bcac-35ac0ec7cded",
+                        "stringValue": "JP0040.1",
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    }
+                ]
+            },
+            {
+                "id": "d77bdbf9-0e38-4307-a1eb-ffa1ec43bad7",
+                "factTypeId": "bbf9acb0-7897-4421-b6e2-faf3928b85ca",
+                "fields": [
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "b850d6bd-43e6-4582-85af-d780d8845352",
+                        "factFieldTypeId": "614a8c7a-019d-4d94-ab2e-147bc511b537",
+                        "stringValue": "Mud Run - DLS - Lease",
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    }
+                ]
+            },
+            {
+                "id": "6765b6dc-a133-4ce9-8d91-07acb4e033fd",
+                "factTypeId": "cc05d0b7-005b-4775-a84d-e7cc98a7241f",
+                "fields": [
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "c04df560-c318-4707-b74a-a3c44cd97bd4",
+                        "factFieldTypeId": "cb93b25d-8bed-4865-8402-b2b3ded62af5",
+                        "stringValue": null,
+                        "numberValue": null,
+                        "dateValue": "2021-01-27",
+                        "booleanValue": null,
+                        "annotations": null
+                    }
+                ]
+            },
+            {
+                "id": "b9642bb5-5148-491e-aed0-a9f44b5713ad",
+                "factTypeId": "e31c3090-21b0-4afd-877d-cf7eeed20673",
+                "fields": [
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "5d438248-5b06-40da-9daf-b42af7b36f02",
+                        "factFieldTypeId": "43986a11-a08f-4365-ae0b-6e1673f85daf",
+                        "stringValue": null,
+                        "numberValue": 17850.0,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "5f59ffaf-ae29-4fcd-9ac9-400f5a311fc3",
+                        "factFieldTypeId": "4113ec1c-007a-4f0d-9c2c-4f1aaebf452b",
+                        "stringValue": "Development",
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "9fef2456-441f-4c97-aba9-8e8450d8228e",
+                        "factFieldTypeId": "6c43a922-acf9-4afe-9fb6-dc97e14d9099",
+                        "stringValue": "Annually",
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    }
+                ]
+            },
+            {
+                "id": "0dd811df-8e9e-4400-8c58-2a30a57ff7d5",
+                "factTypeId": "e31c3090-21b0-4afd-877d-cf7eeed20673",
+                "fields": [
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "eae3da15-90b8-4c69-95d9-b49c2d4f3775",
+                        "factFieldTypeId": "f37fe1d6-5e26-4a6c-a79e-bfe0015774e4",
+                        "stringValue": null,
+                        "numberValue": 35700.0,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "0a0c9873-46e5-46b1-afc8-7090b69171c0",
+                        "factFieldTypeId": "f8b466e6-8a85-4573-8412-0cf9bd6cb15e",
+                        "stringValue": null,
+                        "numberValue": 1000.0,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "bebad4d2-82ae-4a5c-96a0-5a912faf977a",
+                        "factFieldTypeId": "cba28aa6-29dd-4f30-806b-db13887d050c",
+                        "stringValue": null,
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": true,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "b03c79be-fd8c-4f6f-831d-edeab0caa32d",
+                        "factFieldTypeId": "4113ec1c-007a-4f0d-9c2c-4f1aaebf452b",
+                        "stringValue": "Operations",
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "8402b4ce-ce2c-44cc-806e-968c1257cc48",
+                        "factFieldTypeId": "6c43a922-acf9-4afe-9fb6-dc97e14d9099",
+                        "stringValue": "Annually",
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "0f306afa-3b2d-4abc-9b85-0d6f104ac16b",
+                        "factFieldTypeId": "7cc2322c-7b01-4d98-bd80-b13420187c92",
+                        "stringValue": null,
+                        "numberValue": 1.0,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "a73cf218-ad15-4810-8636-c549c1874dcb",
+                        "factFieldTypeId": "63fe352e-59e5-4e8d-93aa-a1f0a16846b9",
+                        "stringValue": null,
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": true,
+                        "annotations": null
+                    }
+                ]
+            },
+            {
+                "id": "0814fbae-a072-4e4c-80bc-9de7822f4c2a",
+                "factTypeId": "8a874127-1425-457c-af96-d311f09034d6",
+                "fields": [
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "9e6c7ed3-05f5-4eb7-afaa-3816c4589f50",
+                        "factFieldTypeId": "2e45d6a2-8eb3-435e-a6a8-ce90f93181e7",
+                        "stringValue": null,
+                        "numberValue": null,
+                        "dateValue": "2021-09-07",
+                        "booleanValue": null,
+                        "annotations": null
+                    }
+                ]
+            }
+        ],
+        "pageCount": 4,
+        "pages": null,
+        "highlightedText": null,
+        "highlightedName": null,
+        "sourceDocumentId": "2a004f02-1d0a-426e-a878-731db53415e5",
+        "sourceDocumentName": "First Amendment to Lease Mud Run DLS.pdf",
+        "securityLabelId": null,
+        "lastModifiedBy": "f00c1746-8935-473c-4a94-08dac7d3ca42",
+        "lastModifiedOn": "2023-01-24T23:11:16.7969365+00:00",
+        "score": 100.0
+    },
+    {
         "id": "878390b2-7380-44c5-8171-b07fbaef3592",
         "name": "Angels Creek I Tempus PM Lease Vela-Cuellar 20200709.pdf",
         "documentTypeId": "a012c867-6cd8-4639-830f-5ad3a6ed29c3",
@@ -2589,6 +2822,17 @@
                         "dateValue": null,
                         "booleanValue": null,
                         "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "3dee2ea7-365f-4bcb-b91f-d88a6b354ab1",
+                        "factFieldTypeId": "7bd5a6c1-13e5-4d92-a4f8-c52b1fd2791e",
+                        "stringValue": null,
+                        "numberValue": null,
+                        "dateValue": "2021-01-01",
+                        "booleanValue": null,
+                        "annotations": null
                     }
                 ]
             }
@@ -2601,7 +2845,7 @@
         "sourceDocumentName": "Crossett PM Lease David H. Arrington LLC 20200804.pdf",
         "securityLabelId": null,
         "lastModifiedBy": "f00c1746-8935-473c-4a94-08dac7d3ca42",
-        "lastModifiedOn": "2023-01-24T19:44:09.0700542+00:00",
+        "lastModifiedOn": "2023-01-24T20:38:43.9107537+00:00",
         "score": 100.0
     },
     {
@@ -6289,6 +6533,23 @@
                         "annotations": null
                     }
                 ]
+            },
+            {
+                "id": "d7e2bc5b-680e-4f95-a36e-638511055414",
+                "factTypeId": "bbf9acb0-7897-4421-b6e2-faf3928b85ca",
+                "fields": [
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "9e4d53c1-9c9e-48f8-b861-150519fc5a44",
+                        "factFieldTypeId": "614a8c7a-019d-4d94-ab2e-147bc511b537",
+                        "stringValue": "Mud Run - DLS - Lease",
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    }
+                ]
             }
         ],
         "pageCount": 24,
@@ -6298,8 +6559,8 @@
         "sourceDocumentId": "2917c80e-5c87-444a-b085-1e937d6a6897",
         "sourceDocumentName": "Mud Run Lease DLS Leasing 20210127.pdf",
         "securityLabelId": null,
-        "lastModifiedBy": "6c7112f8-f4e7-440c-a800-08dad4796f27",
-        "lastModifiedOn": "2023-01-24T15:21:38.3190105+00:00",
+        "lastModifiedBy": "f00c1746-8935-473c-4a94-08dac7d3ca42",
+        "lastModifiedOn": "2023-01-24T22:57:36.807798+00:00",
         "score": 100.0
     },
     {
@@ -6706,6 +6967,23 @@
                         "annotations": null
                     }
                 ]
+            },
+            {
+                "id": "4e4ebe4e-1527-4acf-8694-9279e42a652c",
+                "factTypeId": "bbf9acb0-7897-4421-b6e2-faf3928b85ca",
+                "fields": [
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "c1fe06e4-63b7-45a8-9843-d2d0911ed10b",
+                        "factFieldTypeId": "614a8c7a-019d-4d94-ab2e-147bc511b537",
+                        "stringValue": "Mud Run - Brumfield - Lease",
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    }
+                ]
             }
         ],
         "pageCount": 21,
@@ -6715,8 +6993,8 @@
         "sourceDocumentId": "04c13bf6-dcf7-4496-b2a3-b54588e9e279",
         "sourceDocumentName": "Mud Run Lease Brumfield 20200730.pdf",
         "securityLabelId": null,
-        "lastModifiedBy": "6c7112f8-f4e7-440c-a800-08dad4796f27",
-        "lastModifiedOn": "2023-01-24T15:21:36.6466545+00:00",
+        "lastModifiedBy": "f00c1746-8935-473c-4a94-08dac7d3ca42",
+        "lastModifiedOn": "2023-01-24T23:51:01.9172534+00:00",
         "score": 100.0
     },
     {
