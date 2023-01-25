@@ -1,5 +1,5 @@
 import JupiterDoc from './jupiter.js';
-import utils from './utils.js';
+// import utils from './utils.js';
 
 var docs = [];
 var factTypes = [];
@@ -51,53 +51,30 @@ const getAllLookups = async () => {
     return { docs, factTypes, docTypes };
 };
 
-const jupiterizeAll = async () => {
-    // initial loop to Jupiterize docs
-    docs.forEach((doc) => {
-        jupiterDocs.push(new JupiterDoc(doc, factTypes, docTypes, tags));
-    });
-};
+// const jupiterizeAll = async () => {
+//     // initial loop to Jupiterize docs
+//     docs.forEach((doc) => {
+//         var jdoc = new JupiterDoc(doc, factTypes, docTypes, tags);
+//         jdoc.calcAllTermPayments();
+//         jupiterDocs.push(jdoc);
+//     });
+// };
 
 // wait until arrays are filled
 await getAllLookups();
 
-await jupiterizeAll();
-
-const documentsDiv = document.querySelector('.documents');
+docs.forEach((doc) => {
+    var jdoc = new JupiterDoc(doc, factTypes, docTypes, tags);
+    jdoc.calcAllTermPayments();
+    jupiterDocs.push(jdoc);
+});
 
 // run a pass to associate amendments with parent docs
 jupiterDocs.forEach((doc, index) => {
-    const amendments = jupiterDocs.filter((x) => x.agreement_id === doc.agreement_id && x.amendment_date && x.id !== doc.id);
-    if (amendments) {
-        // sort amendments by amendment date, adding an ordinal property
-        amendments
-            .sort((a, b) => {
-                return new Date(a.amendment_date) - new Date(b.amendment_date);
-            })
-            .map((x) => (x.amendment_ordinal = amendments.indexOf(x) + 1));
-
-        // check each amendment for new values
-        // newer amendments overwrite older values
-
-        amendments.forEach((amendment) => {
-            // leased acres
-            // only write if different from parent doc
-            if (amendment.leased_acres && amendment.leased_acres !== doc.leased_acres) {
-                doc.amended_leased_acres = amendment.leased_acres;
-            }
-
-            // lease terms
-            if (amendment.lease_terms && amendment.lease_terms.length > 0) {
-                doc.amended_lease_terms = amendment.lease_terms;
-            }
-
-            // periodic payment models
-            if (amendment.periodic_payment_models && amendment.periodic_payment_models.length > 0) {
-                doc.amended_periodic_payment_models = amendment.periodic_payment_models;
-            }
-        });
-    }
+    doc.processAmendments(jupiterDocs);
 });
+
+const documentsDiv = document.querySelector('.documents');
 
 // filter jupiter docs and iterate to display data
 jupiterDocs

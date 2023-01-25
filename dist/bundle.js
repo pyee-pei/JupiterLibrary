@@ -227,6 +227,35 @@ const calculateGrowth = (initial, rate, periods) => {
     return round(initial + initial * rate * periods, 4);
 };
 
+// /***
+//  * API - GET Auth Token
+//  */
+// const apiGetAuthToken = async (clienet_id, secret) => {
+//     const url = `https://cors-anywhere.herokuapp.com/https://identity.thoughttrace.com/connect/token`;
+//     const response = await fetch(url, {
+//         method: 'POST',
+//         querytype: 'x-www-form-urlencoded',
+//         body: `grant_type=client_credentials&client_id=${clienet_id}&client_secret=${secret}`,
+//     });
+
+//     return response;
+// };
+
+// /***
+//  * API - GET Tags
+//  */
+// const apiGetTags = async (token) => {
+//     const url = `https://api.thoughttrace.com/tags`;
+//     const response = await fetch(url, {
+//         method: 'GET',
+//         headers: {
+//             Authorization: `Bearer ${token}`,
+//         },
+//     });
+
+//     return response;
+// };
+
 var utils = {
     round,
     getFactTypeId,
@@ -239,6 +268,8 @@ var utils = {
     cleanFieldNames,
     calculateCompoundingGrowth,
     calculateGrowth,
+    // apiGetAuthToken,
+    // apiGetTags,
 };
 
 /**
@@ -278,6 +309,14 @@ class JupiterDoc {
         var docType = docTypes.find((x) => x.id === doc.documentTypeId);
         this.document_type = docType ? docType.name : null;
 
+        // Agreement ID
+        this.agreement_id = utils.extractFactValue(
+            doc,
+            utils.getFactTypeId('Agreement ID', factTypes),
+            utils.getFactFieldId('Agreement ID', 'Agreement ID', factTypes),
+            'string'
+        );
+
         // Project ID
         this.project_id = utils.extractFactValue(
             doc,
@@ -302,6 +341,14 @@ class JupiterDoc {
             doc,
             utils.getFactTypeId('Effective Date', factTypes),
             utils.getFactFieldId('Effective Date', 'Effective Date', factTypes),
+            'date'
+        );
+
+        // Amendment Date
+        this.amendment_date = utils.extractFactValue(
+            doc,
+            utils.getFactTypeId('Amendment Date', factTypes),
+            utils.getFactFieldId('Amendment Date', 'Amendment Date', factTypes),
             'date'
         );
 
@@ -343,13 +390,6 @@ class JupiterDoc {
 
         // calculate lease term dates
         this.calcLeaseTermDates(this.lease_terms, this.effective_date);
-
-        // calc payments in each term
-        this.lease_terms.forEach((term) => {
-            if (this.periodic_payment_models) {
-                this.calcPeriodicPayments(term, this.periodic_payment_models, this.leased_acres);
-            }
-        });
     }
 
     /**
@@ -476,7 +516,7 @@ class JupiterDoc {
      * calculate periodic payments for a given term
      */
 
-    calcPeriodicPayments(term, paymentModels, leased_acres) {
+    calcPeriodicPaymentsForTerm(term, paymentModels, leased_acres) {
         const payments = [];
 
         // get payment model for this term
@@ -566,10 +606,67 @@ class JupiterDoc {
         payments.sort((a, b) => a.payment_date - b.payment_date);
 
         // mutate term object to store payment array
-        term.payments = payments;
+        return payments;
 
         // calc total payments for whole term
-        term.cumulative_payment_amount = payments.reduce((a, b) => a + b.total_payment_amount, 0);
+        //term.cumulative_payment_amount = payments.reduce((a, b) => a + b.total_payment_amount, 0);
+    }
+
+    /***
+     * calc payments on all terms for the lease
+     */
+    calcAllTermPayments() {
+        // calc payments in each term
+        this.lease_terms.forEach((term) => {
+            if (this.periodic_payment_models) {
+                term.payments = this.calcPeriodicPaymentsForTerm(
+                    term,
+                    this.amended_periodic_payment_models ?? this.periodic_payment_models,
+                    this.amended_leased_acres ?? this.leased_acres
+                );
+            }
+        });
+    }
+
+    /**
+     * load amendments & create new properties to store them
+     */
+
+    processAmendments(allDocs) {
+        const amendments = allDocs.filter((x) => x.agreement_id === this.agreement_id && x.amendment_date && x.id !== this.id);
+        if (amendments) {
+            // sort amendments by amendment date, adding an ordinal property
+            amendments
+                .sort((a, b) => {
+                    return new Date(a.amendment_date) - new Date(b.amendment_date);
+                })
+                .map((x) => (x.amendment_ordinal = amendments.indexOf(x) + 1));
+
+            // check each amendment for new values
+            // newer amendments overwrite older values
+            amendments.forEach((amendment) => {
+                // leased acres
+                // only write if different from parent doc
+                if (amendment.leased_acres && amendment.leased_acres !== this.leased_acres) {
+                    this.amended_leased_acres = amendment.leased_acres;
+                }
+
+                // lease terms
+                if (amendment.lease_terms && amendment.lease_terms.length > 0) {
+                    this.amended_lease_terms = amendment.lease_terms;
+                }
+
+                // periodic payment models
+                if (amendment.periodic_payment_models && amendment.periodic_payment_models.length > 0) {
+                    this.amended_periodic_payment_models = amendment.periodic_payment_models;
+                }
+            });
+
+            // re-calculate payments based on amended values
+            if (this.lease_terms) {
+                this.calcAllTermPayments();
+            }
+        }
     }
 
     /**
