@@ -463,9 +463,9 @@ class JupiterDoc {
 
         // apply rate escalation
         if (compounding_escalation) {
-            base = utils.calculateCompoundingGrowth(base, term_escalation_rate / 100 ?? 0, previous_terms ?? 0);
+            base = utils.calculateCompoundingGrowth(base, term_escalation_rate ?? 0 / 100, previous_terms ?? 0);
         } else {
-            base = utils.calculateGrowth(base, term_escalation_rate / 100 ?? 0, previous_terms ?? 0);
+            base = utils.calculateGrowth(base, term_escalation_rate ?? 0 / 100, previous_terms ?? 0);
         }
 
         return base;
@@ -498,6 +498,8 @@ class JupiterDoc {
                 payment_period_end = new luxon.DateTime.local(start_date.year, 12, 31);
             } else if (frequency === 'Quarterly') {
                 payment_period_end = new luxon.DateTime.local(start_date.year, start_date.month + 3, 1).minus({ days: 1 });
+            } else if (frequency === 'Monthly') {
+                payment_period_end = new luxon.DateTime.local(start_date.year, start_date.month, 1).plus({ months: 1 }).minus({ days: 1 });
             }
         } else {
             // anniversary payment dates
@@ -505,7 +507,7 @@ class JupiterDoc {
                 payment_period_end = start_date.plus({ years: 1 }).minus({ days: 1 });
             } else if (frequency === 'Quarterly') {
                 payment_period_end = start_date.plus({ months: 3 }).minus({ days: 1 });
-            } else if (frequency == 'Monthly') {
+            } else if (frequency === 'Monthly') {
                 payment_period_end = start_date.plus({ months: 1 }).minus({ days: 1 });
             }
         }
@@ -595,7 +597,7 @@ class JupiterDoc {
                 payment_period_start: payment_period_start.toLocaleString(),
                 payment_period_end: payment_period_end.toLocaleString(),
                 prorata_factor: prorata_factor,
-                //base_payment: utils.round(periodic_payment * (1 + term_escalation_rate / 100), 4),
+                // base_payment: utils.round(periodic_payment * (1 + term_escalation_rate / 100), 4),
                 total_payment_amount:
                     utils.calculateCompoundingGrowth(periodic_payment, periodic_escalation_rate, i + term.previous_periods) * prorata_factor,
             });
