@@ -89,6 +89,8 @@ jupiterDocs
 console.log(jupiterDocs.filter((x) => x.lease_terms.length > 0 || x.periodic_payment_models.length > 0));
 console.log(jupiterDocs.filter((x) => x.id === 'af08218f-53ed-4fd6-97e1-cdecc6872548')[0]);
 console.log(jupiterDocs.filter((x) => x.id === '878390b2-7380-44c5-8171-b07fbaef3592')[0]);
+console.log(jupiterDocs.filter((x) => x.id === '2917c80e-5c87-444a-b085-1e937d6a6897')[0]);
+console.log(jupiterDocs.filter((x) => x.id === 'bd6435e2-7b43-48d9-a706-0c2a85d03729')[0]);
 
 // for (let i = 0; i < 10; i++) {
 //     console.log(utils.round(utils.calculateCompoundingGrowth(75000, 0.1, i), 4));

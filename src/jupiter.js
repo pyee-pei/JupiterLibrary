@@ -327,7 +327,7 @@ class JupiterDoc {
                 prorata_factor: prorata_factor,
                 // base_payment: utils.round(periodic_payment * (1 + term_escalation_rate / 100), 4),
                 total_payment_amount:
-                    utils.calculateCompoundingGrowth(periodic_payment, periodic_escalation_rate, i + term.previous_periods) * prorata_factor,
+                    utils.calculateCompoundingGrowth(periodic_payment, periodic_escalation_rate / 100, i + term.previous_periods) * prorata_factor,
             });
 
             payment_period_start = payment_period_end.plus({ days: 1 });
