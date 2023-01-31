@@ -219,6 +219,34 @@
                         "annotations": null
                     }
                 ]
+            },
+            {
+                "id": "43b207f9-95aa-4fbb-8f1b-d2144771ab90",
+                "factTypeId": "b4f52442-1b7d-4b04-8a37-eb114aec2210",
+                "fields": [
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "db8693e7-e81f-45eb-92eb-2ced82941de2",
+                        "factFieldTypeId": "7bd5a6c1-13e5-4d92-a4f8-c52b1fd2791e",
+                        "stringValue": null,
+                        "numberValue": null,
+                        "dateValue": "2023-01-31",
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "7dc551a9-2b92-4f60-baaf-fabe27b7fca3",
+                        "factFieldTypeId": "d9dc745e-cbb0-4a1d-ba00-c789548c3cc7",
+                        "stringValue": null,
+                        "numberValue": 88.0,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    }
+                ]
             }
         ],
         "pageCount": 4,
@@ -228,8 +256,8 @@
         "sourceDocumentId": "2a004f02-1d0a-426e-a878-731db53415e5",
         "sourceDocumentName": "First Amendment to Lease Mud Run DLS.pdf",
         "securityLabelId": null,
-        "lastModifiedBy": "f00c1746-8935-473c-4a94-08dac7d3ca42",
-        "lastModifiedOn": "2023-01-24T23:11:16.7969365+00:00",
+        "lastModifiedBy": "0a089276-00f5-444f-e407-08dac8de685f",
+        "lastModifiedOn": "2023-01-27T00:02:10.0572059+00:00",
         "score": 100.0
     },
     {
@@ -4348,8 +4376,8 @@
         "sourceDocumentId": "953f3162-310c-4aaa-b4fa-6b93b2acc789",
         "sourceDocumentName": "Flagtail Lease Sprague, Michael & Laura 20210701.pdf",
         "securityLabelId": null,
-        "lastModifiedBy": "6c7112f8-f4e7-440c-a800-08dad4796f27",
-        "lastModifiedOn": "2023-01-24T15:20:26.7832501+00:00",
+        "lastModifiedBy": "5c0d168b-b87c-4fac-04d3-08daf2586950",
+        "lastModifiedOn": "2023-01-25T02:35:03.9207097+00:00",
         "score": 100.0
     },
     {
@@ -5266,7 +5294,7 @@
     {
         "id": "51290455-b56a-4cdf-a720-b3943b935fdb",
         "name": "Hidalgo I Occasio PM Lease Twelve Street Associates 20210317.pdf",
-        "documentTypeId": "96cf03e0-2634-461d-98fc-3dc1f79e7aa7",
+        "documentTypeId": "a012c867-6cd8-4639-830f-5ad3a6ed29c3",
         "processingStatus": "Processed",
         "pageManipulationStatus": null,
         "createdBy": "6c7112f8-f4e7-440c-a800-08dad4796f27",
@@ -5892,8 +5920,8 @@
         "sourceDocumentId": "51290455-b56a-4cdf-a720-b3943b935fdb",
         "sourceDocumentName": "Hidalgo I Occasio PM Lease Twelve Street Associates 20210317.pdf",
         "securityLabelId": null,
-        "lastModifiedBy": "6c7112f8-f4e7-440c-a800-08dad4796f27",
-        "lastModifiedOn": "2023-01-24T15:20:35.8278602+00:00",
+        "lastModifiedBy": "5c0d168b-b87c-4fac-04d3-08daf2586950",
+        "lastModifiedOn": "2023-01-25T02:36:36.102136+00:00",
         "score": 100.0
     },
     {
@@ -10695,7 +10723,7 @@
     {
         "id": "7d2db7ab-d845-42eb-b485-f9d5da43753a",
         "name": "Old Aqueduct Solar Lease Jim Byrd Farms 20210827.pdf",
-        "documentTypeId": "10287c20-f1d7-4302-8843-4606b352104d",
+        "documentTypeId": "a012c867-6cd8-4639-830f-5ad3a6ed29c3",
         "processingStatus": "Processed",
         "pageManipulationStatus": null,
         "createdBy": "6c7112f8-f4e7-440c-a800-08dad4796f27",
@@ -11454,8 +11482,8 @@
         "sourceDocumentId": "7d2db7ab-d845-42eb-b485-f9d5da43753a",
         "sourceDocumentName": "Old Aqueduct Solar Lease Jim Byrd Farms 20210827.pdf",
         "securityLabelId": null,
-        "lastModifiedBy": "6c7112f8-f4e7-440c-a800-08dad4796f27",
-        "lastModifiedOn": "2023-01-24T15:21:52.3987866+00:00",
+        "lastModifiedBy": "5c0d168b-b87c-4fac-04d3-08daf2586950",
+        "lastModifiedOn": "2023-01-25T02:37:14.178733+00:00",
         "score": 100.0
     },
     {
@@ -12238,7 +12266,7 @@
     {
         "id": "dee80c90-01d6-4339-b93c-e6d25ab187a2",
         "name": "Old Aqueduct Tempus PM AOS Harkey, Laura 20200213.pdf",
-        "documentTypeId": "a012c867-6cd8-4639-830f-5ad3a6ed29c3",
+        "documentTypeId": "ab9755e3-2d5f-4570-9442-b05d7334b087",
         "processingStatus": "Processed",
         "pageManipulationStatus": null,
         "createdBy": "6c7112f8-f4e7-440c-a800-08dad4796f27",
@@ -12325,8 +12353,8 @@
         "sourceDocumentId": "dee80c90-01d6-4339-b93c-e6d25ab187a2",
         "sourceDocumentName": "Old Aqueduct Tempus PM AOS Harkey, Laura 20200213.pdf",
         "securityLabelId": null,
-        "lastModifiedBy": "6c7112f8-f4e7-440c-a800-08dad4796f27",
-        "lastModifiedOn": "2023-01-24T15:21:55.4532593+00:00",
+        "lastModifiedBy": "5c0d168b-b87c-4fac-04d3-08daf2586950",
+        "lastModifiedOn": "2023-01-25T02:32:18.6522143+00:00",
         "score": 100.0
     },
     {
@@ -12527,7 +12555,7 @@
         "createdOn": "2022-12-09T20:07:18.6429926+00:00",
         "archivedBy": null,
         "archivedOn": null,
-        "tagIds": [],
+        "tagIds": ["63e514cb-bbf8-4b31-9436-0d616f47f648"],
         "userIds": [],
         "thoughts": [],
         "facts": [
@@ -12607,6 +12635,39 @@
                         "dateValue": null,
                         "booleanValue": null,
                         "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "b6c678b1-5856-4f59-a889-fa35eb64cb4b",
+                        "factFieldTypeId": "43dc655d-cd25-4859-a11e-610317f4baf3",
+                        "stringValue": "Development",
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "00bf19aa-fa55-4da8-b812-c0c948bb0e88",
+                        "factFieldTypeId": "c8208db9-e328-454d-b6c6-c940856f825d",
+                        "stringValue": null,
+                        "numberValue": 30.0,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "2e846e5b-29b0-4f46-8e4e-c4b91d7eb3ae",
+                        "factFieldTypeId": "f04c837a-a3fe-475c-b819-d8f974915fb7",
+                        "stringValue": "Development",
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
                     }
                 ]
             },
@@ -12635,6 +12696,50 @@
                         "dateValue": null,
                         "booleanValue": null,
                         "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "6f505f0d-c056-4bde-92aa-2228a8fa9d5c",
+                        "factFieldTypeId": "43dc655d-cd25-4859-a11e-610317f4baf3",
+                        "stringValue": "Construction",
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "507ddb7f-d8dd-4b20-ba10-ba5503c27147",
+                        "factFieldTypeId": "c4a9c0f2-ee0e-447f-a101-49e49e226dfc",
+                        "stringValue": null,
+                        "numberValue": 20.0,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "d4037c26-fcb2-4178-a07f-9e410bbceb32",
+                        "factFieldTypeId": "f04c837a-a3fe-475c-b819-d8f974915fb7",
+                        "stringValue": "Development",
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "d9b72c87-8db4-409f-9ecd-fec2d55c7b9e",
+                        "factFieldTypeId": "b5e0b70c-a194-4b9a-b9d9-6671a06ebf26",
+                        "stringValue": null,
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": true,
+                        "annotations": null
                     }
                 ]
             },
@@ -12660,6 +12765,50 @@
                         "factFieldTypeId": "ced1155e-6ce4-4528-b7e9-a8461d17c89d",
                         "stringValue": null,
                         "numberValue": 10.0,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "02b2f00b-e63c-499f-88f8-449635423feb",
+                        "factFieldTypeId": "43dc655d-cd25-4859-a11e-610317f4baf3",
+                        "stringValue": "Operations",
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "d7707e34-feaa-48ab-9510-b160cece470c",
+                        "factFieldTypeId": "c8208db9-e328-454d-b6c6-c940856f825d",
+                        "stringValue": null,
+                        "numberValue": 45.0,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "6e665980-1552-466d-8f3e-31edc4ea9c06",
+                        "factFieldTypeId": "42c1a629-73f7-4d0a-a641-ece72988327a",
+                        "stringValue": null,
+                        "numberValue": 45.0,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "2162007d-ac6d-4dd9-b447-8daaa6505eea",
+                        "factFieldTypeId": "f04c837a-a3fe-475c-b819-d8f974915fb7",
+                        "stringValue": "Operations",
+                        "numberValue": null,
                         "dateValue": null,
                         "booleanValue": null,
                         "annotations": null
@@ -12691,6 +12840,72 @@
                         "dateValue": null,
                         "booleanValue": null,
                         "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "ac33b472-8c1c-42a3-8c49-a75850f50067",
+                        "factFieldTypeId": "43dc655d-cd25-4859-a11e-610317f4baf3",
+                        "stringValue": "Operations",
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "5bfe3c57-725e-41be-a718-17b4c6e8d661",
+                        "factFieldTypeId": "c8208db9-e328-454d-b6c6-c940856f825d",
+                        "stringValue": null,
+                        "numberValue": 45.0,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "334250d8-05af-41f9-b785-70ddeb37e0c4",
+                        "factFieldTypeId": "42c1a629-73f7-4d0a-a641-ece72988327a",
+                        "stringValue": null,
+                        "numberValue": 45.0,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "8870ce74-3c90-46cb-a061-888d8152f271",
+                        "factFieldTypeId": "f04c837a-a3fe-475c-b819-d8f974915fb7",
+                        "stringValue": "Extension",
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "bbef1c7f-09f0-44ae-9659-f5597fdd84f0",
+                        "factFieldTypeId": "c4a9c0f2-ee0e-447f-a101-49e49e226dfc",
+                        "stringValue": null,
+                        "numberValue": 50.0,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "a88668fb-25ee-4b5c-a168-f54009c93f20",
+                        "factFieldTypeId": "b5e0b70c-a194-4b9a-b9d9-6671a06ebf26",
+                        "stringValue": null,
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": true,
+                        "annotations": null
                     }
                 ]
             },
@@ -12716,6 +12931,50 @@
                         "factFieldTypeId": "ced1155e-6ce4-4528-b7e9-a8461d17c89d",
                         "stringValue": null,
                         "numberValue": 5.0,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "a7f29c17-ca1f-4af7-b56d-73953229f615",
+                        "factFieldTypeId": "c8208db9-e328-454d-b6c6-c940856f825d",
+                        "stringValue": null,
+                        "numberValue": 45.0,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "b727e34c-9fea-4f45-8dec-69b218080813",
+                        "factFieldTypeId": "42c1a629-73f7-4d0a-a641-ece72988327a",
+                        "stringValue": null,
+                        "numberValue": 45.0,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "dfdac1f9-edf4-4c23-b243-41d9444aca4a",
+                        "factFieldTypeId": "f04c837a-a3fe-475c-b819-d8f974915fb7",
+                        "stringValue": "Extension",
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "1cb1c4de-b3eb-494c-9343-4ccde07b35e3",
+                        "factFieldTypeId": "c4a9c0f2-ee0e-447f-a101-49e49e226dfc",
+                        "stringValue": null,
+                        "numberValue": 0.0,
                         "dateValue": null,
                         "booleanValue": null,
                         "annotations": null
@@ -12789,6 +13048,156 @@
                         "annotations": null
                     }
                 ]
+            },
+            {
+                "id": "541095e0-e2f7-4689-a542-7baef87e144a",
+                "factTypeId": "e31c3090-21b0-4afd-877d-cf7eeed20673",
+                "fields": [
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "6010a91a-2202-470a-9faf-4afb363eca3f",
+                        "factFieldTypeId": "4113ec1c-007a-4f0d-9c2c-4f1aaebf452b",
+                        "stringValue": "Development",
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "c2811824-412b-41e3-89f4-7a09d28ee61d",
+                        "factFieldTypeId": "63fe352e-59e5-4e8d-93aa-a1f0a16846b9",
+                        "stringValue": null,
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": true,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "c7c2dbde-acd5-47a5-9077-7f419ab52aa7",
+                        "factFieldTypeId": "43986a11-a08f-4365-ae0b-6e1673f85daf",
+                        "stringValue": null,
+                        "numberValue": 60000.0,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "d40e0cba-4929-4c80-bae7-61b77674fcc6",
+                        "factFieldTypeId": "6c43a922-acf9-4afe-9fb6-dc97e14d9099",
+                        "stringValue": "Annually",
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    }
+                ]
+            },
+            {
+                "id": "446d2473-5499-4648-b324-6f607a070702",
+                "factTypeId": "e31c3090-21b0-4afd-877d-cf7eeed20673",
+                "fields": [
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "9d91f61b-a3e7-42cf-ac7f-84b593e93905",
+                        "factFieldTypeId": "4113ec1c-007a-4f0d-9c2c-4f1aaebf452b",
+                        "stringValue": "Operations",
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "7e9b3d70-231b-4ad2-a9b3-9a6cc30d7675",
+                        "factFieldTypeId": "43986a11-a08f-4365-ae0b-6e1673f85daf",
+                        "stringValue": null,
+                        "numberValue": 32000.0,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "e480bcbd-6290-4bf3-b6e7-b41356e3056a",
+                        "factFieldTypeId": "63fe352e-59e5-4e8d-93aa-a1f0a16846b9",
+                        "stringValue": null,
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": true,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "467bf4b6-74f0-4cb3-a47f-083bde8ef2b2",
+                        "factFieldTypeId": "6c43a922-acf9-4afe-9fb6-dc97e14d9099",
+                        "stringValue": "Annually",
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    }
+                ]
+            },
+            {
+                "id": "4fbb68b9-82b0-4c6c-ae53-54ab66a58e60",
+                "factTypeId": "e31c3090-21b0-4afd-877d-cf7eeed20673",
+                "fields": [
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "8cca4709-15fb-47e0-b213-8f153fcdea5a",
+                        "factFieldTypeId": "4113ec1c-007a-4f0d-9c2c-4f1aaebf452b",
+                        "stringValue": "Extension",
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "acb7264a-2001-409b-90c4-232e599eb7b8",
+                        "factFieldTypeId": "43986a11-a08f-4365-ae0b-6e1673f85daf",
+                        "stringValue": null,
+                        "numberValue": 48000.0,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "73a5dbbc-ffaf-4b53-bbc5-9c05d2d874d4",
+                        "factFieldTypeId": "63fe352e-59e5-4e8d-93aa-a1f0a16846b9",
+                        "stringValue": null,
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": true,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "f872a2ea-4de7-47d6-9976-e070d1da5277",
+                        "factFieldTypeId": "6c43a922-acf9-4afe-9fb6-dc97e14d9099",
+                        "stringValue": "Annually",
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    }
+                ]
             }
         ],
         "pageCount": 43,
@@ -12798,8 +13207,8 @@
         "sourceDocumentId": "0ec2342a-bc46-4592-82f1-6729d482316f",
         "sourceDocumentName": "Painter I EC&R Solar Development Lease Persoon, Johannes 20180924.pdf",
         "securityLabelId": null,
-        "lastModifiedBy": "6c7112f8-f4e7-440c-a800-08dad4796f27",
-        "lastModifiedOn": "2023-01-24T15:22:01.4406447+00:00",
+        "lastModifiedBy": "5c0d168b-b87c-4fac-04d3-08daf2586950",
+        "lastModifiedOn": "2023-01-30T20:47:47.0309094+00:00",
         "score": 100.0
     },
     {
@@ -12812,7 +13221,12 @@
         "createdOn": "2022-12-09T20:07:13.0761965+00:00",
         "archivedBy": null,
         "archivedOn": null,
-        "tagIds": [],
+        "tagIds": [
+            "63e514cb-bbf8-4b31-9436-0d616f47f648",
+            "c0677747-e33c-4a02-be2d-5b937105bfa7",
+            "4a63b9a4-178e-4a4a-a6cf-a11ab9ef7c6f",
+            "47e65284-b40c-4e68-b00f-10b27191eaaa"
+        ],
         "userIds": [],
         "thoughts": [],
         "facts": [
@@ -12883,6 +13297,1127 @@
                         "annotations": null
                     }
                 ]
+            },
+            {
+                "id": "c8a5a4af-5806-48ae-ad36-f2aecbcacb90",
+                "factTypeId": "cc05d0b7-005b-4775-a84d-e7cc98a7241f",
+                "fields": [
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "b11cd4c8-3a0b-4a1d-aa79-1a540c080c24",
+                        "factFieldTypeId": "cb93b25d-8bed-4865-8402-b2b3ded62af5",
+                        "stringValue": null,
+                        "numberValue": null,
+                        "dateValue": "2020-10-30",
+                        "booleanValue": null,
+                        "annotations": null
+                    }
+                ]
+            },
+            {
+                "id": "6b98c47b-25ee-49d5-999c-bb0644b58b41",
+                "factTypeId": "68bfe50d-25ad-42cf-b026-78db2d066f1b",
+                "fields": [
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "ce919272-9665-4eff-8cd9-9d1923bba1a6",
+                        "factFieldTypeId": "56c59cf7-9fcd-4598-ae86-6c226db77b53",
+                        "stringValue": "Dwayne Reith (the \"Landlord\")",
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    }
+                ]
+            },
+            {
+                "id": "7913c9ca-bcd9-4bfb-90e1-8d63cae0d0d9",
+                "factTypeId": "3e9cf52f-c9d8-4f43-9f28-92ec8e4615b0",
+                "fields": [
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "696046c2-1e51-4ae9-928a-4deb46d2101a",
+                        "factFieldTypeId": "d136291d-429e-46f3-9efe-e889b977ed47",
+                        "stringValue": "Juno Power Management LLC (the \"Developer\")",
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    }
+                ]
+            },
+            {
+                "id": "d2ed6385-b235-4c1f-b568-f624f05317f6",
+                "factTypeId": "ad77da6a-4332-41df-8d3a-7ae96a6ad262",
+                "fields": [
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "20e1f309-9c1e-451c-add6-e85ea3f23c3c",
+                        "factFieldTypeId": "569b2edf-de64-40f8-822c-ff57adb7b6e5",
+                        "stringValue": null,
+                        "numberValue": 12.0,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "04b20fef-d7f8-4239-b11c-8a7827e335da",
+                        "factFieldTypeId": "f82b674d-c629-4e2b-8c21-2b7371d0fdb0",
+                        "stringValue": null,
+                        "numberValue": 1.0,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    }
+                ]
+            },
+            {
+                "id": "04c35bf4-5b3b-4368-a958-0759998aec04",
+                "factTypeId": "ad77da6a-4332-41df-8d3a-7ae96a6ad262",
+                "fields": [
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "b5862a8c-27d3-4538-a5d2-c2922a1a72e8",
+                        "factFieldTypeId": "569b2edf-de64-40f8-822c-ff57adb7b6e5",
+                        "stringValue": null,
+                        "numberValue": 12.0,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "7ca1dbe2-63aa-446a-b8bd-3b6c29aade2d",
+                        "factFieldTypeId": "f82b674d-c629-4e2b-8c21-2b7371d0fdb0",
+                        "stringValue": null,
+                        "numberValue": 2.0,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    }
+                ]
+            },
+            {
+                "id": "d5a49b5c-0269-4818-b787-0da485608ed6",
+                "factTypeId": "ad77da6a-4332-41df-8d3a-7ae96a6ad262",
+                "fields": [
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "1731c644-66fa-4b6f-9fd4-9c3a634d5ac9",
+                        "factFieldTypeId": "569b2edf-de64-40f8-822c-ff57adb7b6e5",
+                        "stringValue": null,
+                        "numberValue": 12.0,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "5226af89-2138-49e6-a9ed-a25dcbced594",
+                        "factFieldTypeId": "f82b674d-c629-4e2b-8c21-2b7371d0fdb0",
+                        "stringValue": null,
+                        "numberValue": 3.0,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    }
+                ]
+            },
+            {
+                "id": "861f996e-48cd-42d7-b480-70e4fe73176d",
+                "factTypeId": "e31c3090-21b0-4afd-877d-cf7eeed20673",
+                "fields": [
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "de6e0e5b-54e2-4add-b131-4f87ad1dfe73",
+                        "factFieldTypeId": "4113ec1c-007a-4f0d-9c2c-4f1aaebf452b",
+                        "stringValue": "Option",
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "1d1748ec-6be2-43f7-b117-843835da02c3",
+                        "factFieldTypeId": "43986a11-a08f-4365-ae0b-6e1673f85daf",
+                        "stringValue": null,
+                        "numberValue": 20000.0,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "d4dc9238-0434-4a1d-bb9f-d8d9dcc36356",
+                        "factFieldTypeId": "6c43a922-acf9-4afe-9fb6-dc97e14d9099",
+                        "stringValue": "Quarterly",
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "9cc81577-10c1-4930-a7c0-f61055cbc8a4",
+                        "factFieldTypeId": "63fe352e-59e5-4e8d-93aa-a1f0a16846b9",
+                        "stringValue": null,
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": true,
+                        "annotations": null
+                    }
+                ]
+            },
+            {
+                "id": "0d9665e8-a835-4400-ab18-d27a9433513e",
+                "factTypeId": "e31c3090-21b0-4afd-877d-cf7eeed20673",
+                "fields": [
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "f031e0ed-851d-4e6c-8ac9-82ece968277e",
+                        "factFieldTypeId": "4113ec1c-007a-4f0d-9c2c-4f1aaebf452b",
+                        "stringValue": "Custom 1",
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "af37c523-0139-41f0-aa22-af0c5ca390ec",
+                        "factFieldTypeId": "43986a11-a08f-4365-ae0b-6e1673f85daf",
+                        "stringValue": null,
+                        "numberValue": 10000.0,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "c12ff30a-348d-4577-82ec-66ddbf3682d7",
+                        "factFieldTypeId": "6c43a922-acf9-4afe-9fb6-dc97e14d9099",
+                        "stringValue": "Quarterly",
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    }
+                ]
+            },
+            {
+                "id": "ac60b724-f04b-44fa-85fa-f24d2427f386",
+                "factTypeId": "e31c3090-21b0-4afd-877d-cf7eeed20673",
+                "fields": [
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "464c3007-1117-4f89-b8b3-9940784d5f01",
+                        "factFieldTypeId": "4113ec1c-007a-4f0d-9c2c-4f1aaebf452b",
+                        "stringValue": "Operations",
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "5fec2408-6f59-4f93-977c-834993485191",
+                        "factFieldTypeId": "43986a11-a08f-4365-ae0b-6e1673f85daf",
+                        "stringValue": null,
+                        "numberValue": 54450.0,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "d105ac3c-86ff-4bac-b9a2-69f97c438167",
+                        "factFieldTypeId": "6c43a922-acf9-4afe-9fb6-dc97e14d9099",
+                        "stringValue": "Monthly",
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    }
+                ]
+            },
+            {
+                "id": "22765c91-2f3e-4afb-9585-b166589f4170",
+                "factTypeId": "7601840f-8d47-4c0b-a2a1-2ad2a692bfb8",
+                "fields": [
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "f81df42e-84cc-4f94-9eeb-f7da994e6276",
+                        "factFieldTypeId": "7a9ddbe6-3c1e-4cf9-8811-2d256c56cddb",
+                        "stringValue": null,
+                        "numberValue": 1.0,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "67d69320-9216-47d4-89e1-8c151495aea5",
+                        "factFieldTypeId": "43dc655d-cd25-4859-a11e-610317f4baf3",
+                        "stringValue": "Option",
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "f0feba44-90ce-4281-b594-a8496e7ebc49",
+                        "factFieldTypeId": "f04c837a-a3fe-475c-b819-d8f974915fb7",
+                        "stringValue": "Option",
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "1e284f30-571c-41c4-83a5-723763069f1b",
+                        "factFieldTypeId": "ced1155e-6ce4-4528-b7e9-a8461d17c89d",
+                        "stringValue": null,
+                        "numberValue": 1.0,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "f58ddb5f-0aad-4486-b97b-88d79ba515e9",
+                        "factFieldTypeId": "f401c9de-d1c2-4102-907c-adeb3915745c",
+                        "stringValue": null,
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": false,
+                        "annotations": null
+                    }
+                ]
+            },
+            {
+                "id": "15b0854e-1e5a-492b-b2fe-f6428fd61b84",
+                "factTypeId": "7601840f-8d47-4c0b-a2a1-2ad2a692bfb8",
+                "fields": [
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "1c7a2c04-8bd8-44e7-b16f-78fc7ec8cdbd",
+                        "factFieldTypeId": "7a9ddbe6-3c1e-4cf9-8811-2d256c56cddb",
+                        "stringValue": null,
+                        "numberValue": 2.0,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "d163182f-ed3b-4579-9ff9-56ec4120cd65",
+                        "factFieldTypeId": "43dc655d-cd25-4859-a11e-610317f4baf3",
+                        "stringValue": "Option",
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "d9ba00f8-75b1-46b8-968b-41ef6628eaaf",
+                        "factFieldTypeId": "f04c837a-a3fe-475c-b819-d8f974915fb7",
+                        "stringValue": "Custom 1",
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "f3c70104-80ea-4bdf-9d66-bc9752699e3d",
+                        "factFieldTypeId": "c4a9c0f2-ee0e-447f-a101-49e49e226dfc",
+                        "stringValue": null,
+                        "numberValue": -50.0,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "8c3ffaf4-cae5-4d59-9350-533e0950b44d",
+                        "factFieldTypeId": "ced1155e-6ce4-4528-b7e9-a8461d17c89d",
+                        "stringValue": null,
+                        "numberValue": 1.0,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "dc1da76e-add5-4072-845c-9954e459006c",
+                        "factFieldTypeId": "f401c9de-d1c2-4102-907c-adeb3915745c",
+                        "stringValue": null,
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": true,
+                        "annotations": null
+                    }
+                ]
+            },
+            {
+                "id": "64a9f0c1-0213-4f4e-9e3b-b160d918f658",
+                "factTypeId": "7601840f-8d47-4c0b-a2a1-2ad2a692bfb8",
+                "fields": [
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "861802e5-c97d-49e5-ac1d-0653f4a44dd4",
+                        "factFieldTypeId": "7a9ddbe6-3c1e-4cf9-8811-2d256c56cddb",
+                        "stringValue": null,
+                        "numberValue": 3.0,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "470a834a-7104-490b-a01e-d8188e381e3b",
+                        "factFieldTypeId": "43dc655d-cd25-4859-a11e-610317f4baf3",
+                        "stringValue": "Option",
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "e8ef21cd-110a-49f9-af90-6793cc19b258",
+                        "factFieldTypeId": "f04c837a-a3fe-475c-b819-d8f974915fb7",
+                        "stringValue": "Custom 1",
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "3ee57be4-20f5-4339-8fa9-11b4f3863aae",
+                        "factFieldTypeId": "c4a9c0f2-ee0e-447f-a101-49e49e226dfc",
+                        "stringValue": null,
+                        "numberValue": 0.0,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "1e1db57b-8928-48f8-93e1-fbfebd68b8c8",
+                        "factFieldTypeId": "ced1155e-6ce4-4528-b7e9-a8461d17c89d",
+                        "stringValue": null,
+                        "numberValue": 1.0,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "1ac4c871-8a51-485b-8eff-3aaeffa594d0",
+                        "factFieldTypeId": "f401c9de-d1c2-4102-907c-adeb3915745c",
+                        "stringValue": null,
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": true,
+                        "annotations": null
+                    }
+                ]
+            },
+            {
+                "id": "13359c19-31b0-4486-a1ed-f0fdeda11f8f",
+                "factTypeId": "7601840f-8d47-4c0b-a2a1-2ad2a692bfb8",
+                "fields": [
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "14c5decf-238f-457b-bc6b-8b5b20462c10",
+                        "factFieldTypeId": "7a9ddbe6-3c1e-4cf9-8811-2d256c56cddb",
+                        "stringValue": null,
+                        "numberValue": 4.0,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "aae99c6d-d8f0-4c01-8dfb-4a36feda92db",
+                        "factFieldTypeId": "43dc655d-cd25-4859-a11e-610317f4baf3",
+                        "stringValue": "Operations",
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "06337ac4-ce24-439b-9457-59b3c42b0169",
+                        "factFieldTypeId": "f04c837a-a3fe-475c-b819-d8f974915fb7",
+                        "stringValue": "Operations",
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "847e5510-b3dd-428a-87a7-b11b0a0be133",
+                        "factFieldTypeId": "f401c9de-d1c2-4102-907c-adeb3915745c",
+                        "stringValue": null,
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": false,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "2cb14c97-d52f-402e-b00a-2ccb20217e85",
+                        "factFieldTypeId": "c4a9c0f2-ee0e-447f-a101-49e49e226dfc",
+                        "stringValue": null,
+                        "numberValue": 7.5,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "e8f39d04-b569-48ff-9f1e-c724c91fa5f0",
+                        "factFieldTypeId": "ced1155e-6ce4-4528-b7e9-a8461d17c89d",
+                        "stringValue": null,
+                        "numberValue": 5.0,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    }
+                ]
+            },
+            {
+                "id": "89ac2133-1762-49f6-b30a-bfe5522a475c",
+                "factTypeId": "7601840f-8d47-4c0b-a2a1-2ad2a692bfb8",
+                "fields": [
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "e73b799d-1031-4ab2-b415-a299e3d03429",
+                        "factFieldTypeId": "7a9ddbe6-3c1e-4cf9-8811-2d256c56cddb",
+                        "stringValue": null,
+                        "numberValue": 5.0,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "61eb11f0-7992-4730-8e9e-44826f137e2a",
+                        "factFieldTypeId": "43dc655d-cd25-4859-a11e-610317f4baf3",
+                        "stringValue": "Operations",
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "5597b402-6427-4225-9469-60ffd07b72ad",
+                        "factFieldTypeId": "f04c837a-a3fe-475c-b819-d8f974915fb7",
+                        "stringValue": "Operations",
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "ed426316-c8cb-4b76-beb8-faeb5c7d6d18",
+                        "factFieldTypeId": "f401c9de-d1c2-4102-907c-adeb3915745c",
+                        "stringValue": null,
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": true,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "ff99149e-a665-49ec-9fc9-01215b8ea730",
+                        "factFieldTypeId": "c4a9c0f2-ee0e-447f-a101-49e49e226dfc",
+                        "stringValue": null,
+                        "numberValue": 7.5,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "4e72cc00-bd4c-4eac-9601-f7bc72c25b66",
+                        "factFieldTypeId": "ced1155e-6ce4-4528-b7e9-a8461d17c89d",
+                        "stringValue": null,
+                        "numberValue": 5.0,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "3c02f76b-ee22-4dd1-ae69-07a17edc0ddd",
+                        "factFieldTypeId": "b5e0b70c-a194-4b9a-b9d9-6671a06ebf26",
+                        "stringValue": null,
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": true,
+                        "annotations": null
+                    }
+                ]
+            },
+            {
+                "id": "603b8c83-fec0-4497-a52f-a2181381af25",
+                "factTypeId": "7601840f-8d47-4c0b-a2a1-2ad2a692bfb8",
+                "fields": [
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "13d39c48-abab-4167-8d60-47fa8768d32a",
+                        "factFieldTypeId": "7a9ddbe6-3c1e-4cf9-8811-2d256c56cddb",
+                        "stringValue": null,
+                        "numberValue": 6.0,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "2b0b675b-fe2a-480a-a810-569d36876c6f",
+                        "factFieldTypeId": "43dc655d-cd25-4859-a11e-610317f4baf3",
+                        "stringValue": "Operations",
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "2d3081f8-e178-4db1-a83b-c65e07d35699",
+                        "factFieldTypeId": "f04c837a-a3fe-475c-b819-d8f974915fb7",
+                        "stringValue": "Operations",
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "c146aa2c-6960-437e-b0b0-9648eeb4be86",
+                        "factFieldTypeId": "f401c9de-d1c2-4102-907c-adeb3915745c",
+                        "stringValue": null,
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": true,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "fe3241cc-448f-43de-a4ea-57cfa1c24062",
+                        "factFieldTypeId": "c4a9c0f2-ee0e-447f-a101-49e49e226dfc",
+                        "stringValue": null,
+                        "numberValue": 7.5,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "9b6891b2-ee7a-4bc7-bf57-5befd3e544ef",
+                        "factFieldTypeId": "ced1155e-6ce4-4528-b7e9-a8461d17c89d",
+                        "stringValue": null,
+                        "numberValue": 5.0,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "78c1c6c8-444b-44df-98d3-d3a16c1f4b09",
+                        "factFieldTypeId": "b5e0b70c-a194-4b9a-b9d9-6671a06ebf26",
+                        "stringValue": null,
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": true,
+                        "annotations": null
+                    }
+                ]
+            },
+            {
+                "id": "808eff41-0ddb-474e-afc8-2c2141d34de4",
+                "factTypeId": "7601840f-8d47-4c0b-a2a1-2ad2a692bfb8",
+                "fields": [
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "b4133051-0416-4fe6-af84-0f67abd65ce2",
+                        "factFieldTypeId": "7a9ddbe6-3c1e-4cf9-8811-2d256c56cddb",
+                        "stringValue": null,
+                        "numberValue": 7.0,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "c9cf55f6-b9d5-4752-9bae-801d6203fba9",
+                        "factFieldTypeId": "43dc655d-cd25-4859-a11e-610317f4baf3",
+                        "stringValue": "Operations",
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "1e5dfe47-20bb-43fe-af13-1d2f0ce5171c",
+                        "factFieldTypeId": "f04c837a-a3fe-475c-b819-d8f974915fb7",
+                        "stringValue": "Operations",
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "9205466e-6508-4a89-ab2a-bd7e01d342b3",
+                        "factFieldTypeId": "f401c9de-d1c2-4102-907c-adeb3915745c",
+                        "stringValue": null,
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": true,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "7eb6ada4-eaaf-4a87-8692-e511a2edf907",
+                        "factFieldTypeId": "c4a9c0f2-ee0e-447f-a101-49e49e226dfc",
+                        "stringValue": null,
+                        "numberValue": 7.5,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "54bf97be-b4c3-48f9-952b-d29f846d36fe",
+                        "factFieldTypeId": "ced1155e-6ce4-4528-b7e9-a8461d17c89d",
+                        "stringValue": null,
+                        "numberValue": 5.0,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "a41677d8-9153-4855-81dc-cabdff73701a",
+                        "factFieldTypeId": "b5e0b70c-a194-4b9a-b9d9-6671a06ebf26",
+                        "stringValue": null,
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": true,
+                        "annotations": null
+                    }
+                ]
+            },
+            {
+                "id": "f10960d3-e5bd-46f3-9bb7-17376c216318",
+                "factTypeId": "7601840f-8d47-4c0b-a2a1-2ad2a692bfb8",
+                "fields": [
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "f9a3453c-8514-4d1b-b10f-24f3c5734dc9",
+                        "factFieldTypeId": "7a9ddbe6-3c1e-4cf9-8811-2d256c56cddb",
+                        "stringValue": null,
+                        "numberValue": 8.0,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "4023f8df-c022-488b-96bb-a33a8e2737c2",
+                        "factFieldTypeId": "43dc655d-cd25-4859-a11e-610317f4baf3",
+                        "stringValue": "Operations",
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "c5200196-0bab-42ac-b1b4-0a35c8f463b8",
+                        "factFieldTypeId": "f04c837a-a3fe-475c-b819-d8f974915fb7",
+                        "stringValue": "Operations",
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "9692c50f-d74b-4ecf-94fd-1a57b39ce414",
+                        "factFieldTypeId": "f401c9de-d1c2-4102-907c-adeb3915745c",
+                        "stringValue": null,
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": true,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "32a03a0e-fe38-431e-8534-636b2cf1cb2d",
+                        "factFieldTypeId": "c4a9c0f2-ee0e-447f-a101-49e49e226dfc",
+                        "stringValue": null,
+                        "numberValue": 7.5,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "658c9ddf-344e-498c-be1c-5a7f92a87380",
+                        "factFieldTypeId": "ced1155e-6ce4-4528-b7e9-a8461d17c89d",
+                        "stringValue": null,
+                        "numberValue": 5.0,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "7e3389d4-4d84-4fe4-95cb-b00a264a6d6c",
+                        "factFieldTypeId": "b5e0b70c-a194-4b9a-b9d9-6671a06ebf26",
+                        "stringValue": null,
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": true,
+                        "annotations": null
+                    }
+                ]
+            },
+            {
+                "id": "1a6d83c5-79e9-43cd-b4bd-ff7dddc7f71d",
+                "factTypeId": "7601840f-8d47-4c0b-a2a1-2ad2a692bfb8",
+                "fields": [
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "018a5bd1-50c2-4d4a-91d6-701986650e8e",
+                        "factFieldTypeId": "7a9ddbe6-3c1e-4cf9-8811-2d256c56cddb",
+                        "stringValue": null,
+                        "numberValue": 9.0,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "d5db948f-52d0-447b-8cf2-5bdc66ce6ee4",
+                        "factFieldTypeId": "43dc655d-cd25-4859-a11e-610317f4baf3",
+                        "stringValue": "Operations",
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "a9b7f73c-7e02-4ec7-a09e-61d426c15654",
+                        "factFieldTypeId": "f04c837a-a3fe-475c-b819-d8f974915fb7",
+                        "stringValue": "Operations",
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "bf288483-69ce-404b-a85b-77d5eb448350",
+                        "factFieldTypeId": "f401c9de-d1c2-4102-907c-adeb3915745c",
+                        "stringValue": null,
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": true,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "4b8ce729-4738-4647-b66d-818afe24b6ad",
+                        "factFieldTypeId": "c4a9c0f2-ee0e-447f-a101-49e49e226dfc",
+                        "stringValue": null,
+                        "numberValue": 7.5,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "ee3870cb-9fec-479d-ae0e-5f54b19135e9",
+                        "factFieldTypeId": "ced1155e-6ce4-4528-b7e9-a8461d17c89d",
+                        "stringValue": null,
+                        "numberValue": 5.0,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "5a6d538e-1235-4b38-ba8e-3889a2616228",
+                        "factFieldTypeId": "b5e0b70c-a194-4b9a-b9d9-6671a06ebf26",
+                        "stringValue": null,
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": true,
+                        "annotations": null
+                    }
+                ]
+            },
+            {
+                "id": "157b8d56-8713-469d-8861-0542a748f635",
+                "factTypeId": "7601840f-8d47-4c0b-a2a1-2ad2a692bfb8",
+                "fields": [
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "ea2b9b0b-b17f-4b7a-b444-1d283ea6ed38",
+                        "factFieldTypeId": "7a9ddbe6-3c1e-4cf9-8811-2d256c56cddb",
+                        "stringValue": null,
+                        "numberValue": 10.0,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "2df7e895-64f0-44cf-99cf-662cf0180eee",
+                        "factFieldTypeId": "43dc655d-cd25-4859-a11e-610317f4baf3",
+                        "stringValue": "Operations",
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "37a3255c-dca2-487b-a623-ca5023763671",
+                        "factFieldTypeId": "f04c837a-a3fe-475c-b819-d8f974915fb7",
+                        "stringValue": "Operations",
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "36a556d4-ed24-4cd6-8706-015a50ad46cb",
+                        "factFieldTypeId": "f401c9de-d1c2-4102-907c-adeb3915745c",
+                        "stringValue": null,
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": true,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "1e3feb71-1f5d-4320-b07b-6c2ab2fd8cc1",
+                        "factFieldTypeId": "c4a9c0f2-ee0e-447f-a101-49e49e226dfc",
+                        "stringValue": null,
+                        "numberValue": 7.5,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "3d29f16e-861b-4702-bab1-ab1ab48d25fe",
+                        "factFieldTypeId": "ced1155e-6ce4-4528-b7e9-a8461d17c89d",
+                        "stringValue": null,
+                        "numberValue": 5.0,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "6b960f37-1e88-456d-b326-e6679be30b4a",
+                        "factFieldTypeId": "b5e0b70c-a194-4b9a-b9d9-6671a06ebf26",
+                        "stringValue": null,
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": true,
+                        "annotations": null
+                    }
+                ]
+            },
+            {
+                "id": "7c73341e-685a-420f-a008-0f37a2d0e560",
+                "factTypeId": "7601840f-8d47-4c0b-a2a1-2ad2a692bfb8",
+                "fields": [
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "1f2c00c4-f734-4558-a4a1-8c4998b023d6",
+                        "factFieldTypeId": "7a9ddbe6-3c1e-4cf9-8811-2d256c56cddb",
+                        "stringValue": null,
+                        "numberValue": 11.0,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "ad3c97af-bd2b-4309-b8e3-0b2099b4b39c",
+                        "factFieldTypeId": "43dc655d-cd25-4859-a11e-610317f4baf3",
+                        "stringValue": "Operations",
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "0a006907-425b-4038-a55b-48d4e0bea9cf",
+                        "factFieldTypeId": "ced1155e-6ce4-4528-b7e9-a8461d17c89d",
+                        "stringValue": null,
+                        "numberValue": 5.0,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "b49c8770-701b-4a0f-ad58-924081dea4b9",
+                        "factFieldTypeId": "f04c837a-a3fe-475c-b819-d8f974915fb7",
+                        "stringValue": "Operations",
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "a123b6e2-e307-461e-b15e-c8bcdf43616c",
+                        "factFieldTypeId": "f401c9de-d1c2-4102-907c-adeb3915745c",
+                        "stringValue": null,
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": true,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "86e71be5-0c1a-459a-ab0b-6852a42a1300",
+                        "factFieldTypeId": "c4a9c0f2-ee0e-447f-a101-49e49e226dfc",
+                        "stringValue": null,
+                        "numberValue": 7.5,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "9200e15c-a7dc-48dd-b3f9-5e1bd1b0ce95",
+                        "factFieldTypeId": "b5e0b70c-a194-4b9a-b9d9-6671a06ebf26",
+                        "stringValue": null,
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": true,
+                        "annotations": null
+                    }
+                ]
             }
         ],
         "pageCount": 21,
@@ -12892,8 +14427,8 @@
         "sourceDocumentId": "af08218f-53ed-4fd6-97e1-cdecc6872548",
         "sourceDocumentName": "River Bend I Juno PM Lease Reith, Dwayne 20201030.pdf",
         "securityLabelId": null,
-        "lastModifiedBy": "6c7112f8-f4e7-440c-a800-08dad4796f27",
-        "lastModifiedOn": "2023-01-24T15:22:06.266113+00:00",
+        "lastModifiedBy": "5c0d168b-b87c-4fac-04d3-08daf2586950",
+        "lastModifiedOn": "2023-01-30T20:29:17.9717037+00:00",
         "score": 100.0
     },
     {
@@ -13177,7 +14712,7 @@
     {
         "id": "84a6e680-0fe7-42a9-8f4e-904802667155",
         "name": "Saracen I Gemini I Energy Storage AOS Biofuels Power Corp. 20201231.pdf",
-        "documentTypeId": "a012c867-6cd8-4639-830f-5ad3a6ed29c3",
+        "documentTypeId": "ab9755e3-2d5f-4570-9442-b05d7334b087",
         "processingStatus": "Processed",
         "pageManipulationStatus": null,
         "createdBy": "6c7112f8-f4e7-440c-a800-08dad4796f27",
@@ -13264,14 +14799,14 @@
         "sourceDocumentId": "84a6e680-0fe7-42a9-8f4e-904802667155",
         "sourceDocumentName": "Saracen I Gemini I Energy Storage AOS Biofuels Power Corp. 20201231.pdf",
         "securityLabelId": null,
-        "lastModifiedBy": "6c7112f8-f4e7-440c-a800-08dad4796f27",
-        "lastModifiedOn": "2023-01-24T15:22:08.2797134+00:00",
+        "lastModifiedBy": "5c0d168b-b87c-4fac-04d3-08daf2586950",
+        "lastModifiedOn": "2023-01-25T02:31:47.5529525+00:00",
         "score": 100.0
     },
     {
         "id": "0d437e99-b7d0-4768-a10f-b44cd34dd435",
         "name": "Shore Rd Nike Equities AOS Global Companies 20210729.pdf",
-        "documentTypeId": "a012c867-6cd8-4639-830f-5ad3a6ed29c3",
+        "documentTypeId": "a2063704-ad09-43c5-a773-914ea269d48e",
         "processingStatus": "Processed",
         "pageManipulationStatus": null,
         "createdBy": "6c7112f8-f4e7-440c-a800-08dad4796f27",
@@ -13358,14 +14893,14 @@
         "sourceDocumentId": "0d437e99-b7d0-4768-a10f-b44cd34dd435",
         "sourceDocumentName": "Shore Rd Nike Equities AOS Global Companies 20210729.pdf",
         "securityLabelId": null,
-        "lastModifiedBy": "6c7112f8-f4e7-440c-a800-08dad4796f27",
-        "lastModifiedOn": "2023-01-24T15:22:12.9802614+00:00",
+        "lastModifiedBy": "5c0d168b-b87c-4fac-04d3-08daf2586950",
+        "lastModifiedOn": "2023-01-25T02:31:39.2771748+00:00",
         "score": 100.0
     },
     {
         "id": "27173908-621a-4f09-bb91-bc9ee195d84c",
         "name": "Scout Storage I Juno PM AOS Estes, Smith, Welsh, Fulcher, Hickman 20190923.pdf",
-        "documentTypeId": "a012c867-6cd8-4639-830f-5ad3a6ed29c3",
+        "documentTypeId": "ab9755e3-2d5f-4570-9442-b05d7334b087",
         "processingStatus": "Processed",
         "pageManipulationStatus": null,
         "createdBy": "6c7112f8-f4e7-440c-a800-08dad4796f27",
@@ -13452,8 +14987,8 @@
         "sourceDocumentId": "27173908-621a-4f09-bb91-bc9ee195d84c",
         "sourceDocumentName": "Scout Storage I Juno PM AOS Estes, Smith, Welsh, Fulcher, Hickman 20190923.pdf",
         "securityLabelId": null,
-        "lastModifiedBy": "6c7112f8-f4e7-440c-a800-08dad4796f27",
-        "lastModifiedOn": "2023-01-24T15:22:11.3676745+00:00",
+        "lastModifiedBy": "5c0d168b-b87c-4fac-04d3-08daf2586950",
+        "lastModifiedOn": "2023-01-25T02:31:28.1927228+00:00",
         "score": 100.0
     },
     {
@@ -13537,6 +15072,451 @@
                         "annotations": null
                     }
                 ]
+            },
+            {
+                "id": "2e1b3bb4-5728-43c5-a423-9aaf9d8186d1",
+                "factTypeId": "cc05d0b7-005b-4775-a84d-e7cc98a7241f",
+                "fields": [
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "6d96d3a1-cc05-4d41-b338-8fbe6408c870",
+                        "factFieldTypeId": "cb93b25d-8bed-4865-8402-b2b3ded62af5",
+                        "stringValue": null,
+                        "numberValue": null,
+                        "dateValue": "2021-03-30",
+                        "booleanValue": null,
+                        "annotations": null
+                    }
+                ]
+            },
+            {
+                "id": "a66f1518-35a3-4df6-b740-d5fd3521ead1",
+                "factTypeId": "3e9cf52f-c9d8-4f43-9f28-92ec8e4615b0",
+                "fields": [
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "29f183aa-54d8-4a9f-9ee0-8a45ebf53f3c",
+                        "factFieldTypeId": "d136291d-429e-46f3-9efe-e889b977ed47",
+                        "stringValue": "Tempus Power Management LLC, a Texas limited liability company (\"Lessee\")",
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    }
+                ]
+            },
+            {
+                "id": "2407a695-1266-4c9c-b638-16f07cf29f11",
+                "factTypeId": "68bfe50d-25ad-42cf-b026-78db2d066f1b",
+                "fields": [
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "e4d4c48a-6c42-4ae1-a8e1-2b1cabb10eb8",
+                        "factFieldTypeId": "56c59cf7-9fcd-4598-ae86-6c226db77b53",
+                        "stringValue": "George E. Riggs and Glenna J. Riggs, husband and wife (\"Owner\")",
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    }
+                ]
+            },
+            {
+                "id": "5b9a7502-53b2-43be-8917-61c0519ffc8f",
+                "factTypeId": "7601840f-8d47-4c0b-a2a1-2ad2a692bfb8",
+                "fields": [
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "c0202851-a423-4b1b-97f3-ed7493bbf223",
+                        "factFieldTypeId": "7a9ddbe6-3c1e-4cf9-8811-2d256c56cddb",
+                        "stringValue": null,
+                        "numberValue": 1.0,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "7f2195ed-2da8-4b62-b4bf-055a04ae5d57",
+                        "factFieldTypeId": "43dc655d-cd25-4859-a11e-610317f4baf3",
+                        "stringValue": "Operations",
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "297300dc-d283-498b-a2e5-f8262c6736ad",
+                        "factFieldTypeId": "ced1155e-6ce4-4528-b7e9-a8461d17c89d",
+                        "stringValue": null,
+                        "numberValue": 10.0,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "27f67d7a-3288-4eda-b6b5-cce24a9bc61f",
+                        "factFieldTypeId": "f401c9de-d1c2-4102-907c-adeb3915745c",
+                        "stringValue": null,
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": false,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "1912a490-1f68-42e6-ae7a-2fd1d3bc0184",
+                        "factFieldTypeId": "f04c837a-a3fe-475c-b819-d8f974915fb7",
+                        "stringValue": "Operations",
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    }
+                ]
+            },
+            {
+                "id": "880e25e2-9795-4b2a-9a79-1205182fac8d",
+                "factTypeId": "7601840f-8d47-4c0b-a2a1-2ad2a692bfb8",
+                "fields": [
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "37dad8f9-c2cf-489e-8ea7-10a3470f1390",
+                        "factFieldTypeId": "7a9ddbe6-3c1e-4cf9-8811-2d256c56cddb",
+                        "stringValue": null,
+                        "numberValue": 2.0,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "11f975dd-3f24-433a-9473-89b3e15661bd",
+                        "factFieldTypeId": "43dc655d-cd25-4859-a11e-610317f4baf3",
+                        "stringValue": "Operations",
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "11ea71ad-0c6b-487c-bcc0-422ad1976a63",
+                        "factFieldTypeId": "ced1155e-6ce4-4528-b7e9-a8461d17c89d",
+                        "stringValue": null,
+                        "numberValue": 10.0,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "6f0dc43d-2220-4644-83c8-1cc94344c0ee",
+                        "factFieldTypeId": "f401c9de-d1c2-4102-907c-adeb3915745c",
+                        "stringValue": null,
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": true,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "aa650148-a4cd-417e-be81-4472c4cf0197",
+                        "factFieldTypeId": "f04c837a-a3fe-475c-b819-d8f974915fb7",
+                        "stringValue": "Operations",
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "a1a95184-7e80-4078-8da4-637ab89f6881",
+                        "factFieldTypeId": "c4a9c0f2-ee0e-447f-a101-49e49e226dfc",
+                        "stringValue": null,
+                        "numberValue": 10.0,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "516abc40-129c-43ba-bbad-5f2b7eeb359e",
+                        "factFieldTypeId": "b5e0b70c-a194-4b9a-b9d9-6671a06ebf26",
+                        "stringValue": null,
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": true,
+                        "annotations": null
+                    }
+                ]
+            },
+            {
+                "id": "6f2d94a9-b69b-4573-b3c3-dd481761fd2d",
+                "factTypeId": "7601840f-8d47-4c0b-a2a1-2ad2a692bfb8",
+                "fields": [
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "cb86db21-a16c-4abf-9cc1-786730b7084c",
+                        "factFieldTypeId": "7a9ddbe6-3c1e-4cf9-8811-2d256c56cddb",
+                        "stringValue": null,
+                        "numberValue": 3.0,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "9bf2da8e-d91a-4fb0-86b4-452305b39767",
+                        "factFieldTypeId": "43dc655d-cd25-4859-a11e-610317f4baf3",
+                        "stringValue": "Operations",
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "8572deaf-6f6f-40a5-816a-fa37db54dac9",
+                        "factFieldTypeId": "ced1155e-6ce4-4528-b7e9-a8461d17c89d",
+                        "stringValue": null,
+                        "numberValue": 10.0,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "8e02f847-e328-42a6-9db2-f7e232bcd53f",
+                        "factFieldTypeId": "f401c9de-d1c2-4102-907c-adeb3915745c",
+                        "stringValue": null,
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": true,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "4a4ef430-9713-407a-b55b-989ba57a28bb",
+                        "factFieldTypeId": "f04c837a-a3fe-475c-b819-d8f974915fb7",
+                        "stringValue": "Operations",
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "56176118-95d6-49ec-a6c5-fd07c24d05c1",
+                        "factFieldTypeId": "c4a9c0f2-ee0e-447f-a101-49e49e226dfc",
+                        "stringValue": null,
+                        "numberValue": 10.0,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "e0efb264-4902-4b8f-bea3-05d76c2679dc",
+                        "factFieldTypeId": "b5e0b70c-a194-4b9a-b9d9-6671a06ebf26",
+                        "stringValue": null,
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": true,
+                        "annotations": null
+                    }
+                ]
+            },
+            {
+                "id": "a4cf9571-5034-40d9-ba8c-8b70bb17cda7",
+                "factTypeId": "e31c3090-21b0-4afd-877d-cf7eeed20673",
+                "fields": [
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "bb4a1ada-eb67-4888-b5f2-ad9bc47459a6",
+                        "factFieldTypeId": "4113ec1c-007a-4f0d-9c2c-4f1aaebf452b",
+                        "stringValue": "Operations",
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "3d47e7c3-74fb-4c3f-86a8-13460e0ec987",
+                        "factFieldTypeId": "f8b466e6-8a85-4573-8412-0cf9bd6cb15e",
+                        "stringValue": null,
+                        "numberValue": 2000.0,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "06e1eaa1-0c9a-414d-922e-8c9b27614975",
+                        "factFieldTypeId": "f37fe1d6-5e26-4a6c-a79e-bfe0015774e4",
+                        "stringValue": null,
+                        "numberValue": 30000.0,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "09cfccf9-b925-434b-8645-7e0a4ef46f53",
+                        "factFieldTypeId": "6c43a922-acf9-4afe-9fb6-dc97e14d9099",
+                        "stringValue": "Annually",
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    }
+                ]
+            },
+            {
+                "id": "25ae14ab-7448-48bc-a25d-5b639f4179c4",
+                "factTypeId": "e31c3090-21b0-4afd-877d-cf7eeed20673",
+                "fields": [
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "69a68baa-ab21-4ba5-8959-d5bebb7d78e8",
+                        "factFieldTypeId": "4113ec1c-007a-4f0d-9c2c-4f1aaebf452b",
+                        "stringValue": "Extension",
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "2b288fa8-08e6-45e8-abca-0d0f9c697092",
+                        "factFieldTypeId": "f8b466e6-8a85-4573-8412-0cf9bd6cb15e",
+                        "stringValue": null,
+                        "numberValue": 2200.0,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "77a5342b-bcb4-46af-87fe-6b71769dee12",
+                        "factFieldTypeId": "f37fe1d6-5e26-4a6c-a79e-bfe0015774e4",
+                        "stringValue": null,
+                        "numberValue": 30000.0,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "8230e8b7-8f5d-4b0e-9445-fe79f33962e0",
+                        "factFieldTypeId": "6c43a922-acf9-4afe-9fb6-dc97e14d9099",
+                        "stringValue": "Annually",
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    }
+                ]
+            },
+            {
+                "id": "5373bf26-ecc4-4ae8-8690-93e829a24876",
+                "factTypeId": "e31c3090-21b0-4afd-877d-cf7eeed20673",
+                "fields": [
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "3aa1c296-176a-46df-a228-802110f4fe9f",
+                        "factFieldTypeId": "4113ec1c-007a-4f0d-9c2c-4f1aaebf452b",
+                        "stringValue": "Custom 1",
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "598e6c7e-c349-43ca-a74c-dfe80ecb25c5",
+                        "factFieldTypeId": "f8b466e6-8a85-4573-8412-0cf9bd6cb15e",
+                        "stringValue": null,
+                        "numberValue": 2420.0,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "1de36de7-6a3c-4bb1-a099-14c5170bf0a3",
+                        "factFieldTypeId": "f37fe1d6-5e26-4a6c-a79e-bfe0015774e4",
+                        "stringValue": null,
+                        "numberValue": 30000.0,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "ed783a57-9e07-4628-bb09-88bd57b16284",
+                        "factFieldTypeId": "6c43a922-acf9-4afe-9fb6-dc97e14d9099",
+                        "stringValue": "Annually",
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    }
+                ]
+            },
+            {
+                "id": "ef60a5e0-75bf-4617-83d7-110a1298a4bc",
+                "factTypeId": "ee3cb856-bc4a-4d2c-9a0e-35b9a85c27d0",
+                "fields": [
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "ad5adabb-5019-4dfa-bbcd-28ced3531137",
+                        "factFieldTypeId": "1d4abfa8-da96-4827-aa78-d55eda623899",
+                        "stringValue": null,
+                        "numberValue": 15.0,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    }
+                ]
             }
         ],
         "pageCount": 27,
@@ -13546,8 +15526,8 @@
         "sourceDocumentId": "3d801768-f4b7-4ec8-b7f9-a47384d87bf1",
         "sourceDocumentName": "St Gall I Tempus PM Lease Riggs, George & Glenna 20210330.pdf",
         "securityLabelId": null,
-        "lastModifiedBy": "6c7112f8-f4e7-440c-a800-08dad4796f27",
-        "lastModifiedOn": "2023-01-24T15:22:14.5725807+00:00",
+        "lastModifiedBy": "5c0d168b-b87c-4fac-04d3-08daf2586950",
+        "lastModifiedOn": "2023-01-30T20:22:24.7149894+00:00",
         "score": 100.0
     },
     {
@@ -14074,7 +16054,7 @@
     {
         "id": "f97b403c-90b4-4d28-8f2c-01ee963e1168",
         "name": "Tibbits Occasio PM AOS Glei's Orchard 20200807.pdf",
-        "documentTypeId": "a012c867-6cd8-4639-830f-5ad3a6ed29c3",
+        "documentTypeId": "a2063704-ad09-43c5-a773-914ea269d48e",
         "processingStatus": "Processed",
         "pageManipulationStatus": null,
         "createdBy": "6c7112f8-f4e7-440c-a800-08dad4796f27",
@@ -14161,14 +16141,14 @@
         "sourceDocumentId": "f97b403c-90b4-4d28-8f2c-01ee963e1168",
         "sourceDocumentName": "Tibbits Occasio PM AOS Glei's Orchard 20200807.pdf",
         "securityLabelId": null,
-        "lastModifiedBy": "6c7112f8-f4e7-440c-a800-08dad4796f27",
-        "lastModifiedOn": "2023-01-24T15:22:19.2941387+00:00",
+        "lastModifiedBy": "5c0d168b-b87c-4fac-04d3-08daf2586950",
+        "lastModifiedOn": "2023-01-25T02:31:08.924899+00:00",
         "score": 100.0
     },
     {
         "id": "fb065d38-71b4-4757-86ea-60bb1b57d1cc",
         "name": "Tidwell Prairie AOS Mikolajewski, Annie 20201027.pdf",
-        "documentTypeId": "a012c867-6cd8-4639-830f-5ad3a6ed29c3",
+        "documentTypeId": "ab9755e3-2d5f-4570-9442-b05d7334b087",
         "processingStatus": "Processed",
         "pageManipulationStatus": null,
         "createdBy": "6c7112f8-f4e7-440c-a800-08dad4796f27",
@@ -14255,14 +16235,14 @@
         "sourceDocumentId": "fb065d38-71b4-4757-86ea-60bb1b57d1cc",
         "sourceDocumentName": "Tidwell Prairie AOS Mikolajewski, Annie 20201027.pdf",
         "securityLabelId": null,
-        "lastModifiedBy": "6c7112f8-f4e7-440c-a800-08dad4796f27",
-        "lastModifiedOn": "2023-01-24T15:22:20.8197719+00:00",
+        "lastModifiedBy": "5c0d168b-b87c-4fac-04d3-08daf2586950",
+        "lastModifiedOn": "2023-01-25T02:30:58.0654669+00:00",
         "score": 100.0
     },
     {
         "id": "e8dad45d-6fc3-448c-b69d-8558b83c9e7f",
         "name": "Triple Butte I Tempus PM AOS McIntyre, Roslyn 20190923.pdf",
-        "documentTypeId": "a012c867-6cd8-4639-830f-5ad3a6ed29c3",
+        "documentTypeId": "ab9755e3-2d5f-4570-9442-b05d7334b087",
         "processingStatus": "Processed",
         "pageManipulationStatus": null,
         "createdBy": "6c7112f8-f4e7-440c-a800-08dad4796f27",
@@ -14349,8 +16329,8 @@
         "sourceDocumentId": "e8dad45d-6fc3-448c-b69d-8558b83c9e7f",
         "sourceDocumentName": "Triple Butte I Tempus PM AOS McIntyre, Roslyn 20190923.pdf",
         "securityLabelId": null,
-        "lastModifiedBy": "6c7112f8-f4e7-440c-a800-08dad4796f27",
-        "lastModifiedOn": "2023-01-24T15:22:22.2156903+00:00",
+        "lastModifiedBy": "5c0d168b-b87c-4fac-04d3-08daf2586950",
+        "lastModifiedOn": "2023-01-25T02:30:48.136861+00:00",
         "score": 100.0
     },
     {
@@ -14434,6 +16414,329 @@
                         "annotations": null
                     }
                 ]
+            },
+            {
+                "id": "99709db9-8942-47e3-8040-f8b0791ca8ba",
+                "factTypeId": "cc05d0b7-005b-4775-a84d-e7cc98a7241f",
+                "fields": [
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "2137d9d9-652c-43ec-b785-04c688f20d8b",
+                        "factFieldTypeId": "cb93b25d-8bed-4865-8402-b2b3ded62af5",
+                        "stringValue": null,
+                        "numberValue": null,
+                        "dateValue": "2020-11-24",
+                        "booleanValue": null,
+                        "annotations": null
+                    }
+                ]
+            },
+            {
+                "id": "05910e7a-2694-42fd-8429-554288a140eb",
+                "factTypeId": "3e9cf52f-c9d8-4f43-9f28-92ec8e4615b0",
+                "fields": [
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "febfa6c4-6ab7-4071-b822-7ecbc42d06f3",
+                        "factFieldTypeId": "d136291d-429e-46f3-9efe-e889b977ed47",
+                        "stringValue": "Occasio Power Management, LLC, a Texas limited liability company who's address is 1108 Lavaca St ., Suite 110-349, Austin, Texas 78701 (\"Tenant\")",
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    }
+                ]
+            },
+            {
+                "id": "4df87f3f-7b22-408f-8b7f-3b8196ff0227",
+                "factTypeId": "68bfe50d-25ad-42cf-b026-78db2d066f1b",
+                "fields": [
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "20fb8bf6-1982-47b9-a091-242cf3fe6839",
+                        "factFieldTypeId": "56c59cf7-9fcd-4598-ae86-6c226db77b53",
+                        "stringValue": "David & Cheryl Salter (Husband & Wife), who's address is 711 S. 3rd St ., Chowchilla, CA 93610 (\"Owner\")",
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    }
+                ]
+            },
+            {
+                "id": "41de09c6-a721-4cd4-b099-9c6cdbc3070c",
+                "factTypeId": "7601840f-8d47-4c0b-a2a1-2ad2a692bfb8",
+                "fields": [
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "40e20988-4784-42e1-96cb-fccdf2088053",
+                        "factFieldTypeId": "7a9ddbe6-3c1e-4cf9-8811-2d256c56cddb",
+                        "stringValue": null,
+                        "numberValue": 1.0,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "4ca18650-0d0f-4e50-8978-665e18672220",
+                        "factFieldTypeId": "ced1155e-6ce4-4528-b7e9-a8461d17c89d",
+                        "stringValue": null,
+                        "numberValue": 3.0,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "7e60ee16-71e0-402c-824f-e6f8bee3bce4",
+                        "factFieldTypeId": "43dc655d-cd25-4859-a11e-610317f4baf3",
+                        "stringValue": "Development",
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "0d3dcfff-29cf-4f58-827e-fa0c72d28328",
+                        "factFieldTypeId": "f401c9de-d1c2-4102-907c-adeb3915745c",
+                        "stringValue": null,
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": false,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "f613d7d1-7400-46d2-88d9-655015504c21",
+                        "factFieldTypeId": "b5e0b70c-a194-4b9a-b9d9-6671a06ebf26",
+                        "stringValue": null,
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": false,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "b194e81a-73cb-437a-89eb-227a00858b1e",
+                        "factFieldTypeId": "c8208db9-e328-454d-b6c6-c940856f825d",
+                        "stringValue": null,
+                        "numberValue": 30.0,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    }
+                ]
+            },
+            {
+                "id": "eba2ca77-2494-4048-b649-ad47ddefd6f0",
+                "factTypeId": "7601840f-8d47-4c0b-a2a1-2ad2a692bfb8",
+                "fields": [
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "82d7e300-baed-4b66-bfcf-4e48a7064893",
+                        "factFieldTypeId": "7a9ddbe6-3c1e-4cf9-8811-2d256c56cddb",
+                        "stringValue": null,
+                        "numberValue": 2.0,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "edcaf126-5361-44be-9f21-7a10fa71ed86",
+                        "factFieldTypeId": "ced1155e-6ce4-4528-b7e9-a8461d17c89d",
+                        "stringValue": null,
+                        "numberValue": 20.0,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "a5d156c8-d4eb-4d52-b82e-b147e51516d8",
+                        "factFieldTypeId": "43dc655d-cd25-4859-a11e-610317f4baf3",
+                        "stringValue": "Operations",
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "4f2c4c7a-118f-4270-9eb6-60d9f7c2eb2e",
+                        "factFieldTypeId": "f401c9de-d1c2-4102-907c-adeb3915745c",
+                        "stringValue": null,
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": false,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "d639cc0e-23d3-4dcd-9089-ac7dc2591c8c",
+                        "factFieldTypeId": "b5e0b70c-a194-4b9a-b9d9-6671a06ebf26",
+                        "stringValue": null,
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": true,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "918d2bfd-2a46-4f16-99b2-cf903d6a0d9a",
+                        "factFieldTypeId": "c4a9c0f2-ee0e-447f-a101-49e49e226dfc",
+                        "stringValue": null,
+                        "numberValue": 2.5,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "027ad363-522b-4850-9fe3-7fa9d2832930",
+                        "factFieldTypeId": "c8208db9-e328-454d-b6c6-c940856f825d",
+                        "stringValue": null,
+                        "numberValue": 45.0,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    }
+                ]
+            },
+            {
+                "id": "2474882c-b4da-4276-b91e-3b9b8e46ed6f",
+                "factTypeId": "7601840f-8d47-4c0b-a2a1-2ad2a692bfb8",
+                "fields": [
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "41218853-c46d-49b4-87de-c2c805e2db32",
+                        "factFieldTypeId": "ced1155e-6ce4-4528-b7e9-a8461d17c89d",
+                        "stringValue": null,
+                        "numberValue": 20.0,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "2d30b86c-d890-48d0-b4ca-2c735f9a9ad8",
+                        "factFieldTypeId": "43dc655d-cd25-4859-a11e-610317f4baf3",
+                        "stringValue": "Operations",
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "4c0c01c1-8c14-468b-b65c-b553e13f1fe9",
+                        "factFieldTypeId": "f401c9de-d1c2-4102-907c-adeb3915745c",
+                        "stringValue": null,
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": true,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "f3a5a76f-0229-4f31-9aa1-70c1e21f3229",
+                        "factFieldTypeId": "b5e0b70c-a194-4b9a-b9d9-6671a06ebf26",
+                        "stringValue": null,
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": true,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "9add51a1-f9ba-4065-b945-42dba4a2c9a5",
+                        "factFieldTypeId": "c4a9c0f2-ee0e-447f-a101-49e49e226dfc",
+                        "stringValue": null,
+                        "numberValue": 2.5,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    }
+                ]
+            },
+            {
+                "id": "1c9b3404-2249-450b-a49b-be67534ed0b8",
+                "factTypeId": "e31c3090-21b0-4afd-877d-cf7eeed20673",
+                "fields": [
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "6ef50e34-bbb4-4d69-828b-2c3a75da84ed",
+                        "factFieldTypeId": "4113ec1c-007a-4f0d-9c2c-4f1aaebf452b",
+                        "stringValue": "Development",
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "e7a7f759-abf0-4783-860b-4a2cb09930c6",
+                        "factFieldTypeId": "43986a11-a08f-4365-ae0b-6e1673f85daf",
+                        "stringValue": null,
+                        "numberValue": 30000.0,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    }
+                ]
+            },
+            {
+                "id": "61e73738-dd85-4ff4-bbca-3f0581ad9c2c",
+                "factTypeId": "e31c3090-21b0-4afd-877d-cf7eeed20673",
+                "fields": [
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "40bcf88e-5238-467d-93ca-906e004c8bb8",
+                        "factFieldTypeId": "4113ec1c-007a-4f0d-9c2c-4f1aaebf452b",
+                        "stringValue": "Operations",
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "1ff5443e-6cdf-4532-8e76-a60531e599dc",
+                        "factFieldTypeId": "43986a11-a08f-4365-ae0b-6e1673f85daf",
+                        "stringValue": null,
+                        "numberValue": 54000.0,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    }
+                ]
             }
         ],
         "pageCount": 5,
@@ -14443,14 +16746,14 @@
         "sourceDocumentId": "305850c8-3aed-4d1a-956e-51766b613093",
         "sourceDocumentName": "Valetudo Occasio PM Lease Salter, David & Cheryl 20201124.pdf",
         "securityLabelId": null,
-        "lastModifiedBy": "6c7112f8-f4e7-440c-a800-08dad4796f27",
-        "lastModifiedOn": "2023-01-24T15:22:25.7212548+00:00",
+        "lastModifiedBy": "5c0d168b-b87c-4fac-04d3-08daf2586950",
+        "lastModifiedOn": "2023-01-27T16:52:57.7471828+00:00",
         "score": 100.0
     },
     {
         "id": "5d75b4c6-1557-4468-b064-098c24a44bb4",
         "name": "Vandalia I Pine Tree PM AOS Pilot Travel Centers 20210910.pdf",
-        "documentTypeId": "a012c867-6cd8-4639-830f-5ad3a6ed29c3",
+        "documentTypeId": "ab9755e3-2d5f-4570-9442-b05d7334b087",
         "processingStatus": "Processed",
         "pageManipulationStatus": null,
         "createdBy": "6c7112f8-f4e7-440c-a800-08dad4796f27",
@@ -14537,8 +16840,8 @@
         "sourceDocumentId": "5d75b4c6-1557-4468-b064-098c24a44bb4",
         "sourceDocumentName": "Vandalia I Pine Tree PM AOS Pilot Travel Centers 20210910.pdf",
         "securityLabelId": null,
-        "lastModifiedBy": "6c7112f8-f4e7-440c-a800-08dad4796f27",
-        "lastModifiedOn": "2023-01-24T15:22:27.6199585+00:00",
+        "lastModifiedBy": "5c0d168b-b87c-4fac-04d3-08daf2586950",
+        "lastModifiedOn": "2023-01-25T02:30:25.11101+00:00",
         "score": 100.0
     },
     {
@@ -14622,6 +16925,57 @@
                         "annotations": null
                     }
                 ]
+            },
+            {
+                "id": "fc93e8f0-c75f-49da-8902-4ec3c50d5f69",
+                "factTypeId": "cc05d0b7-005b-4775-a84d-e7cc98a7241f",
+                "fields": [
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "4a6c9747-5847-4fec-bd05-88a05cd4e18a",
+                        "factFieldTypeId": "cb93b25d-8bed-4865-8402-b2b3ded62af5",
+                        "stringValue": null,
+                        "numberValue": null,
+                        "dateValue": "2020-04-17",
+                        "booleanValue": null,
+                        "annotations": null
+                    }
+                ]
+            },
+            {
+                "id": "f4ae2700-2424-40af-b6a2-d764cb1fb250",
+                "factTypeId": "3e9cf52f-c9d8-4f43-9f28-92ec8e4615b0",
+                "fields": [
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "1dcf74bc-ec7e-496b-886e-935ced3f96a6",
+                        "factFieldTypeId": "d136291d-429e-46f3-9efe-e889b977ed47",
+                        "stringValue": "JUNO POWER MANAGEMENT, LLC",
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    }
+                ]
+            },
+            {
+                "id": "efc440c2-5b90-47c4-842b-2d445a1b5c7e",
+                "factTypeId": "68bfe50d-25ad-42cf-b026-78db2d066f1b",
+                "fields": [
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "bdd2e419-87ee-43fd-b4a0-bc0b2e59647f",
+                        "factFieldTypeId": "56c59cf7-9fcd-4598-ae86-6c226db77b53",
+                        "stringValue": "LDR EQUITIES LLC and DANIEL RUBIN, as tenants in common",
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    }
+                ]
             }
         ],
         "pageCount": 43,
@@ -14631,14 +16985,14 @@
         "sourceDocumentId": "98e4b91b-5331-4982-b4e5-c84a26349757",
         "sourceDocumentName": "Two Rivers Storage Juno PM Lease LDR Equities & Rubin, Daniel 20200417.pdf",
         "securityLabelId": null,
-        "lastModifiedBy": "6c7112f8-f4e7-440c-a800-08dad4796f27",
-        "lastModifiedOn": "2023-01-24T15:22:24.0447945+00:00",
+        "lastModifiedBy": "5c0d168b-b87c-4fac-04d3-08daf2586950",
+        "lastModifiedOn": "2023-01-27T16:55:12.7075329+00:00",
         "score": 100.0
     },
     {
         "id": "f47a6ba0-c4f9-4eab-bd06-d510fedce3c1",
         "name": "Woods Landing Storage Juno PM AOS Zhu, Lanny & Qing, Guo G&L International Trading 20200327.pdf",
-        "documentTypeId": "a012c867-6cd8-4639-830f-5ad3a6ed29c3",
+        "documentTypeId": "ab9755e3-2d5f-4570-9442-b05d7334b087",
         "processingStatus": "Processed",
         "pageManipulationStatus": null,
         "createdBy": "6c7112f8-f4e7-440c-a800-08dad4796f27",
@@ -14725,8 +17079,8 @@
         "sourceDocumentId": "f47a6ba0-c4f9-4eab-bd06-d510fedce3c1",
         "sourceDocumentName": "Woods Landing Storage Juno PM AOS Zhu, Lanny & Qing, Guo G&L International Trading 20200327.pdf",
         "securityLabelId": null,
-        "lastModifiedBy": "6c7112f8-f4e7-440c-a800-08dad4796f27",
-        "lastModifiedOn": "2023-01-24T15:22:30.8324314+00:00",
+        "lastModifiedBy": "5c0d168b-b87c-4fac-04d3-08daf2586950",
+        "lastModifiedOn": "2023-01-25T02:29:39.0282764+00:00",
         "score": 100.0
     },
     {
@@ -14920,7 +17274,7 @@
     {
         "id": "268435d4-8607-4078-8b10-fdc3e76be60f",
         "name": "Elm Line II Juno PM AOS Rosh, Ann 20200324.pdf",
-        "documentTypeId": "a012c867-6cd8-4639-830f-5ad3a6ed29c3",
+        "documentTypeId": "a2063704-ad09-43c5-a773-914ea269d48e",
         "processingStatus": "Processed",
         "pageManipulationStatus": null,
         "createdBy": "6c7112f8-f4e7-440c-a800-08dad4796f27",
@@ -15007,8 +17361,8 @@
         "sourceDocumentId": "268435d4-8607-4078-8b10-fdc3e76be60f",
         "sourceDocumentName": "Elm Line II Juno PM AOS Rosh, Ann 20200324.pdf",
         "securityLabelId": null,
-        "lastModifiedBy": "6c7112f8-f4e7-440c-a800-08dad4796f27",
-        "lastModifiedOn": "2023-01-24T15:20:23.980102+00:00",
+        "lastModifiedBy": "5c0d168b-b87c-4fac-04d3-08daf2586950",
+        "lastModifiedOn": "2023-01-25T02:29:09.9445461+00:00",
         "score": 100.0
     },
     {
@@ -15186,6 +17540,490 @@
                         "annotations": null
                     }
                 ]
+            },
+            {
+                "id": "625d4aa8-02ee-4de6-923c-bf6b99b693ed",
+                "factTypeId": "cc05d0b7-005b-4775-a84d-e7cc98a7241f",
+                "fields": [
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "79521beb-d177-478c-b5a8-9da0aa34200e",
+                        "factFieldTypeId": "cb93b25d-8bed-4865-8402-b2b3ded62af5",
+                        "stringValue": null,
+                        "numberValue": null,
+                        "dateValue": "2021-12-10",
+                        "booleanValue": null,
+                        "annotations": null
+                    }
+                ]
+            },
+            {
+                "id": "fef0dba4-94b7-4792-93d1-4bf5f34cc331",
+                "factTypeId": "68bfe50d-25ad-42cf-b026-78db2d066f1b",
+                "fields": [
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "42d8a930-5beb-42c4-99a4-68800d852661",
+                        "factFieldTypeId": "56c59cf7-9fcd-4598-ae86-6c226db77b53",
+                        "stringValue": "Diane Strawn, as Trustee of the Diane Strawn GST Trust (\"Owner\")",
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    }
+                ]
+            },
+            {
+                "id": "e9831850-dd58-4c28-9021-f8e9e511b063",
+                "factTypeId": "3e9cf52f-c9d8-4f43-9f28-92ec8e4615b0",
+                "fields": [
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "8f4d3b22-27b0-4c2e-88d7-545dfe953dd4",
+                        "factFieldTypeId": "d136291d-429e-46f3-9efe-e889b977ed47",
+                        "stringValue": "Old Aqueduct Solar LLC, a Delaware limited liability company (\"Tenant\")",
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    }
+                ]
+            },
+            {
+                "id": "042e44c4-9dbd-4ed7-9376-f95f4dfdd559",
+                "factTypeId": "ee3cb856-bc4a-4d2c-9a0e-35b9a85c27d0",
+                "fields": [
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "52315ae5-0031-427b-ace1-5565b09f3804",
+                        "factFieldTypeId": "1d4abfa8-da96-4827-aa78-d55eda623899",
+                        "stringValue": null,
+                        "numberValue": 385.548,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    }
+                ]
+            },
+            {
+                "id": "6ca6aa78-9f94-4516-b00b-e616fdfefda0",
+                "factTypeId": "7601840f-8d47-4c0b-a2a1-2ad2a692bfb8",
+                "fields": [
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "f4bde75f-3da4-447b-b2bc-81650ee6e60c",
+                        "factFieldTypeId": "7a9ddbe6-3c1e-4cf9-8811-2d256c56cddb",
+                        "stringValue": null,
+                        "numberValue": 1.0,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "151387fb-345b-4390-ad70-7f266be9f018",
+                        "factFieldTypeId": "43dc655d-cd25-4859-a11e-610317f4baf3",
+                        "stringValue": "Development",
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "d8b7d850-4ec7-4f8d-b605-67cab38847d8",
+                        "factFieldTypeId": "ced1155e-6ce4-4528-b7e9-a8461d17c89d",
+                        "stringValue": null,
+                        "numberValue": 5.0,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "be3d6c96-3012-4fdb-b5d7-49c5eefa8006",
+                        "factFieldTypeId": "c8208db9-e328-454d-b6c6-c940856f825d",
+                        "stringValue": null,
+                        "numberValue": 45.0,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "9ff118fc-2888-497d-bf84-26404ba0c9fb",
+                        "factFieldTypeId": "f04c837a-a3fe-475c-b819-d8f974915fb7",
+                        "stringValue": "Development",
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    }
+                ]
+            },
+            {
+                "id": "6be3d0e8-2e0f-46ed-a402-352e9c753f4e",
+                "factTypeId": "7601840f-8d47-4c0b-a2a1-2ad2a692bfb8",
+                "fields": [
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "018e1dfd-fde7-4978-895d-1d15e45f91e1",
+                        "factFieldTypeId": "7a9ddbe6-3c1e-4cf9-8811-2d256c56cddb",
+                        "stringValue": null,
+                        "numberValue": 2.0,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "027ae50a-393a-49a7-a060-89f0337b039d",
+                        "factFieldTypeId": "43dc655d-cd25-4859-a11e-610317f4baf3",
+                        "stringValue": "Construction",
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "a6f525ce-2570-4e2d-b115-aab98face605",
+                        "factFieldTypeId": "ced1155e-6ce4-4528-b7e9-a8461d17c89d",
+                        "stringValue": null,
+                        "numberValue": 1.5,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "a346f1a3-6c89-41aa-8775-4ae16ffd020c",
+                        "factFieldTypeId": "f04c837a-a3fe-475c-b819-d8f974915fb7",
+                        "stringValue": "Development",
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    }
+                ]
+            },
+            {
+                "id": "5667a8ff-8394-410c-9b3b-cde3b3740047",
+                "factTypeId": "7601840f-8d47-4c0b-a2a1-2ad2a692bfb8",
+                "fields": [
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "895d700e-c175-4514-8a0c-f4308bf5f552",
+                        "factFieldTypeId": "7a9ddbe6-3c1e-4cf9-8811-2d256c56cddb",
+                        "stringValue": null,
+                        "numberValue": 3.0,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "6af15416-5161-4753-b4aa-a596c9993fe9",
+                        "factFieldTypeId": "ced1155e-6ce4-4528-b7e9-a8461d17c89d",
+                        "stringValue": null,
+                        "numberValue": 25.0,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "e9edc1d5-1328-4540-80ac-62c17d63848f",
+                        "factFieldTypeId": "43dc655d-cd25-4859-a11e-610317f4baf3",
+                        "stringValue": "Operations",
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "6fdc9201-2983-4773-be0b-603ef44ed34a",
+                        "factFieldTypeId": "f04c837a-a3fe-475c-b819-d8f974915fb7",
+                        "stringValue": "Operations",
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "1e6db360-73fe-4e5c-8a2b-dcfb1960e89f",
+                        "factFieldTypeId": "c8208db9-e328-454d-b6c6-c940856f825d",
+                        "stringValue": null,
+                        "numberValue": 45.0,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    }
+                ]
+            },
+            {
+                "id": "0f5959d4-ae66-4d7e-a329-c9f0bb8b7a45",
+                "factTypeId": "7601840f-8d47-4c0b-a2a1-2ad2a692bfb8",
+                "fields": [
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "aecb98a5-feba-4cc1-a5fb-2393eb63fe25",
+                        "factFieldTypeId": "7a9ddbe6-3c1e-4cf9-8811-2d256c56cddb",
+                        "stringValue": null,
+                        "numberValue": 4.0,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "56fa9fea-d573-4571-b147-42eb7ebc7ddd",
+                        "factFieldTypeId": "43dc655d-cd25-4859-a11e-610317f4baf3",
+                        "stringValue": "Operations",
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "d5c82e42-846d-4d2e-b294-5428a4ac2e98",
+                        "factFieldTypeId": "ced1155e-6ce4-4528-b7e9-a8461d17c89d",
+                        "stringValue": null,
+                        "numberValue": 10.0,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "c8d304f2-0a16-434d-a498-6f636b543550",
+                        "factFieldTypeId": "c4a9c0f2-ee0e-447f-a101-49e49e226dfc",
+                        "stringValue": null,
+                        "numberValue": 10.0,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "7fb22083-eccc-4c43-91d6-13cc5497be1e",
+                        "factFieldTypeId": "f04c837a-a3fe-475c-b819-d8f974915fb7",
+                        "stringValue": "Operations",
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "39ffddca-5512-41be-8662-ba9e00ab7940",
+                        "factFieldTypeId": "b5e0b70c-a194-4b9a-b9d9-6671a06ebf26",
+                        "stringValue": null,
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": true,
+                        "annotations": null
+                    }
+                ]
+            },
+            {
+                "id": "c328890d-b06c-44ea-b59f-1530b70bc1cb",
+                "factTypeId": "7601840f-8d47-4c0b-a2a1-2ad2a692bfb8",
+                "fields": [
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "83849331-6dbd-4ad8-a84f-aad3e1979127",
+                        "factFieldTypeId": "7a9ddbe6-3c1e-4cf9-8811-2d256c56cddb",
+                        "stringValue": null,
+                        "numberValue": 5.0,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "fac09801-c484-4662-b2ee-79d15b9a9070",
+                        "factFieldTypeId": "ced1155e-6ce4-4528-b7e9-a8461d17c89d",
+                        "stringValue": null,
+                        "numberValue": 10.0,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "e3711b73-f684-423a-9243-f300fcb83c20",
+                        "factFieldTypeId": "43dc655d-cd25-4859-a11e-610317f4baf3",
+                        "stringValue": "Operations",
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "3964dc2e-4854-48c4-ad1e-a1204b254ae9",
+                        "factFieldTypeId": "c4a9c0f2-ee0e-447f-a101-49e49e226dfc",
+                        "stringValue": null,
+                        "numberValue": 10.0,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "edfb9f46-f385-411c-9502-2d977bc1ff41",
+                        "factFieldTypeId": "f04c837a-a3fe-475c-b819-d8f974915fb7",
+                        "stringValue": "Operations",
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "e6fa6cb0-ac06-41b9-bc24-d763a1a7702f",
+                        "factFieldTypeId": "b5e0b70c-a194-4b9a-b9d9-6671a06ebf26",
+                        "stringValue": null,
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": true,
+                        "annotations": null
+                    }
+                ]
+            },
+            {
+                "id": "d60036d4-fe73-4f73-9344-6b005abdffdd",
+                "factTypeId": "e31c3090-21b0-4afd-877d-cf7eeed20673",
+                "fields": [
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "f93cce96-7f49-455a-8ec9-d9ddc5918a60",
+                        "factFieldTypeId": "4113ec1c-007a-4f0d-9c2c-4f1aaebf452b",
+                        "stringValue": "Development",
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "84ff1d80-7830-47a1-8fcb-7ec297795a6b",
+                        "factFieldTypeId": "43986a11-a08f-4365-ae0b-6e1673f85daf",
+                        "stringValue": null,
+                        "numberValue": 23132.88,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "539380e8-8072-4e8f-818b-0510aceabb45",
+                        "factFieldTypeId": "6c43a922-acf9-4afe-9fb6-dc97e14d9099",
+                        "stringValue": "Annually",
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    }
+                ]
+            },
+            {
+                "id": "8cf2f349-440c-4869-9efd-5cb4de9a7332",
+                "factTypeId": "e31c3090-21b0-4afd-877d-cf7eeed20673",
+                "fields": [
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "3becbd5e-19d4-4163-afe3-cc3420e381e1",
+                        "factFieldTypeId": "4113ec1c-007a-4f0d-9c2c-4f1aaebf452b",
+                        "stringValue": "Operations",
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "02accade-2606-4ee2-9c08-0bf17fa608a1",
+                        "factFieldTypeId": "f8b466e6-8a85-4573-8412-0cf9bd6cb15e",
+                        "stringValue": null,
+                        "numberValue": 575.0,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "11ba9b96-6620-43ab-9a30-98ca3e8c171d",
+                        "factFieldTypeId": "6c43a922-acf9-4afe-9fb6-dc97e14d9099",
+                        "stringValue": "Annually",
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "43c20ab6-daee-491b-a6cc-2f572422b377",
+                        "factFieldTypeId": "f37fe1d6-5e26-4a6c-a79e-bfe0015774e4",
+                        "stringValue": null,
+                        "numberValue": 139078.13,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "10303d94-92bd-45e1-878f-c85c7f095a84",
+                        "factFieldTypeId": "63fe352e-59e5-4e8d-93aa-a1f0a16846b9",
+                        "stringValue": null,
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": true,
+                        "annotations": null
+                    }
+                ]
             }
         ],
         "pageCount": 26,
@@ -15195,14 +18033,14 @@
         "sourceDocumentId": "e353c93d-f312-495a-b683-3b33d408527a",
         "sourceDocumentName": "OA Solar Lease and Easement Agreement Diane Strawn 20211210.pdf",
         "securityLabelId": null,
-        "lastModifiedBy": "6c7112f8-f4e7-440c-a800-08dad4796f27",
-        "lastModifiedOn": "2023-01-24T15:21:41.4971013+00:00",
+        "lastModifiedBy": "5c0d168b-b87c-4fac-04d3-08daf2586950",
+        "lastModifiedOn": "2023-01-30T20:48:51.6354488+00:00",
         "score": 100.0
     },
     {
         "id": "1838c136-945b-4b23-992c-efc263401e8a",
         "name": "Land Purchase Agreement Rock Creek Option Agreement Clinton Regional Development Corporation Rock Creek I.pdf",
-        "documentTypeId": "a012c867-6cd8-4639-830f-5ad3a6ed29c3",
+        "documentTypeId": "a2063704-ad09-43c5-a773-914ea269d48e",
         "processingStatus": "Processed",
         "pageManipulationStatus": null,
         "createdBy": "6c7112f8-f4e7-440c-a800-08dad4796f27",
@@ -15289,8 +18127,8 @@
         "sourceDocumentId": "1838c136-945b-4b23-992c-efc263401e8a",
         "sourceDocumentName": "Land Purchase Agreement Rock Creek Option Agreement Clinton Regional Development Corporation Rock Creek I.pdf",
         "securityLabelId": null,
-        "lastModifiedBy": "6c7112f8-f4e7-440c-a800-08dad4796f27",
-        "lastModifiedOn": "2023-01-24T15:21:32.5901498+00:00",
+        "lastModifiedBy": "5c0d168b-b87c-4fac-04d3-08daf2586950",
+        "lastModifiedOn": "2023-01-25T02:28:05.2158298+00:00",
         "score": 100.0
     },
     {
@@ -20452,7 +23290,7 @@
     {
         "id": "94c4dc1d-b075-42cb-946c-82e33b393bd4",
         "name": "Land Lease Agreement Big Shoulders ESM Southeast Properties Lease Big Shoulders I.pdf",
-        "documentTypeId": "ab9755e3-2d5f-4570-9442-b05d7334b087",
+        "documentTypeId": "a012c867-6cd8-4639-830f-5ad3a6ed29c3",
         "processingStatus": "Processed",
         "pageManipulationStatus": null,
         "createdBy": "6c7112f8-f4e7-440c-a800-08dad4796f27",
@@ -20515,15 +23353,15 @@
                 ]
             },
             {
-                "id": "4bf93f9a-608d-4989-8487-68c6093fc905",
-                "factTypeId": "fe02f206-d720-47ea-9462-180b440b953e",
+                "id": "9eba74df-8082-4126-a003-18c56c65b918",
+                "factTypeId": "68bfe50d-25ad-42cf-b026-78db2d066f1b",
                 "fields": [
                     {
                         "score": null,
                         "highlightedText": null,
-                        "id": "5b20f7f5-12aa-45f8-a363-98b02078c258",
-                        "factFieldTypeId": "17f6d36a-0a16-45c6-876d-9d8def5decf5",
-                        "stringValue": "Energy Storage Lease and Easement Agreement",
+                        "id": "b33d7dcf-fec0-4f02-9038-03a9df271b58",
+                        "factFieldTypeId": "56c59cf7-9fcd-4598-ae86-6c226db77b53",
+                        "stringValue": "ESM Southeast Properties LLC",
                         "numberValue": null,
                         "dateValue": null,
                         "booleanValue": null,
@@ -20539,14 +23377,14 @@
         "sourceDocumentId": "94c4dc1d-b075-42cb-946c-82e33b393bd4",
         "sourceDocumentName": "Land Lease Agreement Big Shoulders ESM Southeast Properties Lease Big Shoulders I.pdf",
         "securityLabelId": null,
-        "lastModifiedBy": "6c7112f8-f4e7-440c-a800-08dad4796f27",
-        "lastModifiedOn": "2023-01-24T15:20:47.8207628+00:00",
+        "lastModifiedBy": "f00c1746-8935-473c-4a94-08dac7d3ca42",
+        "lastModifiedOn": "2023-01-27T20:23:25.9406309+00:00",
         "score": 100.0
     },
     {
         "id": "9c46b228-7b4b-41b1-b1de-1f7c37430e63",
         "name": "Land Lease Agreement OA Solar Lease and Easement Hall Old Aqueduct Solar.pdf",
-        "documentTypeId": "10287c20-f1d7-4302-8843-4606b352104d",
+        "documentTypeId": "a012c867-6cd8-4639-830f-5ad3a6ed29c3",
         "processingStatus": "Processed",
         "pageManipulationStatus": null,
         "createdBy": "6c7112f8-f4e7-440c-a800-08dad4796f27",
@@ -21316,8 +24154,8 @@
         "sourceDocumentId": "9c46b228-7b4b-41b1-b1de-1f7c37430e63",
         "sourceDocumentName": "Land Lease Agreement OA Solar Lease and Easement Hall Old Aqueduct Solar.pdf",
         "securityLabelId": null,
-        "lastModifiedBy": "6c7112f8-f4e7-440c-a800-08dad4796f27",
-        "lastModifiedOn": "2023-01-24T15:21:06.2759278+00:00",
+        "lastModifiedBy": "5c0d168b-b87c-4fac-04d3-08daf2586950",
+        "lastModifiedOn": "2023-01-25T02:39:34.3298856+00:00",
         "score": 100.0
     },
     {
@@ -21714,7 +24552,7 @@
         "createdOn": "2022-12-09T20:01:45.3481396+00:00",
         "archivedBy": null,
         "archivedOn": null,
-        "tagIds": [],
+        "tagIds": ["59118990-54cc-439e-bd2f-60c70b796e03"],
         "userIds": [],
         "thoughts": [],
         "facts": [
@@ -21777,8 +24615,8 @@
         "sourceDocumentId": "5014689d-0923-462a-9b85-11c513094490",
         "sourceDocumentName": "JP0024.1 Elm Line I OPT-PUR Stanton, Arlyn 11072022.pdf",
         "securityLabelId": null,
-        "lastModifiedBy": "6c7112f8-f4e7-440c-a800-08dad4796f27",
-        "lastModifiedOn": "2023-01-24T15:20:42.7474873+00:00",
+        "lastModifiedBy": "f00c1746-8935-473c-4a94-08dac7d3ca42",
+        "lastModifiedOn": "2023-01-27T20:24:00.7127857+00:00",
         "score": 100.0
     },
     {
@@ -21791,7 +24629,7 @@
         "createdOn": "2022-12-09T20:01:42.589902+00:00",
         "archivedBy": null,
         "archivedOn": null,
-        "tagIds": [],
+        "tagIds": ["59118990-54cc-439e-bd2f-60c70b796e03"],
         "userIds": [],
         "thoughts": [],
         "facts": [
@@ -21845,6 +24683,163 @@
                         "annotations": null
                     }
                 ]
+            },
+            {
+                "id": "8364349f-e5e7-4f1f-b56f-bec0e6598dd9",
+                "factTypeId": "68bfe50d-25ad-42cf-b026-78db2d066f1b",
+                "fields": [
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "0ba8cf25-c908-4166-b913-75daecd520e6",
+                        "factFieldTypeId": "56c59cf7-9fcd-4598-ae86-6c226db77b53",
+                        "stringValue": "Arlyn Stanton and Evelyn Stanton",
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    }
+                ]
+            },
+            {
+                "id": "d91f5687-9b77-480a-9f20-6dcc5b54bb8d",
+                "factTypeId": "cc05d0b7-005b-4775-a84d-e7cc98a7241f",
+                "fields": [
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "7a7bf8a9-9914-4922-88d6-1ade3621b903",
+                        "factFieldTypeId": "cb93b25d-8bed-4865-8402-b2b3ded62af5",
+                        "stringValue": null,
+                        "numberValue": null,
+                        "dateValue": "2022-11-02",
+                        "booleanValue": null,
+                        "annotations": null
+                    }
+                ]
+            },
+            {
+                "id": "fe0f2078-336b-4d53-99d1-7467855669dd",
+                "factTypeId": "ee3cb856-bc4a-4d2c-9a0e-35b9a85c27d0",
+                "fields": [
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "cb701e29-d55f-4a0f-bdd4-2ba4b0ccd941",
+                        "factFieldTypeId": "1d4abfa8-da96-4827-aa78-d55eda623899",
+                        "stringValue": null,
+                        "numberValue": 10.79,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    }
+                ]
+            },
+            {
+                "id": "0533d571-30c3-497c-9f21-c57c82f3899c",
+                "factTypeId": "ad77da6a-4332-41df-8d3a-7ae96a6ad262",
+                "fields": [
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "995c87e3-cbbd-4ca8-acb0-1f7532b1065c",
+                        "factFieldTypeId": "569b2edf-de64-40f8-822c-ff57adb7b6e5",
+                        "stringValue": null,
+                        "numberValue": 12.0,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "98300c8b-d322-43e1-a9a1-3867f6fd198e",
+                        "factFieldTypeId": "f82b674d-c629-4e2b-8c21-2b7371d0fdb0",
+                        "stringValue": null,
+                        "numberValue": 1.0,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    }
+                ]
+            },
+            {
+                "id": "a7c5b248-ee4e-400f-9c9a-d9752ef154df",
+                "factTypeId": "b522d3bf-7bb5-4755-851d-b702b22dc0f1",
+                "fields": [
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "be2123d1-8533-43bb-84b2-28bd6f44210b",
+                        "factFieldTypeId": "62d48a1d-4c85-4d71-8173-75641882d894",
+                        "stringValue": null,
+                        "numberValue": 30000.0,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "52dc65f5-c3ae-4ed1-ac7a-5e495deceb32",
+                        "factFieldTypeId": "bb75b334-c292-459e-9db0-15339e3ced04",
+                        "stringValue": null,
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": true,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "76c6076a-7368-4d09-9a7d-556d8a1b7d28",
+                        "factFieldTypeId": "d3d33352-0d88-42a5-b959-ef520b3c9dd2",
+                        "stringValue": null,
+                        "numberValue": 30.0,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "8f5a72f5-0ceb-4267-93c9-4b4fb3e20332",
+                        "factFieldTypeId": "c214e5ea-dacd-4b61-b678-f473a2bb89ed",
+                        "stringValue": "Option Fee",
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "116eb433-e763-4c85-a11a-919d9a0ef0d5",
+                        "factFieldTypeId": "1f9a3fb1-b027-4522-91eb-795d43a6b279",
+                        "stringValue": null,
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": false,
+                        "annotations": null
+                    }
+                ]
+            },
+            {
+                "id": "771e88dd-314f-441a-b939-34021ae36b8d",
+                "factTypeId": "07fd8b4c-3daf-4b41-940b-09fcf4da5d87",
+                "fields": [
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "4bd031ba-8ae5-4749-80d4-256f0aea4cc3",
+                        "factFieldTypeId": "6d8ea1c2-2e91-41a1-b463-58c3e10c6a6a",
+                        "stringValue": "Complete",
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    }
+                ]
             }
         ],
         "pageCount": 33,
@@ -21854,8 +24849,8 @@
         "sourceDocumentId": "20c1d6c3-68e5-4b5d-882f-f92c478543ea",
         "sourceDocumentName": "JP0024.1 Elm Line I OPT-PUR Stanton, Arlyn 11022022.pdf",
         "securityLabelId": null,
-        "lastModifiedBy": "6c7112f8-f4e7-440c-a800-08dad4796f27",
-        "lastModifiedOn": "2023-01-24T15:20:40.958639+00:00",
+        "lastModifiedBy": "f00c1746-8935-473c-4a94-08dac7d3ca42",
+        "lastModifiedOn": "2023-01-27T20:58:22.2195794+00:00",
         "score": 100.0
     }
 ]

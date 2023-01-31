@@ -87,8 +87,8 @@ jupiterDocs
     });
 
 console.log(jupiterDocs.filter((x) => x.lease_terms.length > 0 || x.periodic_payment_models.length > 0));
-console.log(jupiterDocs.filter((x) => x.id === '2917c80e-5c87-444a-b085-1e937d6a6897')[0]);
-console.log(jupiterDocs.filter((x) => x.id === '2a004f02-1d0a-426e-a878-731db53415e5')[0]);
+console.log(jupiterDocs.filter((x) => x.id === 'af08218f-53ed-4fd6-97e1-cdecc6872548')[0]);
+// console.log(jupiterDocs.filter((x) => x.id === '2a004f02-1d0a-426e-a878-731db53415e5')[0]);
 
 // for (let i = 0; i < 10; i++) {
 //     console.log(utils.round(utils.calculateCompoundingGrowth(75000, 0.1, i), 4));

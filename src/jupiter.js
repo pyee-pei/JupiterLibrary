@@ -191,9 +191,9 @@ class JupiterDoc {
 
         // apply rate escalation
         if (compounding_escalation) {
-            base = utils.calculateCompoundingGrowth(base, term_escalation_rate ?? 0, previous_terms ?? 0);
+            base = utils.calculateCompoundingGrowth(base, term_escalation_rate / 100 ?? 0, previous_terms ?? 0);
         } else {
-            base = utils.calculateGrowth(base, term_escalation_rate ?? 0, previous_terms ?? 0);
+            base = utils.calculateGrowth(base, term_escalation_rate / 100 ?? 0, previous_terms ?? 0);
         }
 
         return base;
@@ -233,6 +233,8 @@ class JupiterDoc {
                 payment_period_end = start_date.plus({ years: 1 }).minus({ days: 1 });
             } else if (frequency === 'Quarterly') {
                 payment_period_end = start_date.plus({ months: 3 }).minus({ days: 1 });
+            } else if (frequency == 'Monthly') {
+                payment_period_end = start_date.plus({ months: 1 }).minus({ days: 1 });
             }
         }
 
@@ -274,7 +276,7 @@ class JupiterDoc {
         var payment_period_end;
         var lag_days;
 
-        var term_escalation_rate = term.escalation_rate ?? 0;
+        // var term_escalation_rate = term.escalation_rate ?? 0;
         var periodic_escalation_rate = model.periodic_escalation_rate ?? 0;
 
         // calc first payment date for term
@@ -321,7 +323,7 @@ class JupiterDoc {
                 payment_period_start: payment_period_start.toLocaleString(),
                 payment_period_end: payment_period_end.toLocaleString(),
                 prorata_factor: prorata_factor,
-                base_payment: utils.round(periodic_payment * (1 + term_escalation_rate / 100), 4),
+                //base_payment: utils.round(periodic_payment * (1 + term_escalation_rate / 100), 4),
                 total_payment_amount:
                     utils.calculateCompoundingGrowth(periodic_payment, periodic_escalation_rate, i + term.previous_periods) * prorata_factor,
             });
