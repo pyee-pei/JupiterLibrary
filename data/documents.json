@@ -1960,6 +1960,17 @@
                         "dateValue": null,
                         "booleanValue": null,
                         "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "3765746d-5c70-4957-8a3a-7624a5eae7f1",
+                        "factFieldTypeId": "6c43a922-acf9-4afe-9fb6-dc97e14d9099",
+                        "stringValue": "Annually",
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
                     }
                 ]
             },
@@ -1995,6 +2006,17 @@
                         "id": "465b8dd6-74ba-45ad-9800-d6f9f1bfada9",
                         "factFieldTypeId": "4113ec1c-007a-4f0d-9c2c-4f1aaebf452b",
                         "stringValue": "Operations",
+                        "numberValue": null,
+                        "dateValue": null,
+                        "booleanValue": null,
+                        "annotations": null
+                    },
+                    {
+                        "score": null,
+                        "highlightedText": null,
+                        "id": "18986999-1688-4b34-bd13-465be5ad7621",
+                        "factFieldTypeId": "6c43a922-acf9-4afe-9fb6-dc97e14d9099",
+                        "stringValue": "Annually",
                         "numberValue": null,
                         "dateValue": null,
                         "booleanValue": null,
@@ -2095,8 +2117,8 @@
         "sourceDocumentId": "bd6435e2-7b43-48d9-a706-0c2a85d03729",
         "sourceDocumentName": "Brantley Branch Lease Moore, Aaron & Erin 20210819.pdf",
         "securityLabelId": null,
-        "lastModifiedBy": "6c7112f8-f4e7-440c-a800-08dad4796f27",
-        "lastModifiedOn": "2023-01-24T15:20:08.6569403+00:00",
+        "lastModifiedBy": "f00c1746-8935-473c-4a94-08dac7d3ca42",
+        "lastModifiedOn": "2023-01-31T23:46:21.5846424+00:00",
         "score": 100.0
     },
     {

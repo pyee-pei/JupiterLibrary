@@ -463,9 +463,9 @@ class JupiterDoc {
 
         // apply rate escalation
         if (compounding_escalation) {
-            base = utils.calculateCompoundingGrowth(base, term_escalation_rate ?? 0 / 100, previous_terms ?? 0);
+            base = utils.calculateCompoundingGrowth(base, (term_escalation_rate ?? 0) / 100, previous_terms ?? 0);
         } else {
-            base = utils.calculateGrowth(base, term_escalation_rate ?? 0 / 100, previous_terms ?? 0);
+            base = utils.calculateGrowth(base, (term_escalation_rate ?? 0) / 100, previous_terms ?? 0);
         }
 
         return base;
