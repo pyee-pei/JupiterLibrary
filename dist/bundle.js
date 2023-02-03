@@ -201,6 +201,23 @@ const extractFactMultiFields = (doc, factType) => {
 };
 
 /***
+ * compare luxon date objects
+ * return earliest date, or return the non-null date.
+ * if both are null, return null
+ */
+const getEarliestDateTime = (date1, date2) => {
+    if (date1 && date2) {
+        return date1.toMillis() < date2.toMillis() ? date1 : date2;
+    } else if (date1) {
+        return date1;
+    } else if (date2) {
+        return date2;
+    }
+
+    return null;
+};
+
+/***
  * convert fact field names to be more javascript friendly
  */
 const cleanFieldNames = (str) => {
@@ -265,6 +282,7 @@ var utils = {
     extractFactValue,
     extractMultiFactValues,
     extractFactMultiFields,
+    getEarliestDateTime,
     cleanFieldNames,
     calculateCompoundingGrowth,
     calculateGrowth,
@@ -389,7 +407,7 @@ class JupiterDoc {
         );
 
         // calculate lease term dates
-        this.calcLeaseTermDates(this.lease_terms, this.effective_date);
+        this.calcLeaseTermDates(this.lease_terms, this.effective_date, this.operational_details);
     }
 
     /**
@@ -412,21 +430,35 @@ class JupiterDoc {
      * calculates the term dates from the given facts
      * This function mutates lease term objects and creates calculated properties
      */
-    calcLeaseTermDates(leaseTerms, effectiveDate) {
+    calcLeaseTermDates(leaseTerms, effectiveDate, opDetails) {
         // exit if no effectiveDate
         if (!effectiveDate) {
             return;
         }
 
+        opDetails = opDetails || {};
+
         leaseTerms
             .sort((a, b) => a.term_ordinal - b.term_ordinal)
             .forEach((term, index) => {
-                // start day after previous term end, or if no previous term, use effective date
-                term.start_date = leaseTerms[index - 1] ? leaseTerms[index - 1].end_date.plus({ days: 1 }) : effectiveDate;
-                term.start_date_text = term.start_date.toFormat('M/d/yyyy');
+                console.log(opDetails);
+                // check opDetails for actual construction start date
+                // only set on non-extension terms for construction and operations
+                if (term.term_type === 'Construction' && !term.extension && opDetails.construction_commencement_date) {
+                    term.start_date = opDetails.construction_commencement_date;
+                } else if (term.term_type === 'Operations' && !term.extension && opDetails.operations_commencement_date) {
+                    term.start_date = opDetails.operations_commencement_date;
+                } else {
+                    // start day after previous term end, or if no previous term, use effective date
+                    term.start_date = leaseTerms[index - 1] ? leaseTerms[index - 1].end_date.plus({ days: 1 }) : effectiveDate;
+                    term.start_date_text = term.start_date.toFormat('M/d/yyyy');
+                }
 
-                // end one day prior to the Nth anniversary
-                term.end_date = term.start_date.plus({ years: term.term_length_years }).plus({ days: -1 });
+                // end one day prior to the Nth anniversary, or on operationalDetails termination date, whichever is sooner
+                term.end_date = utils.getEarliestDateTime(
+                    opDetails.termination,
+                    term.start_date.plus({ years: term.term_length_years }).plus({ days: -1 })
+                );
                 term.end_date_text = term.end_date.toFormat('M/d/yyyy');
 
                 // calculate previous periods on same payment model for periodic escalation

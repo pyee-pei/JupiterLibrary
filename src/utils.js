@@ -199,6 +199,23 @@ const extractFactMultiFields = (doc, factType) => {
 };
 
 /***
+ * compare luxon date objects
+ * return earliest date, or return the non-null date.
+ * if both are null, return null
+ */
+const getEarliestDateTime = (date1, date2) => {
+    if (date1 && date2) {
+        return date1.toMillis() < date2.toMillis() ? date1 : date2;
+    } else if (date1) {
+        return date1;
+    } else if (date2) {
+        return date2;
+    }
+
+    return null;
+};
+
+/***
  * convert fact field names to be more javascript friendly
  */
 const cleanFieldNames = (str) => {
@@ -263,6 +280,7 @@ export default {
     extractFactValue,
     extractMultiFactValues,
     extractFactMultiFields,
+    getEarliestDateTime,
     cleanFieldNames,
     calculateCompoundingGrowth,
     calculateGrowth,
