@@ -205,7 +205,7 @@ const extractFactMultiFields = (doc, factType) => {
  */
 const getEarliestDateTime = (date1, date2) => {
     if (date1 && date2) {
-        return date1.toMillis() < date2.toMillis() ? date1 : date2;
+        return date1.ts < date2.ts ? date1 : date2;
     } else if (date1) {
         return date1;
     } else if (date2) {
