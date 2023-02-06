@@ -160,8 +160,9 @@ class JupiterDoc {
                 } else {
                     // start day after previous term end, or if no previous term, use effective date
                     term.start_date = leaseTerms[index - 1] ? leaseTerms[index - 1].end_date.plus({ days: 1 }) : effectiveDate;
-                    term.start_date_text = term.start_date.toFormat('M/d/yyyy');
                 }
+                // add a text version pre-formatted
+                term.start_date_text = term.start_date.toFormat('MM/dd/yyyy');
 
                 // calculated end-date, will be tested against opDates later
                 // end one day prior to the Nth anniversary, or on operationalDetails termination date, whichever is sooner
@@ -191,7 +192,7 @@ class JupiterDoc {
                     }
                 }
 
-                term.end_date_text = term.end_date.toFormat('M/d/yyyy');
+                term.end_date_text = term.end_date.toFormat('MM/dd/yyyy');
 
                 // calculate previous periods on same payment model for periodic escalation
                 // NOTE: this will not continue periodic escalations across payment models
