@@ -78,7 +78,7 @@ const documentsDiv = document.querySelector('.documents');
 
 // filter jupiter docs and iterate to display data
 jupiterDocs
-    .filter((x) => x.lease_terms.length > 0)
+    .filter((x) => x.agreement_terms.length > 0)
     .forEach((doc, index) => {
         let p = document.createElement('p');
         p.setAttribute('class', 'document');
@@ -86,7 +86,7 @@ jupiterDocs
         documentsDiv.appendChild(p);
     });
 
-console.log(jupiterDocs.filter((x) => x.lease_terms.length > 0 || x.periodic_payment_models.length > 0));
+console.log(jupiterDocs.filter((x) => x.agreement_terms.length > 0 || x.periodic_payment_models.length > 0));
 console.log(jupiterDocs.filter((x) => x.id === '4af28688-47f2-426c-9f6c-0c2188b53429')[0]);
 
 // for (let i = 0; i < 10; i++) {

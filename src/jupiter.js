@@ -12,9 +12,9 @@ import utils from './utils.js'; // generic import, requires "utils" namespace to
  * @property {string} project_name - Project Name
  * @property {Date} effective_date - Effective date of the document
  *
- * @property {Array} lease_terms - array of potential lease terms
- * @property {Date} lease_terms.start_date - start date of lease term
- * @property {Date} lease_terms.end_date - end date of lease term
+ * @property {Array} agreement_terms - array of potential agreement terms
+ * @property {Date} agreement_terms.start_date - start date of lease term
+ * @property {Date} agreement_terms.end_date - end date of lease term
  *
  * @property {Array} periodic_payment_models - array of periodic payment models
  * @property {Array} tags - array of tags
@@ -92,7 +92,7 @@ class JupiterDoc {
         this.operational_details = utils.extractFactMultiFields(doc, utils.getFactTypeId('Operational Details', factTypes));
 
         // Lease Terms
-        this.lease_terms = utils.extractMultiFactValues(doc, utils.getFactTypeId('Lease Term', factTypes));
+        this.agreement_terms = utils.extractMultiFactValues(doc, utils.getFactTypeId('Agreement Term', factTypes));
 
         // Periodic Payment Models
         this.periodic_payment_models = utils.extractMultiFactValues(doc, utils.getFactTypeId('Periodic Payment Model', factTypes));
@@ -117,7 +117,7 @@ class JupiterDoc {
         );
 
         // calculate lease term dates
-        this.calcLeaseTermDates(this.lease_terms, this.effective_date, this.operational_details);
+        this.calcAgreementTermDates(this.agreement_terms, this.effective_date, this.operational_details);
     }
 
     /**
@@ -140,7 +140,7 @@ class JupiterDoc {
      * calculates the term dates from the given facts
      * This function mutates lease term objects and creates calculated properties
      */
-    calcLeaseTermDates(leaseTerms, effectiveDate, opDetails) {
+    calcAgreementTermDates(leaseTerms, effectiveDate, opDetails) {
         // exit if no effectiveDate
         if (!effectiveDate) {
             return;
@@ -386,7 +386,7 @@ class JupiterDoc {
      */
     calcAllTermPayments() {
         // calc payments in each term
-        this.lease_terms.forEach((term) => {
+        this.agreement_terms.forEach((term) => {
             if (this.periodic_payment_models) {
                 term.payments = this.calcPeriodicPaymentsForTerm(
                     term,
@@ -421,8 +421,8 @@ class JupiterDoc {
                 }
 
                 // lease terms
-                if (amendment.lease_terms && amendment.lease_terms.length > 0) {
-                    this.amended_lease_terms = amendment.lease_terms;
+                if (amendment.agreement_terms && amendment.agreement_terms.length > 0) {
+                    this.amended_agreement_terms = amendment.agreement_terms;
                 }
 
                 // periodic payment models
@@ -432,7 +432,7 @@ class JupiterDoc {
             });
 
             // re-calculate payments based on amended values
-            if (this.lease_terms) {
+            if (this.agreement_terms) {
                 this.calcAllTermPayments();
             }
         }
