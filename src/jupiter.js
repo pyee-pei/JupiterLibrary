@@ -140,7 +140,7 @@ class JupiterDoc {
      * calculates the term dates from the given facts
      * This function mutates lease term objects and creates calculated properties
      */
-    calcAgreementTermDates(leaseTerms, effectiveDate, opDetails) {
+    calcAgreementTermDates(agreementTerms, effectiveDate, opDetails) {
         // exit if no effectiveDate
         if (!effectiveDate) {
             return;
@@ -148,7 +148,7 @@ class JupiterDoc {
 
         opDetails = opDetails || {};
 
-        leaseTerms
+        agreementTerms
             .sort((a, b) => a.term_ordinal - b.term_ordinal)
             .forEach((term, index) => {
                 // check opDetails for actual construction start date
@@ -159,7 +159,7 @@ class JupiterDoc {
                     term.start_date = opDetails.operations_commencement;
                 } else {
                     // start day after previous term end, or if no previous term, use effective date
-                    term.start_date = leaseTerms[index - 1] ? leaseTerms[index - 1].end_date.plus({ days: 1 }) : effectiveDate;
+                    term.start_date = agreementTerms[index - 1] ? agreementTerms[index - 1].end_date.plus({ days: 1 }) : effectiveDate;
                 }
                 // add a text version pre-formatted
                 term.start_date_text = term.start_date.toFormat('MM/dd/yyyy');
@@ -196,12 +196,14 @@ class JupiterDoc {
 
                 // calculate previous periods on same payment model for periodic escalation
                 // NOTE: this will not continue periodic escalations across payment models
-                term.previous_periods = leaseTerms
+                term.previous_periods = agreementTerms
                     .filter((x) => x.term_ordinal < term.term_ordinal && x.payment_model === term.payment_model)
                     .reduce((accumulator, t) => accumulator + t.term_length_years, 0);
 
                 // calculate perevious terms for term escalation
-                term.previous_terms = leaseTerms.filter((x) => x.term_ordinal < term.term_ordinal && x.payment_model === term.payment_model).length;
+                term.previous_terms = agreementTerms.filter(
+                    (x) => x.term_ordinal < term.term_ordinal && x.payment_model === term.payment_model
+                ).length;
             });
     }
 
@@ -313,7 +315,7 @@ class JupiterDoc {
         var payment_period_start = term.start_date.plus({ days: term.term_payment_delay_days });
         var payment_date;
         var payment_period_end;
-        var lag_days;
+        var grace_days;
 
         // var term_escalation_rate = term.escalation_rate ?? 0;
         var periodic_escalation_rate = model.periodic_escalation_rate ?? 0;
@@ -350,15 +352,10 @@ class JupiterDoc {
                 prorata_factor = utils.round(payment_period_end.plus({ days: 1 }).diff(payment_period_start, 'months').months, 4);
             }
 
-            lag_days = i === 0 ? term.first_payment_lag_days ?? 0 : 0;
-
             payments.push({
                 payment_index: i,
-                payment_date: payment_date
-                    .plus({
-                        days: lag_days,
-                    })
-                    .toLocaleString(),
+                payment_date: payment_date.toLocaleString(),
+                grace_days: i === 0 ? term.first_payment_grace_days ?? 0 : term.subsequent_payment_grace_days ?? 0,
                 payment_period_start: payment_period_start.toLocaleString(),
                 payment_period_end: payment_period_end.toLocaleString(),
                 prorata_factor: prorata_factor,

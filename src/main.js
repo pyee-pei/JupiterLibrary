@@ -87,7 +87,7 @@ jupiterDocs
     });
 
 console.log(jupiterDocs.filter((x) => x.agreement_terms.length > 0 || x.periodic_payment_models.length > 0));
-console.log(jupiterDocs.filter((x) => x.id === '4af28688-47f2-426c-9f6c-0c2188b53429')[0]);
+console.log(jupiterDocs.filter((x) => x.id === '0ec2342a-bc46-4592-82f1-6729d482316f')[0]);
 
 // for (let i = 0; i < 10; i++) {
 //     console.log(utils.round(utils.calculateCompoundingGrowth(75000, 0.1, i), 4));
