@@ -66,6 +66,7 @@ await getAllLookups();
 docs.forEach((doc) => {
     var jdoc = new JupiterDoc(doc, factTypes, docTypes, tags);
     jdoc.calcAllTermPayments();
+    jdoc.calcOneTimePayments();
     jupiterDocs.push(jdoc);
 });
 
@@ -78,7 +79,7 @@ const documentsDiv = document.querySelector('.documents');
 
 // filter jupiter docs and iterate to display data
 jupiterDocs
-    .filter((x) => x.agreement_terms.length > 0)
+    .filter((x) => x.agreement_terms.length > 0 || x.periodic_payment_models.length > 0 || x.one_time_payment_models.length > 0)
     .forEach((doc, index) => {
         let p = document.createElement('p');
         p.setAttribute('class', 'document');
@@ -86,8 +87,11 @@ jupiterDocs
         documentsDiv.appendChild(p);
     });
 
-console.log(jupiterDocs.filter((x) => x.agreement_terms.length > 0 || x.periodic_payment_models.length > 0));
-console.log(jupiterDocs.filter((x) => x.id === '0ec2342a-bc46-4592-82f1-6729d482316f')[0]);
+console.log(jupiterDocs.filter((x) => x.agreement_terms.length > 0 || x.periodic_payment_models.length > 0 || x.one_time_payment_models.length > 0));
+console.log(jupiterDocs.filter((x) => x.id === '86ab20ff-d2bd-49f2-8334-b19517cd7ba3')[0]);
+console.log(jupiterDocs.filter((x) => x.id === 'eace6482-f8fc-4917-a993-4e45404ed469')[0]);
+console.log(jupiterDocs.filter((x) => x.id === '20c1d6c3-68e5-4b5d-882f-f92c478543ea')[0]);
+console.log(jupiterDocs.filter((x) => x.id === '4d657dd0-edf5-40c8-8717-6855b2681bf6')[0]);
 
 // for (let i = 0; i < 10; i++) {
 //     console.log(utils.round(utils.calculateCompoundingGrowth(75000, 0.1, i), 4));

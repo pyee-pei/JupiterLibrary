@@ -88,14 +88,28 @@ class JupiterDoc {
             'number'
         );
 
+        // Purchase Price
+        this.full_purchase_price = utils.extractFactValue(
+            doc,
+            utils.getFactTypeId('Full Purchase Price', factTypes),
+            utils.getFactFieldId('Full Purchase Price', 'Full Purchase Price', factTypes),
+            'number'
+        );
+
         // Operational Details
         this.operational_details = utils.extractFactMultiFields(doc, utils.getFactTypeId('Operational Details', factTypes));
 
-        // Lease Terms
+        // Agreement Terms
         this.agreement_terms = utils.extractMultiFactValues(doc, utils.getFactTypeId('Agreement Term', factTypes));
+
+        // Option Terms
+        this.option_terms = utils.extractMultiFactValues(doc, utils.getFactTypeId('Option Term', factTypes));
 
         // Periodic Payment Models
         this.periodic_payment_models = utils.extractMultiFactValues(doc, utils.getFactTypeId('Periodic Payment Model', factTypes));
+
+        // One Time Payment Models
+        this.one_time_payment_models = utils.extractMultiFactValues(doc, utils.getFactTypeId('One Time Payment Model', factTypes));
 
         // Tags
         this.tags = this.getTags(tags);
@@ -118,6 +132,7 @@ class JupiterDoc {
 
         // calculate lease term dates
         this.calcAgreementTermDates(this.agreement_terms, this.effective_date, this.operational_details);
+        this.calcOptionTermDates(this.option_terms, this.effective_date);
     }
 
     /**
@@ -204,6 +219,29 @@ class JupiterDoc {
                 term.previous_terms = agreementTerms.filter(
                     (x) => x.term_ordinal < term.term_ordinal && x.payment_model === term.payment_model
                 ).length;
+            });
+    }
+
+    /**
+     * calculate option term dates
+     */
+    calcOptionTermDates(optionTerms, effectiveDate) {
+        // exit if no effectiveDate
+        if (!effectiveDate) {
+            return;
+        }
+
+        optionTerms
+            .sort((a, b) => a.term_ordinal - b.term_ordinal)
+            .forEach((term, index) => {
+                // start day after previous term end, or if no previous term, use effective date
+                term.start_date = optionTerms[index - 1] ? optionTerms[index - 1].end_date.plus({ days: 1 }) : effectiveDate;
+                // add a text version pre-formatted
+                term.start_date_text = term.start_date.toFormat('MM/dd/yyyy');
+
+                // calculated end-date
+                term.end_date = term.start_date.plus({ months: term.term_months ?? 0, days: term.term_days ?? 0 });
+                term.end_date_text = term.end_date.toFormat('MM/dd/yyyy');
             });
     }
 
@@ -333,7 +371,7 @@ class JupiterDoc {
                 break;
             // add more cases as they arise
             default:
-                payment_date = term.start_date;
+                payment_date = term.first_payment_date ?? term.start_date;
         }
 
         // loop through remaining payments
@@ -359,6 +397,7 @@ class JupiterDoc {
                 payment_period_start: payment_period_start.toLocaleString(),
                 payment_period_end: payment_period_end.toLocaleString(),
                 prorata_factor: prorata_factor,
+                applicable_to_purchase: model.applicable_to_purchase,
                 // base_payment: utils.round(periodic_payment * (1 + term_escalation_rate / 100), 4),
                 total_payment_amount:
                     utils.calculateCompoundingGrowth(periodic_payment, periodic_escalation_rate / 100, i + term.previous_periods) * prorata_factor,
@@ -385,13 +424,61 @@ class JupiterDoc {
         // calc payments in each term
         this.agreement_terms.forEach((term) => {
             if (this.periodic_payment_models) {
-                term.payments = this.calcPeriodicPaymentsForTerm(
+                term.periodic_payments = this.calcPeriodicPaymentsForTerm(
                     term,
                     this.amended_periodic_payment_models ?? this.periodic_payment_models,
                     this.amended_leased_acres ?? this.leased_acres
                 );
             }
         });
+    }
+
+    /**
+     * calc one-time payments (including purchase price)
+     */
+    calcOneTimePayments() {
+        // exit if no one-time models
+        if (!this.one_time_payment_models.length > 0 || !this.option_terms.length > 0) return;
+
+        var one_time_payments = [];
+
+        // create payment object for all models
+        this.one_time_payment_models.forEach((model) => {
+            one_time_payments.push({
+                // payment is due on fixed date, or on the effective date
+                payment_date: model.payment_date ?? this.effective_date,
+                payment_type: model.payment_type,
+                payment_amount: model.payment_amount,
+                applicable_to_purchase: model.applicable_to_purchase,
+                refundable: model.refundable,
+            });
+        });
+
+        // calculate how mcuh of the purchase price has already been paid
+        var previous_applicable_payments = one_time_payments.filter((x) => x.applicable_to_purchase).reduce((a, b) => a + b.payment_amount, 0);
+
+        // loop through agreement terms and find all payments applicable to purchase price
+        this.agreement_terms.forEach((term) => {
+            if (term.periodic_payments) {
+                // add any payments applicable to purchase price
+                previous_applicable_payments +=
+                    term.periodic_payments.filter((x) => x.applicable_to_purchase).reduce((a, b) => a + b.total_payment_amount, 0) ?? 0;
+            }
+        });
+
+        // create payment object for purchase price
+        one_time_payments.push({
+            // assume closing date at the end of all the options
+            payment_date: this.option_terms.sort((a, b) => b.end_date - a.end_date)[0].end_date,
+            payment_type: 'Purchase Price',
+            // purchase payment will subtract all payments applicable to purchase price
+            payment_amount: this.full_purchase_price - previous_applicable_payments,
+            applicable_to_purchase: true,
+            refundable: false,
+        });
+
+        // mutate doc object to store one time payment array
+        this.one_time_payments = one_time_payments;
     }
 
     /**
