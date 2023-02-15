@@ -444,9 +444,12 @@ class JupiterDoc {
 
         // create payment object for all models
         this.one_time_payment_models.forEach((model) => {
+            // if payment date is not specified, use effective date
+            var payment_date = model.payment_date ?? this.effective_date;
+
             one_time_payments.push({
                 // payment is due on fixed date, or on the effective date
-                payment_date: model.payment_date ?? this.effective_date,
+                payment_date: payment_date.toLocaleString(),
                 payment_type: model.payment_type,
                 payment_amount: model.payment_amount,
                 applicable_to_purchase: model.applicable_to_purchase,
