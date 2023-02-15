@@ -761,7 +761,7 @@ class JupiterDoc {
         // create payment object for purchase price
         one_time_payments.push({
             // assume closing date at the end of all the options
-            payment_date: this.option_terms.sort((a, b) => b.end_date - a.end_date)[0].end_date,
+            payment_date: this.option_terms.sort((a, b) => b.end_date - a.end_date)[0].end_date.toLocaleString(),
             payment_type: 'Purchase Price',
             // purchase payment will subtract all payments applicable to purchase price
             payment_amount: this.full_purchase_price - previous_applicable_payments,
