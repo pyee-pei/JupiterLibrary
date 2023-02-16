@@ -501,7 +501,7 @@ class JupiterDoc {
 
                 // calculate previous periods on same payment model for periodic escalation
                 // NOTE: this will not continue periodic escalations across payment models
-                term.previous_periods = agreementTerms
+                term.previous_escalation_periods = agreementTerms
                     .filter((x) => x.term_ordinal < term.term_ordinal && x.payment_model === term.payment_model)
                     .reduce((accumulator, t) => accumulator + t.term_length_years, 0);
 
@@ -679,6 +679,22 @@ class JupiterDoc {
                 prorata_factor = utils.round(payment_period_end.plus({ days: 1 }).diff(payment_period_start, 'months').months, 4);
             }
 
+            // handle discrepancy between payment frequency and escalation frequency
+            // set up index variable and ratio factors
+            var periodic_escalation_frequency_index;
+            var ratioFactors = {
+                Annually: 1,
+                Quarterly: 4,
+                Monthly: 12,
+            };
+
+            // determine an index difference between escalation frequency and payment frequency
+            if (model.payment_frequency && model.periodic_escalation_frequency) {
+                periodic_escalation_frequency_index = ratioFactors[model.payment_frequency] / ratioFactors[model.periodic_escalation_frequency];
+            } else {
+                periodic_escalation_frequency_index = 1;
+            }
+
             payments.push({
                 payment_index: i,
                 payment_date: payment_date.toLocaleString(),
@@ -689,7 +705,11 @@ class JupiterDoc {
                 applicable_to_purchase: model.applicable_to_purchase,
                 // base_payment: utils.round(periodic_payment * (1 + term_escalation_rate / 100), 4),
                 total_payment_amount:
-                    utils.calculateCompoundingGrowth(periodic_payment, periodic_escalation_rate / 100, i + term.previous_periods) * prorata_factor,
+                    utils.calculateCompoundingGrowth(
+                        periodic_payment,
+                        periodic_escalation_rate / 100,
+                        Math.floor(i / periodic_escalation_frequency_index)
+                    ) * prorata_factor,
             });
 
             payment_period_start = payment_period_end.plus({ days: 1 });
