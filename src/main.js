@@ -88,10 +88,13 @@ jupiterDocs
     });
 
 console.log(jupiterDocs.filter((x) => x.agreement_terms.length > 0 || x.periodic_payment_models.length > 0 || x.one_time_payment_models.length > 0));
-console.log(jupiterDocs.filter((x) => x.id === '86ab20ff-d2bd-49f2-8334-b19517cd7ba3')[0]);
-console.log(jupiterDocs.filter((x) => x.id === 'eace6482-f8fc-4917-a993-4e45404ed469')[0]);
-console.log(jupiterDocs.filter((x) => x.id === '20c1d6c3-68e5-4b5d-882f-f92c478543ea')[0]);
-console.log(jupiterDocs.filter((x) => x.id === '4d657dd0-edf5-40c8-8717-6855b2681bf6')[0]);
+console.log(jupiterDocs.filter((x) => x.id === '04c13bf6-dcf7-4496-b2a3-b54588e9e279')[0]);
+
+// jupiterDocs.forEach((doc) => {
+//     if (!doc.grantor[0]) return;
+//     console.log(doc.grantor[0]['grantor/lessor_name']);
+//     console.log(doc.nicknameGrantor(doc.grantor[0]['grantor/lessor_name']));
+// });
 
 // for (let i = 0; i < 10; i++) {
 //     console.log(utils.round(utils.calculateCompoundingGrowth(75000, 0.1, i), 4));

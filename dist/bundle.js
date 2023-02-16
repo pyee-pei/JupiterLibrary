@@ -666,7 +666,7 @@ class JupiterDoc {
         // loop through remaining payments
         while (payment_period_start < term.end_date) {
             // calculate payment period end date
-            payment_period_end = this.calcPaymentPeriodEnd(payment_date, model.payment_frequency, term.prorated, term.end_date);
+            payment_period_end = this.calcPaymentPeriodEnd(payment_date, model.payment_frequency, model.prorated_first_period, term.end_date);
 
             if (!payment_period_end) return;
 
@@ -812,6 +812,30 @@ class JupiterDoc {
                 this.calcAllTermPayments();
             }
         }
+    }
+
+    /**
+     * Nickname lessors
+     */
+
+    nicknameGrantor(longName) {
+        // create array of indexes
+        var indexes = [];
+
+        // find first instance of "and" or a "," in the name
+        // repeat for anything we want to search for, and add it to the list
+        longName.toLowerCase().indexOf(' and ') > 0 ? indexes.push(longName.toLowerCase().indexOf(' and ')) : null;
+        longName.toLowerCase().indexOf(', ') > 0 ? indexes.push(longName.toLowerCase().indexOf(',')) : null;
+
+        // return whole string if no "stoppers" found
+        if (indexes.length === 0) {
+            return longName;
+        }
+
+        var index = Math.min(...indexes);
+
+        // return the substring up to to the index
+        return longName.substring(0, index);
     }
 
     /**
