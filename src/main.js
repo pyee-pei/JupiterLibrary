@@ -87,9 +87,34 @@ jupiterDocs
         documentsDiv.appendChild(p);
     });
 
+var consoleHeaderFormat = 'color: blue; font-size: 14px; font-weight: bold;';
+
+console.log('%cAll docs with terms or payment models:', consoleHeaderFormat);
 console.log(jupiterDocs.filter((x) => x.agreement_terms.length > 0 || x.periodic_payment_models.length > 0 || x.one_time_payment_models.length > 0));
-console.log(jupiterDocs.filter((x) => x.id === '04c13bf6-dcf7-4496-b2a3-b54588e9e279')[0]);
-console.log(jupiterDocs.filter((x) => x.id === 'c5feac8e-87ba-4cde-bdf9-5ed8074b391f')[0]);
+// console.log(jupiterDocs.filter((x) => x.id === '04c13bf6-dcf7-4496-b2a3-b54588e9e279')[0]);
+// console.log(jupiterDocs.filter((x) => x.id === 'c5feac8e-87ba-4cde-bdf9-5ed8074b391f')[0]);
+
+// filter jupiterDocs for any doc with a term that is cancelled by ops
+console.log('%cThese docs have a cancelled term:', consoleHeaderFormat);
+jupiterDocs
+    .filter((doc) => doc.agreement_terms.some((term) => term.cancelled_by_ops === true))
+    .forEach((doc) => {
+        console.log(doc);
+    });
+
+console.log('%cThese docs have multiple splits on the Grantor:', consoleHeaderFormat);
+jupiterDocs
+    .filter((doc) => doc.grantor.length > 1)
+    .forEach((doc) => {
+        console.log(doc);
+    });
+
+console.log('%cThese docs have operational details:', consoleHeaderFormat);
+jupiterDocs
+    .filter((doc) => doc.operational_details)
+    .forEach((doc) => {
+        console.log(doc);
+    });
 
 // jupiterDocs.forEach((doc) => {
 //     if (!doc.grantor[0]) return;

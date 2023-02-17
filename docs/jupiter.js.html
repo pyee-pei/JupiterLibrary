@@ -158,9 +158,31 @@ class JupiterDoc {
             'string'
         );
 
+        // calculate agreement ID
+        this.agreement_id = this.calcAgreementId();
+
         // calculate lease term dates
         this.calcAgreementTermDates(this.agreement_terms, this.effective_date, this.operational_details);
         this.calcOptionTermDates(this.option_terms, this.effective_date);
+    }
+
+    /**
+     * calc agreement ID
+     */
+    calcAgreementId() {
+        // only calculate for completed docs
+        if (!this.grantor[0] || !this.review_status === 'Complete') {
+            return null;
+        }
+        // check other required fields, and exclude any known amendments
+
+        if (this.project_id &amp;&amp; this.project_name &amp;&amp; this.document_type &amp;&amp; !this.amendment_date) {
+            return `${this.document_type} - ${this.project_name} - ${this.nicknameGrantor(this.grantor[0]['grantor/lessor_name'])} - ${
+                this.project_id
+            }`;
+        }
+
+        return null;
     }
 
     /**
@@ -277,16 +299,25 @@ class JupiterDoc {
      * calculates base periodic payment for a given model
      * largest of all possible ways to calculate payment
      */
-    periodicBasePayment(model, compounding_escalation, term_escalation_rate, term_escalation_amount, previous_terms, leased_acres) {
+    periodicBasePayment(model, op_details, compounding_escalation, term_escalation_rate, term_escalation_amount, previous_terms, leased_acres) {
         if (!model) {
             return 0;
+        }
+
+        // set defaults if no provided
+        if (!op_details) {
+            op_details = {
+                mw: 0,
+                inverter_count: 0,
+                inverter_rating_mvas: 0,
+            };
         }
 
         // calculate max payment from different methods
         var base = Math.max(
             model.minimum_payment ?? 0,
-            (model.payment_per_mw ?? 0) * (model.mw ?? 0),
-            (model.inverter_count ?? 0) * (model.inverter_rating_mvas ?? 0) * (model.payment_per_mva ?? 0),
+            (model.payment_per_mw ?? 0) * (op_details.mw ?? 0),
+            (op_details.inverter_count ?? 0) * (op_details.inverter_rating_mvas ?? 0) * (model.payment_per_mva ?? 0),
             model.flat_payment_amount ?? 0,
             (model.payment_per_acre ?? 0) * (leased_acres ?? 0)
         );
@@ -353,13 +384,19 @@ class JupiterDoc {
      * calculate periodic payments for a given term
      */
 
-    calcPeriodicPaymentsForTerm(term, paymentModels, leased_acres) {
+    calcPeriodicPaymentsForTerm(term, op_details, paymentModels, leased_acres, grantor, project_id) {
+        // exit if term is cancelled by operations starting, or there are no grantors listed
+        if (term.cancelled_by_ops || grantor.length === 0) {
+            return null;
+        }
+
         const payments = [];
 
         // get payment model for this term
         const model = this.termPaymentModel(term, paymentModels);
         const periodic_payment = this.periodicBasePayment(
             model,
+            op_details,
             term.compounding_escalation,
             term.escalation_rate,
             term.escalation_amount,
@@ -433,21 +470,26 @@ class JupiterDoc {
                 periodic_escalation_frequency_index = 1;
             }
 
-            payments.push({
-                payment_index: i,
-                payment_date: payment_date.toLocaleString(),
-                grace_days: i === 0 ? term.first_payment_grace_days ?? 0 : term.subsequent_payment_grace_days ?? 0,
-                payment_period_start: payment_period_start.toLocaleString(),
-                payment_period_end: payment_period_end.toLocaleString(),
-                prorata_factor: prorata_factor,
-                applicable_to_purchase: model.applicable_to_purchase,
-                // base_payment: utils.round(periodic_payment * (1 + term_escalation_rate / 100), 4),
-                total_payment_amount:
-                    utils.calculateCompoundingGrowth(
-                        periodic_payment,
-                        periodic_escalation_rate / 100,
-                        Math.floor(i / periodic_escalation_frequency_index)
-                    ) * prorata_factor,
+            // loop through grantors and add payments per payee according to their split
+            grantor.forEach((g) => {
+                payments.push({
+                    project_id: project_id,
+                    payment_index: i,
+                    payee: this.nicknameGrantor(g['grantor/lessor_name']),
+                    payment_date: payment_date.toLocaleString(),
+                    grace_days: i === 0 ? term.first_payment_grace_days ?? 0 : term.subsequent_payment_grace_days ?? 0,
+                    payment_period_start: payment_period_start.toLocaleString(),
+                    payment_period_end: payment_period_end.toLocaleString(),
+                    prorata_factor: prorata_factor,
+                    applicable_to_purchase: model.applicable_to_purchase,
+                    // base_payment: utils.round(periodic_payment * (1 + term_escalation_rate / 100), 4),
+                    total_payment_amount:
+                        utils.calculateCompoundingGrowth(
+                            periodic_payment * ((g.payment_split ?? 100) / 100),
+                            periodic_escalation_rate / 100,
+                            Math.floor(i / periodic_escalation_frequency_index)
+                        ) * prorata_factor,
+                });
             });
 
             payment_period_start = payment_period_end.plus({ days: 1 });
@@ -473,8 +515,11 @@ class JupiterDoc {
             if (this.periodic_payment_models) {
                 term.periodic_payments = this.calcPeriodicPaymentsForTerm(
                     term,
+                    this.operational_details,
                     this.amended_periodic_payment_models ?? this.periodic_payment_models,
-                    this.amended_leased_acres ?? this.leased_acres
+                    this.amended_leased_acres ?? this.leased_acres,
+                    this.grantor,
+                    this.project_id
                 );
             }
         });
@@ -642,7 +687,7 @@ export default JupiterDoc;
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.0</a> on Thu Feb 16 2023 17:54:49 GMT-0600 (Central Standard Time)
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.0</a> on Fri Feb 17 2023 11:05:24 GMT-0600 (Central Standard Time)
 </footer>
 
 <script> prettyPrint(); </script>
