@@ -116,6 +116,13 @@ jupiterDocs
         console.log(doc);
     });
 
+console.log('%cThese docs have one-time payments:', consoleHeaderFormat);
+jupiterDocs
+    .filter((doc) => doc.one_time_payments)
+    .forEach((doc) => {
+        console.log(doc);
+    });
+
 // jupiterDocs.forEach((doc) => {
 //     if (!doc.grantor[0]) return;
 //     console.log(doc.grantor[0]['grantor/lessor_name']);

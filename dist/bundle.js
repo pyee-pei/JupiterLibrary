@@ -393,7 +393,7 @@ class JupiterDoc {
         this.agreement_terms = utils.extractMultiFactValues(doc, utils.getFactTypeId('Agreement Term', factTypes));
 
         // Option Terms
-        this.option_terms = utils.extractMultiFactValues(doc, utils.getFactTypeId('Option Term', factTypes));
+        //this.option_terms = utils.extractMultiFactValues(doc, utils.getFactTypeId('Option Term', factTypes));
 
         // Periodic Payment Models
         this.periodic_payment_models = utils.extractMultiFactValues(doc, utils.getFactTypeId('Periodic Payment Model', factTypes));
@@ -425,7 +425,9 @@ class JupiterDoc {
 
         // calculate lease term dates
         this.calcAgreementTermDates(this.agreement_terms, this.effective_date, this.operational_details);
-        this.calcOptionTermDates(this.option_terms, this.effective_date);
+
+        // deprecated - these should all be in agreement terms
+        //this.calcOptionTermDates(this.option_terms, this.effective_date);
     }
 
     /**
@@ -536,26 +538,27 @@ class JupiterDoc {
 
     /**
      * calculate option term dates
+     * DEPRECATED - these should all be in agreement terms
      */
-    calcOptionTermDates(optionTerms, effectiveDate) {
-        // exit if no effectiveDate
-        if (!effectiveDate) {
-            return;
-        }
+    // calcOptionTermDates(optionTerms, effectiveDate) {
+    //     // exit if no effectiveDate
+    //     if (!effectiveDate) {
+    //         return;
+    //     }
 
-        optionTerms
-            .sort((a, b) => a.term_ordinal - b.term_ordinal)
-            .forEach((term, index) => {
-                // start day after previous term end, or if no previous term, use effective date
-                term.start_date = optionTerms[index - 1] ? optionTerms[index - 1].end_date.plus({ days: 1 }) : effectiveDate;
-                // add a text version pre-formatted
-                term.start_date_text = term.start_date.toFormat('MM/dd/yyyy');
+    //     optionTerms
+    //         .sort((a, b) => a.term_ordinal - b.term_ordinal)
+    //         .forEach((term, index) => {
+    //             // start day after previous term end, or if no previous term, use effective date
+    //             term.start_date = optionTerms[index - 1] ? optionTerms[index - 1].end_date.plus({ days: 1 }) : effectiveDate;
+    //             // add a text version pre-formatted
+    //             term.start_date_text = term.start_date.toFormat('MM/dd/yyyy');
 
-                // calculated end-date
-                term.end_date = term.start_date.plus({ months: term.term_months ?? 0, days: term.term_days ?? 0 });
-                term.end_date_text = term.end_date.toFormat('MM/dd/yyyy');
-            });
-    }
+    //             // calculated end-date
+    //             term.end_date = term.start_date.plus({ months: term.term_months ?? 0, days: term.term_days ?? 0 });
+    //             term.end_date_text = term.end_date.toFormat('MM/dd/yyyy');
+    //         });
+    // }
 
     /**
      * calculates base periodic payment for a given model
@@ -761,7 +764,6 @@ class JupiterDoc {
 
         payments.sort((a, b) => a.payment_date - b.payment_date);
 
-        // mutate term object to store payment array
         return payments;
 
         // calc total payments for whole term
@@ -773,6 +775,7 @@ class JupiterDoc {
      */
     calcAllTermPayments() {
         // calc payments in each term
+        // and mutate the term object to set value of periodic_payments array
         this.agreement_terms.forEach((term) => {
             if (this.periodic_payment_models) {
                 term.periodic_payments = this.calcPeriodicPaymentsForTerm(
@@ -792,7 +795,7 @@ class JupiterDoc {
      */
     calcOneTimePayments() {
         // exit if no one-time models
-        if (!this.one_time_payment_models.length > 0 || !this.option_terms.length > 0) return;
+        if (!this.one_time_payment_models.length > 0 || !this.agreement_terms.length > 0) return;
 
         var one_time_payments = [];
 
@@ -825,8 +828,9 @@ class JupiterDoc {
 
         // create payment object for purchase price
         one_time_payments.push({
-            // assume closing date at the end of all the options
-            payment_date: this.option_terms.sort((a, b) => b.end_date - a.end_date)[0].end_date.toLocaleString(),
+            // assume closing date at the end of all the terms
+            // ?? if no agreement terms, this won't work... may need to also default to effective date if no terms exist ??
+            payment_date: this.agreement_terms.sort((a, b) => b.end_date - a.end_date)[0].end_date.toLocaleString(),
             payment_type: 'Purchase Price',
             // purchase payment will subtract all payments applicable to purchase price
             payment_amount: this.full_purchase_price - previous_applicable_payments,
