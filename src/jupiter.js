@@ -96,6 +96,14 @@ class JupiterDoc {
             'number'
         );
 
+        // Closing Date
+        this.closing_date = utils.extractFactValue(
+            doc,
+            utils.getFactTypeId('Closing Date', factTypes),
+            utils.getFactFieldId('Closing Date', 'Closing Date', factTypes),
+            'date'
+        );
+
         // Operational Details
         this.operational_details = utils.extractFactMultiFields(doc, utils.getFactTypeId('Operational Details', factTypes));
 
@@ -536,17 +544,21 @@ class JupiterDoc {
             }
         });
 
-        // create payment object for purchase price
-        one_time_payments.push({
-            // assume closing date at the end of all the terms
-            // ?? if no agreement terms, this won't work... may need to also default to effective date if no terms exist ??
-            payment_date: this.agreement_terms.sort((a, b) => b.end_date - a.end_date)[0].end_date.toLocaleString(),
-            payment_type: 'Purchase Price',
-            // purchase payment will subtract all payments applicable to purchase price
-            payment_amount: this.full_purchase_price - previous_applicable_payments,
-            applicable_to_purchase: true,
-            refundable: false,
-        });
+        if (this.full_purchase_price > 0) {
+            // create payment object for purchase price
+            one_time_payments.push({
+                // Defaults to closing date, or last term end date if no closing date
+                // ?? if no agreement terms, this won't work... may need to also default to effective date if no terms exist ??
+                payment_date: this.closing_date
+                    ? this.closing_date.toLocaleString()
+                    : this.agreement_terms.sort((a, b) => b.end_date - a.end_date)[0].end_date.toLocaleString(),
+                payment_type: 'Purchase Price',
+                // purchase payment will subtract all payments applicable to purchase price
+                payment_amount: this.full_purchase_price - previous_applicable_payments,
+                applicable_to_purchase: true,
+                refundable: false,
+            });
+        }
 
         // mutate doc object to store one time payment array
         this.one_time_payments = one_time_payments;
@@ -557,7 +569,7 @@ class JupiterDoc {
      */
 
     processAmendments(allDocs) {
-        const amendments = allDocs.filter((x) => x.agreement_id === this.agreement_id && x.amendment_date && x.id !== this.id);
+        const amendments = allDocs.filter((x) => this.agreement_id && x.agreement_id === this.agreement_id && x.amendment_date && x.id !== this.id);
         if (amendments) {
             // sort amendments by amendment date, adding an ordinal property
             amendments
