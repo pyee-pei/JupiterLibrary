@@ -500,8 +500,6 @@ class JupiterDoc {
             var period = 1;
             var payment_amount = 0;
 
-            console.log(model);
-
             // loop until end date is reached
             while (payment_date <= model.end_date) {
                 // apply escalation as needed
@@ -584,6 +582,12 @@ class JupiterDoc {
                     term.periodic_payments.filter((x) => x.applicable_to_purchase).reduce((a, b) => a + b.total_payment_amount, 0) ?? 0;
             }
         });
+
+        // filter dated payments and find all payments applicable to purchase price
+        if (this.periodic_date_payments) {
+            previous_applicable_payments +=
+                this.periodic_date_payments.filter((x) => x.applicable_to_purchase).reduce((a, b) => a + b.payment_amount, 0) ?? 0;
+        }
 
         if (this.full_purchase_price > 0) {
             // create payment object for purchase price

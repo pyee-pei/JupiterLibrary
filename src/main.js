@@ -88,7 +88,7 @@ jupiterDocs
         documentsDiv.appendChild(p);
     });
 
-var consoleHeaderFormat = 'color: blue; font-size: 14px; font-weight: bold;';
+var consoleHeaderFormat = 'color: blue; font-size: 12px; font-weight: bold;';
 
 console.log('%cAll docs with terms or payment models:', consoleHeaderFormat);
 console.log(
