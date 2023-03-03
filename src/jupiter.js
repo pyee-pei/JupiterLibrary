@@ -1,4 +1,5 @@
 import utils from './utils.js'; // generic import, requires "utils" namespace to be used in code
+import lookups from './lookups.js'; // import lookups as a single object
 
 /**
  * Represents a Jupiter document.
@@ -138,8 +139,8 @@ class JupiterDoc {
             'string'
         );
 
-        // calculate agreement ID
-        this.agreement_id = this.calcAgreementId();
+        // calculate agreement group
+        this.agreement_group = this.calcAgreementGroup();
 
         // calculate lease term dates
         this.calcAgreementTermDates(this.agreement_terms, this.effective_date, this.operational_details);
@@ -151,7 +152,7 @@ class JupiterDoc {
     /**
      * calc agreement ID
      */
-    calcAgreementId() {
+    calcAgreementGroup() {
         // only calculate for completed docs
         if (!this.grantor[0] || !this.review_status === 'Complete') {
             return null;
@@ -159,7 +160,7 @@ class JupiterDoc {
         // check other required fields, and exclude any known amendments
 
         if (this.project_id && this.project_name && this.document_type && !this.amendment_date) {
-            return `${this.document_type} - ${this.project_name} - ${this.nicknameGrantor(this.grantor[0]['grantor/lessor_name'])} - ${
+            return `${lookups[this.document_type]} - ${this.project_name} - ${this.nicknameGrantor(this.grantor[0]['grantor/lessor_name'])} - ${
                 this.project_id
             }`;
         }
