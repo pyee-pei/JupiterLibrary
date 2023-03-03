@@ -45,7 +45,7 @@ import lookups from './lookups.js'; // import lookups as a single object
  * @property {Date} agreement_terms.start_date - start date of lease term
  * @property {Date} agreement_terms.end_date - end date of lease term
  *
- * @property {Array} periodic_payment_models - array of periodic payment models
+ * @property {Array} periodic_term_payment_models - array of periodic payment models
  * @property {Array} tags - array of tags
  */
 class JupiterDoc {
@@ -142,11 +142,14 @@ class JupiterDoc {
         // Option Terms
         //this.option_terms = utils.extractMultiFactValues(doc, utils.getFactTypeId('Option Term', factTypes));
 
-        // Periodic Payment Models
-        this.periodic_payment_models = utils.extractMultiFactValues(doc, utils.getFactTypeId('Periodic Payment Model', factTypes));
+        // Periodic Payment Models (term based)
+        this.periodic_term_payment_models = utils.extractMultiFactValues(doc, utils.getFactTypeId('Payment Model - Periodic Term Based', factTypes));
+
+        // Peroidic Payment Models (date based)
+        this.periodic_date_payment_models = utils.extractMultiFactValues(doc, utils.getFactTypeId('Payment Model - Periodic Date Based', factTypes));
 
         // One Time Payment Models
-        this.one_time_payment_models = utils.extractMultiFactValues(doc, utils.getFactTypeId('One Time Payment Model', factTypes));
+        this.one_time_payment_models = utils.extractMultiFactValues(doc, utils.getFactTypeId('Payment Model - One Time', factTypes));
 
         // Tags
         this.tags = this.getTags(tags);
@@ -282,30 +285,6 @@ class JupiterDoc {
                 ).length;
             });
     }
-
-    /**
-     * calculate option term dates
-     * DEPRECATED - these should all be in agreement terms
-     */
-    // calcOptionTermDates(optionTerms, effectiveDate) {
-    //     // exit if no effectiveDate
-    //     if (!effectiveDate) {
-    //         return;
-    //     }
-
-    //     optionTerms
-    //         .sort((a, b) => a.term_ordinal - b.term_ordinal)
-    //         .forEach((term, index) => {
-    //             // start day after previous term end, or if no previous term, use effective date
-    //             term.start_date = optionTerms[index - 1] ? optionTerms[index - 1].end_date.plus({ days: 1 }) : effectiveDate;
-    //             // add a text version pre-formatted
-    //             term.start_date_text = term.start_date.toFormat('MM/dd/yyyy');
-
-    //             // calculated end-date
-    //             term.end_date = term.start_date.plus({ months: term.term_months ?? 0, days: term.term_days ?? 0 });
-    //             term.end_date_text = term.end_date.toFormat('MM/dd/yyyy');
-    //         });
-    // }
 
     /**
      * calculates base periodic payment for a given model
@@ -524,17 +503,78 @@ class JupiterDoc {
         // calc payments in each term
         // and mutate the term object to set value of periodic_payments array
         this.agreement_terms.forEach((term) => {
-            if (this.periodic_payment_models) {
+            if (this.periodic_term_payment_models) {
                 term.periodic_payments = this.calcPeriodicPaymentsForTerm(
                     term,
                     this.operational_details,
-                    this.amended_periodic_payment_models ?? this.periodic_payment_models,
+                    this.amended_periodic_term_payment_models ?? this.periodic_term_payment_models,
                     this.amended_leased_acres ?? this.leased_acres,
                     this.grantor,
                     this.project_id
                 );
             }
         });
+    }
+
+    calcPeriodicDatePayments() {
+        var periodic_date_payments = [];
+
+        this.periodic_date_payment_models.forEach((model) => {
+            // return null if missing required fields
+            if (!model.start_date || !model.end_date || !model.payment_amount || !model.frequency) return;
+
+            // iterating variables
+            var payment_date = model.start_date;
+            var period = 1;
+            var payment_amount = 0;
+
+            console.log(model);
+
+            // loop until end date is reached
+            while (payment_date &lt;= model.end_date) {
+                // apply escalation as needed
+                if (model.compounding_escalation) {
+                    payment_amount = utils.calculateCompoundingGrowth(model.payment_amount, (model.escalation_rate ?? 0) / 100, period);
+                } else {
+                    payment_amount = utils.calculateGrowth(model.payment_amount, (model.escalation_rate ?? 0) / 100, period);
+                }
+
+                // TODO: these are not yet being split among all grantors - it all goes to the first one, or to the payee if specified
+
+                // create payment object
+                var payment = {
+                    model_id: model.id,
+                    payment_date: payment_date.toLocaleString(),
+                    payment_type: model.payment_type,
+                    payment_amount: payment_amount,
+                    payee: model.payee ?? this.nicknameGrantor(this.grantor[0]['grantor/lessor_name']),
+                    applicable_to_purchase: model.applicable_to_purchase,
+                    refundable: model.refundable,
+                };
+
+                // add payment to array
+                periodic_date_payments.push(payment);
+
+                // increment period
+                period++;
+
+                // increment payment date based on model frequency
+                if (model.frequency === 'Annually') {
+                    payment_date = payment_date.plus({ years: 1 });
+                } else if (model.frequency === 'Quarterly') {
+                    payment_date = payment_date.plus({ months: 3 });
+                } else if (model.frequency === 'Monthly') {
+                    payment_date = payment_date.plus({ months: 1 });
+                } else {
+                    // if frequency doesn't match one of those options return - we can't get into an infinite loop
+                    // this can probably go above so we don't post any payments...
+                    return;
+                }
+            }
+        });
+
+        // all models, all loops complete, mutate doc object to contain results
+        this.periodic_date_payments = periodic_date_payments;
     }
 
     /**
@@ -622,8 +662,8 @@ class JupiterDoc {
                 }
 
                 // periodic payment models
-                if (amendment.periodic_payment_models &amp;&amp; amendment.periodic_payment_models.length > 0) {
-                    this.amended_periodic_payment_models = amendment.periodic_payment_models;
+                if (amendment.periodic_term_payment_models &amp;&amp; amendment.periodic_term_payment_models.length > 0) {
+                    this.amended_periodic_term_payment_models = amendment.periodic_term_payment_models;
                 }
             });
 
@@ -704,7 +744,7 @@ export default JupiterDoc;
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.0</a> on Fri Mar 03 2023 11:05:27 GMT-0600 (Central Standard Time)
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.0</a> on Fri Mar 03 2023 15:42:53 GMT-0600 (Central Standard Time)
 </footer>
 
 <script> prettyPrint(); </script>

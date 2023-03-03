@@ -66,6 +66,7 @@ await getAllLookups();
 docs.forEach((doc) => {
     var jdoc = new JupiterDoc(doc, factTypes, docTypes, tags);
     jdoc.calcAllTermPayments();
+    jdoc.calcPeriodicDatePayments();
     jdoc.calcOneTimePayments();
     jupiterDocs.push(jdoc);
 });
@@ -79,7 +80,7 @@ const documentsDiv = document.querySelector('.documents');
 
 // filter jupiter docs and iterate to display data
 jupiterDocs
-    .filter((x) => x.agreement_terms.length > 0 || x.periodic_payment_models.length > 0 || x.one_time_payment_models.length > 0)
+    .filter((x) => x.agreement_terms.length > 0 || x.periodic_term_payment_models.length > 0 || x.one_time_payment_models.length > 0)
     .forEach((doc, index) => {
         let p = document.createElement('p');
         p.setAttribute('class', 'document');
@@ -90,7 +91,9 @@ jupiterDocs
 var consoleHeaderFormat = 'color: blue; font-size: 14px; font-weight: bold;';
 
 console.log('%cAll docs with terms or payment models:', consoleHeaderFormat);
-console.log(jupiterDocs.filter((x) => x.agreement_terms.length > 0 || x.periodic_payment_models.length > 0 || x.one_time_payment_models.length > 0));
+console.log(
+    jupiterDocs.filter((x) => x.agreement_terms.length > 0 || x.periodic_term_payment_models.length > 0 || x.one_time_payment_models.length > 0)
+);
 // console.log(jupiterDocs.filter((x) => x.id === '04c13bf6-dcf7-4496-b2a3-b54588e9e279')[0]);
 // console.log(jupiterDocs.filter((x) => x.id === 'c5feac8e-87ba-4cde-bdf9-5ed8074b391f')[0]);
 
