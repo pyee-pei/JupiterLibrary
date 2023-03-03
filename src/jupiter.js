@@ -552,7 +552,7 @@ class JupiterDoc {
      */
     calcOneTimePayments() {
         // exit if no one-time models
-        if (!this.one_time_payment_models.length > 0 || !this.agreement_terms.length > 0) return;
+        if (!this.one_time_payment_models.length > 0) return;
 
         var one_time_payments = [];
 
@@ -575,13 +575,15 @@ class JupiterDoc {
         var previous_applicable_payments = one_time_payments.filter((x) => x.applicable_to_purchase).reduce((a, b) => a + b.payment_amount, 0);
 
         // loop through agreement terms and find all payments applicable to purchase price
-        this.agreement_terms.forEach((term) => {
-            if (term.periodic_payments) {
-                // add any payments applicable to purchase price
-                previous_applicable_payments +=
-                    term.periodic_payments.filter((x) => x.applicable_to_purchase).reduce((a, b) => a + b.total_payment_amount, 0) ?? 0;
-            }
-        });
+        if (this.agreement_terms.length > 0) {
+            this.agreement_terms.forEach((term) => {
+                if (term.periodic_payments) {
+                    // add any payments applicable to purchase price
+                    previous_applicable_payments +=
+                        term.periodic_payments.filter((x) => x.applicable_to_purchase).reduce((a, b) => a + b.total_payment_amount, 0) ?? 0;
+                }
+            });
+        }
 
         // filter dated payments and find all payments applicable to purchase price
         if (this.periodic_date_payments) {
