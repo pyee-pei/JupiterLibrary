@@ -420,6 +420,9 @@ class JupiterDoc {
         // Peroidic Payment Models (date based)
         this.periodic_date_payment_models = utils.extractMultiFactValues(doc, utils.getFactTypeId('Payment Model - Periodic Date Based', factTypes));
 
+        // Periodic Payments (date based)
+        this.periodic_date_payments = [];
+
         // One Time Payment Models
         this.one_time_payment_models = utils.extractMultiFactValues(doc, utils.getFactTypeId('Payment Model - One Time', factTypes));
 
@@ -823,7 +826,7 @@ class JupiterDoc {
                 };
 
                 // add payment to array
-                periodic_date_payments.push(payment);
+                this.periodic_date_payments.push(payment);
 
                 // increment period
                 period++;
@@ -844,7 +847,7 @@ class JupiterDoc {
         });
 
         // all models, all loops complete, mutate doc object to contain results
-        this.periodic_date_payments = periodic_date_payments;
+        this.periodic_date_payments.push(...periodic_date_payments);
     }
 
     /**
@@ -898,7 +901,7 @@ class JupiterDoc {
         if (this.full_purchase_price > 0 && this.closing_date) {
             // create payment object for purchase price
             one_time_payments.push({
-                payment_date: this.closing_date,
+                payment_date: this.closing_date.toLocaleString(),
                 payment_type: 'Purchase Price',
                 // purchase payment will subtract all payments applicable to purchase price
                 payment_amount: this.full_purchase_price - previous_applicable_payments,
