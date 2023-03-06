@@ -858,6 +858,9 @@ class JupiterDoc {
 
         // create payment object for all models
         this.one_time_payment_models.forEach((model) => {
+            // return null if missing required fields
+            if (!model.payment_due && !this.effective_date) return;
+
             // if payment date is not specified, use effective date
             var payment_date = model.payment_due ?? this.effective_date;
 
@@ -891,14 +894,11 @@ class JupiterDoc {
                 this.periodic_date_payments.filter((x) => x.applicable_to_purchase).reduce((a, b) => a + b.payment_amount, 0) ?? 0;
         }
 
-        if (this.full_purchase_price > 0) {
+        // only run purchase price if there is a closing date and a purchase price
+        if (this.full_purchase_price > 0 && this.closing_date) {
             // create payment object for purchase price
             one_time_payments.push({
-                // Defaults to closing date, or last term end date if no closing date
-                // ?? if no agreement terms, this won't work... may need to also default to effective date if no terms exist ??
-                payment_date: this.closing_date
-                    ? this.closing_date.toLocaleString()
-                    : this.agreement_terms.sort((a, b) => b.end_date - a.end_date)[0].end_date.toLocaleString(),
+                payment_date: this.closing_date,
                 payment_type: 'Purchase Price',
                 // purchase payment will subtract all payments applicable to purchase price
                 payment_amount: this.full_purchase_price - previous_applicable_payments,
