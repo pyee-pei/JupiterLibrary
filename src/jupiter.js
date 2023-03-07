@@ -145,8 +145,13 @@ class JupiterDoc {
             'string'
         );
 
-        // calculate agreement group
-        this.agreement_group = this.calcAgreementGroup();
+        // Agreement Group
+        this.agreement_group = utils.extractFactValue(
+            doc,
+            utils.getFactTypeId('Agreement Group', factTypes),
+            utils.getFactFieldId('Agreement Group', 'Agreement Group', factTypes),
+            'string'
+        );
 
         // calculate lease term dates
         this.calcAgreementTermDates(this.agreement_terms, this.effective_date, this.operational_details);
@@ -619,7 +624,9 @@ class JupiterDoc {
      */
 
     processAmendments(allDocs) {
-        const amendments = allDocs.filter((x) => this.agreement_id && x.agreement_id === this.agreement_id && x.amendment_date && x.id !== this.id);
+        const amendments = allDocs.filter(
+            (x) => this.agreement_group && x.agreement_group === this.agreement_group && x.amendment_date && x.id !== this.id
+        );
         if (amendments) {
             // sort amendments by amendment date, adding an ordinal property
             amendments
@@ -634,22 +641,32 @@ class JupiterDoc {
                 // leased acres
                 // only write if different from parent doc
                 if (amendment.leased_acres && amendment.leased_acres !== this.leased_acres) {
-                    this.amended_leased_acres = amendment.leased_acres;
+                    // this.amended_leased_acres = amendment.leased_acres;
+                    this.leased_acres = amendment.leased_acres;
+                }
+
+                if (amendment.closing_date) {
+                    this.closing_date = amendment.closing_date;
                 }
 
                 // lease terms
                 if (amendment.agreement_terms && amendment.agreement_terms.length > 0) {
-                    this.amended_agreement_terms = amendment.agreement_terms;
+                    // this.amended_agreement_terms = amendment.agreement_terms;
+                    this.agreement_terms = amendment.agreement_terms;
                 }
 
                 // periodic payment models
                 if (amendment.periodic_term_payment_models && amendment.periodic_term_payment_models.length > 0) {
-                    this.amended_periodic_term_payment_models = amendment.periodic_term_payment_models;
+                    // this.amended_periodic_term_payment_models = amendment.periodic_term_payment_models;
+                    this.periodic_term_payment_models = amendment.periodic_term_payment_models;
                 }
             });
 
+            this.amendments = amendments;
+
             // re-calculate payments based on amended values
             if (this.agreement_terms) {
+                this.calcAgreementTermDates(this.agreement_terms, this.effective_date, this.operational_details);
                 this.calcAllTermPayments();
             }
         }
