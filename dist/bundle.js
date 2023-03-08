@@ -974,6 +974,7 @@ class JupiterDoc {
                 }
 
                 // these facts are additive, not replacement facts
+                // if an original fact of these types exists, it will need to be modified on the original document
 
                 // one time payment models
                 amendment.one_time_payment_models.forEach((model) => {
