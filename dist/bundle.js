@@ -924,6 +924,11 @@ class JupiterDoc {
      */
 
     processAmendments(allDocs) {
+        // don't process amendments of amendments
+        if (this.amendment_date) {
+            return;
+        }
+
         const amendments = allDocs.filter(
             (x) => this.agreement_group && x.agreement_group === this.agreement_group && x.amendment_date && x.id !== this.id
         );
@@ -945,6 +950,12 @@ class JupiterDoc {
                     this.leased_acres = amendment.leased_acres;
                 }
 
+                // lessors
+                if (amendment.grantor && amendment.grantor.length > 0) {
+                    this.grantor = amendment.grantor;
+                }
+
+                // closing date
                 if (amendment.closing_date) {
                     this.closing_date = amendment.closing_date;
                 }
@@ -955,10 +966,20 @@ class JupiterDoc {
                     this.agreement_terms = amendment.agreement_terms;
                 }
 
+                // one time payment models
+                if (amendment.one_time_payment_models && amendment.one_time_payment_models.length > 0) {
+                    this.one_time_payment_models = amendment.one_time_payment_models;
+                }
+
                 // periodic payment models
                 if (amendment.periodic_term_payment_models && amendment.periodic_term_payment_models.length > 0) {
                     // this.amended_periodic_term_payment_models = amendment.periodic_term_payment_models;
                     this.periodic_term_payment_models = amendment.periodic_term_payment_models;
+                }
+
+                // periodic date payment models
+                if (amendment.periodic_date_payment_models && amendment.periodic_date_payment_models.length > 0) {
+                    this.periodic_date_payment_models = amendment.periodic_date_payment_models;
                 }
             });
 
@@ -968,6 +989,8 @@ class JupiterDoc {
             if (this.agreement_terms) {
                 this.calcAgreementTermDates(this.agreement_terms, this.effective_date, this.operational_details);
                 this.calcAllTermPayments();
+                this.calcPeriodicDatePayments();
+                this.calcOneTimePayments();
             }
         }
     }
