@@ -634,7 +634,7 @@ class JupiterDoc {
         const amendments = allDocs.filter(
             (x) => this.agreement_group && x.agreement_group === this.agreement_group && x.amendment_date && x.id !== this.id
         );
-        if (amendments) {
+        if (amendments.length > 0) {
             // sort amendments by amendment date, adding an ordinal property
             amendments
                 .sort((a, b) => {
@@ -687,8 +687,6 @@ class JupiterDoc {
                 });
             });
 
-            this.amendments = amendments;
-
             // re-calculate payments based on amended values
             if (this.agreement_terms) {
                 this.calcAgreementTermDates(this.agreement_terms, this.effective_date, this.operational_details);
@@ -696,6 +694,8 @@ class JupiterDoc {
                 this.calcPeriodicDatePayments();
                 this.calcOneTimePayments();
             }
+
+            this.amendments = amendments;
         }
     }
 
