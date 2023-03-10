@@ -17,7 +17,7 @@ import lookups from './lookups.js'; // import lookups as a single object
  * @property {Date} agreement_terms.start_date - start date of lease term
  * @property {Date} agreement_terms.end_date - end date of lease term
  *
- * @property {Array} periodic_term_payment_models - array of periodic payment models
+ * @property {Array} term_payment_models - array of periodic payment models
  * @property {Array} tags - array of tags
  */
 class JupiterDoc {
@@ -27,7 +27,7 @@ class JupiterDoc {
         utils.addFactandFieldNames(doc, factTypes);
 
         // set initial properties
-        this.rawDoc = doc;
+        this.rawDoc = doc; // for debugging
         this.id = doc.id;
         this.name = doc.name;
 
@@ -115,13 +115,13 @@ class JupiterDoc {
         //this.option_terms = utils.extractMultiFactValues(doc, utils.getFactTypeId('Option Term', factTypes));
 
         // Periodic Payment Models (term based)
-        this.periodic_term_payment_models = utils.extractMultiFactValues(doc, utils.getFactTypeId('Payment Model - Periodic Term Based', factTypes));
+        this.term_payment_models = utils.extractMultiFactValues(doc, utils.getFactTypeId('Payment Model - Term Based', factTypes));
 
         // Peroidic Payment Models (date based)
-        this.periodic_date_payment_models = utils.extractMultiFactValues(doc, utils.getFactTypeId('Payment Model - Periodic Date Based', factTypes));
+        this.date_payment_models = utils.extractMultiFactValues(doc, utils.getFactTypeId('Payment Model - Date Based', factTypes));
 
         // Periodic Payments (date based)
-        this.periodic_date_payments = [];
+        this.date_payments = [];
 
         // One Time Payment Models
         this.one_time_payment_models = utils.extractMultiFactValues(doc, utils.getFactTypeId('Payment Model - One Time', factTypes));
@@ -444,22 +444,25 @@ class JupiterDoc {
             // loop through grantors and add payments per payee according to their split
             grantor.forEach((g) => {
                 payments.push({
+                    payment_source: 'Term Model',
+                    model_id: model.id,
                     project_id: project_id,
                     payment_index: i,
-                    payee: this.nicknameGrantor(g['grantor/lessor_name']),
                     payment_date: payment_date.toLocaleString(),
-                    grace_days: i === 0 ? term.first_payment_grace_days ?? 0 : term.subsequent_payment_grace_days ?? 0,
-                    payment_period_start: payment_period_start.toLocaleString(),
-                    payment_period_end: payment_period_end.toLocaleString(),
-                    prorata_factor: prorata_factor,
-                    applicable_to_purchase: model.applicable_to_purchase,
-                    // base_payment: utils.round(periodic_payment * (1 + term_escalation_rate / 100), 4),
-                    total_payment_amount:
+                    payment_type: `${term.term_type}${term.extension ? ' (ext)' : ''} Term Payment`,
+                    payment_amount:
                         utils.calculateCompoundingGrowth(
                             periodic_payment * ((g.payment_split ?? 100) / 100),
                             periodic_escalation_rate / 100,
                             Math.floor(i / periodic_escalation_frequency_index)
                         ) * prorata_factor,
+                    payee: this.nicknameGrantor(g['grantor/lessor_name']),
+                    grace_days: i === 0 ? term.first_payment_grace_days ?? 0 : term.subsequent_payment_grace_days ?? 0,
+                    payment_period_start: payment_period_start.toLocaleString(),
+                    payment_period_end: payment_period_end.toLocaleString(),
+                    prorata_factor: prorata_factor,
+                    applicable_to_purchase: model.applicable_to_purchase,
+                    refundable: false, // defaults to false on term payments
                 });
             });
 
@@ -483,11 +486,11 @@ class JupiterDoc {
         // calc payments in each term
         // and mutate the term object to set value of periodic_payments array
         this.agreement_terms.forEach((term) => {
-            if (this.periodic_term_payment_models) {
+            if (this.term_payment_models) {
                 term.periodic_payments = this.calcPeriodicPaymentsForTerm(
                     term,
                     this.operational_details,
-                    this.amended_periodic_term_payment_models ?? this.periodic_term_payment_models,
+                    this.term_payment_models,
                     this.amended_leased_acres ?? this.leased_acres,
                     this.grantor,
                     this.project_id
@@ -496,20 +499,26 @@ class JupiterDoc {
         });
     }
 
-    calcPeriodicDatePayments() {
-        var periodic_date_payments = [];
+    calcDatePayments() {
+        var date_payments = [];
 
-        this.periodic_date_payment_models.forEach((model) => {
+        this.date_payment_models.forEach((model) => {
             // return null if missing required fields
-            if (!model.start_date || !model.end_date || !model.payment_amount || !model.frequency) return;
+            // must have EITHER: date_begin, date_end, frequency OR date_one_time, and a payment amount
+            if (
+                (!(model.date_begin && model.date_end && model.frequency) && !model.date_one_time) ||
+                !model.payment_amount ||
+                !this.grantor.length > 0
+            )
+                return;
 
             // iterating variables
-            var payment_date = model.start_date;
+            var payment_date = model.date_begin;
             var period = 1;
             var payment_amount = 0;
 
             // loop until end date is reached
-            while (payment_date <= model.end_date) {
+            while (payment_date <= model.date_end) {
                 // apply escalation as needed
                 if (model.compounding_escalation) {
                     payment_amount = utils.calculateCompoundingGrowth(model.payment_amount, (model.escalation_rate ?? 0) / 100, period);
@@ -517,21 +526,25 @@ class JupiterDoc {
                     payment_amount = utils.calculateGrowth(model.payment_amount, (model.escalation_rate ?? 0) / 100, period);
                 }
 
-                // TODO: these are not yet being split among all grantors - it all goes to the first one, or to the payee if specified
+                // create a payment object for each grantor on the agreement
+                this.grantor.forEach((g) => {
+                    // create payment object
+                    var payment = {
+                        payment_source: 'Date Model',
+                        model_id: model.id,
+                        project_id: this.project_id,
+                        payment_index: period - 1,
+                        payment_date: payment_date.toLocaleString(),
+                        payment_type: model.payment_type,
+                        payment_amount: payment_amount * ((g.payment_split ?? 100) / 100),
+                        payee: model.payee ?? this.nicknameGrantor(g['grantor/lessor_name']),
+                        applicable_to_purchase: model.applicable_to_purchase,
+                        refundable: model.refundable,
+                    };
 
-                // create payment object
-                var payment = {
-                    model_id: model.id,
-                    payment_date: payment_date.toLocaleString(),
-                    payment_type: model.payment_type,
-                    payment_amount: payment_amount,
-                    payee: model.payee ?? this.nicknameGrantor(this.grantor[0]['grantor/lessor_name']),
-                    applicable_to_purchase: model.applicable_to_purchase,
-                    refundable: model.refundable,
-                };
-
-                // add payment to array
-                this.periodic_date_payments.push(payment);
+                    // add payment to array
+                    this.date_payments.push(payment);
+                });
 
                 // increment period
                 period++;
@@ -552,11 +565,11 @@ class JupiterDoc {
         });
 
         // all models, all loops complete, mutate doc object to contain results
-        this.periodic_date_payments.push(...periodic_date_payments);
+        this.date_payments.push(...date_payments);
     }
 
     /**
-     * calc one-time payments (including purchase price)
+     * calc one-time payments
      */
     calcOneTimePayments() {
         // exit if no one-time models
@@ -583,8 +596,23 @@ class JupiterDoc {
             });
         });
 
+        // mutate doc object to store one time payment array
+        this.one_time_payments = one_time_payments;
+    }
+
+    /**
+     * calc final purchase price
+     */
+    calcEstimatedPurchasePrice() {
+        if (!this.full_purchase_price || !this.closing_date) {
+            return;
+        }
         // calculate how mcuh of the purchase price has already been paid
-        var previous_applicable_payments = one_time_payments.filter((x) => x.applicable_to_purchase).reduce((a, b) => a + b.payment_amount, 0);
+        var previous_applicable_payments = 0;
+
+        if (this.one_time_payments) {
+            previous_applicable_payments += this.one_time_payments.filter((x) => x.applicable_to_purchase).reduce((a, b) => a + b.payment_amount, 0);
+        }
 
         // loop through agreement terms and find all payments applicable to purchase price
         if (this.agreement_terms.length > 0) {
@@ -598,27 +626,26 @@ class JupiterDoc {
         }
 
         // filter dated payments and find all payments applicable to purchase price
-        if (this.periodic_date_payments) {
-            previous_applicable_payments +=
-                this.periodic_date_payments.filter((x) => x.applicable_to_purchase).reduce((a, b) => a + b.payment_amount, 0) ?? 0;
+        if (this.date_payments) {
+            previous_applicable_payments += this.date_payments.filter((x) => x.applicable_to_purchase).reduce((a, b) => a + b.payment_amount, 0) ?? 0;
         }
 
         // only run purchase price if there is a closing date and a purchase price
-        if (this.full_purchase_price > 0 && this.closing_date) {
+
+        this.grantor.forEach((g) => {
             // create payment object for purchase price
-            one_time_payments.push({
+            this.date_payments.push({
+                payment_source: 'Purchase Price Calculation',
+                model_id: null,
                 payment_date: this.closing_date.toLocaleString(),
                 payment_type: 'Purchase Price',
-                payee: this.nicknameGrantor(this.grantor[0]['grantor/lessor_name']),
+                payee: this.nicknameGrantor(g['grantor/lessor_name']),
                 // purchase payment will subtract all payments applicable to purchase price
-                payment_amount: this.full_purchase_price - previous_applicable_payments,
+                payment_amount: (this.full_purchase_price - previous_applicable_payments) * ((g.payment_split ?? 100) / 100),
                 applicable_to_purchase: true,
                 refundable: false,
             });
-        }
-
-        // mutate doc object to store one time payment array
-        this.one_time_payments = one_time_payments;
+        });
     }
 
     /**
@@ -669,8 +696,8 @@ class JupiterDoc {
                 }
 
                 // periodic payment models
-                if (amendment.periodic_term_payment_models && amendment.periodic_term_payment_models.length > 0) {
-                    this.periodic_term_payment_models = amendment.periodic_term_payment_models;
+                if (amendment.term_payment_models && amendment.term_payment_models.length > 0) {
+                    this.term_payment_models = amendment.term_payment_models;
                 }
 
                 // these facts are additive, not replacement facts
@@ -682,8 +709,8 @@ class JupiterDoc {
                 });
 
                 // periodic date payment models
-                amendment.periodic_date_payment_models.forEach((model) => {
-                    this.periodic_date_payment_models.push(model);
+                amendment.date_payment_models.forEach((model) => {
+                    this.date_payment_models.push(model);
                 });
             });
 
@@ -691,7 +718,7 @@ class JupiterDoc {
             if (this.agreement_terms) {
                 this.calcAgreementTermDates(this.agreement_terms, this.effective_date, this.operational_details);
                 this.calcAllTermPayments();
-                this.calcPeriodicDatePayments();
+                this.calcDatePayments();
                 this.calcOneTimePayments();
             }
 

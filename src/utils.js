@@ -223,7 +223,7 @@ const cleanFieldNames = (str) => {
     return str
         ? str
               .toLowerCase()
-              .replace(/[\s()]+/g, '_')
+              .replace(/[\s()-]+/g, '_')
               .replace(/_+$/, '')
         : null;
 };
