@@ -513,12 +513,14 @@ class JupiterDoc {
                 return;
 
             // iterating variables
-            var payment_date = model.date_begin;
+            var payment_date = model.date_one_time ?? model.date_begin;
+            var payment_date_end = model.date_end ?? model.date_one_time;
             var period = 1;
             var payment_amount = 0;
+            var payment_source = model.date_one_time ? 'Date Model (One Time)' : 'Date Model';
 
             // loop until end date is reached
-            while (payment_date <= model.date_end) {
+            while (payment_date <= payment_date_end) {
                 // apply escalation as needed
                 if (model.compounding_escalation) {
                     payment_amount = utils.calculateCompoundingGrowth(model.payment_amount, (model.escalation_rate ?? 0) / 100, period);
@@ -530,7 +532,7 @@ class JupiterDoc {
                 this.grantor.forEach((g) => {
                     // create payment object
                     var payment = {
-                        payment_source: 'Date Model',
+                        payment_source: payment_source,
                         model_id: model.id,
                         project_id: this.project_id,
                         payment_index: period - 1,
