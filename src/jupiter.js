@@ -81,11 +81,11 @@ class JupiterDoc {
             'date'
         );
 
-        // Leased Acres
-        this.leased_acres = utils.extractFactValue(
+        // Agreement Acres
+        this.agreeement_acres = utils.extractFactValue(
             doc,
-            utils.getFactTypeId('Leased Acres', factTypes),
-            utils.getFactFieldId('Leased Acres', 'Leased Acres', factTypes),
+            utils.getFactTypeId('Agreement Acres', factTypes),
+            utils.getFactFieldId('Agreement Acres', 'Agreement Acres', factTypes),
             'number'
         );
 
@@ -270,7 +270,7 @@ class JupiterDoc {
      * calculates base periodic payment for a given model
      * largest of all possible ways to calculate payment
      */
-    periodicBasePayment(model, op_details, compounding_escalation, term_escalation_rate, term_escalation_amount, previous_terms, leased_acres) {
+    periodicBasePayment(model, op_details, compounding_escalation, term_escalation_rate, term_escalation_amount, previous_terms, agreeement_acres) {
         if (!model) {
             return 0;
         }
@@ -290,7 +290,7 @@ class JupiterDoc {
             (model.payment_per_mw ?? 0) * (op_details.mw ?? 0),
             (op_details.inverter_count ?? 0) * (op_details.inverter_rating_mvas ?? 0) * (model.payment_per_mva ?? 0),
             model.flat_payment_amount ?? 0,
-            (model.payment_per_acre ?? 0) * (leased_acres ?? 0)
+            (model.payment_per_acre ?? 0) * (agreeement_acres ?? 0)
         );
 
         // apply amount escalation
@@ -355,7 +355,7 @@ class JupiterDoc {
      * calculate periodic payments for a given term
      */
 
-    calcPeriodicPaymentsForTerm(term, op_details, paymentModels, leased_acres, grantor, project_id) {
+    calcPeriodicPaymentsForTerm(term, op_details, paymentModels, agreeement_acres, grantor, project_id) {
         // exit if term is cancelled by operations starting, or there are no grantors listed
         if (term.cancelled_by_ops || grantor.length === 0) {
             return null;
@@ -372,7 +372,7 @@ class JupiterDoc {
             term.escalation_rate,
             term.escalation_amount,
             term.previous_terms,
-            leased_acres
+            agreeement_acres
         );
 
         // exit if no model, or start/end dates
@@ -491,7 +491,7 @@ class JupiterDoc {
                     term,
                     this.operational_details,
                     this.term_payment_models,
-                    this.amended_leased_acres ?? this.leased_acres,
+                    this.amended_agreeement_acres ?? this.agreeement_acres,
                     this.grantor,
                     this.project_id
                 );
@@ -678,10 +678,10 @@ class JupiterDoc {
             amendments.forEach((amendment) => {
                 // these facts get overwritten by the amendment
 
-                // leased acres
+                // agreement acres
                 // only write if different from parent doc
-                if (amendment.leased_acres && amendment.leased_acres !== this.leased_acres) {
-                    this.leased_acres = amendment.leased_acres;
+                if (amendment.agreeement_acres && amendment.agreeement_acres !== this.agreeement_acres) {
+                    this.agreeement_acres = amendment.agreeement_acres;
                 }
 
                 // lessors
