@@ -62,6 +62,14 @@ class JupiterDoc {
             'string'
         );
 
+        // Jupiter Entity
+        this.jupiter_entity = utils.extractFactValue(
+            doc,
+            utils.getFactTypeId('Jupiter Entity', factTypes),
+            utils.getFactFieldId('Jupiter Entity', 'Jupiter Entity', factTypes),
+            'string'
+        );
+
         // Grantor/Lessor - Multi-instance fact
         this.grantor = utils.extractMultiFactValues(doc, utils.getFactTypeId('Grantor/Lessor', factTypes));
 
