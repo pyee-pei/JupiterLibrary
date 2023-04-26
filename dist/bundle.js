@@ -862,7 +862,7 @@ class JupiterDoc {
                 // increment payment date based on model frequency
                 if (model.frequency === 'Annually') {
                     payment_date = payment_date.plus({ years: 1 });
-                } else if (model.frequency === 'Semi Annually') {
+                } else if (model.frequency === 'Semiannually') {
                     payment_date = payment_date.plus({ months: 6 });
                 } else if (model.frequency === 'Quarterly') {
                     payment_date = payment_date.plus({ months: 3 });
