@@ -348,6 +348,8 @@ class JupiterDoc {
             // anniversary payment dates
             if (frequency === 'Annually') {
                 payment_period_end = start_date.plus({ years: 1 }).minus({ days: 1 });
+            } else if (frequency === 'Semiannually') {
+                payment_period_end = start_date.plus({ months: 6 }).minus({ days: 1 });
             } else if (frequency === 'Quarterly') {
                 payment_period_end = start_date.plus({ months: 3 }).minus({ days: 1 });
             } else if (frequency === 'Monthly') {
@@ -427,6 +429,8 @@ class JupiterDoc {
             // calculate pro rata periods
             if (model.payment_frequency === 'Annually') {
                 prorata_factor = utils.round(payment_period_end.plus({ days: 1 }).diff(payment_period_start, 'years').years, 4);
+            } else if (model.payment_frequency === 'Semiannually') {
+                prorata_factor = utils.round(payment_period_end.plus({ days: 1 }).diff(payment_period_start, 'months').months / 6, 4);
             } else if (model.payment_frequency === 'Quarterly') {
                 prorata_factor = utils.round(payment_period_end.plus({ days: 1 }).diff(payment_period_start, 'quarters').quarters, 4);
             } else if (model.payment_frequency === 'Monthly') {
@@ -438,6 +442,7 @@ class JupiterDoc {
             var periodic_escalation_frequency_index;
             var ratioFactors = {
                 Annually: 1,
+                Semiannually: 2,
                 Quarterly: 4,
                 Monthly: 12,
             };
