@@ -390,12 +390,13 @@ class JupiterDoc {
         );
 
         // Agreement Acres
-        this.agreeement_acres = utils.extractFactValue(
-            doc,
-            utils.getFactTypeId('Agreement Acres', factTypes),
-            utils.getFactFieldId('Agreement Acres', 'Agreement Acres', factTypes),
-            'number'
-        );
+        // deprecated 2023-05-02 - moved this field to Property Description
+        // this.agreeement_acres = utils.extractFactValue(
+        //     doc,
+        //     utils.getFactTypeId('Agreement Acres', factTypes),
+        //     utils.getFactFieldId('Agreement Acres', 'Agreement Acres', factTypes),
+        //     'number'
+        // );
 
         // Purchase Price
         this.full_purchase_price = utils.extractFactValue(
@@ -412,6 +413,14 @@ class JupiterDoc {
             utils.getFactFieldId('Closing Date', 'Closing Date', factTypes),
             'date'
         );
+
+        // Property Details
+        this.property_description = utils.extractMultiFactValues(doc, utils.getFactTypeId('Property Description', factTypes));
+
+        // calc total acres for all proprerty descriptions
+        this.total_agreement_acres = this.property_description.reduce((acc, desc) => {
+            return acc + desc.agreement_acres;
+        }, 0);
 
         // Operational Details
         this.operational_details = utils.extractFactMultiFields(doc, utils.getFactTypeId('Operational Details', factTypes));
@@ -665,7 +674,7 @@ class JupiterDoc {
      * calculate periodic payments for a given term
      */
 
-    calcPeriodicPaymentsForTerm(term, op_details, paymentModels, agreeement_acres, grantor, project_id) {
+    calcPeriodicPaymentsForTerm(term, op_details, paymentModels, agreement_acres, grantor, project_id) {
         // exit if term is cancelled by operations starting, or there are no grantors listed
         if (term.cancelled_by_ops || grantor.length === 0) {
             return null;
@@ -682,7 +691,7 @@ class JupiterDoc {
             term.escalation_rate,
             term.escalation_amount,
             term.previous_terms,
-            agreeement_acres
+            agreement_acres
         );
 
         // exit if no model, or start/end dates
@@ -798,13 +807,14 @@ class JupiterDoc {
     calcAllTermPayments() {
         // calc payments in each term
         // and mutate the term object to set value of periodic_payments array
+
         this.agreement_terms.forEach((term) => {
             if (this.term_payment_models) {
                 term.periodic_payments = this.calcPeriodicPaymentsForTerm(
                     term,
                     this.operational_details,
                     this.term_payment_models,
-                    this.amended_agreeement_acres ?? this.agreeement_acres,
+                    this.amended_agreement_acres ?? this.total_agreement_acres,
                     this.grantor,
                     this.project_id
                 );
@@ -993,8 +1003,17 @@ class JupiterDoc {
 
                 // agreement acres
                 // only write if different from parent doc
-                if (amendment.agreeement_acres && amendment.agreeement_acres !== this.agreeement_acres) {
-                    this.agreeement_acres = amendment.agreeement_acres;
+                // *** deprecated 2023-05-02 for property_description facts ***
+                // if (
+                //     amendment.property_description.agreeement_acres &&
+                //     amendment.property_description.agreeement_acres !== this.property_description.agreeement_acres
+                // ) {
+                //     this.amended_agreeement_acres = amendment.property_description.agreeement_acres;
+                // }
+
+                // property description
+                if (amendment.property_description) {
+                    this.property_description = amendment.property_description;
                 }
 
                 // lessors
