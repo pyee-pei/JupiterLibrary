@@ -711,6 +711,11 @@ class JupiterDoc {
                 //     this.amended_agreeement_acres = amendment.property_description.agreeement_acres;
                 // }
 
+                // effective date
+                if (amendment.effective_date) {
+                    this.effective_date = amendment.effective_date;
+                }
+
                 // property description
                 if (amendment.property_description) {
                     this.property_description = amendment.property_description;
