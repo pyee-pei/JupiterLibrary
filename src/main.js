@@ -91,6 +91,9 @@ jupiterDocs
 
 var consoleHeaderFormat = 'color: blue; font-size: 12px; font-weight: bold;';
 
+console.log(jupiterDocs.find((x) => x.id === '7125c0e5-11b6-41b5-a94d-20b422915d7a'));
+console.log(jupiterDocs.find((x) => x.id === '9b4b5d40-1dc0-4806-b783-5799338bce99'));
+
 console.log('%cAll docs with terms or payment models:', consoleHeaderFormat);
 console.log(jupiterDocs.filter((x) => x.agreement_terms.length > 0 || x.term_payment_models.length > 0 || x.one_time_payment_models.length > 0));
 // console.log(jupiterDocs.filter((x) => x.id === '04c13bf6-dcf7-4496-b2a3-b54588e9e279')[0]);
