@@ -91,13 +91,16 @@ jupiterDocs
 
 var consoleHeaderFormat = 'color: blue; font-size: 12px; font-weight: bold;';
 
-console.log(jupiterDocs.find((x) => x.id === '7125c0e5-11b6-41b5-a94d-20b422915d7a'));
-console.log(jupiterDocs.find((x) => x.id === '9b4b5d40-1dc0-4806-b783-5799338bce99'));
+// console.log(jupiterDocs.find((x) => x.id === '7125c0e5-11b6-41b5-a94d-20b422915d7a'));
+// console.log(jupiterDocs.find((x) => x.id === '9b4b5d40-1dc0-4806-b783-5799338bce99'));
 
 console.log('%cAll docs with terms or payment models:', consoleHeaderFormat);
 console.log(jupiterDocs.filter((x) => x.agreement_terms.length > 0 || x.term_payment_models.length > 0 || x.one_time_payment_models.length > 0));
 // console.log(jupiterDocs.filter((x) => x.id === '04c13bf6-dcf7-4496-b2a3-b54588e9e279')[0]);
 // console.log(jupiterDocs.filter((x) => x.id === 'c5feac8e-87ba-4cde-bdf9-5ed8074b391f')[0]);
+
+console.log('%cThese docs have an outside date:', consoleHeaderFormat);
+console.log(jupiterDocs.filter((x) => x.outside_date));
 
 // console.log('%cThese docs have property descriptions:', consoleHeaderFormat);
 // jupiterDocs
@@ -106,44 +109,44 @@ console.log(jupiterDocs.filter((x) => x.agreement_terms.length > 0 || x.term_pay
 //         console.log(doc);
 //     });
 
-console.log('%cThese docs have price per acre:', consoleHeaderFormat);
-jupiterDocs
-    .filter(
-        (doc) =>
-            doc.term_payment_models.some((model) => model.payment_per_acre > 0) || doc.date_payment_models.some((model) => model.payment_per_acre > 0)
-    )
-    .forEach((doc) => {
-        console.log(doc);
-    });
+// console.log('%cThese docs have price per acre:', consoleHeaderFormat);
+// jupiterDocs
+//     .filter(
+//         (doc) =>
+//             doc.term_payment_models.some((model) => model.payment_per_acre > 0) || doc.date_payment_models.some((model) => model.payment_per_acre > 0)
+//     )
+//     .forEach((doc) => {
+//         console.log(doc);
+//     });
 
 // filter jupiterDocs for any doc with a term that is cancelled by ops
-console.log('%cThese docs have a cancelled term:', consoleHeaderFormat);
-jupiterDocs
-    .filter((doc) => doc.agreement_terms.some((term) => term.cancelled_by_ops === true))
-    .forEach((doc) => {
-        console.log(doc);
-    });
+// console.log('%cThese docs have a cancelled term:', consoleHeaderFormat);
+// jupiterDocs
+//     .filter((doc) => doc.agreement_terms.some((term) => term.cancelled_by_ops === true))
+//     .forEach((doc) => {
+//         console.log(doc);
+//     });
 
-console.log('%cThese docs have multiple splits on the Grantor:', consoleHeaderFormat);
-jupiterDocs
-    .filter((doc) => doc.grantor.length > 1)
-    .forEach((doc) => {
-        console.log(doc);
-    });
+// console.log('%cThese docs have multiple splits on the Grantor:', consoleHeaderFormat);
+// jupiterDocs
+//     .filter((doc) => doc.grantor.length > 1)
+//     .forEach((doc) => {
+//         console.log(doc);
+//     });
 
-console.log('%cThese docs have operational details:', consoleHeaderFormat);
-jupiterDocs
-    .filter((doc) => doc.operational_details)
-    .forEach((doc) => {
-        console.log(doc);
-    });
+// console.log('%cThese docs have operational details:', consoleHeaderFormat);
+// jupiterDocs
+//     .filter((doc) => doc.operational_details)
+//     .forEach((doc) => {
+//         console.log(doc);
+//     });
 
-console.log('%cThese docs have date-based payments:', consoleHeaderFormat);
-jupiterDocs
-    .filter((doc) => doc.date_payment_models.length > 0)
-    .forEach((doc) => {
-        console.log(doc);
-    });
+// console.log('%cThese docs have date-based payments:', consoleHeaderFormat);
+// jupiterDocs
+//     .filter((doc) => doc.date_payment_models.length > 0)
+//     .forEach((doc) => {
+//         console.log(doc);
+//     });
 
 // jupiterDocs.forEach((doc) => {
 //     if (!doc.grantor[0]) return;

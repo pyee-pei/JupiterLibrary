@@ -389,6 +389,14 @@ class JupiterDoc {
             'date'
         );
 
+        // Outside Date
+        this.outside_date = utils.extractFactValue(
+            doc,
+            utils.getFactTypeId('Outside Date', factTypes),
+            utils.getFactFieldId('Outside Date', 'Outside Date', factTypes),
+            'date'
+        );
+
         // Agreement Acres
         // deprecated 2023-05-02 - moved this field to Property Description
         // this.agreeement_acres = utils.extractFactValue(
@@ -777,7 +785,7 @@ class JupiterDoc {
                     payment_type: `${term.term_type}${term.extension ? ' (ext)' : ''} Term Payment`,
                     payment_amount:
                         utils.calculateCompoundingGrowth(
-                            periodic_payment * ((g.payment_split ?? 100) / 100),
+                            periodic_payment * ((g.payment_split ?? 100 / grantor.length) / 100),
                             periodic_escalation_rate / 100,
                             Math.floor(i / periodic_escalation_frequency_index)
                         ) * prorata_factor,
@@ -788,6 +796,7 @@ class JupiterDoc {
                     prorata_factor: prorata_factor,
                     applicable_to_purchase: model.applicable_to_purchase,
                     refundable: false, // defaults to false on term payments
+                    after_outside_date: this.outside_date ? payment_date.ts > this.outside_date.ts : false,
                 });
             });
 
@@ -868,6 +877,7 @@ class JupiterDoc {
                         payee: model.payee ?? this.nicknameGrantor(g['grantor/lessor_name']),
                         applicable_to_purchase: model.applicable_to_purchase,
                         refundable: model.refundable,
+                        after_outside_date: this.outside_date ? payment_date.ts > this.outside_date.ts : false,
                     };
 
                     // add payment to array
@@ -923,6 +933,7 @@ class JupiterDoc {
                 payment_amount: model.payment_amount,
                 applicable_to_purchase: model.applicable_to_purchase,
                 refundable: model.refundable,
+                after_outside_date: this.outside_date ? payment_date.ts > this.outside_date.ts : false,
             });
         });
 
@@ -1017,6 +1028,11 @@ class JupiterDoc {
                 // effective date
                 if (amendment.effective_date) {
                     this.effective_date = amendment.effective_date;
+                }
+
+                // outside date
+                if (amendment.outside_date) {
+                    this.outside_date = amendment.outside_date;
                 }
 
                 // property description
