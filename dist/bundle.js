@@ -554,7 +554,7 @@ class JupiterDoc {
                 // calculated end-date, will be tested against opDates later
                 // end one day prior to the Nth anniversary, or on operationalDetails termination date, whichever is sooner
                 term.end_date = utils.getEarliestDateTime(
-                    opDetails.termination,
+                    opDetails?.termination_date,
                     term.start_date.plus({ years: term.term_length_years }).plus({ days: -1 })
                 );
 
@@ -849,7 +849,7 @@ class JupiterDoc {
 
             // iterating variables
             var payment_date = model.date_one_time ?? model.date_begin;
-            var payment_date_end = model.date_end ?? model.date_one_time;
+            var payment_date_end = this.operational_details?.termination_date ?? model.date_end ?? model.date_one_time;
             var period = 1;
             var payment_amount = 0;
             var payment_source = model.date_one_time ? 'Date Model (One Time)' : 'Date Model';

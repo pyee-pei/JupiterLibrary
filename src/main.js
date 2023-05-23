@@ -91,6 +91,8 @@ jupiterDocs
 
 var consoleHeaderFormat = 'color: blue; font-size: 12px; font-weight: bold;';
 
+console.log(jupiterDocs.filter((x) => x.id === '933644ab-f682-481b-bdad-c497986d5c71'));
+
 // console.log(jupiterDocs.find((x) => x.id === '7125c0e5-11b6-41b5-a94d-20b422915d7a'));
 // console.log(jupiterDocs.find((x) => x.id === '9b4b5d40-1dc0-4806-b783-5799338bce99'));
 
