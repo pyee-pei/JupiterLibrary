@@ -551,12 +551,20 @@ class JupiterDoc {
                 // add a text version pre-formatted
                 term.start_date_text = term.start_date.toFormat('MM/dd/yyyy');
 
+                // determine appropriate duration to add
+                if (!term.term_length_years) {
+                    var addDuration = { days: 0 };
+                } else if (parseInt(term.term_length_years) === term.term_length_years) {
+                    var addDuration = { years: term.term_length_years };
+                } else if (parseInt(term.term_length_years * 12) === term.term_length_years * 12) {
+                    var addDuration = { months: term.term_length_years * 12 };
+                } else {
+                    var addDuration = { days: parseInt(term.term_length_years * 365) };
+                }
+
                 // calculated end-date, will be tested against opDates later
                 // end one day prior to the Nth anniversary, or on operationalDetails termination date, whichever is sooner
-                term.end_date = utils.getEarliestDateTime(
-                    opDetails?.termination_date,
-                    term.start_date.plus({ years: term.term_length_years }).plus({ days: -1 })
-                );
+                term.end_date = utils.getEarliestDateTime(opDetails?.termination_date, term.start_date.plus(addDuration).plus({ days: -1 }));
 
                 // on non-construction and non-operational terms, check to see if they are cut short, or totally removed by operational dates
                 if (term.term_type !== 'Construction' && term.term_type !== 'Operations') {
