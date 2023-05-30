@@ -427,7 +427,7 @@ class JupiterDoc {
 
         // calc total acres for all proprerty descriptions
         this.total_agreement_acres = this.property_description.reduce((acc, desc) => {
-            return acc + desc.agreement_acres;
+            return acc + desc.agreement_acres || 0;
         }, 0);
 
         // Operational Details
@@ -606,7 +606,7 @@ class JupiterDoc {
      * calculates base periodic payment for a given model
      * largest of all possible ways to calculate payment
      */
-    periodicBasePayment(model, op_details, compounding_escalation, term_escalation_rate, term_escalation_amount, previous_terms, agreeement_acres) {
+    periodicBasePayment(model, op_details, compounding_escalation, term_escalation_rate, term_escalation_amount, previous_terms, agreement_acres) {
         if (!model) {
             return 0;
         }
@@ -626,7 +626,7 @@ class JupiterDoc {
             (model.payment_per_mw ?? 0) * (op_details.mw ?? 0),
             (op_details.inverter_count ?? 0) * (op_details.inverter_rating_mvas ?? 0) * (model.payment_per_mva ?? 0),
             model.flat_payment_amount ?? 0,
-            (model.payment_per_acre ?? 0) * (agreeement_acres ?? 0)
+            (model.payment_per_acre ?? 0) * (agreement_acres ?? 0)
         );
 
         // apply amount escalation
