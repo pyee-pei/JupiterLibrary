@@ -566,9 +566,9 @@ class JupiterDoc {
             while (payment_date <= payment_date_end) {
                 // apply escalation as needed
                 if (model.compounding_escalation) {
-                    payment_amount = utils.calculateCompoundingGrowth(model.payment_amount, (model.escalation_rate ?? 0) / 100, period);
+                    payment_amount = utils.calculateCompoundingGrowth(model.payment_amount, (model.periodic_escalation_rate ?? 0) / 100, period);
                 } else {
-                    payment_amount = utils.calculateGrowth(model.payment_amount, (model.escalation_rate ?? 0) / 100, period);
+                    payment_amount = utils.calculateGrowth(model.payment_amount, (model.periodic_escalation_rate ?? 0) / 100, period);
                 }
 
                 // create a payment object for each grantor on the agreement
