@@ -543,7 +543,7 @@ class JupiterDoc {
     }
 
     calcDatePayments() {
-        var date_payments = [];
+        this.date_payments = []; // reset date payment array, re-calc for all new models
 
         this.date_payment_models.forEach((model) => {
             // return null if missing required fields
@@ -613,7 +613,7 @@ class JupiterDoc {
         });
 
         // all models, all loops complete, mutate doc object to contain results
-        this.date_payments.push(...date_payments);
+        //this.date_payments.push(...date_payments); // already mutating object in push() above
     }
 
     /**
