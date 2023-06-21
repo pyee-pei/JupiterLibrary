@@ -497,7 +497,7 @@ class JupiterDoc {
                             periodic_escalation_rate / 100,
                             Math.floor(i / periodic_escalation_frequency_index)
                         ) * prorata_factor,
-                    payee: this.nicknameGrantor(g['grantor/lessor_name']),
+                    payee: model.payee ?? this.nicknameGrantor(g['grantor/lessor_name']),
                     grace_days: i === 0 ? term.first_payment_grace_days ?? 0 : term.subsequent_payment_grace_days ?? 0,
                     payment_period_start: payment_period_start.toLocaleString(),
                     payment_period_end: payment_period_end.toLocaleString(),
