@@ -744,7 +744,7 @@ class JupiterDoc {
                 }
 
                 // property description
-                if (amendment.property_description) {
+                if (amendment.property_description.length > 0) {
                     this.property_description = amendment.property_description;
                 }
 

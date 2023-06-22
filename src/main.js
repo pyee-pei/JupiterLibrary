@@ -63,6 +63,8 @@ const getAllLookups = async () => {
 // wait until arrays are filled
 await getAllLookups();
 
+console.log(factTypes);
+
 docs.forEach((doc) => {
     var jdoc = new JupiterDoc(doc, factTypes, docTypes, tags);
     jdoc.calcAllTermPayments();
@@ -104,12 +106,18 @@ console.log(jupiterDocs.filter((x) => x.agreement_terms.length > 0 || x.term_pay
 console.log('%cThese docs have an outside date:', consoleHeaderFormat);
 console.log(jupiterDocs.filter((x) => x.outside_date));
 
-// console.log('%cThese docs have property descriptions:', consoleHeaderFormat);
-// jupiterDocs
-//     .filter((doc) => doc.property_description.length > 0)
-//     .forEach((doc) => {
-//         console.log(doc);
-//     });
+console.log('%cThese docs have property descriptions:', consoleHeaderFormat);
+console.log(jupiterDocs.filter((doc) => doc.property_description.length > 0));
+
+// filter to document where the rawDoc.facts array contains a fact with factTypeName of 'Property Description'
+const docsWithPropertyDescription = jupiterDocs.filter((doc) => doc.rawDoc.facts.some((fact) => fact.factTypeName === 'Property Description'));
+console.log('%cThese docs have rawDoc property descriptions:', consoleHeaderFormat);
+console.log(docsWithPropertyDescription);
+
+// filter docsWithPropertyDescription where the property 'property_description' is empty
+const docsWithEmptyPropertyDescription = docsWithPropertyDescription.filter((doc) => doc.property_description.length === 0);
+console.log('%cThese docs have empty property descriptions:', consoleHeaderFormat);
+console.log(docsWithEmptyPropertyDescription);
 
 // console.log('%cThese docs have price per acre:', consoleHeaderFormat);
 // jupiterDocs
