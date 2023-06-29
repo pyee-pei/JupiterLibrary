@@ -1,4 +1,4 @@
-import JupiterDoc from './jupiter.js';
+import JupiterDoc from "./jupiter.js";
 // import utils from './utils.js';
 
 var docs = [];
@@ -10,45 +10,45 @@ const jupiterDocs = [];
 
 // fetch data from json files and put them into variables
 const getDocs = () => {
-    return fetch('../data/documents.json')
-        .then((res) => res.json())
-        .then((data) => {
-            return data;
-        });
+  return fetch("../data/documents.json")
+    .then((res) => res.json())
+    .then((data) => {
+      return data;
+    });
 };
 
 const getFactTypes = () => {
-    return fetch('../data/factTypes.json')
-        .then((res) => res.json())
-        .then((data) => {
-            return data;
-        });
+  return fetch("../data/factTypes.json")
+    .then((res) => res.json())
+    .then((data) => {
+      return data;
+    });
 };
 
 const getDocTypes = () => {
-    return fetch('../data/documentTypes.json')
-        .then((res) => res.json())
-        .then((data) => {
-            return data;
-        });
+  return fetch("../data/documentTypes.json")
+    .then((res) => res.json())
+    .then((data) => {
+      return data;
+    });
 };
 
 const getTags = () => {
-    return fetch('../data/tags.json')
-        .then((res) => res.json())
-        .then((data) => {
-            return data;
-        });
+  return fetch("../data/tags.json")
+    .then((res) => res.json())
+    .then((data) => {
+      return data;
+    });
 };
 
 // await all fetches to complete with Promise.all
 
 const getAllLookups = async () => {
-    docs = await getDocs();
-    factTypes = await getFactTypes();
-    docTypes = await getDocTypes();
-    tags = await getTags();
-    return { docs, factTypes, docTypes };
+  docs = await getDocs();
+  factTypes = await getFactTypes();
+  docTypes = await getDocTypes();
+  tags = await getTags();
+  return { docs, factTypes, docTypes };
 };
 
 // const jupiterizeAll = async () => {
@@ -63,61 +63,72 @@ const getAllLookups = async () => {
 // wait until arrays are filled
 await getAllLookups();
 
-console.log(factTypes);
-
 docs.forEach((doc) => {
-    var jdoc = new JupiterDoc(doc, factTypes, docTypes, tags);
-    jdoc.calcAllTermPayments();
-    jdoc.calcDatePayments();
-    jdoc.calcOneTimePayments();
-    jdoc.calcEstimatedPurchasePrice();
-    jupiterDocs.push(jdoc);
+  var jdoc = new JupiterDoc(doc, factTypes, docTypes, tags);
+  jdoc.calcAllTermPayments();
+  jdoc.calcDatePayments();
+  jdoc.calcOneTimePayments();
+  jdoc.calcEstimatedPurchasePrice();
+  jupiterDocs.push(jdoc);
 });
 
 // run a pass to associate amendments with parent docs
 jupiterDocs.forEach((doc, index) => {
-    doc.processAmendments(jupiterDocs);
+  doc.processAmendments(jupiterDocs);
+  if (doc.docType !== "Deed") {
+    doc.findDeeds(jupiterDocs);
+  }
 });
 
-const documentsDiv = document.querySelector('.documents');
+const documentsDiv = document.querySelector(".documents");
 
 // filter jupiter docs and iterate to display data
 jupiterDocs
-    .filter((x) => x.agreement_terms.length > 0 || x.term_payment_models.length > 0 || x.one_time_payment_models.length > 0)
-    .forEach((doc, index) => {
-        let p = document.createElement('p');
-        p.setAttribute('class', 'document');
-        p.innerHTML = index + ' - ' + doc.name;
-        documentsDiv.appendChild(p);
-    });
+  .filter((x) => x.agreement_terms.length > 0 || x.term_payment_models.length > 0 || x.one_time_payment_models.length > 0)
+  .forEach((doc, index) => {
+    let p = document.createElement("p");
+    p.setAttribute("class", "document");
+    p.innerHTML = index + " - " + doc.name;
+    documentsDiv.appendChild(p);
+  });
 
-var consoleHeaderFormat = 'color: blue; font-size: 12px; font-weight: bold;';
+var consoleHeaderFormat = "color: blue; font-size: 12px; font-weight: bold;";
 
-console.log(jupiterDocs.filter((x) => x.id === '3f2bba5e-6993-4583-9b56-26473142b896'));
+console.log(jupiterDocs.filter((x) => x.id === "a1e62373-5f7f-482d-b78c-5830d49976bf"));
 
 // console.log(jupiterDocs.find((x) => x.id === '7125c0e5-11b6-41b5-a94d-20b422915d7a'));
 // console.log(jupiterDocs.find((x) => x.id === '9b4b5d40-1dc0-4806-b783-5799338bce99'));
 
-console.log('%cAll docs with terms or payment models:', consoleHeaderFormat);
+console.log("%cAll docs with terms or payment models:", consoleHeaderFormat);
 console.log(jupiterDocs.filter((x) => x.agreement_terms.length > 0 || x.term_payment_models.length > 0 || x.one_time_payment_models.length > 0));
 // console.log(jupiterDocs.filter((x) => x.id === '04c13bf6-dcf7-4496-b2a3-b54588e9e279')[0]);
 // console.log(jupiterDocs.filter((x) => x.id === 'c5feac8e-87ba-4cde-bdf9-5ed8074b391f')[0]);
 
-console.log('%cThese docs have an outside date:', consoleHeaderFormat);
+console.log("%cThese docs have an outside date:", consoleHeaderFormat);
 console.log(jupiterDocs.filter((x) => x.outside_date));
 
-console.log('%cThese docs have property descriptions:', consoleHeaderFormat);
+console.log("%cThese docs have property descriptions:", consoleHeaderFormat);
 console.log(jupiterDocs.filter((doc) => doc.property_description.length > 0));
 
 // filter to document where the rawDoc.facts array contains a fact with factTypeName of 'Property Description'
-const docsWithPropertyDescription = jupiterDocs.filter((doc) => doc.rawDoc.facts.some((fact) => fact.factTypeName === 'Property Description'));
-console.log('%cThese docs have rawDoc property descriptions:', consoleHeaderFormat);
+const docsWithPropertyDescription = jupiterDocs.filter((doc) => doc.rawDoc.facts.some((fact) => fact.factTypeName === "Property Description"));
+console.log("%cThese docs have rawDoc property descriptions:", consoleHeaderFormat);
 console.log(docsWithPropertyDescription);
 
 // filter docsWithPropertyDescription where the property 'property_description' is empty
 const docsWithEmptyPropertyDescription = docsWithPropertyDescription.filter((doc) => doc.property_description.length === 0);
-console.log('%cThese docs have empty property descriptions:', consoleHeaderFormat);
+console.log("%cThese docs have empty property descriptions:", consoleHeaderFormat);
 console.log(docsWithEmptyPropertyDescription);
+
+// filter to documents that are terminated
+const terminatedDocs = jupiterDocs.filter((doc) => doc.terminated && doc.agreement_terms.length > 0);
+console.log("%cThese docs are terminated:", consoleHeaderFormat);
+console.log(terminatedDocs);
+
+// filter to documents that have deeds
+const docsThatHaveDeeds = jupiterDocs.filter((doc) => doc.deeds.length > 1);
+console.log("%cThese docs have deeds:", consoleHeaderFormat);
+console.log(docsThatHaveDeeds);
 
 // console.log('%cThese docs have price per acre:', consoleHeaderFormat);
 // jupiterDocs
