@@ -75,9 +75,7 @@ docs.forEach((doc) => {
 // run a pass to associate amendments with parent docs
 jupiterDocs.forEach((doc, index) => {
   doc.processAmendments(jupiterDocs);
-  if (doc.docType !== "Deed") {
-    doc.findDeeds(jupiterDocs);
-  }
+  doc.findDeeds(jupiterDocs);
 });
 
 const documentsDiv = document.querySelector(".documents");
@@ -94,7 +92,7 @@ jupiterDocs
 
 var consoleHeaderFormat = "color: blue; font-size: 12px; font-weight: bold;";
 
-console.log(jupiterDocs.filter((x) => x.id === "a1e62373-5f7f-482d-b78c-5830d49976bf"));
+console.log(jupiterDocs.filter((x) => x.id === "27173908-621a-4f09-bb91-bc9ee195d84c"));
 
 // console.log(jupiterDocs.find((x) => x.id === '7125c0e5-11b6-41b5-a94d-20b422915d7a'));
 // console.log(jupiterDocs.find((x) => x.id === '9b4b5d40-1dc0-4806-b783-5799338bce99'));
@@ -126,7 +124,7 @@ console.log("%cThese docs are terminated:", consoleHeaderFormat);
 console.log(terminatedDocs);
 
 // filter to documents that have deeds
-const docsThatHaveDeeds = jupiterDocs.filter((doc) => doc.deeds.length > 1);
+const docsThatHaveDeeds = jupiterDocs.filter((doc) => doc.deed_count > 0);
 console.log("%cThese docs have deeds:", consoleHeaderFormat);
 console.log(docsThatHaveDeeds);
 

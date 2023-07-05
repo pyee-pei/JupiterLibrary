@@ -306,6 +306,9 @@ class JupiterDoc {
         // calculate perevious terms for term escalation
         term.previous_terms = agreementTerms.filter((x) => x.term_ordinal < term.term_ordinal && x.payment_model === term.payment_model).length;
       });
+
+    // calculate final term end date
+    this.final_term_end_date = agreementTerms[agreementTerms.length - 1]?.end_date.toFormat("M/d/yyyy");
   }
 
   /**
@@ -807,7 +810,46 @@ class JupiterDoc {
 
   findDeeds(allDocs) {
     var deeds = allDocs.filter((x) => x.document_type === "Deed" && x.agreement_group && x.agreement_group === this.agreement_group);
-    this.deeds = deeds;
+
+    if (this.id === "27173908-621a-4f09-bb91-bc9ee195d84c") {
+      console.log(deeds);
+    }
+
+    if (this.document_type !== "Deed" && deeds.length > 0) {
+      this.processDeedAmendments(deeds);
+    }
+  }
+
+  processDeedAmendments(deeds) {
+    const deed = deeds[0];
+    const amendments = deeds.slice(1);
+
+    // sort amendments by amendment date, adding an ordinal property
+    amendments.sort((a, b) => {
+      return new Date(a.amendment_date) - new Date(b.amendment_date);
+    });
+
+    // check each amendment for new values
+    // newer amendments overwrite older values
+    amendments.forEach((amendment) => {
+      // effective date
+      if (amendment.effective_date) {
+        deed.effective_date = amendment.effective_date;
+      }
+
+      // property description
+      if (amendment.property_description) {
+        deed.property_description = amendment.property_description;
+      }
+    });
+
+    // update root document
+    this.deed_count = deeds.length;
+    this.deed_effective_date = deed.effective_date?.toFormat("M/d/yyyy");
+    this.property_description = deed.property_description;
+    if (!this.tags.includes("Purchased")) {
+      this.tags.push("Purchased");
+    }
   }
 
   /**
