@@ -442,7 +442,7 @@ class JupiterDoc {
 
     // calc first payment date for term
     switch (term.first_payment_start) {
-      case "Start with Term (plus applicable lag)":
+      case "Start with Term":
         payment_date = term.start_date.plus({ days: term_payment_delay_days });
         break;
       case "Start next Jan 1 after Term commencement":
