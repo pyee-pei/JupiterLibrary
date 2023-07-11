@@ -438,6 +438,14 @@ class JupiterDoc {
       return acc + desc.agreement_acres || 0;
     }, 0);
 
+    // Notice Details
+    this.notice_details = utils.extractFactValue(
+      doc,
+      utils.getFactTypeId("Notice Details", factTypes),
+      utils.getFactFieldId("Notice Details", "Notice Details", factTypes),
+      "string"
+    );
+
     // Operational Details
     this.operational_details = utils.extractFactMultiFields(doc, utils.getFactTypeId("Operational Details", factTypes)) ?? {};
 
@@ -490,7 +498,7 @@ class JupiterDoc {
     this.calcAgreementTermDates(this.agreement_terms, this.effective_date, this.operational_details);
 
     // flag a version number
-    this.libraryVersion = "1.0.78";
+    this.libraryVersion = "1.0.79";
 
     // deprecated - these should all be in agreement terms
     //this.calcOptionTermDates(this.option_terms, this.effective_date);
@@ -1073,23 +1081,18 @@ class JupiterDoc {
           this.term_payment_models = amendment.term_payment_models;
         }
 
+        // termination date
+        if (amendment.operational_details?.termination_date) {
+          this.operational_details.termination_date = amendment.operational_details.termination_date;
+        }
+
         // these facts are additive, not replacement facts
         // if an original fact of these types exists, it will need to be modified on the original document
-
-        // one time payment models
-        amendment.one_time_payment_models.forEach((model) => {
-          this.one_time_payment_models.push(model);
-        });
 
         // periodic date payment models
         amendment.date_payment_models.forEach((model) => {
           this.date_payment_models.push(model);
         });
-
-        // termination date
-        if (amendment.operational_details?.termination_date) {
-          this.operational_details.termination_date = amendment.operational_details.termination_date;
-        }
       });
 
       // re-calculate payments based on amended values
