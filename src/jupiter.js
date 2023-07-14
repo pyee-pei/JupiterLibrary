@@ -399,11 +399,13 @@ class JupiterDoc {
         payment_period_end = start_date.plus({ months: 3 }).minus({ days: 1 });
       } else if (frequency === "Monthly") {
         payment_period_end = start_date.plus({ months: 1 }).minus({ days: 1 });
+      } else if (frequency === "Once per Term") {
+        payment_period_end = term_end;
       }
     }
 
     // if payment period end is after term end, return term end
-    return payment_period_end > term_end ? term_end : payment_period_end;
+    return payment_period_end >= term_end ? term_end : payment_period_end;
   }
 
   /***
