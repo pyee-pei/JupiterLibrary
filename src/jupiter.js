@@ -198,7 +198,7 @@ class JupiterDoc {
     this.calcAgreementTermDates(this.agreement_terms, this.effective_date, this.operational_details);
 
     // flag a version number
-    this.libraryVersion = "1.0.79";
+    this.libraryVersion = "1.0.80";
 
     // deprecated - these should all be in agreement terms
     //this.calcOptionTermDates(this.option_terms, this.effective_date);
