@@ -198,7 +198,7 @@ class JupiterDoc {
     this.calcAgreementTermDates(this.agreement_terms, this.effective_date, this.operational_details);
 
     // flag a version number
-    this.libraryVersion = "1.0.80";
+    this.libraryVersion = "1.0.81";
 
     // deprecated - these should all be in agreement terms
     //this.calcOptionTermDates(this.option_terms, this.effective_date);
@@ -482,6 +482,8 @@ class JupiterDoc {
         prorata_factor = utils.round(payment_period_end.plus({ days: 1 }).diff(payment_period_start, "quarters").quarters, 4);
       } else if (model.payment_frequency === "Monthly") {
         prorata_factor = utils.round(payment_period_end.plus({ days: 1 }).diff(payment_period_start, "months").months, 4);
+      } else {
+        prorata_factor = 1;
       }
 
       // handle discrepancy between payment frequency and escalation frequency

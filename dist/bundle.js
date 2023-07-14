@@ -782,6 +782,8 @@ class JupiterDoc {
         prorata_factor = utils.round(payment_period_end.plus({ days: 1 }).diff(payment_period_start, "quarters").quarters, 4);
       } else if (model.payment_frequency === "Monthly") {
         prorata_factor = utils.round(payment_period_end.plus({ days: 1 }).diff(payment_period_start, "months").months, 4);
+      } else {
+        prorata_factor = 1;
       }
 
       // handle discrepancy between payment frequency and escalation frequency
