@@ -76,6 +76,7 @@ docs.forEach((doc) => {
 jupiterDocs.forEach((doc, index) => {
   doc.processAmendments(jupiterDocs);
   doc.findDeeds(jupiterDocs);
+  doc.qc();
 });
 
 const documentsDiv = document.querySelector(".documents");
@@ -91,6 +92,57 @@ jupiterDocs
   });
 
 var consoleHeaderFormat = "color: blue; font-size: 12px; font-weight: bold;";
+
+// console.log(jupiterDocs[0].rawDoc.facts);
+
+const factArray = [];
+jupiterDocs.map((doc) => {
+  doc.rawDoc.facts.map((fact) => {
+    fact.fields.map((field) => {
+      factArray.push({
+        docId: doc.id,
+        agreement_group: doc.agreement_group,
+        factId: fact.id,
+        factType: factTypes.find((x) => x.id === fact.factTypeId).name,
+        fieldName: field.factTypeFieldName,
+        factDate: (doc.effective_date ?? doc.amendment_date)?.toFormat("MM/dd/yyyy"),
+        value: field.stringValue ?? field.dateValue ?? field.numberValue ?? field.booleanValue,
+        fileName: doc.name,
+      });
+    });
+  });
+});
+
+/*
+const resultString = JSON.stringify(factArray, null, 2);
+const blob = new Blob([resultString], { type: "application/json" });
+
+const url = URL.createObjectURL(blob);
+const a = document.createElement("a");
+a.href = url;
+a.download = "jupiterFacts.json";
+
+document.body.appendChild(a);
+
+a.click();
+
+console.log(factArray.slice(0, 30));
+
+*/
+
+console.log("%cAll docs with term payment models:", consoleHeaderFormat);
+console.log(jupiterDocs.filter((x) => x.term_payment_models.length > 0));
+
+const total_qc_count = jupiterDocs.reduce((acc, doc) => acc + doc.qc_flags.length, 0);
+console.log("Total QC Flag Count:", total_qc_count);
+
+console.log(jupiterDocs.filter((x) => x.qc_flags.length > 0));
+console.log(jupiterDocs.filter((x) => x.qc_flags.length > 0 && x.agreement_terms.length > 0));
+
+// find docs with a qc_flag similar to 'Date % Model' (wildcard % search)
+console.log(jupiterDocs.filter((x) => x.qc_flags.some((flag) => flag.includes("First Payment"))));
+
+/*
 
 console.log(jupiterDocs.filter((x) => x.id === "27173908-621a-4f09-bb91-bc9ee195d84c"));
 
@@ -128,54 +180,7 @@ const docsThatHaveDeeds = jupiterDocs.filter((doc) => doc.deed_count > 0);
 console.log("%cThese docs have deeds:", consoleHeaderFormat);
 console.log(docsThatHaveDeeds);
 
-// console.log('%cThese docs have price per acre:', consoleHeaderFormat);
-// jupiterDocs
-//     .filter(
-//         (doc) =>
-//             doc.term_payment_models.some((model) => model.payment_per_acre > 0) || doc.date_payment_models.some((model) => model.payment_per_acre > 0)
-//     )
-//     .forEach((doc) => {
-//         console.log(doc);
-//     });
 
-// filter jupiterDocs for any doc with a term that is cancelled by ops
-// console.log('%cThese docs have a cancelled term:', consoleHeaderFormat);
-// jupiterDocs
-//     .filter((doc) => doc.agreement_terms.some((term) => term.cancelled_by_ops === true))
-//     .forEach((doc) => {
-//         console.log(doc);
-//     });
-
-// console.log('%cThese docs have multiple splits on the Grantor:', consoleHeaderFormat);
-// jupiterDocs
-//     .filter((doc) => doc.grantor.length > 1)
-//     .forEach((doc) => {
-//         console.log(doc);
-//     });
-
-// console.log('%cThese docs have operational details:', consoleHeaderFormat);
-// jupiterDocs
-//     .filter((doc) => doc.operational_details)
-//     .forEach((doc) => {
-//         console.log(doc);
-//     });
-
-// console.log('%cThese docs have date-based payments:', consoleHeaderFormat);
-// jupiterDocs
-//     .filter((doc) => doc.date_payment_models.length > 0)
-//     .forEach((doc) => {
-//         console.log(doc);
-//     });
-
-// jupiterDocs.forEach((doc) => {
-//     if (!doc.grantor[0]) return;
-//     console.log(doc.grantor[0]['grantor/lessor_name']);
-//     console.log(doc.nicknameGrantor(doc.grantor[0]['grantor/lessor_name']));
-// });
-
-// for (let i = 0; i < 10; i++) {
-//     console.log(utils.round(utils.calculateCompoundingGrowth(75000, 0.1, i), 4));
-//     console.log(utils.round(utils.calculateGrowth(75000, 0.1, i), 4));
-// }
+*/
 
 export default {};

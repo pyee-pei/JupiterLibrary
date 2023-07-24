@@ -225,8 +225,10 @@ class JupiterDoc {
     // calculate lease term dates
     this.calcAgreementTermDates(this.agreement_terms, this.effective_date, this.operational_details);
 
+    this.qc_flags = [];
+
     // flag a version number
-    this.libraryVersion = "1.0.80";
+    this.libraryVersion = "1.1";
 
     // deprecated - these should all be in agreement terms
     //this.calcOptionTermDates(this.option_terms, this.effective_date);
@@ -846,9 +848,9 @@ class JupiterDoc {
   findDeeds(allDocs) {
     var deeds = allDocs.filter((x) => x.document_type === "Deed" &amp;&amp; x.agreement_group &amp;&amp; x.agreement_group === this.agreement_group);
 
-    if (this.id === "27173908-621a-4f09-bb91-bc9ee195d84c") {
-      console.log(deeds);
-    }
+    // if (this.id === "27173908-621a-4f09-bb91-bc9ee195d84c") {
+    //   console.log(deeds);
+    // }
 
     if (this.document_type !== "Deed" &amp;&amp; deeds.length > 0) {
       this.processDeedAmendments(deeds);
@@ -884,6 +886,120 @@ class JupiterDoc {
     this.property_description = deed.property_description;
     if (!this.tags.includes("Purchased")) {
       this.tags.push("Purchased");
+    }
+  }
+
+  /**
+   * QC functions that add QC tags to documents (Document-Level QC)
+   */
+  qc() {
+    // exit on out-of-scope documents
+    if (this.document_type === "Master Service Agreement" || this.operational_details?.termination_date) {
+      return;
+    }
+
+    // check all docs for these required facts
+    const all_required = ["agreement_group", "document_type"];
+    var missing = all_required.filter((x) => !this[x]);
+    missing.forEach((x) => this.qc_flags.push(`Missing ${x}`));
+
+    // check to see if any original docs have any of the following facts missing
+    const original_required = ["project_id", "project_name"];
+    const oringial_missing = original_required.filter((x) => !this[x] &amp;&amp; this.amendment_date === null &amp;&amp; this.document_type != "Deed");
+    oringial_missing.forEach((x) => this.qc_flags.push(`Missing ${x}`));
+
+    // check for missing property_description on original documents
+    if (this.property_description.length === 0 &amp;&amp; this.amendment_date === null &amp;&amp; this.document_type != "Deed") {
+      this.qc_flags.push("Missing Property Description");
+    }
+
+    // check for state and county on each property description provided
+    if (this.property_description.length > 0) {
+      this.property_description.forEach((desc, descIndex) => {
+        ["county", "state"].forEach((x) => {
+          if (!desc[x]) {
+            this.qc_flags.push(`Missing ${x} on Property Description ${descIndex + 1}`);
+          }
+        });
+      });
+    }
+
+    // check for effective date and amendment date
+    if (this.effective_date &amp;&amp; this.amendment_date) {
+      this.qc_flags.push("Docment has Effective Date AND Amendment Date");
+    } else if (!this.effective_date &amp;&amp; !this.amendment_date) {
+      this.qc_flags.push("Document has no Effective Date OR Amendment Date");
+    }
+
+    // document has termiation tag, but no termination date
+    if (this.tags.includes("Terminated") &amp;&amp; !this.operational_details?.termination_date) {
+      this.qc_flags.push("Termination tag but no Termination Date");
+    }
+
+    // agreement term QC
+    if (this.agreement_terms) {
+      this.agreement_terms.forEach((term, termIndex) => {
+        // check for agreement term missing fields
+        ["term_length_years", "term_ordinal", "term_type"].forEach((x) => {
+          if (!term[x]) {
+            this.qc_flags.push(`Missing ${x} on Agreement Term ${termIndex + 1}`);
+          }
+        });
+
+        // if payment_model is specified, make sure payment_start is also specified
+        if (term.payment_model &amp;&amp; !term.first_payment_start) {
+          this.qc_flags.push(`Missing First Payment Start on Agreement Term ${termIndex + 1}`);
+        }
+      });
+    }
+
+    // check date payment models for missing fields
+    if (this.date_payment_models) {
+      this.date_payment_models.forEach((model, modelIndex) => {
+        // check required fields for all models
+        ["payment_type", "payment_amount"].forEach((x) => {
+          if (!model[x]) {
+            this.qc_flags.push(`Missing ${x} on Date Payment Model ${modelIndex + 1}`);
+          }
+        });
+
+        // check for start date or one-time date
+        if (!model.date_begin &amp;&amp; !model.date_one_time) {
+          this.qc_flags.push(`Missing Start Date OR One-time Date on Date Payment Model ${modelIndex + 1}`);
+        }
+
+        // check frequency on periodic models
+        if (!model.date_one_time &amp;&amp; !model.frequency) {
+          this.qc_flags.push(`Missing Frequency on Recurring Date Payment Model ${modelIndex + 1}`);
+        }
+
+        // check for end_date when start_date is provided
+        if (model.date_begin &amp;&amp; !model.date_end) {
+          this.qc_flags.push(`Missing End Date on Recurring Date Payment Model ${modelIndex + 1}`);
+        }
+      });
+    }
+
+    // check term payment models for missing fields
+    if (this.term_payment_models) {
+      this.term_payment_models.forEach((model, modelIndex) => {
+        // check required fields for all models
+        ["model_type", "payment_frequency"].forEach((x) => {
+          if (!model[x]) {
+            this.qc_flags.push(`Missing ${x} on Term Payment Model ${modelIndex + 1}`);
+          }
+        });
+
+        // check for a payment amount
+        if (!model.minimum_payment &amp;&amp; !model.flat_payment_amount &amp;&amp; !model.payment_per_mw &amp;&amp; !model.payment_per_mva &amp;&amp; !model.payment_per_acre) {
+          this.qc_flags.push(`Cannot calculate payment amount on Term Payment Model ${modelIndex + 1}`);
+        }
+
+        // check for acreage if payment per acre is specified
+        if (model.payment_per_acre &amp;&amp; !this.total_agreement_acres) {
+          this.qc_flags.push(`Missing Total acres required for Term Payment Model ${modelIndex + 1} $/acre calculation`);
+        }
+      });
     }
   }
 
@@ -957,7 +1073,7 @@ export default JupiterDoc;
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.2</a> on Fri Jul 14 2023 09:36:05 GMT-0500 (Central Daylight Time)
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.2</a> on Mon Jul 24 2023 15:33:59 GMT-0500 (Central Daylight Time)
 </footer>
 
 <script> prettyPrint(); </script>
