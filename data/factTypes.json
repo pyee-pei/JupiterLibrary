@@ -1,1 +1,832 @@
-[{"id":"bbf9acb0-7897-4421-b6e2-faf3928b85ca","name":"Agreement Group","description":"unique identifier for every document","fieldTypes":[{"id":"614a8c7a-019d-4d94-ab2e-147bc511b537","name":"Agreement Group","dataType":"String","measurementType":null,"selectListValues":null,"selectListValuesTotalCount":0}],"allowMultiple":false,"archived":false},{"id":"7601840f-8d47-4c0b-a2a1-2ad2a692bfb8","name":"Agreement Term","description":null,"fieldTypes":[{"id":"ced1155e-6ce4-4528-b7e9-a8461d17c89d","name":"Term Length (Years)","dataType":"Number","measurementType":"None","selectListValues":null,"selectListValuesTotalCount":0},{"id":"7a9ddbe6-3c1e-4cf9-8811-2d256c56cddb","name":"Term Ordinal","dataType":"Number","measurementType":"None","selectListValues":null,"selectListValuesTotalCount":0},{"id":"43dc655d-cd25-4859-a11e-610317f4baf3","name":"Term Type","dataType":"SelectList","measurementType":null,"selectListValues":["Option","Development","Construction","Operations"],"selectListValuesTotalCount":4},{"id":"c4a9c0f2-ee0e-447f-a101-49e49e226dfc","name":"Escalation Rate","dataType":"Number","measurementType":"Percentage","selectListValues":null,"selectListValuesTotalCount":0},{"id":"3fbbc152-6e5a-4b2e-9710-f17c1b63f8b0","name":"Escalation Amount","dataType":"Number","measurementType":"Dollars","selectListValues":null,"selectListValuesTotalCount":0},{"id":"f04c837a-a3fe-475c-b819-d8f974915fb7","name":"Payment Model","dataType":"SelectList","measurementType":null,"selectListValues":["Option","Development","Construction","Operations","Extension","Custom 1","Custom 2","Custom 3","Custom 4","Custom 5"],"selectListValuesTotalCount":10},{"id":"f401c9de-d1c2-4102-907c-adeb3915745c","name":"Extension","dataType":"Boolean","measurementType":null,"selectListValues":null,"selectListValuesTotalCount":0},{"id":"b5e0b70c-a194-4b9a-b9d9-6671a06ebf26","name":"Compounding Escalation","dataType":"Boolean","measurementType":null,"selectListValues":null,"selectListValuesTotalCount":0},{"id":"c8208db9-e328-454d-b6c6-c940856f825d","name":"First Payment Grace (days)","dataType":"Number","measurementType":"Days","selectListValues":null,"selectListValuesTotalCount":0},{"id":"b5bf4453-bfea-476f-9a9e-f16e93b17693","name":"First Payment Start","dataType":"SelectList","measurementType":null,"selectListValues":["Start with Term","Start next Jan 1 after Term commencement","Start 1st of month after commencement"],"selectListValuesTotalCount":3},{"id":"2665805d-a735-4b7f-9385-031eb8305678","name":"Term Payment Delay (days)","dataType":"Number","measurementType":"Days","selectListValues":null,"selectListValuesTotalCount":0},{"id":"6ddcf646-d657-4a59-a238-78b6e481186d","name":"First Payment Date","dataType":"Date","measurementType":null,"selectListValues":null,"selectListValuesTotalCount":0}],"allowMultiple":true,"archived":false},{"id":"8a874127-1425-457c-af96-d311f09034d6","name":"Amendment Date","description":null,"fieldTypes":[{"id":"2e45d6a2-8eb3-435e-a6a8-ce90f93181e7","name":"Amendment Date","dataType":"Date","measurementType":null,"selectListValues":null,"selectListValuesTotalCount":0}],"allowMultiple":false,"archived":false},{"id":"4691579c-8ad3-42f1-9d63-4ba695c46b19","name":"Closing Date","description":null,"fieldTypes":[{"id":"8a8b77ff-6439-4d38-8fa8-fb6d5ee332b9","name":"Closing Date","dataType":"Date","measurementType":null,"selectListValues":null,"selectListValuesTotalCount":0}],"allowMultiple":false,"archived":false},{"id":"aafaf2dc-ce89-4312-bb3d-b434893906fb","name":"Document Type RL","description":null,"fieldTypes":[{"id":"9197e6fc-e648-4a04-b2bb-9c55d069e58b","name":"Document Type RL","dataType":"SelectList","measurementType":null,"selectListValues":["Lease Option","Purchase Option","Purchase and Sale Agreement","Storage Lease and Easement","Solar Lease and Easement"],"selectListValuesTotalCount":5}],"allowMultiple":false,"archived":false},{"id":"cc05d0b7-005b-4775-a84d-e7cc98a7241f","name":"Effective Date","description":null,"fieldTypes":[{"id":"cb93b25d-8bed-4865-8402-b2b3ded62af5","name":"Effective Date","dataType":"Date","measurementType":null,"selectListValues":null,"selectListValuesTotalCount":0}],"allowMultiple":false,"archived":false},{"id":"470c0504-9386-4ba5-a9a8-ecc3fd42f592","name":"Full Purchase Price","description":null,"fieldTypes":[{"id":"4f1b1956-1751-43fa-9f97-ec44ff2a499d","name":"Full Purchase Price","dataType":"Number","measurementType":"Dollars","selectListValues":null,"selectListValuesTotalCount":0}],"allowMultiple":false,"archived":false},{"id":"3e9cf52f-c9d8-4f43-9f28-92ec8e4615b0","name":"Grantee/Lessee","description":null,"fieldTypes":[{"id":"d136291d-429e-46f3-9efe-e889b977ed47","name":"Grantee/Lessee","dataType":"String","measurementType":null,"selectListValues":null,"selectListValuesTotalCount":0}],"allowMultiple":true,"archived":false},{"id":"68bfe50d-25ad-42cf-b026-78db2d066f1b","name":"Grantor/Lessor","description":null,"fieldTypes":[{"id":"56c59cf7-9fcd-4598-ae86-6c226db77b53","name":"Grantor/Lessor Name","dataType":"String","measurementType":null,"selectListValues":null,"selectListValuesTotalCount":0},{"id":"b64fa47b-8280-4870-969e-fba35c7d2871","name":"Payment Split","dataType":"Number","measurementType":"Percentage","selectListValues":null,"selectListValuesTotalCount":0}],"allowMultiple":true,"archived":false},{"id":"08060c37-a8a5-4852-9977-eccb9fc204f3","name":"Jupiter Entity","description":"Jupiter Power Internal Party","fieldTypes":[{"id":"779a1262-4c53-4c4f-9021-5422c8e682d9","name":"Jupiter Entity","dataType":"String","measurementType":null,"selectListValues":null,"selectListValuesTotalCount":0}],"allowMultiple":true,"archived":false},{"id":"97dd7b97-9980-42bd-915d-d26b13decbc1","name":"Notice Details","description":null,"fieldTypes":[{"id":"86f356a7-72b4-410b-8652-67cc63c6b00d","name":"Notice Details","dataType":"String","measurementType":null,"selectListValues":null,"selectListValuesTotalCount":0}],"allowMultiple":true,"archived":false},{"id":"b4f52442-1b7d-4b04-8a37-eb114aec2210","name":"Operational Details","description":null,"fieldTypes":[{"id":"7bd5a6c1-13e5-4d92-a4f8-c52b1fd2791e","name":"Construction Commencement","dataType":"Date","measurementType":null,"selectListValues":null,"selectListValuesTotalCount":0},{"id":"013f483d-e9e3-48e5-a6f7-ac6977a4f947","name":"Operations Commencement","dataType":"Date","measurementType":null,"selectListValues":null,"selectListValuesTotalCount":0},{"id":"77d6673d-5a8c-4d7e-bffe-04e8123e21b1","name":"Termination Date","dataType":"Date","measurementType":null,"selectListValues":null,"selectListValuesTotalCount":0},{"id":"d9dc745e-cbb0-4a1d-ba00-c789548c3cc7","name":"Inverter Count","dataType":"Number","measurementType":"None","selectListValues":null,"selectListValuesTotalCount":0},{"id":"45a61ced-f4b3-49eb-a094-5067c8ba07c3","name":"Inverter Rating (MVAs)","dataType":"Number","measurementType":"None","selectListValues":null,"selectListValuesTotalCount":0},{"id":"2fb50c17-f929-4c02-9bd6-ce89aafa5f9f","name":"MW","dataType":"Number","measurementType":"None","selectListValues":null,"selectListValuesTotalCount":0}],"allowMultiple":false,"archived":false},{"id":"dbf1943a-ea4c-4670-af2c-f9acc0b9ae22","name":"Outside Date","description":null,"fieldTypes":[{"id":"95615c11-e592-4fed-bbde-52a259aabbb9","name":"Outside Date","dataType":"Date","measurementType":null,"selectListValues":null,"selectListValuesTotalCount":0}],"allowMultiple":false,"archived":false},{"id":"917e938f-af4a-4005-8dfb-84201fd0e5d4","name":"Payment Model - Date Based","description":"Use this model for periodic payments that aren't tied to a specific agreement term","fieldTypes":[{"id":"f6ed2da9-6a84-4a84-8c32-924b2a251fc9","name":"Date - Begin","dataType":"Date","measurementType":null,"selectListValues":null,"selectListValuesTotalCount":0},{"id":"4147792e-f388-4b25-b3cd-e2af94526869","name":"Date - End","dataType":"Date","measurementType":null,"selectListValues":null,"selectListValuesTotalCount":0},{"id":"9ee9844b-5806-40a2-bd15-a5383b7080ac","name":"Frequency","dataType":"SelectList","measurementType":null,"selectListValues":["Annually","Semi Annually","Quarterly","Monthly"],"selectListValuesTotalCount":4},{"id":"abe0c4df-224d-4651-8fd9-99f8d8d157f8","name":"Payment Amount","dataType":"Number","measurementType":"Dollars","selectListValues":null,"selectListValuesTotalCount":0},{"id":"744d9c75-388b-4bef-9ad8-60444b36c39b","name":"Payee","dataType":"String","measurementType":null,"selectListValues":null,"selectListValuesTotalCount":0},{"id":"d1f89e49-acdf-4558-a3ba-fa03b305cbf0","name":"Applicable to Purchase","dataType":"Boolean","measurementType":null,"selectListValues":null,"selectListValuesTotalCount":0},{"id":"aaea03f6-94f7-488e-8013-677c57eabdb8","name":"Refundable","dataType":"Boolean","measurementType":null,"selectListValues":null,"selectListValuesTotalCount":0},{"id":"104d9731-51a2-4b51-9a3d-4c9e3d873332","name":"Periodic Escalation Rate","dataType":"Number","measurementType":"Percentage","selectListValues":null,"selectListValuesTotalCount":0},{"id":"1854d694-9301-41cf-beb3-cde419cc6943","name":"Periodic Escalation Amount","dataType":"Number","measurementType":"Dollars","selectListValues":null,"selectListValuesTotalCount":0},{"id":"f4a36fba-c248-4088-b09c-f0b6d15c0b01","name":"Compounding Escalation","dataType":"Boolean","measurementType":null,"selectListValues":null,"selectListValuesTotalCount":0},{"id":"1f8f276c-1461-4d7a-9115-c0628a729033","name":"Payment Type","dataType":"SelectList","measurementType":null,"selectListValues":["Deposit","Option Fee","Due Diligence Fee","Payment","Commission","Maintenance Fee","Signing Bonus"],"selectListValuesTotalCount":7},{"id":"15a5f624-d693-4ec0-9711-8544a001ca36","name":"Notes","dataType":"String","measurementType":null,"selectListValues":null,"selectListValuesTotalCount":0},{"id":"aa088d35-1cc9-4abb-a2f3-818ac55027bd","name":"Date - One Time","dataType":"Date","measurementType":null,"selectListValues":null,"selectListValuesTotalCount":0}],"allowMultiple":true,"archived":false},{"id":"e31c3090-21b0-4afd-877d-cf7eeed20673","name":"Payment Model - Term Based","description":"Track recurring payments","fieldTypes":[{"id":"4113ec1c-007a-4f0d-9c2c-4f1aaebf452b","name":"Model Type","dataType":"SelectList","measurementType":null,"selectListValues":["Option","Development","Construction","Operations","Extension","Custom 1","Custom 2","Custom 3","Custom 4","Custom 5"],"selectListValuesTotalCount":10},{"id":"43986a11-a08f-4365-ae0b-6e1673f85daf","name":"Flat Payment Amount","dataType":"Number","measurementType":"Dollars","selectListValues":null,"selectListValuesTotalCount":0},{"id":"f8b466e6-8a85-4573-8412-0cf9bd6cb15e","name":"Payment per Acre","dataType":"Number","measurementType":"Dollars","selectListValues":null,"selectListValuesTotalCount":0},{"id":"3b549698-95e2-47d0-b70d-98f28f8f32bf","name":"Payment per MVA","dataType":"Number","measurementType":"Dollars","selectListValues":null,"selectListValuesTotalCount":0},{"id":"f37fe1d6-5e26-4a6c-a79e-bfe0015774e4","name":"Minimum Payment","dataType":"Number","measurementType":"Dollars","selectListValues":null,"selectListValuesTotalCount":0},{"id":"7cc2322c-7b01-4d98-bd80-b13420187c92","name":"Periodic Escalation Rate","dataType":"Number","measurementType":"Percentage","selectListValues":null,"selectListValuesTotalCount":0},{"id":"f9faf261-09e6-4316-9cf4-fa87ded6a14c","name":"Periodic Escalation Amount","dataType":"Number","measurementType":"Dollars","selectListValues":null,"selectListValuesTotalCount":0},{"id":"6c43a922-acf9-4afe-9fb6-dc97e14d9099","name":"Payment frequency","dataType":"SelectList","measurementType":null,"selectListValues":["Monthly","Quarterly","Semiannually","Annually"],"selectListValuesTotalCount":4},{"id":"63fe352e-59e5-4e8d-93aa-a1f0a16846b9","name":"Prorated First Period","dataType":"Boolean","measurementType":null,"selectListValues":null,"selectListValuesTotalCount":0},{"id":"fe8d124f-0e2f-48c9-b460-873d6593cfe8","name":"Payment per MW","dataType":"Number","measurementType":"None","selectListValues":null,"selectListValuesTotalCount":0},{"id":"cba28aa6-29dd-4f30-806b-db13887d050c","name":"Compounding Escalation","dataType":"Boolean","measurementType":null,"selectListValues":null,"selectListValuesTotalCount":0},{"id":"8799ed1e-a858-4d08-ba17-52549d69ea3f","name":"Applicable to Purchase","dataType":"Boolean","measurementType":null,"selectListValues":null,"selectListValuesTotalCount":0},{"id":"acc55af2-36e3-4455-aa30-71d4b3e87824","name":"Periodic Escalation Frequency","dataType":"SelectList","measurementType":null,"selectListValues":["Annually","Quarterly","Monthly"],"selectListValuesTotalCount":3},{"id":"046d36d9-98b2-4743-bb37-a485ca7e644f","name":"Payee","dataType":"String","measurementType":null,"selectListValues":null,"selectListValuesTotalCount":0},{"id":"cd334004-f63b-46b5-86de-54bc613808b7","name":"Notes","dataType":"String","measurementType":null,"selectListValues":null,"selectListValuesTotalCount":0},{"id":"8e851c65-6b4b-43cf-937f-c7b9611f15a1","name":"Refundable","dataType":"Boolean","measurementType":null,"selectListValues":null,"selectListValuesTotalCount":0}],"allowMultiple":true,"archived":false},{"id":"429fc170-2a94-4cc6-901f-2743897ed6c3","name":"Project ID","description":null,"fieldTypes":[{"id":"09272207-6ba1-4a2a-bcac-35ac0ec7cded","name":"Project ID","dataType":"String","measurementType":null,"selectListValues":null,"selectListValuesTotalCount":0}],"allowMultiple":false,"archived":false},{"id":"cf7fc28f-823e-4af1-a3be-09b756c3952a","name":"Project Name","description":null,"fieldTypes":[{"id":"a7fdf688-839d-49f8-8e07-a55dc19cb521","name":"Project Name","dataType":"String","measurementType":null,"selectListValues":null,"selectListValuesTotalCount":0}],"allowMultiple":false,"archived":false},{"id":"9d00a14b-aad3-45ee-8ed6-572cba6fbbb1","name":"Property Description","description":null,"fieldTypes":[{"id":"047a79ae-3e0a-4867-a644-87f5b9be6368","name":"Legal Description","dataType":"String","measurementType":null,"selectListValues":null,"selectListValuesTotalCount":0},{"id":"22aec2e0-055c-44f3-b8a7-7a267d91c2c2","name":"County","dataType":"String","measurementType":null,"selectListValues":null,"selectListValuesTotalCount":0},{"id":"dcbf5a14-e261-4519-b599-2892564e57f6","name":"State","dataType":"String","measurementType":null,"selectListValues":null,"selectListValuesTotalCount":0},{"id":"8b7bea34-5d6a-42be-89cd-7bf6b330f20d","name":"Agreement Acres","dataType":"Number","measurementType":"Acres","selectListValues":null,"selectListValuesTotalCount":0},{"id":"06572f89-ffb7-423f-831b-60f7e68f8938","name":"Parcel ID","dataType":"String","measurementType":null,"selectListValues":null,"selectListValuesTotalCount":0}],"allowMultiple":true,"archived":false},{"id":"07fd8b4c-3daf-4b41-940b-09fcf4da5d87","name":"Review Status","description":null,"fieldTypes":[{"id":"6d8ea1c2-2e91-41a1-b463-58c3e10c6a6a","name":"Review Status","dataType":"SelectList","measurementType":null,"selectListValues":["Not Reviewed","In Progress","Complete"],"selectListValuesTotalCount":3},{"id":"ce717681-a47f-4b34-af1b-835e4acc2ba3","name":"Notes","dataType":"String","measurementType":null,"selectListValues":null,"selectListValuesTotalCount":0}],"allowMultiple":false,"archived":false},{"id":"fe02f206-d720-47ea-9462-180b440b953e","name":"Sharepoint Document Type","description":null,"fieldTypes":[{"id":"17f6d36a-0a16-45c6-876d-9d8def5decf5","name":"Sharepoint Document Type","dataType":"String","measurementType":null,"selectListValues":null,"selectListValuesTotalCount":0}],"allowMultiple":false,"archived":false},{"id":"842a3d35-19c1-4bd6-a222-a451231533f3","name":"Terminated","description":null,"fieldTypes":[{"id":"77036264-5de9-41a4-be1d-0be12f245bc1","name":"Terminated","dataType":"Boolean","measurementType":null,"selectListValues":null,"selectListValuesTotalCount":0}],"allowMultiple":false,"archived":false}]
+[
+  {
+    "id": "bbf9acb0-7897-4421-b6e2-faf3928b85ca",
+    "name": "Agreement Group",
+    "description": "unique identifier for every document",
+    "fieldTypes": [
+      {
+        "id": "614a8c7a-019d-4d94-ab2e-147bc511b537",
+        "name": "Agreement Group",
+        "dataType": "String",
+        "measurementType": null,
+        "selectListValues": null,
+        "selectListValuesTotalCount": 0
+      }
+    ],
+    "allowMultiple": false,
+    "archived": false
+  },
+  {
+    "id": "7601840f-8d47-4c0b-a2a1-2ad2a692bfb8",
+    "name": "Agreement Term",
+    "description": null,
+    "fieldTypes": [
+      {
+        "id": "ced1155e-6ce4-4528-b7e9-a8461d17c89d",
+        "name": "Term Length (Years)",
+        "dataType": "Number",
+        "measurementType": "None",
+        "selectListValues": null,
+        "selectListValuesTotalCount": 0
+      },
+      {
+        "id": "7a9ddbe6-3c1e-4cf9-8811-2d256c56cddb",
+        "name": "Term Ordinal",
+        "dataType": "Number",
+        "measurementType": "None",
+        "selectListValues": null,
+        "selectListValuesTotalCount": 0
+      },
+      {
+        "id": "43dc655d-cd25-4859-a11e-610317f4baf3",
+        "name": "Term Type",
+        "dataType": "SelectList",
+        "measurementType": null,
+        "selectListValues": [
+          "Option",
+          "Development",
+          "Construction",
+          "Operations"
+        ],
+        "selectListValuesTotalCount": 4
+      },
+      {
+        "id": "c4a9c0f2-ee0e-447f-a101-49e49e226dfc",
+        "name": "Escalation Rate",
+        "dataType": "Number",
+        "measurementType": "Percentage",
+        "selectListValues": null,
+        "selectListValuesTotalCount": 0
+      },
+      {
+        "id": "3fbbc152-6e5a-4b2e-9710-f17c1b63f8b0",
+        "name": "Escalation Amount",
+        "dataType": "Number",
+        "measurementType": "Dollars",
+        "selectListValues": null,
+        "selectListValuesTotalCount": 0
+      },
+      {
+        "id": "f04c837a-a3fe-475c-b819-d8f974915fb7",
+        "name": "Payment Model",
+        "dataType": "SelectList",
+        "measurementType": null,
+        "selectListValues": [
+          "Option",
+          "Development",
+          "Construction",
+          "Operations",
+          "Extension",
+          "Custom 1",
+          "Custom 2",
+          "Custom 3",
+          "Custom 4",
+          "Custom 5"
+        ],
+        "selectListValuesTotalCount": 10
+      },
+      {
+        "id": "f401c9de-d1c2-4102-907c-adeb3915745c",
+        "name": "Extension",
+        "dataType": "Boolean",
+        "measurementType": null,
+        "selectListValues": null,
+        "selectListValuesTotalCount": 0
+      },
+      {
+        "id": "b5e0b70c-a194-4b9a-b9d9-6671a06ebf26",
+        "name": "Compounding Escalation",
+        "dataType": "Boolean",
+        "measurementType": null,
+        "selectListValues": null,
+        "selectListValuesTotalCount": 0
+      },
+      {
+        "id": "c8208db9-e328-454d-b6c6-c940856f825d",
+        "name": "First Payment Grace (days)",
+        "dataType": "Number",
+        "measurementType": "Days",
+        "selectListValues": null,
+        "selectListValuesTotalCount": 0
+      },
+      {
+        "id": "b5bf4453-bfea-476f-9a9e-f16e93b17693",
+        "name": "First Payment Start",
+        "dataType": "SelectList",
+        "measurementType": null,
+        "selectListValues": [
+          "Start with Term",
+          "Start next Jan 1 after Term commencement",
+          "Start 1st of month after commencement"
+        ],
+        "selectListValuesTotalCount": 3
+      },
+      {
+        "id": "2665805d-a735-4b7f-9385-031eb8305678",
+        "name": "Term Payment Delay (days)",
+        "dataType": "Number",
+        "measurementType": "Days",
+        "selectListValues": null,
+        "selectListValuesTotalCount": 0
+      },
+      {
+        "id": "6ddcf646-d657-4a59-a238-78b6e481186d",
+        "name": "First Payment Date",
+        "dataType": "Date",
+        "measurementType": null,
+        "selectListValues": null,
+        "selectListValuesTotalCount": 0
+      }
+    ],
+    "allowMultiple": true,
+    "archived": false
+  },
+  {
+    "id": "8a874127-1425-457c-af96-d311f09034d6",
+    "name": "Amendment Date",
+    "description": null,
+    "fieldTypes": [
+      {
+        "id": "2e45d6a2-8eb3-435e-a6a8-ce90f93181e7",
+        "name": "Amendment Date",
+        "dataType": "Date",
+        "measurementType": null,
+        "selectListValues": null,
+        "selectListValuesTotalCount": 0
+      }
+    ],
+    "allowMultiple": false,
+    "archived": false
+  },
+  {
+    "id": "a27f3ab8-6a86-4a32-866e-122a38dd46f3",
+    "name": "Associated Agreements",
+    "description": "Add Agreement Group to associate another agreement",
+    "fieldTypes": [
+      {
+        "id": "10b81b75-3dc5-474b-a3b2-3d10c0cad968",
+        "name": "Associated Agreements",
+        "dataType": "String",
+        "measurementType": null,
+        "selectListValues": null,
+        "selectListValuesTotalCount": 0
+      }
+    ],
+    "allowMultiple": true,
+    "archived": false
+  },
+  {
+    "id": "4691579c-8ad3-42f1-9d63-4ba695c46b19",
+    "name": "Closing Date",
+    "description": null,
+    "fieldTypes": [
+      {
+        "id": "8a8b77ff-6439-4d38-8fa8-fb6d5ee332b9",
+        "name": "Closing Date",
+        "dataType": "Date",
+        "measurementType": null,
+        "selectListValues": null,
+        "selectListValuesTotalCount": 0
+      }
+    ],
+    "allowMultiple": false,
+    "archived": false
+  },
+  {
+    "id": "aafaf2dc-ce89-4312-bb3d-b434893906fb",
+    "name": "Document Type RL",
+    "description": null,
+    "fieldTypes": [
+      {
+        "id": "9197e6fc-e648-4a04-b2bb-9c55d069e58b",
+        "name": "Document Type RL",
+        "dataType": "SelectList",
+        "measurementType": null,
+        "selectListValues": [
+          "Lease Option",
+          "Purchase Option",
+          "Purchase and Sale Agreement",
+          "Storage Lease and Easement",
+          "Solar Lease and Easement"
+        ],
+        "selectListValuesTotalCount": 5
+      }
+    ],
+    "allowMultiple": false,
+    "archived": false
+  },
+  {
+    "id": "cc05d0b7-005b-4775-a84d-e7cc98a7241f",
+    "name": "Effective Date",
+    "description": null,
+    "fieldTypes": [
+      {
+        "id": "cb93b25d-8bed-4865-8402-b2b3ded62af5",
+        "name": "Effective Date",
+        "dataType": "Date",
+        "measurementType": null,
+        "selectListValues": null,
+        "selectListValuesTotalCount": 0
+      }
+    ],
+    "allowMultiple": false,
+    "archived": false
+  },
+  {
+    "id": "470c0504-9386-4ba5-a9a8-ecc3fd42f592",
+    "name": "Full Purchase Price",
+    "description": null,
+    "fieldTypes": [
+      {
+        "id": "4f1b1956-1751-43fa-9f97-ec44ff2a499d",
+        "name": "Full Purchase Price",
+        "dataType": "Number",
+        "measurementType": "Dollars",
+        "selectListValues": null,
+        "selectListValuesTotalCount": 0
+      }
+    ],
+    "allowMultiple": false,
+    "archived": false
+  },
+  {
+    "id": "3e9cf52f-c9d8-4f43-9f28-92ec8e4615b0",
+    "name": "Grantee/Lessee",
+    "description": null,
+    "fieldTypes": [
+      {
+        "id": "d136291d-429e-46f3-9efe-e889b977ed47",
+        "name": "Grantee/Lessee",
+        "dataType": "String",
+        "measurementType": null,
+        "selectListValues": null,
+        "selectListValuesTotalCount": 0
+      }
+    ],
+    "allowMultiple": true,
+    "archived": false
+  },
+  {
+    "id": "68bfe50d-25ad-42cf-b026-78db2d066f1b",
+    "name": "Grantor/Lessor",
+    "description": null,
+    "fieldTypes": [
+      {
+        "id": "56c59cf7-9fcd-4598-ae86-6c226db77b53",
+        "name": "Grantor/Lessor Name",
+        "dataType": "String",
+        "measurementType": null,
+        "selectListValues": null,
+        "selectListValuesTotalCount": 0
+      },
+      {
+        "id": "b64fa47b-8280-4870-969e-fba35c7d2871",
+        "name": "Payment Split",
+        "dataType": "Number",
+        "measurementType": "Percentage",
+        "selectListValues": null,
+        "selectListValuesTotalCount": 0
+      }
+    ],
+    "allowMultiple": true,
+    "archived": false
+  },
+  {
+    "id": "08060c37-a8a5-4852-9977-eccb9fc204f3",
+    "name": "Jupiter Entity",
+    "description": "Jupiter Power Internal Party",
+    "fieldTypes": [
+      {
+        "id": "779a1262-4c53-4c4f-9021-5422c8e682d9",
+        "name": "Jupiter Entity",
+        "dataType": "String",
+        "measurementType": null,
+        "selectListValues": null,
+        "selectListValuesTotalCount": 0
+      }
+    ],
+    "allowMultiple": true,
+    "archived": false
+  },
+  {
+    "id": "97dd7b97-9980-42bd-915d-d26b13decbc1",
+    "name": "Notice Details",
+    "description": null,
+    "fieldTypes": [
+      {
+        "id": "86f356a7-72b4-410b-8652-67cc63c6b00d",
+        "name": "Notice Details",
+        "dataType": "String",
+        "measurementType": null,
+        "selectListValues": null,
+        "selectListValuesTotalCount": 0
+      }
+    ],
+    "allowMultiple": true,
+    "archived": false
+  },
+  {
+    "id": "b4f52442-1b7d-4b04-8a37-eb114aec2210",
+    "name": "Operational Details",
+    "description": null,
+    "fieldTypes": [
+      {
+        "id": "7bd5a6c1-13e5-4d92-a4f8-c52b1fd2791e",
+        "name": "Construction Commencement",
+        "dataType": "Date",
+        "measurementType": null,
+        "selectListValues": null,
+        "selectListValuesTotalCount": 0
+      },
+      {
+        "id": "013f483d-e9e3-48e5-a6f7-ac6977a4f947",
+        "name": "Operations Commencement",
+        "dataType": "Date",
+        "measurementType": null,
+        "selectListValues": null,
+        "selectListValuesTotalCount": 0
+      },
+      {
+        "id": "77d6673d-5a8c-4d7e-bffe-04e8123e21b1",
+        "name": "Termination Date",
+        "dataType": "Date",
+        "measurementType": null,
+        "selectListValues": null,
+        "selectListValuesTotalCount": 0
+      },
+      {
+        "id": "d9dc745e-cbb0-4a1d-ba00-c789548c3cc7",
+        "name": "Inverter Count",
+        "dataType": "Number",
+        "measurementType": "None",
+        "selectListValues": null,
+        "selectListValuesTotalCount": 0
+      },
+      {
+        "id": "45a61ced-f4b3-49eb-a094-5067c8ba07c3",
+        "name": "Inverter Rating (MVAs)",
+        "dataType": "Number",
+        "measurementType": "None",
+        "selectListValues": null,
+        "selectListValuesTotalCount": 0
+      },
+      {
+        "id": "2fb50c17-f929-4c02-9bd6-ce89aafa5f9f",
+        "name": "MW",
+        "dataType": "Number",
+        "measurementType": "None",
+        "selectListValues": null,
+        "selectListValuesTotalCount": 0
+      }
+    ],
+    "allowMultiple": false,
+    "archived": false
+  },
+  {
+    "id": "dbf1943a-ea4c-4670-af2c-f9acc0b9ae22",
+    "name": "Outside Date",
+    "description": null,
+    "fieldTypes": [
+      {
+        "id": "95615c11-e592-4fed-bbde-52a259aabbb9",
+        "name": "Outside Date",
+        "dataType": "Date",
+        "measurementType": null,
+        "selectListValues": null,
+        "selectListValuesTotalCount": 0
+      }
+    ],
+    "allowMultiple": false,
+    "archived": false
+  },
+  {
+    "id": "917e938f-af4a-4005-8dfb-84201fd0e5d4",
+    "name": "Payment Model - Date Based",
+    "description": "Use this model for periodic payments that aren't tied to a specific agreement term",
+    "fieldTypes": [
+      {
+        "id": "f6ed2da9-6a84-4a84-8c32-924b2a251fc9",
+        "name": "Date - Begin",
+        "dataType": "Date",
+        "measurementType": null,
+        "selectListValues": null,
+        "selectListValuesTotalCount": 0
+      },
+      {
+        "id": "4147792e-f388-4b25-b3cd-e2af94526869",
+        "name": "Date - End",
+        "dataType": "Date",
+        "measurementType": null,
+        "selectListValues": null,
+        "selectListValuesTotalCount": 0
+      },
+      {
+        "id": "9ee9844b-5806-40a2-bd15-a5383b7080ac",
+        "name": "Frequency",
+        "dataType": "SelectList",
+        "measurementType": null,
+        "selectListValues": [
+          "Annually",
+          "Semi Annually",
+          "Quarterly",
+          "Monthly"
+        ],
+        "selectListValuesTotalCount": 4
+      },
+      {
+        "id": "abe0c4df-224d-4651-8fd9-99f8d8d157f8",
+        "name": "Payment Amount",
+        "dataType": "Number",
+        "measurementType": "Dollars",
+        "selectListValues": null,
+        "selectListValuesTotalCount": 0
+      },
+      {
+        "id": "744d9c75-388b-4bef-9ad8-60444b36c39b",
+        "name": "Payee",
+        "dataType": "String",
+        "measurementType": null,
+        "selectListValues": null,
+        "selectListValuesTotalCount": 0
+      },
+      {
+        "id": "d1f89e49-acdf-4558-a3ba-fa03b305cbf0",
+        "name": "Applicable to Purchase",
+        "dataType": "Boolean",
+        "measurementType": null,
+        "selectListValues": null,
+        "selectListValuesTotalCount": 0
+      },
+      {
+        "id": "aaea03f6-94f7-488e-8013-677c57eabdb8",
+        "name": "Refundable",
+        "dataType": "Boolean",
+        "measurementType": null,
+        "selectListValues": null,
+        "selectListValuesTotalCount": 0
+      },
+      {
+        "id": "104d9731-51a2-4b51-9a3d-4c9e3d873332",
+        "name": "Periodic Escalation Rate",
+        "dataType": "Number",
+        "measurementType": "Percentage",
+        "selectListValues": null,
+        "selectListValuesTotalCount": 0
+      },
+      {
+        "id": "1854d694-9301-41cf-beb3-cde419cc6943",
+        "name": "Periodic Escalation Amount",
+        "dataType": "Number",
+        "measurementType": "Dollars",
+        "selectListValues": null,
+        "selectListValuesTotalCount": 0
+      },
+      {
+        "id": "f4a36fba-c248-4088-b09c-f0b6d15c0b01",
+        "name": "Compounding Escalation",
+        "dataType": "Boolean",
+        "measurementType": null,
+        "selectListValues": null,
+        "selectListValuesTotalCount": 0
+      },
+      {
+        "id": "1f8f276c-1461-4d7a-9115-c0628a729033",
+        "name": "Payment Type",
+        "dataType": "SelectList",
+        "measurementType": null,
+        "selectListValues": [
+          "Deposit",
+          "Option Fee",
+          "Due Diligence Fee",
+          "Payment",
+          "Commission",
+          "Maintenance Fee",
+          "Signing Bonus"
+        ],
+        "selectListValuesTotalCount": 7
+      },
+      {
+        "id": "15a5f624-d693-4ec0-9711-8544a001ca36",
+        "name": "Notes",
+        "dataType": "String",
+        "measurementType": null,
+        "selectListValues": null,
+        "selectListValuesTotalCount": 0
+      },
+      {
+        "id": "aa088d35-1cc9-4abb-a2f3-818ac55027bd",
+        "name": "Date - One Time",
+        "dataType": "Date",
+        "measurementType": null,
+        "selectListValues": null,
+        "selectListValuesTotalCount": 0
+      }
+    ],
+    "allowMultiple": true,
+    "archived": false
+  },
+  {
+    "id": "e31c3090-21b0-4afd-877d-cf7eeed20673",
+    "name": "Payment Model - Term Based",
+    "description": "Track recurring payments",
+    "fieldTypes": [
+      {
+        "id": "4113ec1c-007a-4f0d-9c2c-4f1aaebf452b",
+        "name": "Model Type",
+        "dataType": "SelectList",
+        "measurementType": null,
+        "selectListValues": [
+          "Option",
+          "Development",
+          "Construction",
+          "Operations",
+          "Extension",
+          "Custom 1",
+          "Custom 2",
+          "Custom 3",
+          "Custom 4",
+          "Custom 5"
+        ],
+        "selectListValuesTotalCount": 10
+      },
+      {
+        "id": "43986a11-a08f-4365-ae0b-6e1673f85daf",
+        "name": "Flat Payment Amount",
+        "dataType": "Number",
+        "measurementType": "Dollars",
+        "selectListValues": null,
+        "selectListValuesTotalCount": 0
+      },
+      {
+        "id": "f8b466e6-8a85-4573-8412-0cf9bd6cb15e",
+        "name": "Payment per Acre",
+        "dataType": "Number",
+        "measurementType": "Dollars",
+        "selectListValues": null,
+        "selectListValuesTotalCount": 0
+      },
+      {
+        "id": "3b549698-95e2-47d0-b70d-98f28f8f32bf",
+        "name": "Payment per MVA",
+        "dataType": "Number",
+        "measurementType": "Dollars",
+        "selectListValues": null,
+        "selectListValuesTotalCount": 0
+      },
+      {
+        "id": "f37fe1d6-5e26-4a6c-a79e-bfe0015774e4",
+        "name": "Minimum Payment",
+        "dataType": "Number",
+        "measurementType": "Dollars",
+        "selectListValues": null,
+        "selectListValuesTotalCount": 0
+      },
+      {
+        "id": "7cc2322c-7b01-4d98-bd80-b13420187c92",
+        "name": "Periodic Escalation Rate",
+        "dataType": "Number",
+        "measurementType": "Percentage",
+        "selectListValues": null,
+        "selectListValuesTotalCount": 0
+      },
+      {
+        "id": "f9faf261-09e6-4316-9cf4-fa87ded6a14c",
+        "name": "Periodic Escalation Amount",
+        "dataType": "Number",
+        "measurementType": "Dollars",
+        "selectListValues": null,
+        "selectListValuesTotalCount": 0
+      },
+      {
+        "id": "6c43a922-acf9-4afe-9fb6-dc97e14d9099",
+        "name": "Payment frequency",
+        "dataType": "SelectList",
+        "measurementType": null,
+        "selectListValues": [
+          "Monthly",
+          "Quarterly",
+          "Semiannually",
+          "Annually",
+          "Once per Term"
+        ],
+        "selectListValuesTotalCount": 5
+      },
+      {
+        "id": "63fe352e-59e5-4e8d-93aa-a1f0a16846b9",
+        "name": "Prorated First Period",
+        "dataType": "Boolean",
+        "measurementType": null,
+        "selectListValues": null,
+        "selectListValuesTotalCount": 0
+      },
+      {
+        "id": "fe8d124f-0e2f-48c9-b460-873d6593cfe8",
+        "name": "Payment per MW",
+        "dataType": "Number",
+        "measurementType": "None",
+        "selectListValues": null,
+        "selectListValuesTotalCount": 0
+      },
+      {
+        "id": "cba28aa6-29dd-4f30-806b-db13887d050c",
+        "name": "Compounding Escalation",
+        "dataType": "Boolean",
+        "measurementType": null,
+        "selectListValues": null,
+        "selectListValuesTotalCount": 0
+      },
+      {
+        "id": "8799ed1e-a858-4d08-ba17-52549d69ea3f",
+        "name": "Applicable to Purchase",
+        "dataType": "Boolean",
+        "measurementType": null,
+        "selectListValues": null,
+        "selectListValuesTotalCount": 0
+      },
+      {
+        "id": "acc55af2-36e3-4455-aa30-71d4b3e87824",
+        "name": "Periodic Escalation Frequency",
+        "dataType": "SelectList",
+        "measurementType": null,
+        "selectListValues": [
+          "Annually",
+          "Quarterly",
+          "Monthly"
+        ],
+        "selectListValuesTotalCount": 3
+      },
+      {
+        "id": "046d36d9-98b2-4743-bb37-a485ca7e644f",
+        "name": "Payee",
+        "dataType": "String",
+        "measurementType": null,
+        "selectListValues": null,
+        "selectListValuesTotalCount": 0
+      },
+      {
+        "id": "cd334004-f63b-46b5-86de-54bc613808b7",
+        "name": "Notes",
+        "dataType": "String",
+        "measurementType": null,
+        "selectListValues": null,
+        "selectListValuesTotalCount": 0
+      },
+      {
+        "id": "8e851c65-6b4b-43cf-937f-c7b9611f15a1",
+        "name": "Refundable",
+        "dataType": "Boolean",
+        "measurementType": null,
+        "selectListValues": null,
+        "selectListValuesTotalCount": 0
+      }
+    ],
+    "allowMultiple": true,
+    "archived": false
+  },
+  {
+    "id": "429fc170-2a94-4cc6-901f-2743897ed6c3",
+    "name": "Project ID",
+    "description": null,
+    "fieldTypes": [
+      {
+        "id": "09272207-6ba1-4a2a-bcac-35ac0ec7cded",
+        "name": "Project ID",
+        "dataType": "String",
+        "measurementType": null,
+        "selectListValues": null,
+        "selectListValuesTotalCount": 0
+      }
+    ],
+    "allowMultiple": false,
+    "archived": false
+  },
+  {
+    "id": "cf7fc28f-823e-4af1-a3be-09b756c3952a",
+    "name": "Project Name",
+    "description": null,
+    "fieldTypes": [
+      {
+        "id": "a7fdf688-839d-49f8-8e07-a55dc19cb521",
+        "name": "Project Name",
+        "dataType": "String",
+        "measurementType": null,
+        "selectListValues": null,
+        "selectListValuesTotalCount": 0
+      }
+    ],
+    "allowMultiple": false,
+    "archived": false
+  },
+  {
+    "id": "9d00a14b-aad3-45ee-8ed6-572cba6fbbb1",
+    "name": "Property Description",
+    "description": null,
+    "fieldTypes": [
+      {
+        "id": "047a79ae-3e0a-4867-a644-87f5b9be6368",
+        "name": "Legal Description",
+        "dataType": "String",
+        "measurementType": null,
+        "selectListValues": null,
+        "selectListValuesTotalCount": 0
+      },
+      {
+        "id": "22aec2e0-055c-44f3-b8a7-7a267d91c2c2",
+        "name": "County",
+        "dataType": "String",
+        "measurementType": null,
+        "selectListValues": null,
+        "selectListValuesTotalCount": 0
+      },
+      {
+        "id": "dcbf5a14-e261-4519-b599-2892564e57f6",
+        "name": "State",
+        "dataType": "String",
+        "measurementType": null,
+        "selectListValues": null,
+        "selectListValuesTotalCount": 0
+      },
+      {
+        "id": "8b7bea34-5d6a-42be-89cd-7bf6b330f20d",
+        "name": "Agreement Acres",
+        "dataType": "Number",
+        "measurementType": "Acres",
+        "selectListValues": null,
+        "selectListValuesTotalCount": 0
+      },
+      {
+        "id": "06572f89-ffb7-423f-831b-60f7e68f8938",
+        "name": "Parcel ID",
+        "dataType": "String",
+        "measurementType": null,
+        "selectListValues": null,
+        "selectListValuesTotalCount": 0
+      }
+    ],
+    "allowMultiple": true,
+    "archived": false
+  },
+  {
+    "id": "07fd8b4c-3daf-4b41-940b-09fcf4da5d87",
+    "name": "Review Status",
+    "description": null,
+    "fieldTypes": [
+      {
+        "id": "6d8ea1c2-2e91-41a1-b463-58c3e10c6a6a",
+        "name": "Review Status",
+        "dataType": "SelectList",
+        "measurementType": null,
+        "selectListValues": [
+          "Not Reviewed",
+          "In Progress",
+          "Complete"
+        ],
+        "selectListValuesTotalCount": 3
+      },
+      {
+        "id": "ce717681-a47f-4b34-af1b-835e4acc2ba3",
+        "name": "Notes",
+        "dataType": "String",
+        "measurementType": null,
+        "selectListValues": null,
+        "selectListValuesTotalCount": 0
+      }
+    ],
+    "allowMultiple": false,
+    "archived": false
+  },
+  {
+    "id": "fe02f206-d720-47ea-9462-180b440b953e",
+    "name": "Sharepoint Document Type",
+    "description": null,
+    "fieldTypes": [
+      {
+        "id": "17f6d36a-0a16-45c6-876d-9d8def5decf5",
+        "name": "Sharepoint Document Type",
+        "dataType": "String",
+        "measurementType": null,
+        "selectListValues": null,
+        "selectListValuesTotalCount": 0
+      }
+    ],
+    "allowMultiple": false,
+    "archived": false
+  },
+  {
+    "id": "842a3d35-19c1-4bd6-a222-a451231533f3",
+    "name": "Terminated",
+    "description": null,
+    "fieldTypes": [
+      {
+        "id": "77036264-5de9-41a4-be1d-0be12f245bc1",
+        "name": "Terminated",
+        "dataType": "Boolean",
+        "measurementType": null,
+        "selectListValues": null,
+        "selectListValuesTotalCount": 0
+      }
+    ],
+    "allowMultiple": false,
+    "archived": false
+  }
+]

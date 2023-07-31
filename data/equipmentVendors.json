@@ -1,0 +1,938 @@
+[
+  {
+    "id": 166975,
+    "vendor_id": "V00090",
+    "name": "Siemens Energy, Inc.",
+    "gross_po_balance": 45795160,
+    "open_po_balance": 45653610.81,
+    "accrual_balance": null,
+    "invoice_balance": 0,
+    "address1": null,
+    "address2": null,
+    "address3": null,
+    "city": null,
+    "state": null,
+    "zipcode": null,
+    "contact": null,
+    "position": null,
+    "email": "court.hode@seimens.com",
+    "phone": null,
+    "tax_id": "13-3987280",
+    "ein": "13-3987280",
+    "payment_method_from_id": null,
+    "payoneer_program": null,
+    "purchaser_account": null,
+    "status": "ACTIVE",
+    "created_at": "2021-04-29T05:20:10.727-07:00",
+    "updated_at": "2023-07-26T07:20:23.808-07:00",
+    "external_id": "281",
+    "version_seq": null,
+    "is_employee_type": false,
+    "vendor_type": "COMPANY",
+    "url": null,
+    "is_1099_eligible": false,
+    "po_not_required": false,
+    "no_push": null,
+    "term_id": 1083,
+    "legal_name": "Siemens Energy, Inc.",
+    "classification_category": null,
+    "total_payment_paid": 7918297.53,
+    "contract_end_date": null,
+    "currency_codes_str": "USD",
+    "currency_code": "USD",
+    "portal_disabled": false,
+    "final_approval_date": null,
+    "type_id": "Equipment",
+    "allow_contact_addresses_on_purchase_orders": null,
+    "paid_outside": false,
+    "has_profile_complete": false,
+    "has_w9": true,
+    "profile_completeness": {
+      "contact_info": false,
+      "bank_info": true,
+      "company_detail": true,
+      "has_w9": true,
+      "has_w8ben": null,
+      "has_all_required_documents": true
+    },
+    "created_by": {
+      "id": 24961,
+      "contact_id": 48894,
+      "email": "jupiterpower.ai@accrualify.com"
+    },
+    "currency_codes": [
+      {
+        "code": "USD",
+        "primary": true
+      }
+    ],
+    "currency": {
+      "name": "United States Dollar",
+      "symbol": "$",
+      "html_entity": "$",
+      "iso_code": "USD"
+    },
+    "term": {
+      "id": 1083,
+      "code": "Net 30",
+      "name": "Net 30"
+    },
+    "last_payment": {
+      "id": 954360,
+      "payment_date": "2023-04-20",
+      "amount": 950285.83
+    },
+    "last_po": {
+      "id": 370300,
+      "date": "2021-11-24",
+      "number": "PO-229411 HM",
+      "amount": 1338890
+    },
+    "last_invoice": {
+      "id": 1957275,
+      "date": "2021-05-11",
+      "number": "5842011288",
+      "amount": 407799.36
+    },
+    "company_contacts_str": "",
+    "payment_method": {
+      "id": 220494,
+      "payment_type": "ach",
+      "bank_name": "BANK OF NEW YORK MELLON",
+      "nick_name": "ach-BANK OF NEW YORK MELLON",
+      "name": "BANK OF NEW YORK MELLON",
+      "error_list": null
+    },
+    "subsidiary": {
+      "id": 1887,
+      "name": "Tempus Power"
+    },
+    "subsidiaries_str": "Tempus Power",
+    "fetched_at": "2023-07-27T15:00:24.920+00:00",
+    "last_event": {
+      "id": 637538,
+      "status": "COMPLETED",
+      "event_type": "vendor",
+      "updated_at": "2023-01-10T16:23:25.192-08:00"
+    },
+    "payoneer_status": "N/A",
+    "payee_id": ""
+  },
+  {
+    "id": 166981,
+    "vendor_id": "V00330",
+    "name": "Powin Energy Corporation",
+    "gross_po_balance": 5019250,
+    "open_po_balance": 5019250,
+    "accrual_balance": null,
+    "invoice_balance": 0,
+    "address1": "20550 SW 115th Ave",
+    "address2": null,
+    "address3": null,
+    "city": "Tualatin",
+    "state": "OR",
+    "zipcode": "97062",
+    "contact": null,
+    "position": null,
+    "email": null,
+    "phone": null,
+    "tax_id": "87-0455378",
+    "ein": "87-0455378",
+    "payment_method_from_id": null,
+    "payoneer_program": null,
+    "purchaser_account": null,
+    "status": "ACTIVE",
+    "created_at": "2021-04-29T05:20:11.093-07:00",
+    "updated_at": "2023-07-20T10:25:37.861-07:00",
+    "external_id": "812",
+    "version_seq": null,
+    "is_employee_type": false,
+    "vendor_type": "COMPANY",
+    "url": null,
+    "is_1099_eligible": false,
+    "po_not_required": false,
+    "no_push": null,
+    "term_id": 1083,
+    "legal_name": "Powin Energy Corporation",
+    "classification_category": null,
+    "total_payment_paid": 9988653.88,
+    "contract_end_date": null,
+    "currency_codes_str": "USD",
+    "currency_code": "USD",
+    "portal_disabled": false,
+    "final_approval_date": null,
+    "type_id": "Equipment",
+    "allow_contact_addresses_on_purchase_orders": null,
+    "paid_outside": false,
+    "has_profile_complete": null,
+    "has_w9": false,
+    "profile_completeness": {
+      "contact_info": true,
+      "bank_info": true,
+      "company_detail": true,
+      "has_w9": false,
+      "has_w8ben": null,
+      "has_all_required_documents": true
+    },
+    "created_by": {
+      "id": 24961,
+      "contact_id": 48894,
+      "email": "jupiterpower.ai@accrualify.com"
+    },
+    "currency_codes": [
+      {
+        "code": "USD",
+        "primary": true
+      }
+    ],
+    "currency": {
+      "name": "United States Dollar",
+      "symbol": "$",
+      "html_entity": "$",
+      "iso_code": "USD"
+    },
+    "term": {
+      "id": 1083,
+      "code": "Net 30",
+      "name": "Net 30"
+    },
+    "requestor": {
+      "id": 50934,
+      "name": "Tompall Glaser"
+    },
+    "receiver": {
+      "id": 52300,
+      "name": "David Hernandez"
+    },
+    "last_payment": {
+      "id": 1051868,
+      "payment_date": "2023-07-03",
+      "amount": 3445.27
+    },
+    "last_po": {
+      "id": 234552,
+      "date": "2021-08-03",
+      "number": "PO-002 SW I",
+      "amount": 5019250
+    },
+    "last_invoice": {
+      "id": 2014265,
+      "date": "2021-04-02",
+      "number": "INV688",
+      "amount": 653124.46
+    },
+    "company_contacts_str": "",
+    "invoice_credit_account": "21100",
+    "invoice_debit_account": "63065",
+    "payment_method": {
+      "id": 418825,
+      "payment_type": "external",
+      "bank_name": null,
+      "nick_name": "external-USD",
+      "name": "external: checking",
+      "error_list": null
+    },
+    "subsidiary": {
+      "id": 1878,
+      "name": "Flower Valley I"
+    },
+    "subsidiaries_str": "Swoose  I, Triple Butte, Flower Valley I",
+    "fetched_at": "2023-07-27T15:00:24.920+00:00",
+    "last_event": {
+      "id": 1029291,
+      "status": "COMPLETED",
+      "event_type": "vendor",
+      "updated_at": "2023-04-18T12:25:31.536-07:00"
+    },
+    "payoneer_status": "N/A",
+    "payee_id": ""
+  },
+  {
+    "id": 167118,
+    "vendor_id": "V00339",
+    "name": "Sungrow USA Corporation",
+    "gross_po_balance": 56745487.46,
+    "open_po_balance": 56745487.46,
+    "accrual_balance": null,
+    "invoice_balance": 0,
+    "address1": "4050 E. Cotton Cetner Blvd",
+    "address2": "Suite 75",
+    "address3": null,
+    "city": "Phoenix",
+    "state": "AZ",
+    "zipcode": "85040",
+    "contact": null,
+    "position": null,
+    "email": null,
+    "phone": null,
+    "tax_id": null,
+    "ein": null,
+    "payment_method_from_id": null,
+    "payoneer_program": null,
+    "purchaser_account": null,
+    "status": "ACTIVE",
+    "created_at": "2021-04-29T05:20:16.282-07:00",
+    "updated_at": "2023-07-13T05:38:40.477-07:00",
+    "external_id": "821",
+    "version_seq": null,
+    "is_employee_type": false,
+    "vendor_type": "COMPANY",
+    "url": null,
+    "is_1099_eligible": false,
+    "po_not_required": false,
+    "no_push": null,
+    "term_id": 1083,
+    "legal_name": "Sungrow USA Corporation",
+    "classification_category": null,
+    "total_payment_paid": 87877195.21,
+    "contract_end_date": null,
+    "currency_codes_str": "USD",
+    "currency_code": "USD",
+    "portal_disabled": false,
+    "final_approval_date": null,
+    "type_id": "Equipment",
+    "allow_contact_addresses_on_purchase_orders": null,
+    "paid_outside": false,
+    "has_profile_complete": false,
+    "has_w9": false,
+    "profile_completeness": {
+      "contact_info": false,
+      "bank_info": true,
+      "company_detail": true,
+      "has_w9": false,
+      "has_w8ben": null,
+      "has_all_required_documents": true
+    },
+    "created_by": {
+      "id": 24961,
+      "contact_id": 48894,
+      "email": "jupiterpower.ai@accrualify.com"
+    },
+    "currency_codes": [
+      {
+        "code": "USD",
+        "primary": true
+      }
+    ],
+    "currency": {
+      "name": "United States Dollar",
+      "symbol": "$",
+      "html_entity": "$",
+      "iso_code": "USD"
+    },
+    "term": {
+      "id": 1083,
+      "code": "Net 30",
+      "name": "Net 30"
+    },
+    "requestor": {
+      "id": 50927,
+      "name": "Mike Frerker"
+    },
+    "last_payment": {
+      "id": 989517,
+      "payment_date": "2023-05-16",
+      "amount": 8016950.46
+    },
+    "last_po": {
+      "id": 243665,
+      "date": "2020-10-23",
+      "number": "PO-002 SWII",
+      "amount": 52458875.19
+    },
+    "last_invoice": {
+      "id": 1957426,
+      "date": "2021-05-11",
+      "number": "PI-9001-1",
+      "amount": 7405958.85
+    },
+    "company_contacts_str": "",
+    "payment_method": {
+      "id": 403501,
+      "payment_type": "external",
+      "bank_name": null,
+      "nick_name": "external-USD",
+      "name": "external: checking",
+      "error_list": null
+    },
+    "subsidiary": {
+      "id": 1887,
+      "name": "Tempus Power"
+    },
+    "subsidiaries_str": "Tempus Power",
+    "fetched_at": "2023-07-27T15:00:31.511+00:00",
+    "payoneer_status": "N/A",
+    "payee_id": ""
+  },
+  {
+    "id": 216924,
+    "vendor_id": "147656",
+    "name": "Magnum Custom Trailers",
+    "gross_po_balance": null,
+    "open_po_balance": null,
+    "accrual_balance": null,
+    "invoice_balance": 0,
+    "address1": "10806 Hwy 620 N",
+    "address2": null,
+    "address3": null,
+    "city": "Austin",
+    "state": "TX",
+    "zipcode": "78726",
+    "contact": null,
+    "position": null,
+    "email": "eric@magnumtrailers.com",
+    "phone": null,
+    "tax_id": "74-1974440",
+    "ein": "74-1974440",
+    "payment_method_from_id": null,
+    "payoneer_program": null,
+    "purchaser_account": null,
+    "status": "ACTIVE",
+    "created_at": "2022-03-23T11:21:30.696-07:00",
+    "updated_at": "2022-04-20T16:14:55.743-07:00",
+    "external_id": "1188",
+    "version_seq": null,
+    "is_employee_type": false,
+    "vendor_type": "COMPANY",
+    "url": null,
+    "is_1099_eligible": null,
+    "po_not_required": false,
+    "no_push": null,
+    "term_id": 1083,
+    "legal_name": "Magnum Custom Trailer Mfg. Co., Inc",
+    "classification_category": null,
+    "total_payment_paid": 9627.69,
+    "contract_end_date": null,
+    "currency_codes_str": "USD",
+    "currency_code": "USD",
+    "portal_disabled": false,
+    "final_approval_date": null,
+    "type_id": "Equipment",
+    "allow_contact_addresses_on_purchase_orders": null,
+    "paid_outside": false,
+    "has_profile_complete": false,
+    "has_w9": true,
+    "profile_completeness": {
+      "contact_info": false,
+      "bank_info": true,
+      "company_detail": true,
+      "has_w9": true,
+      "has_w8ben": null,
+      "has_all_required_documents": true
+    },
+    "created_by": {
+      "id": 34965,
+      "contact_id": 66471,
+      "email": "suyeon.lee@jupiterpower.io"
+    },
+    "currency_codes": [
+      {
+        "code": "USD",
+        "primary": true
+      }
+    ],
+    "currency": {
+      "name": "United States Dollar",
+      "symbol": "$",
+      "html_entity": "$",
+      "iso_code": "USD"
+    },
+    "term": {
+      "id": 1083,
+      "code": "Net 30",
+      "name": "Net 30"
+    },
+    "last_payment": {
+      "id": 621761,
+      "payment_date": "2022-04-15",
+      "amount": 9627.69
+    },
+    "last_invoice": {
+      "id": 3415738,
+      "date": "2022-03-30",
+      "number": "03.30.2022",
+      "amount": 9627.69
+    },
+    "company_contacts_str": "",
+    "payment_method": {
+      "id": 291763,
+      "payment_type": "ach",
+      "bank_name": "SAGE CAPITAL BANK NA",
+      "nick_name": "ach-SAGE CAPITAL BANK NA",
+      "name": "SAGE CAPITAL BANK NA",
+      "error_list": null
+    },
+    "subsidiary": {
+      "id": 1881,
+      "name": "Jupiter Power LLC"
+    },
+    "subsidiaries_str": "Jupiter Power LLC",
+    "fetched_at": "2023-07-27T15:00:49.978+00:00",
+    "payoneer_status": "N/A",
+    "payee_id": ""
+  },
+  {
+    "id": 234475,
+    "vendor_id": "172621",
+    "name": "Discount Forklift Inc",
+    "gross_po_balance": 0,
+    "open_po_balance": 0,
+    "accrual_balance": null,
+    "invoice_balance": null,
+    "address1": "4905 Lima Street",
+    "address2": null,
+    "address3": null,
+    "city": "Denver",
+    "state": "CO",
+    "zipcode": "80239",
+    "contact": null,
+    "position": null,
+    "email": "dallas@discountforklift.us",
+    "phone": null,
+    "tax_id": "26-2964586",
+    "ein": "26-2964586",
+    "payment_method_from_id": null,
+    "payoneer_program": null,
+    "purchaser_account": null,
+    "status": "ACTIVE",
+    "created_at": "2022-07-22T11:39:26.656-07:00",
+    "updated_at": "2022-09-28T16:22:16.874-07:00",
+    "external_id": "1273",
+    "version_seq": null,
+    "is_employee_type": false,
+    "vendor_type": "COMPANY",
+    "url": "",
+    "is_1099_eligible": null,
+    "po_not_required": false,
+    "no_push": null,
+    "term_id": null,
+    "legal_name": "Endless Sales Inc",
+    "classification_category": null,
+    "total_payment_paid": 58082.48,
+    "contract_end_date": null,
+    "currency_codes_str": "USD",
+    "currency_code": "USD",
+    "portal_disabled": false,
+    "final_approval_date": null,
+    "type_id": "Equipment",
+    "allow_contact_addresses_on_purchase_orders": null,
+    "paid_outside": false,
+    "has_profile_complete": false,
+    "has_w9": true,
+    "profile_completeness": {
+      "contact_info": false,
+      "bank_info": true,
+      "company_detail": true,
+      "has_w9": true,
+      "has_w8ben": null,
+      "has_all_required_documents": true
+    },
+    "created_by": {
+      "id": 34965,
+      "contact_id": 66471,
+      "email": "suyeon.lee@jupiterpower.io"
+    },
+    "currency_codes": [
+      {
+        "code": "USD",
+        "primary": true
+      }
+    ],
+    "currency": {
+      "name": "United States Dollar",
+      "symbol": "$",
+      "html_entity": "$",
+      "iso_code": "USD"
+    },
+    "requestor": {
+      "id": 52300,
+      "name": "David Hernandez"
+    },
+    "last_payment": {
+      "id": 750094,
+      "payment_date": "2022-09-23",
+      "amount": 1654.63
+    },
+    "last_invoice": {
+      "id": 4188654,
+      "date": "2022-07-29",
+      "number": "27020",
+      "amount": 56427.85
+    },
+    "company_contacts_str": "",
+    "payment_method": {
+      "id": 325394,
+      "payment_type": "ach",
+      "bank_name": "WELLS FARGO BANK, NA",
+      "nick_name": "ach-WELLS FARGO BANK, NA",
+      "name": "WELLS FARGO BANK, NA",
+      "error_list": null
+    },
+    "subsidiary": {
+      "id": 1881,
+      "name": "Jupiter Power LLC"
+    },
+    "subsidiaries_str": "Jupiter Power LLC",
+    "fetched_at": "2023-07-27T15:00:56.971+00:00",
+    "payoneer_status": "N/A",
+    "payee_id": ""
+  },
+  {
+    "id": 253999,
+    "vendor_id": "205310",
+    "name": "CATL- Contemporary Amperex Technology Co., Limited",
+    "gross_po_balance": 116293632,
+    "open_po_balance": 116293632,
+    "accrual_balance": null,
+    "invoice_balance": 0,
+    "address1": "No.2 Xingang Road",
+    "address2": "Zhangwan Town",
+    "address3": null,
+    "city": "Ningde",
+    "state": "FJ",
+    "zipcode": "352100",
+    "contact": null,
+    "position": null,
+    "email": null,
+    "phone": null,
+    "tax_id": null,
+    "ein": null,
+    "payment_method_from_id": null,
+    "payoneer_program": null,
+    "purchaser_account": null,
+    "status": "ACTIVE",
+    "created_at": "2022-11-29T07:18:36.395-08:00",
+    "updated_at": "2023-07-13T06:23:53.922-07:00",
+    "external_id": "1352",
+    "version_seq": null,
+    "is_employee_type": false,
+    "vendor_type": "COMPANY",
+    "url": null,
+    "is_1099_eligible": false,
+    "po_not_required": false,
+    "no_push": null,
+    "term_id": null,
+    "legal_name": "CATL- Contemporary Amperex Technology Co., Limited",
+    "classification_category": null,
+    "total_payment_paid": 81405542.4,
+    "contract_end_date": null,
+    "currency_codes_str": "USD",
+    "currency_code": "USD",
+    "portal_disabled": false,
+    "final_approval_date": null,
+    "type_id": "Equipment",
+    "allow_contact_addresses_on_purchase_orders": null,
+    "paid_outside": false,
+    "has_profile_complete": false,
+    "has_w9": true,
+    "profile_completeness": {
+      "contact_info": false,
+      "bank_info": true,
+      "company_detail": true,
+      "has_w9": true,
+      "has_w8ben": null,
+      "has_all_required_documents": true
+    },
+    "created_by": {
+      "id": 34965,
+      "contact_id": 66471,
+      "email": "suyeon.lee@jupiterpower.io"
+    },
+    "currency_codes": [
+      {
+        "code": "USD",
+        "primary": true
+      }
+    ],
+    "currency": {
+      "name": "United States Dollar",
+      "symbol": "$",
+      "html_entity": "$",
+      "iso_code": "USD"
+    },
+    "requestor": {
+      "id": 50928,
+      "name": "Mike Geier"
+    },
+    "last_payment": {
+      "id": 910727,
+      "payment_date": "2023-03-03",
+      "amount": 58146816
+    },
+    "last_po": {
+      "id": 409575,
+      "date": "2022-11-08",
+      "number": "PO-287972 - Cal",
+      "amount": 116293632
+    },
+    "last_invoice": {
+      "id": 4934806,
+      "date": "2022-11-18",
+      "number": "CATL-20221116",
+      "amount": 23258726.4
+    },
+    "company_contacts_str": "",
+    "payment_method": {
+      "id": 403502,
+      "payment_type": "external",
+      "bank_name": null,
+      "nick_name": "external-USD",
+      "name": "external: wire",
+      "error_list": null
+    },
+    "subsidiary": {
+      "id": 2467,
+      "name": "Callisto I"
+    },
+    "subsidiaries_str": "Callisto I",
+    "fetched_at": "2023-07-27T15:00:56.971+00:00",
+    "last_event": {
+      "id": 779533,
+      "status": "COMPLETED",
+      "event_type": "vendor",
+      "updated_at": "2023-02-16T13:14:59.636-08:00"
+    },
+    "payoneer_status": "N/A",
+    "payee_id": ""
+  },
+  {
+    "id": 256439,
+    "vendor_id": "210290",
+    "name": "United Rentals",
+    "gross_po_balance": null,
+    "open_po_balance": null,
+    "accrual_balance": null,
+    "invoice_balance": null,
+    "address1": "P.O. Box 840514",
+    "address2": null,
+    "address3": null,
+    "city": "Dallas",
+    "state": "TX",
+    "zipcode": "75284-0514",
+    "contact": null,
+    "position": null,
+    "email": "ebuenaagua@ur.com",
+    "phone": null,
+    "tax_id": "86-0933835",
+    "ein": "86-0933835",
+    "payment_method_from_id": null,
+    "payoneer_program": null,
+    "purchaser_account": null,
+    "status": "ACTIVE",
+    "created_at": "2022-12-20T07:34:37.912-08:00",
+    "updated_at": "2023-01-22T22:21:58.930-08:00",
+    "external_id": "1368",
+    "version_seq": null,
+    "is_employee_type": false,
+    "vendor_type": "COMPANY",
+    "url": null,
+    "is_1099_eligible": null,
+    "po_not_required": false,
+    "no_push": null,
+    "term_id": 1083,
+    "legal_name": "United Rentals (North America), Inc.",
+    "classification_category": null,
+    "total_payment_paid": 3087.07,
+    "contract_end_date": null,
+    "currency_codes_str": "USD",
+    "currency_code": "USD",
+    "portal_disabled": false,
+    "final_approval_date": null,
+    "type_id": "Equipment",
+    "allow_contact_addresses_on_purchase_orders": null,
+    "paid_outside": false,
+    "has_profile_complete": false,
+    "has_w9": true,
+    "profile_completeness": {
+      "contact_info": false,
+      "bank_info": true,
+      "company_detail": true,
+      "has_w9": true,
+      "has_w8ben": null,
+      "has_all_required_documents": true
+    },
+    "created_by": {
+      "id": 34965,
+      "contact_id": 66471,
+      "email": "suyeon.lee@jupiterpower.io"
+    },
+    "currency_codes": [
+      {
+        "code": "USD",
+        "primary": true
+      }
+    ],
+    "currency": {
+      "name": "United States Dollar",
+      "symbol": "$",
+      "html_entity": "$",
+      "iso_code": "USD"
+    },
+    "term": {
+      "id": 1083,
+      "code": "Net 30",
+      "name": "Net 30"
+    },
+    "requestor": {
+      "id": 52300,
+      "name": "David Hernandez"
+    },
+    "last_payment": {
+      "id": 852585,
+      "payment_date": "2023-01-12",
+      "amount": 3087.07
+    },
+    "last_invoice": {
+      "id": 5124163,
+      "date": "2022-12-14",
+      "number": "213630229-001",
+      "amount": 3087.07
+    },
+    "company_contacts_str": "",
+    "payment_method": {
+      "id": 373898,
+      "payment_type": "ach",
+      "bank_name": "BANK OF AMERICA, N.A.",
+      "nick_name": "ach-BANK OF AMERICA, N.A.",
+      "name": "BANK OF AMERICA, N.A.",
+      "error_list": null
+    },
+    "subsidiary": {
+      "id": 1881,
+      "name": "Jupiter Power LLC"
+    },
+    "subsidiaries_str": "Jupiter Power LLC",
+    "fetched_at": "2023-07-27T15:00:56.971+00:00",
+    "last_event": {
+      "id": 624106,
+      "status": "COMPLETED",
+      "event_type": "vendor",
+      "updated_at": "2023-01-06T08:53:40.143-08:00"
+    },
+    "payoneer_status": "N/A",
+    "payee_id": ""
+  },
+  {
+    "id": 286752,
+    "vendor_id": "233183",
+    "name": "Rexgear Inc.",
+    "gross_po_balance": 0,
+    "open_po_balance": 0,
+    "accrual_balance": null,
+    "invoice_balance": 0,
+    "address1": "14 Hughes Ste B101",
+    "address2": null,
+    "address3": null,
+    "city": "Irvine",
+    "state": "CA",
+    "zipcode": "92618",
+    "contact": null,
+    "position": null,
+    "email": null,
+    "phone": null,
+    "tax_id": "82-2793679",
+    "ein": "82-2793679",
+    "payment_method_from_id": null,
+    "payoneer_program": null,
+    "purchaser_account": null,
+    "status": "ACTIVE",
+    "created_at": "2023-04-24T13:33:16.956-07:00",
+    "updated_at": "2023-05-31T07:05:09.773-07:00",
+    "external_id": "1428",
+    "version_seq": null,
+    "is_employee_type": false,
+    "vendor_type": "COMPANY",
+    "url": "https://www.rexgear.com",
+    "is_1099_eligible": false,
+    "po_not_required": false,
+    "no_push": null,
+    "term_id": 1083,
+    "legal_name": "Rexgear Inc.",
+    "classification_category": null,
+    "total_payment_paid": 7600,
+    "contract_end_date": null,
+    "currency_codes_str": "USD",
+    "currency_code": "USD",
+    "portal_disabled": false,
+    "final_approval_date": "2023-04-24T22:13:56.438Z",
+    "type_id": "Equipment",
+    "allow_contact_addresses_on_purchase_orders": null,
+    "paid_outside": false,
+    "has_profile_complete": false,
+    "has_w9": true,
+    "profile_completeness": {
+      "contact_info": false,
+      "bank_info": true,
+      "company_detail": true,
+      "has_w9": true,
+      "has_w8ben": null,
+      "has_all_required_documents": true
+    },
+    "created_by": {
+      "id": 34965,
+      "contact_id": 66471,
+      "email": "suyeon.lee@jupiterpower.io"
+    },
+    "currency_codes": [
+      {
+        "code": "USD",
+        "primary": true
+      }
+    ],
+    "currency": {
+      "name": "United States Dollar",
+      "symbol": "$",
+      "html_entity": "$",
+      "iso_code": "USD"
+    },
+    "term": {
+      "id": 1083,
+      "code": "Net 30",
+      "name": "Net 30"
+    },
+    "requestor": {
+      "id": 52300,
+      "name": "David Hernandez"
+    },
+    "last_payment": {
+      "id": 997477,
+      "payment_date": "2023-05-25",
+      "amount": 7600
+    },
+    "last_po": {
+      "id": 482850,
+      "date": "2023-04-26",
+      "number": "PO-350674",
+      "amount": 7600
+    },
+    "last_invoice": {
+      "id": 6168337,
+      "date": "2023-05-02",
+      "number": "INV-000096",
+      "amount": 7600
+    },
+    "company_contacts_str": "",
+    "payment_method": {
+      "id": 416187,
+      "payment_type": "ach",
+      "bank_name": "BANK OF AMERICA, N.A.",
+      "nick_name": "ach-BANK OF AMERICA, N.A.",
+      "name": "BANK OF AMERICA, N.A.",
+      "error_list": null
+    },
+    "subsidiary": {
+      "id": 1881,
+      "name": "Jupiter Power LLC"
+    },
+    "subsidiaries_str": "Jupiter Power LLC",
+    "fetched_at": "2023-07-27T15:01:03.319+00:00",
+    "last_event": {
+      "id": 1060788,
+      "status": "COMPLETED",
+      "event_type": "vendor",
+      "updated_at": "2023-04-24T15:14:05.568-07:00"
+    },
+    "payoneer_status": "N/A",
+    "payee_id": ""
+  }
+]

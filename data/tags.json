@@ -1,34 +1,78 @@
 [
-    {
-        "id": "28734890-5ea1-4aab-9619-ad0e9e1e4f4a",
-        "name": "Closed"
-    },
-    {
-        "id": "63e514cb-bbf8-4b31-9436-0d616f47f648",
-        "name": "Erika - Review"
-    },
-    {
-        "id": "47e65284-b40c-4e68-b00f-10b27191eaaa",
-        "name": "Model Exception"
-    },
-    {
-        "id": "c0677747-e33c-4a02-be2d-5b937105bfa7",
-        "name": "Peter - Review"
-    },
-    {
-        "id": "59118990-54cc-439e-bd2f-60c70b796e03",
-        "name": "Possible Duplicate"
-    },
-    {
-        "id": "7035ac99-4eb3-4433-975d-9c4a40c61f16",
-        "name": "POVDocs"
-    },
-    {
-        "id": "4ef86825-ccdb-4e77-a8da-7e55d198e106",
-        "name": "Superceded"
-    },
-    {
-        "id": "dd218121-8d4f-4485-be08-afb3b162ca81",
-        "name": "Terminated"
-    }
+  {
+    "id": "2814cd31-ec6f-4370-bd8f-0d77bbcde325",
+    "name": "Amendment"
+  },
+  {
+    "id": "28734890-5ea1-4aab-9619-ad0e9e1e4f4a",
+    "name": "Closed"
+  },
+  {
+    "id": "ede6c5cf-2b96-4d48-bc44-9ed054c8578a",
+    "name": "Divested"
+  },
+  {
+    "id": "2c4b8067-9bed-455a-a668-338fe4537ea1",
+    "name": "Doak - Review"
+  },
+  {
+    "id": "63e514cb-bbf8-4b31-9436-0d616f47f648",
+    "name": "Erika - Review"
+  },
+  {
+    "id": "c3de3b00-211b-4dcd-90f8-176108650ab3",
+    "name": "Forecast QC"
+  },
+  {
+    "id": "9bf47d87-e1c4-4fa3-b8f3-3460f52090ae",
+    "name": "JHG"
+  },
+  {
+    "id": "66618892-7cdb-47b7-9459-10fe576b5f4d",
+    "name": "Jupiter Entity Name"
+  },
+  {
+    "id": "e60e282d-f97a-4338-908f-2a95591a9aa1",
+    "name": "Legal Review"
+  },
+  {
+    "id": "d25ec72b-5f1b-46ce-b5ba-1dda31b1e957",
+    "name": "Lori - Review"
+  },
+  {
+    "id": "47e65284-b40c-4e68-b00f-10b27191eaaa",
+    "name": "Model Exception"
+  },
+  {
+    "id": "4a63b9a4-178e-4a4a-a6cf-a11ab9ef7c6f",
+    "name": "Model issue"
+  },
+  {
+    "id": "25565d3d-6c48-4c70-b202-76808e273ac5",
+    "name": "NOT IN EFFECT - Held in Escrow"
+  },
+  {
+    "id": "c0677747-e33c-4a02-be2d-5b937105bfa7",
+    "name": "Peter - Review"
+  },
+  {
+    "id": "59118990-54cc-439e-bd2f-60c70b796e03",
+    "name": "Possible Duplicate"
+  },
+  {
+    "id": "7035ac99-4eb3-4433-975d-9c4a40c61f16",
+    "name": "POVDocs"
+  },
+  {
+    "id": "63206bca-5b4c-4d95-9d05-312f46775c51",
+    "name": "Purchased"
+  },
+  {
+    "id": "4ef86825-ccdb-4e77-a8da-7e55d198e106",
+    "name": "Superceded"
+  },
+  {
+    "id": "dd218121-8d4f-4485-be08-afb3b162ca81",
+    "name": "Terminated"
+  }
 ]

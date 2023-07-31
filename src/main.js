@@ -130,6 +130,8 @@ console.log(factArray.slice(0, 30));
 
 */
 
+console.log(jupiterDocs.filter((x) => x.id === "0745dcdf-34ea-4758-b696-e138c92fc77e"));
+
 console.log("%cAll docs with term payment models:", consoleHeaderFormat);
 console.log(jupiterDocs.filter((x) => x.term_payment_models.length > 0));
 
@@ -175,12 +177,10 @@ const terminatedDocs = jupiterDocs.filter((doc) => doc.terminated && doc.agreeme
 console.log("%cThese docs are terminated:", consoleHeaderFormat);
 console.log(terminatedDocs);
 
+*/
 // filter to documents that have deeds
 const docsThatHaveDeeds = jupiterDocs.filter((doc) => doc.deed_count > 0);
 console.log("%cThese docs have deeds:", consoleHeaderFormat);
 console.log(docsThatHaveDeeds);
-
-
-*/
 
 export default {};

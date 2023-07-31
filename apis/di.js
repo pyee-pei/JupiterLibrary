@@ -1,8 +1,7 @@
 import axios from "axios";
 import querystring from "querystring";
-
-const CLIENT_ID = "0a089276-00f5-444f-e407-08dac8de685f";
-const CLIENT_SECRET = "/7iqIntITg0OJPthutQLSND3zh1W40kyQD4oE516LLbbcJEKmDGzBHTAa6Zgb4shvWYQE4p5bBTNZ1nTePftvA==";
+import fs from "fs";
+import "dotenv/config";
 
 const AUTH_URL = "https://identity.thoughttrace.com/connect/token";
 const BASE_URL = "https://api.thoughttrace.com";
@@ -10,8 +9,8 @@ const BASE_URL = "https://api.thoughttrace.com";
 const getAccessToken = async () => {
   const body = querystring.stringify({
     grant_type: "client_credentials",
-    client_id: CLIENT_ID,
-    client_secret: CLIENT_SECRET,
+    client_id: process.env.DI_CLIENT_ID,
+    client_secret: process.env.DI_CLIENT_SECRET,
   });
 
   const response = await axios.post(AUTH_URL, body);
@@ -73,6 +72,19 @@ const searchDocuments = async () => {
 
   return response.data;
 };
+
+const docs = await searchDocuments();
+const factTypes = await getFactTypes();
+const docTypes = await getDocTypes();
+const tags = await getTags();
+
+// write to json files for web app to consume
+fs.writeFileSync("./data/documents.json", JSON.stringify(docs, null, 2));
+fs.writeFileSync("./data/factTypes.json", JSON.stringify(factTypes, null, 2));
+fs.writeFileSync("./data/documentTypes.json", JSON.stringify(docTypes, null, 2));
+fs.writeFileSync("./data/tags.json", JSON.stringify(tags, null, 2));
+
+console.log("breakpoint");
 
 export default {
   getAccessToken,

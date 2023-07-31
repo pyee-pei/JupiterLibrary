@@ -470,6 +470,9 @@ class JupiterDoc {
     // Tags
     this.tags = this.getTags(tags);
 
+    // Associated Agreements
+    this.associated_agreements = utils.extractMultiFactValues(doc, utils.getFactTypeId("Associated Agreements", factTypes));
+
     // Review Status
     this.review_status = utils.extractFactValue(
       doc,
@@ -500,7 +503,7 @@ class JupiterDoc {
     this.qc_flags = [];
 
     // flag a version number
-    this.libraryVersion = "1.1";
+    this.libraryVersion = "1.1.01";
 
     // deprecated - these should all be in agreement terms
     //this.calcOptionTermDates(this.option_terms, this.effective_date);
@@ -687,9 +690,11 @@ class JupiterDoc {
       if (frequency === "Annually") {
         payment_period_end = new luxon.DateTime.local(start_date.year, 12, 31);
       } else if (frequency === "Quarterly") {
-        payment_period_end = new luxon.DateTime.local(start_date.year, start_date.month + 3, 1).minus({ days: 1 });
+        payment_period_end = start_date.plus({ months: 3 }).minus({ days: 1 });
+        //payment_period_end = new luxon.DateTime.local(start_date.year, start_date.month + 3, 1).minus({ days: 1 });
       } else if (frequency === "Monthly") {
-        payment_period_end = new luxon.DateTime.local(start_date.year, start_date.month, 1).plus({ months: 1 }).minus({ days: 1 });
+        payment_period_end = start_date.plus({ months: 1 }).minus({ days: 1 });
+        //payment_period_end = new luxon.DateTime.local(start_date.year, start_date.month, 1).plus({ months: 1 }).minus({ days: 1 });
       }
     } else {
       // anniversary payment dates
@@ -1154,6 +1159,7 @@ class JupiterDoc {
 
     // update root document
     this.deed_count = deeds.length;
+    this.deeds = deeds;
     this.deed_effective_date = deed.effective_date?.toFormat("M/d/yyyy");
     this.property_description = deed.property_description;
     if (!this.tags.includes("Purchased")) {
