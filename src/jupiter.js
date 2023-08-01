@@ -70,6 +70,14 @@ class JupiterDoc {
       "string"
     );
 
+    // Grantee
+    this.grantee = utils.extractFactValue(
+      doc,
+      utils.getFactTypeId("Grantee/Lessee", factTypes),
+      utils.getFactFieldId("Grantee/Lessee", "Grantee/Lessee", factTypes),
+      "string"
+    );
+
     // Grantor/Lessor - Multi-instance fact
     this.grantor = utils.extractMultiFactValues(doc, utils.getFactTypeId("Grantor/Lessor", factTypes));
 
@@ -203,7 +211,7 @@ class JupiterDoc {
     this.qc_flags = [];
 
     // flag a version number
-    this.libraryVersion = "1.1.01";
+    this.libraryVersion = "1.1.02";
 
     // deprecated - these should all be in agreement terms
     //this.calcOptionTermDates(this.option_terms, this.effective_date);
@@ -772,8 +780,18 @@ class JupiterDoc {
           this.property_description = amendment.property_description;
         }
 
-        // lessors
+        // jupiter entity
+        if (amendment.jupiter_entity) {
+          this.jupiter_entity = amendment.jupiter_entity;
+        }
+
+        // lessees
+        if (amendment.grantee) {
+          this.grantee = amendment.grantee;
+        }
+
         if (amendment.grantor && amendment.grantor.length > 0) {
+          // lessors
           this.grantor = amendment.grantor;
         }
 
