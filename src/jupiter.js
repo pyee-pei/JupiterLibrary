@@ -211,7 +211,7 @@ class JupiterDoc {
     this.qc_flags = [];
 
     // flag a version number
-    this.libraryVersion = "1.1.02";
+    this.libraryVersion = "1.1.03";
 
     // deprecated - these should all be in agreement terms
     //this.calcOptionTermDates(this.option_terms, this.effective_date);
@@ -877,7 +877,7 @@ class JupiterDoc {
 
     // update root document
     this.deed_count = deeds.length;
-    this.deeds = deeds;
+    //this.deeds = deeds;
     this.deed_effective_date = deed.effective_date?.toFormat("M/d/yyyy");
     this.property_description = deed.property_description;
     if (!this.tags.includes("Purchased")) {
@@ -932,6 +932,11 @@ class JupiterDoc {
       this.qc_flags.push("Termination tag but no Termination Date");
     }
 
+    // document has closed tag, but no closing date
+    if (this.tags.includes("Closed") && !this.closing_date) {
+      this.qc_flags.push("Closed tag but no Closing Date");
+    }
+
     // agreement term QC
     if (this.agreement_terms) {
       this.agreement_terms.forEach((term, termIndex) => {
@@ -950,10 +955,14 @@ class JupiterDoc {
     }
 
     // check date payment models for missing fields
-    if (this.date_payment_models) {
+    if (this.date_payment_models.length > 0) {
       this.date_payment_models.forEach((model, modelIndex) => {
         // check required fields for all models
         ["payment_type", "payment_amount"].forEach((x) => {
+          // skip qc flag if the payment amount is 0
+          if (x === "payment_amount" && model.payment_amount === 0) {
+            return;
+          }
           if (!model[x]) {
             this.qc_flags.push(`Missing ${x} on Date Payment Model ${modelIndex + 1}`);
           }
