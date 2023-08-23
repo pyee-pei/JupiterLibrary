@@ -136,6 +136,14 @@
         "measurementType": null,
         "selectListValues": null,
         "selectListValuesTotalCount": 0
+      },
+      {
+        "id": "a056c2a7-1297-4b8a-ab7d-11b73e18b3d6",
+        "name": "Increase Amount",
+        "dataType": "Number",
+        "measurementType": "Dollars",
+        "selectListValues": null,
+        "selectListValuesTotalCount": 0
       }
     ],
     "allowMultiple": true,
@@ -520,6 +528,14 @@
         "measurementType": null,
         "selectListValues": null,
         "selectListValuesTotalCount": 0
+      },
+      {
+        "id": "79146ec7-b6aa-402f-8b6a-5e2d9b140a0d",
+        "name": "Increase Amount",
+        "dataType": "Number",
+        "measurementType": "Dollars",
+        "selectListValues": null,
+        "selectListValuesTotalCount": 0
       }
     ],
     "allowMultiple": true,
@@ -676,6 +692,14 @@
         "name": "Refundable",
         "dataType": "Boolean",
         "measurementType": null,
+        "selectListValues": null,
+        "selectListValuesTotalCount": 0
+      },
+      {
+        "id": "33ceb1ac-e694-4f2f-af41-751c3f13c952",
+        "name": "Increase Amount",
+        "dataType": "Number",
+        "measurementType": "Dollars",
         "selectListValues": null,
         "selectListValuesTotalCount": 0
       }

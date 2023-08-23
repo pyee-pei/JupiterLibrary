@@ -84,7 +84,7 @@ fs.writeFileSync("./data/factTypes.json", JSON.stringify(factTypes, null, 2));
 fs.writeFileSync("./data/documentTypes.json", JSON.stringify(docTypes, null, 2));
 fs.writeFileSync("./data/tags.json", JSON.stringify(tags, null, 2));
 
-console.log("breakpoint");
+//console.log("breakpoint");
 
 export default {
   getAccessToken,

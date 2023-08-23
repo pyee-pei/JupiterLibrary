@@ -130,7 +130,23 @@ console.log(factArray.slice(0, 30));
 
 */
 
-console.log(jupiterDocs.filter((x) => x.id === "e8bdc059-6c0e-416a-bee8-bf6e23d8c711"));
+console.log(jupiterDocs.find((x) => x.id === "09142aaf-e975-4105-9448-0df79cc27c29").agreement_terms[0].periodic_payments);
+
+const termModelIncreaseAmount = jupiterDocs.filter((doc) => {
+  if (doc.term_payment_models.length > 0) {
+    return doc.term_payment_models.some((model) => model.increase_amount > 0);
+  }
+});
+
+console.log(termModelIncreaseAmount);
+
+const termIncreaseAmount = jupiterDocs.filter((doc) => {
+  if (doc.agreement_terms.length > 0) {
+    return doc.agreement_terms.some((term) => term.increase_amount > 0);
+  }
+});
+
+console.log(termIncreaseAmount);
 
 console.log("%cAll docs with term payment models:", consoleHeaderFormat);
 console.log(jupiterDocs.filter((x) => x.term_payment_models.length > 0));

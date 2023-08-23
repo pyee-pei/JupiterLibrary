@@ -211,7 +211,7 @@ class JupiterDoc {
     this.qc_flags = [];
 
     // flag a version number
-    this.libraryVersion = "1.1.03";
+    this.libraryVersion = "1.1.04";
 
     // deprecated - these should all be in agreement terms
     //this.calcOptionTermDates(this.option_terms, this.effective_date);
@@ -336,7 +336,7 @@ class JupiterDoc {
    * calculates base periodic payment for a given model
    * largest of all possible ways to calculate payment
    */
-  periodicBasePayment(model, op_details, compounding_escalation, term_escalation_rate, term_escalation_amount, previous_terms, agreement_acres) {
+  periodicBasePayment(model, op_details, compounding_escalation, term_escalation_rate, term_increase_amount, previous_terms, agreement_acres) {
     if (!model) {
       return 0;
     }
@@ -360,7 +360,7 @@ class JupiterDoc {
     );
 
     // apply amount escalation
-    base = base + ((term_escalation_amount ?? 0) * previous_terms ?? 0);
+    base = base + ((term_increase_amount ?? 0) * previous_terms ?? 0);
 
     // apply rate escalation
     if (compounding_escalation) {
@@ -442,7 +442,7 @@ class JupiterDoc {
       op_details,
       term.compounding_escalation,
       term.escalation_rate,
-      term.escalation_amount,
+      term.increase_amount,
       term.previous_terms,
       agreement_acres
     );
@@ -529,7 +529,7 @@ class JupiterDoc {
           payment_type: `${term.term_type}${term.extension ? " (ext)" : ""} Term Payment`,
           payment_amount:
             utils.calculateCompoundingGrowth(
-              periodic_payment * ((g.payment_split ?? 100 / grantor.length) / 100),
+              (periodic_payment + (model.increase_amount ?? 0) * i) * ((g.payment_split ?? 100 / grantor.length) / 100),
               periodic_escalation_rate / 100,
               Math.floor(i / periodic_escalation_frequency_index)
             ) * prorata_factor,
@@ -597,11 +597,7 @@ class JupiterDoc {
       // loop until end date is reached
       while (payment_date <= payment_date_end) {
         // apply escalation as needed
-        if (model.compounding_escalation) {
-          payment_amount = utils.calculateCompoundingGrowth(model.payment_amount, (model.periodic_escalation_rate ?? 0) / 100, period);
-        } else {
-          payment_amount = utils.calculateGrowth(model.payment_amount, (model.periodic_escalation_rate ?? 0) / 100, period);
-        }
+        payment_amount = utils.calculateCompoundingGrowth(model.payment_amount, (model.periodic_escalation_rate ?? 0) / 100, period);
 
         // create a payment object for each grantor on the agreement
         this.grantor.forEach((g) => {
