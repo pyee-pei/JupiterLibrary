@@ -148,6 +148,8 @@ const extractMultiFactValues = (doc, factType) => {
       fact[property_name] = value;
     });
 
+    fact.source_doc_id = doc.id;
+
     result.push(fact);
   });
 

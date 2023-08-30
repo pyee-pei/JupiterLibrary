@@ -150,6 +150,8 @@ const extractMultiFactValues = (doc, factType) => {
       fact[property_name] = value;
     });
 
+    fact.source_doc_id = doc.id;
+
     result.push(fact);
   });
 
@@ -511,7 +513,7 @@ class JupiterDoc {
     this.qc_flags = [];
 
     // flag a version number
-    this.libraryVersion = "1.1.04";
+    this.libraryVersion = "1.1.05";
 
     // deprecated - these should all be in agreement terms
     //this.calcOptionTermDates(this.option_terms, this.effective_date);
@@ -636,7 +638,7 @@ class JupiterDoc {
    * calculates base periodic payment for a given model
    * largest of all possible ways to calculate payment
    */
-  periodicBasePayment(model, op_details, compounding_escalation, term_escalation_rate, term_increase_amount, previous_terms, agreement_acres) {
+  periodicBasePayment(model, op_details, term_escalation_rate, term_increase_amount, previous_terms, agreement_acres) {
     if (!model) {
       return 0;
     }
@@ -663,11 +665,7 @@ class JupiterDoc {
     base = base + ((term_increase_amount ?? 0) * previous_terms ?? 0);
 
     // apply rate escalation
-    if (compounding_escalation) {
-      base = utils.calculateCompoundingGrowth(base, (term_escalation_rate ?? 0) / 100, previous_terms ?? 0);
-    } else {
-      base = utils.calculateGrowth(base, (term_escalation_rate ?? 0) / 100, previous_terms ?? 0);
-    }
+    base = utils.calculateCompoundingGrowth(base, (term_escalation_rate ?? 0) / 100, previous_terms ?? 0);
 
     return base;
   }
@@ -740,7 +738,6 @@ class JupiterDoc {
     const periodic_payment = this.periodicBasePayment(
       model,
       op_details,
-      term.compounding_escalation,
       term.escalation_rate,
       term.increase_amount,
       term.previous_terms,
