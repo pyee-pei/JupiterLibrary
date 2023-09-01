@@ -211,7 +211,7 @@ class JupiterDoc {
     this.qc_flags = [];
 
     // flag a version number
-    this.libraryVersion = "1.1.06";
+    this.libraryVersion = "1.1.07";
 
     // deprecated - these should all be in agreement terms
     //this.calcOptionTermDates(this.option_terms, this.effective_date);
@@ -281,19 +281,26 @@ class JupiterDoc {
         term.start_date_text = term.start_date.toFormat("MM/dd/yyyy");
 
         // determine appropriate duration to add
+        if (this.id === "240c72a5-45aa-4f8f-9bf7-e1832913cfa9") {
+          console.log(term.term_length_years);
+        }
         if (!term.term_length_years) {
           var addDuration = { days: 0 };
-        } else if (parseInt(term.term_length_years) === term.term_length_years) {
+        } /* else if (parseInt(term.term_length_years) === term.term_length_years) {
           var addDuration = { years: term.term_length_years };
         } else if (parseInt(term.term_length_years * 12) === term.term_length_years * 12) {
           var addDuration = { months: term.term_length_years * 12 };
-        } else {
-          var addDuration = { days: parseInt(term.term_length_years * 365) };
+        } */ else {
+          var addDuration = { years: term.term_length_years };
         }
+
+        // calculate end date from what will be a rounded year decimal approximation
+        var endCalc = term.start_date.plus(addDuration);
+        endCalc = endCalc.plus({ days: endCalc.c.hour >= 12 ? 1 : 0 }).startOf("day"); // this is to round up to the next day if the time is after noon
 
         // calculated end-date, will be tested against opDates later
         // end one day prior to the Nth anniversary, or on operationalDetails termination date, whichever is sooner
-        term.end_date = utils.getEarliestDateTime(opDetails?.termination_date, term.start_date.plus(addDuration).plus({ days: -1 }));
+        term.end_date = utils.getEarliestDateTime(opDetails?.termination_date, endCalc.plus({ days: -1 }));
 
         // on non-construction and non-operational terms, check to see if they are cut short, or totally removed by operational dates
         if (term.term_type !== "Construction" && term.term_type !== "Operations") {

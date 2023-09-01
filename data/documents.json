@@ -1,5 +1,1069 @@
 [
   {
+    "id": "d81235e6-444b-46dc-be04-d07d55db2fdc",
+    "name": "LEASE Goode, Michael D 20230821.pdf",
+    "documentTypeId": "a012c867-6cd8-4639-830f-5ad3a6ed29c3",
+    "processingStatus": "Processed",
+    "pageManipulationStatus": null,
+    "createdBy": "0a089276-00f5-444f-e407-08dac8de685f",
+    "createdOn": "2023-08-31T14:01:34.0268541+00:00",
+    "archivedBy": null,
+    "archivedOn": null,
+    "tagIds": [],
+    "userIds": [],
+    "documentStatusId": null,
+    "thoughts": [],
+    "facts": [
+      {
+        "id": "2c25ff51-b1f7-45e8-8dd6-4e1d7bff8396",
+        "factTypeId": "cc05d0b7-005b-4775-a84d-e7cc98a7241f",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "16459e06-9563-4934-bbc5-a5f797f3aa69",
+            "factFieldTypeId": "cb93b25d-8bed-4865-8402-b2b3ded62af5",
+            "stringValue": null,
+            "numberValue": null,
+            "dateValue": "2023-08-21",
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
+      },
+      {
+        "id": "7b26a1d6-a0e6-4253-b16d-cc6dd1bec7e6",
+        "factTypeId": "68bfe50d-25ad-42cf-b026-78db2d066f1b",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "a91bbc19-7da0-41a6-9336-5709d9395755",
+            "factFieldTypeId": "56c59cf7-9fcd-4598-ae86-6c226db77b53",
+            "stringValue": "Michael D. Goode & Joanne Goode",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
+      },
+      {
+        "id": "4db12712-f102-455a-93b6-47e2ef0c7735",
+        "factTypeId": "08060c37-a8a5-4852-9977-eccb9fc204f3",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "f1166da7-17cb-4792-960d-6b73067fa9a7",
+            "factFieldTypeId": "779a1262-4c53-4c4f-9021-5422c8e682d9",
+            "stringValue": "Tempus Power Management LLC",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
+      },
+      {
+        "id": "ab7360ef-9656-49c1-aaf0-6cdf818875d5",
+        "factTypeId": "97dd7b97-9980-42bd-915d-d26b13decbc1",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "9eb78d5f-31a9-44c8-800c-4c43030346d7",
+            "factFieldTypeId": "86f356a7-72b4-410b-8652-67cc63c6b00d",
+            "stringValue": "All notices or other communications required or permitted by this Agreement, including payments to Owner shall be in writing and shall be deemed given when personally delivered to Owner, Grantee or an Assignee, or in lieu of such personal service, five (5) days afterdeposit in the United States mail, first class, postage prepaid, certified; the next business day if sent by reputable overnight courier, pro vided receipt is obtained and charges prepaid by the delivering party, or by email provided notice is also sent on the following business day by one of the other permitted notice methods. Any notice shall be addressed as follows:\n\nIf to Owner: MICHAEL & JOANNE GOODE PO BOX 579 EDGEWOOD, TX 75117 Email: mdjmg1955@gmail.com\n\nIf to Grantee: Tempus Power Management LLC Attn: Legal Department 1108 Lavaca St, Suite 110-349 Austin, TX 78701 Email: gc@jupiterpower.io",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
+      },
+      {
+        "id": "8ba10070-3454-4216-9a07-9473c77b41d5",
+        "factTypeId": "9d00a14b-aad3-45ee-8ed6-572cba6fbbb1",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "4ae0a9be-031c-40b8-967a-95a7858aa72f",
+            "factFieldTypeId": "22aec2e0-055c-44f3-b8a7-7a267d91c2c2",
+            "stringValue": "Van Zandt",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "95c211dc-d0b7-44f6-9fd5-2ebdd2931cf0",
+            "factFieldTypeId": "dcbf5a14-e261-4519-b599-2892564e57f6",
+            "stringValue": "Texas",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "24d65e3a-ceda-49b2-aaf3-9e1e3570af3d",
+            "factFieldTypeId": "8b7bea34-5d6a-42be-89cd-7bf6b330f20d",
+            "stringValue": null,
+            "numberValue": 21,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "cf69ebb9-7d31-4091-80bd-ac60147057fc",
+            "factFieldTypeId": "06572f89-ffb7-423f-831b-60f7e68f8938",
+            "stringValue": "9834",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
+      },
+      {
+        "id": "decda772-37d4-4dbf-a629-9a7e601598a5",
+        "factTypeId": "fe02f206-d720-47ea-9462-180b440b953e",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "2c1836e6-d55f-423b-add9-2f44b224134e",
+            "factFieldTypeId": "17f6d36a-0a16-45c6-876d-9d8def5decf5",
+            "stringValue": "Lease",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
+      },
+      {
+        "id": "2b1742e4-4017-4ac9-b135-0df4afee002f",
+        "factTypeId": "7601840f-8d47-4c0b-a2a1-2ad2a692bfb8",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "8aa2a807-7507-4ed4-aa28-785c7b0f2c8c",
+            "factFieldTypeId": "c8208db9-e328-454d-b6c6-c940856f825d",
+            "stringValue": null,
+            "numberValue": 45,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "4814b4d3-05a4-4f7d-9f57-7008c9610fe7",
+            "factFieldTypeId": "b5bf4453-bfea-476f-9a9e-f16e93b17693",
+            "stringValue": "Start with Term",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "319a80c3-a556-4153-b6dc-bf892ede77d8",
+            "factFieldTypeId": "6ddcf646-d657-4a59-a238-78b6e481186d",
+            "stringValue": null,
+            "numberValue": null,
+            "dateValue": "2023-10-05",
+            "booleanValue": null,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "d765dcd5-c8a8-423c-8542-0a83fba2d272",
+            "factFieldTypeId": "f04c837a-a3fe-475c-b819-d8f974915fb7",
+            "stringValue": "Development",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "f4a0fb61-e869-4fe3-ba5a-1f6824fa6f93",
+            "factFieldTypeId": "ced1155e-6ce4-4528-b7e9-a8461d17c89d",
+            "stringValue": null,
+            "numberValue": 4,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "19f2ec0e-2fa7-4c6c-8b17-7b6ab0c86d75",
+            "factFieldTypeId": "7a9ddbe6-3c1e-4cf9-8811-2d256c56cddb",
+            "stringValue": null,
+            "numberValue": 1,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "2ae32526-be0a-4b22-9dbf-953e17184644",
+            "factFieldTypeId": "43dc655d-cd25-4859-a11e-610317f4baf3",
+            "stringValue": "Development",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "4d537ae8-c45f-4c02-b75e-184f271e7422",
+            "factFieldTypeId": "f401c9de-d1c2-4102-907c-adeb3915745c",
+            "stringValue": null,
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": false,
+            "annotations": null
+          }
+        ]
+      },
+      {
+        "id": "d95f1332-5612-4a5a-a722-d17bb20311ba",
+        "factTypeId": "3e9cf52f-c9d8-4f43-9f28-92ec8e4615b0",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "e4f2cc6e-d48a-4b44-a27c-5508b0b918df",
+            "factFieldTypeId": "d136291d-429e-46f3-9efe-e889b977ed47",
+            "stringValue": "Tempus Power Management LLC",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
+      },
+      {
+        "id": "357e15a2-1960-4db7-bd46-b62192914303",
+        "factTypeId": "7601840f-8d47-4c0b-a2a1-2ad2a692bfb8",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "373dac67-cb22-4d1f-ac58-c2418e843156",
+            "factFieldTypeId": "7a9ddbe6-3c1e-4cf9-8811-2d256c56cddb",
+            "stringValue": null,
+            "numberValue": 2,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "7bdc8aed-0d46-40a7-88d3-548f7fef5ba2",
+            "factFieldTypeId": "f04c837a-a3fe-475c-b819-d8f974915fb7",
+            "stringValue": "Construction",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "52a9af04-544c-4d22-8e19-026615a22933",
+            "factFieldTypeId": "43dc655d-cd25-4859-a11e-610317f4baf3",
+            "stringValue": "Construction",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "2bbeea77-f8a2-484a-86d5-176c74ef79a6",
+            "factFieldTypeId": "ced1155e-6ce4-4528-b7e9-a8461d17c89d",
+            "stringValue": null,
+            "numberValue": 1.5,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
+      },
+      {
+        "id": "45c0376f-5fc7-4cca-bc74-afbe38b16208",
+        "factTypeId": "7601840f-8d47-4c0b-a2a1-2ad2a692bfb8",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "7f1be39a-43f1-4ffe-8760-92d9473b3ceb",
+            "factFieldTypeId": "f04c837a-a3fe-475c-b819-d8f974915fb7",
+            "stringValue": "Operations",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "65dee90b-1ce3-48a2-8856-e741a4fe4cfa",
+            "factFieldTypeId": "ced1155e-6ce4-4528-b7e9-a8461d17c89d",
+            "stringValue": null,
+            "numberValue": 20,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "e8a77e4f-10a8-4bc8-8eb4-d8a2a6f42cd7",
+            "factFieldTypeId": "7a9ddbe6-3c1e-4cf9-8811-2d256c56cddb",
+            "stringValue": null,
+            "numberValue": 3,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "4dca4abd-ab42-49dc-a84c-1a2c6399221e",
+            "factFieldTypeId": "43dc655d-cd25-4859-a11e-610317f4baf3",
+            "stringValue": "Operations",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
+      },
+      {
+        "id": "17e21c42-50e9-45bb-abbf-5d6e69a76ee0",
+        "factTypeId": "7601840f-8d47-4c0b-a2a1-2ad2a692bfb8",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "8b72e08c-99c5-4f1a-b801-bb4d45231bf3",
+            "factFieldTypeId": "f401c9de-d1c2-4102-907c-adeb3915745c",
+            "stringValue": null,
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": true,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "0c5dcdb8-ec0e-46cb-aba5-43c902d5110d",
+            "factFieldTypeId": "f04c837a-a3fe-475c-b819-d8f974915fb7",
+            "stringValue": "Extension",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "24538e87-17cf-4ccf-9b16-6ae8ff64da77",
+            "factFieldTypeId": "ced1155e-6ce4-4528-b7e9-a8461d17c89d",
+            "stringValue": null,
+            "numberValue": 10,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "63304b3d-e4b0-4301-b111-137690b1acc7",
+            "factFieldTypeId": "7a9ddbe6-3c1e-4cf9-8811-2d256c56cddb",
+            "stringValue": null,
+            "numberValue": 4,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "b5bb59ee-6b87-4f5a-af64-8eeb39930b24",
+            "factFieldTypeId": "43dc655d-cd25-4859-a11e-610317f4baf3",
+            "stringValue": "Operations",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
+      },
+      {
+        "id": "25d18bc4-5aa5-4f65-b6d7-b3698e65c072",
+        "factTypeId": "7601840f-8d47-4c0b-a2a1-2ad2a692bfb8",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "2a6243bd-b1de-4fb6-83ba-907a021a2302",
+            "factFieldTypeId": "f04c837a-a3fe-475c-b819-d8f974915fb7",
+            "stringValue": "Custom 1",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "30be086a-6731-4387-aaea-14a2af6fb1b8",
+            "factFieldTypeId": "ced1155e-6ce4-4528-b7e9-a8461d17c89d",
+            "stringValue": null,
+            "numberValue": 10,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "4ff3816f-e793-4b07-9433-e6167b1ac4f3",
+            "factFieldTypeId": "7a9ddbe6-3c1e-4cf9-8811-2d256c56cddb",
+            "stringValue": null,
+            "numberValue": 5,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "b58d815e-08c0-4698-8725-5b9c9613fe59",
+            "factFieldTypeId": "43dc655d-cd25-4859-a11e-610317f4baf3",
+            "stringValue": "Operations",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
+      }
+    ],
+    "pageCount": 25,
+    "pages": null,
+    "highlightedText": null,
+    "highlightedName": null,
+    "sourceDocumentId": "d81235e6-444b-46dc-be04-d07d55db2fdc",
+    "sourceDocumentName": "LEASE Goode, Michael D 20230821.pdf",
+    "securityLabelId": null,
+    "lastModifiedBy": "0c4ad3a7-78d1-44e1-dc08-08db401b7f0b",
+    "lastModifiedOn": "2023-08-31T21:04:49.1212274+00:00",
+    "score": 100
+  },
+  {
+    "id": "f0454672-3510-4c7c-a657-59617eab9741",
+    "name": "Chester Termination Letter Gardner.pdf",
+    "documentTypeId": "f0f66551-db69-41ce-9a4f-ddb61034aacd",
+    "processingStatus": "Processed",
+    "pageManipulationStatus": null,
+    "createdBy": "0a089276-00f5-444f-e407-08dac8de685f",
+    "createdOn": "2023-08-30T15:46:49.3616764+00:00",
+    "archivedBy": null,
+    "archivedOn": null,
+    "tagIds": [],
+    "userIds": [],
+    "documentStatusId": null,
+    "thoughts": [],
+    "facts": [],
+    "pageCount": 1,
+    "pages": null,
+    "highlightedText": null,
+    "highlightedName": null,
+    "sourceDocumentId": "f0454672-3510-4c7c-a657-59617eab9741",
+    "sourceDocumentName": "Chester Termination Letter Gardner.pdf",
+    "securityLabelId": null,
+    "lastModifiedBy": "thoughttrace-system",
+    "lastModifiedOn": "2023-08-30T15:47:03.6854657+00:00",
+    "score": 100
+  },
+  {
+    "id": "da7701c9-9f43-4114-8752-a0bc4b391e37",
+    "name": "JP0053 Singleton LTR-TER Boston Autoport, LLC 20230823.pdf",
+    "documentTypeId": "f0f66551-db69-41ce-9a4f-ddb61034aacd",
+    "processingStatus": "Processed",
+    "pageManipulationStatus": null,
+    "createdBy": "0a089276-00f5-444f-e407-08dac8de685f",
+    "createdOn": "2023-08-30T15:42:32.3784358+00:00",
+    "archivedBy": null,
+    "archivedOn": null,
+    "tagIds": [],
+    "userIds": [],
+    "documentStatusId": null,
+    "thoughts": [],
+    "facts": [
+      {
+        "id": "0c762ff4-fa20-4c5b-95c6-de45cea78f7d",
+        "factTypeId": "bbf9acb0-7897-4421-b6e2-faf3928b85ca",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "4c74b12b-381e-49c7-b08f-6ba2cdc65f9b",
+            "factFieldTypeId": "614a8c7a-019d-4d94-ab2e-147bc511b537",
+            "stringValue": "ESMT OPT - Singleton I Boston Autoport - Boston Autoport - JP0053",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
+      },
+      {
+        "id": "ee1c1bcd-738f-45bd-88b6-eb8e776f4942",
+        "factTypeId": "8a874127-1425-457c-af96-d311f09034d6",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "0817a656-e856-4170-9eb7-d2a3f8ecc60e",
+            "factFieldTypeId": "2e45d6a2-8eb3-435e-a6a8-ce90f93181e7",
+            "stringValue": null,
+            "numberValue": null,
+            "dateValue": "2023-08-21",
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
+      },
+      {
+        "id": "992d9dfb-6f4e-4f78-b258-a2a4cf82531b",
+        "factTypeId": "842a3d35-19c1-4bd6-a222-a451231533f3",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "a20561a2-37e5-4fcb-a56d-52469fd812b3",
+            "factFieldTypeId": "77036264-5de9-41a4-be1d-0be12f245bc1",
+            "stringValue": null,
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": true,
+            "annotations": null
+          }
+        ]
+      }
+    ],
+    "pageCount": 1,
+    "pages": null,
+    "highlightedText": null,
+    "highlightedName": null,
+    "sourceDocumentId": "da7701c9-9f43-4114-8752-a0bc4b391e37",
+    "sourceDocumentName": "JP0053 Singleton LTR-TER Boston Autoport, LLC 20230823.pdf",
+    "securityLabelId": null,
+    "lastModifiedBy": "0c4ad3a7-78d1-44e1-dc08-08db401b7f0b",
+    "lastModifiedOn": "2023-08-30T16:55:22.0284653+00:00",
+    "score": 100
+  },
+  {
+    "id": "9d87752a-b467-42e6-a604-f16e2f84dbfb",
+    "name": "JP0067 Hidalgo OPT-PUR Rafael & Carmen Santos Revocable Trust, July 26, 2007 20230829.pdf",
+    "documentTypeId": "a2063704-ad09-43c5-a773-914ea269d48e",
+    "processingStatus": "Processed",
+    "pageManipulationStatus": null,
+    "createdBy": "0a089276-00f5-444f-e407-08dac8de685f",
+    "createdOn": "2023-08-29T21:06:52.40437+00:00",
+    "archivedBy": null,
+    "archivedOn": null,
+    "tagIds": [],
+    "userIds": [],
+    "documentStatusId": null,
+    "thoughts": [],
+    "facts": [
+      {
+        "id": "c2e75835-7f39-4cd6-9485-7986fd1d4877",
+        "factTypeId": "bbf9acb0-7897-4421-b6e2-faf3928b85ca",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "c0d1adb9-46e5-415d-a860-47cdf0b35385",
+            "factFieldTypeId": "614a8c7a-019d-4d94-ab2e-147bc511b537",
+            "stringValue": "OPT-PUR - Hidalgo - Santos - JP0067",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
+      },
+      {
+        "id": "4547f75f-5a6d-4714-9723-b6c3d78105f5",
+        "factTypeId": "cc05d0b7-005b-4775-a84d-e7cc98a7241f",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "2288abeb-084e-4fd5-8601-0b58e27893b4",
+            "factFieldTypeId": "cb93b25d-8bed-4865-8402-b2b3ded62af5",
+            "stringValue": null,
+            "numberValue": null,
+            "dateValue": "2023-08-29",
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
+      },
+      {
+        "id": "dc0e0c5c-5250-48e6-8fef-46278a154ab2",
+        "factTypeId": "08060c37-a8a5-4852-9977-eccb9fc204f3",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "5985dc2d-2c3f-49a3-a9d1-e3f8fc4dfc3a",
+            "factFieldTypeId": "779a1262-4c53-4c4f-9021-5422c8e682d9",
+            "stringValue": "Hidalgo Energy Storage LLC",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
+      },
+      {
+        "id": "ac495759-a2ef-48ba-93f1-49ef4e08847b",
+        "factTypeId": "429fc170-2a94-4cc6-901f-2743897ed6c3",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "66bf485b-a1e6-4522-9501-936cfc89c9f8",
+            "factFieldTypeId": "09272207-6ba1-4a2a-bcac-35ac0ec7cded",
+            "stringValue": "JP0067",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
+      },
+      {
+        "id": "aa497ea3-1f95-4b3a-9ddd-a7c1208182e7",
+        "factTypeId": "cf7fc28f-823e-4af1-a3be-09b756c3952a",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "b4dab402-24a3-4c69-bdf8-8a04183c20b3",
+            "factFieldTypeId": "a7fdf688-839d-49f8-8e07-a55dc19cb521",
+            "stringValue": "Hidalgo",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
+      },
+      {
+        "id": "0eab4873-0553-46dd-8bdc-6db3083a2bc5",
+        "factTypeId": "97dd7b97-9980-42bd-915d-d26b13decbc1",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "510e162b-42b3-4414-b598-f105d95f50b9",
+            "factFieldTypeId": "86f356a7-72b4-410b-8652-67cc63c6b00d",
+            "stringValue": "All notices, demands, or other communications given under this Agreement, unless otherwise stated herein, shall be in writing and sent by: (a)personal delivery, (b) nationally recognized overnight courier service, (c) registered or certified mail, or (d) email, provided notice is also sent on the following business day by one of the other permitted notice methods. Any notice under this section shall be deemed to have been delivered when received or upon refusal to accept delivery.\n\nAny notice shall be addressed as follows:\n\nSeller: Carmen Santos 2121 Gale Avenue Long Beach, CA 90810\n\nPurchaser: Hidalgo Energy Storage LLC Attn: Legal 1108 Lavaca Street, Suite 110-349 Austin, Texas 78701 gc@jupiterpower.io",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
+      },
+      {
+        "id": "1d5096c3-b9ea-473e-8a0b-a589c48e12d8",
+        "factTypeId": "fe02f206-d720-47ea-9462-180b440b953e",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "b9b6c8a6-d48a-47f8-ac8a-27071c2cab1f",
+            "factFieldTypeId": "17f6d36a-0a16-45c6-876d-9d8def5decf5",
+            "stringValue": "OPT-PUR",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
+      },
+      {
+        "id": "13a95103-ee4b-43a3-9f0e-2aa5a7ef7695",
+        "factTypeId": "9d00a14b-aad3-45ee-8ed6-572cba6fbbb1",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "83d7d62f-6ae9-4522-afd5-c611724ca55c",
+            "factFieldTypeId": "8b7bea34-5d6a-42be-89cd-7bf6b330f20d",
+            "stringValue": null,
+            "numberValue": 2.22,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "e9cdb711-215a-4200-882a-d1bc6db539b0",
+            "factFieldTypeId": "22aec2e0-055c-44f3-b8a7-7a267d91c2c2",
+            "stringValue": "San Bernardino",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "d84b7f45-c629-4077-8ca3-ab8a34715bbc",
+            "factFieldTypeId": "dcbf5a14-e261-4519-b599-2892564e57f6",
+            "stringValue": "California",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "3bc94e8a-7c2d-4572-a263-34478d6927b9",
+            "factFieldTypeId": "06572f89-ffb7-423f-831b-60f7e68f8938",
+            "stringValue": "3128-021-11-0000",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
+      }
+    ],
+    "pageCount": 31,
+    "pages": null,
+    "highlightedText": null,
+    "highlightedName": null,
+    "sourceDocumentId": "9d87752a-b467-42e6-a604-f16e2f84dbfb",
+    "sourceDocumentName": "JP0067 Hidalgo OPT-PUR Rafael & Carmen Santos Revocable Trust, July 26, 2007 20230829.pdf",
+    "securityLabelId": null,
+    "lastModifiedBy": "0c4ad3a7-78d1-44e1-dc08-08db401b7f0b",
+    "lastModifiedOn": "2023-08-29T23:20:57.222903+00:00",
+    "score": 100
+  },
+  {
+    "id": "70606a39-b4ca-42e4-ac1a-659d3327ce90",
+    "name": "OPT-PUR John Sullivan Trust, and Jean Sullivan Trust 20230824.pdf",
+    "documentTypeId": "a2063704-ad09-43c5-a773-914ea269d48e",
+    "processingStatus": "Processed",
+    "pageManipulationStatus": null,
+    "createdBy": "0a089276-00f5-444f-e407-08dac8de685f",
+    "createdOn": "2023-08-24T22:17:00.4481459+00:00",
+    "archivedBy": null,
+    "archivedOn": null,
+    "tagIds": [],
+    "userIds": [],
+    "documentStatusId": null,
+    "thoughts": [],
+    "facts": [
+      {
+        "id": "605280ef-fcb8-4bb9-b504-dec1f2167886",
+        "factTypeId": "429fc170-2a94-4cc6-901f-2743897ed6c3",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "5994d777-3c69-4fc0-910a-c3fd261c1fab",
+            "factFieldTypeId": "09272207-6ba1-4a2a-bcac-35ac0ec7cded",
+            "stringValue": "JP0086",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
+      },
+      {
+        "id": "1666e996-7a73-4977-9139-61b059c2ac91",
+        "factTypeId": "cc05d0b7-005b-4775-a84d-e7cc98a7241f",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "f77687bd-ef9f-4d87-91f2-31714f24a68b",
+            "factFieldTypeId": "cb93b25d-8bed-4865-8402-b2b3ded62af5",
+            "stringValue": null,
+            "numberValue": null,
+            "dateValue": "2023-08-01",
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
+      },
+      {
+        "id": "aaf4b361-b904-48a9-a718-6f096bc6ff5e",
+        "factTypeId": "3e9cf52f-c9d8-4f43-9f28-92ec8e4615b0",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "9d5526fe-e81b-44e5-aae2-8ca0101d2cff",
+            "factFieldTypeId": "d136291d-429e-46f3-9efe-e889b977ed47",
+            "stringValue": "Occasio Power Management LLC",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
+      },
+      {
+        "id": "2115e07e-28ba-4bd0-a245-fb6fa2782c60",
+        "factTypeId": "68bfe50d-25ad-42cf-b026-78db2d066f1b",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "3bada51e-e659-4153-92d8-a0786b2c3306",
+            "factFieldTypeId": "56c59cf7-9fcd-4598-ae86-6c226db77b53",
+            "stringValue": "John J. Sullivan Trust Dated April 20, 1990, and Jean A. Sullivan Trust Dated April 20, 1990",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
+      },
+      {
+        "id": "4df5ede3-210a-40a9-8b0c-cc09fa451fa4",
+        "factTypeId": "08060c37-a8a5-4852-9977-eccb9fc204f3",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "aba08fca-8a81-49f1-ade2-442d52ef9b9e",
+            "factFieldTypeId": "779a1262-4c53-4c4f-9021-5422c8e682d9",
+            "stringValue": "Occasio Power Management LLC",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
+      },
+      {
+        "id": "098a6a87-33ad-4f70-ab88-dd9367284613",
+        "factTypeId": "07fd8b4c-3daf-4b41-940b-09fcf4da5d87",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "50869b1a-f5aa-452d-b234-a8e1248c81c1",
+            "factFieldTypeId": "ce717681-a47f-4b34-af1b-835e4acc2ba3",
+            "stringValue": "Notice section details for the Seller are incorrect in the Agreement. As it is written in the Facts is correct. -LM",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
+      },
+      {
+        "id": "174f395b-3b42-4d41-b6d3-b40a453ce24d",
+        "factTypeId": "470c0504-9386-4ba5-a9a8-ecc3fd42f592",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "eaee42be-bc8c-4c2a-b440-d03db223946d",
+            "factFieldTypeId": "4f1b1956-1751-43fa-9f97-ec44ff2a499d",
+            "stringValue": null,
+            "numberValue": 2160000,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
+      },
+      {
+        "id": "e058e295-29f5-480d-9246-b048ba1ca698",
+        "factTypeId": "9d00a14b-aad3-45ee-8ed6-572cba6fbbb1",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "bff293de-cfa0-4e1a-b4e7-9ea0423d2350",
+            "factFieldTypeId": "8b7bea34-5d6a-42be-89cd-7bf6b330f20d",
+            "stringValue": null,
+            "numberValue": 90,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "ba2b2a88-cd15-443d-a51c-6d490197462b",
+            "factFieldTypeId": "22aec2e0-055c-44f3-b8a7-7a267d91c2c2",
+            "stringValue": "Monroe",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "9ad3f408-f6ea-4da3-92b1-5e9f8c1e345d",
+            "factFieldTypeId": "dcbf5a14-e261-4519-b599-2892564e57f6",
+            "stringValue": "Michigan",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
+      },
+      {
+        "id": "581418bc-c40c-4c31-9dca-fff6e0029005",
+        "factTypeId": "7601840f-8d47-4c0b-a2a1-2ad2a692bfb8",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "3732e996-e3c0-45cb-ba2a-a2a1edd87616",
+            "factFieldTypeId": "ced1155e-6ce4-4528-b7e9-a8461d17c89d",
+            "stringValue": null,
+            "numberValue": 3,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "67400f3b-6db5-47c6-a689-cdd79a23bd1d",
+            "factFieldTypeId": "7a9ddbe6-3c1e-4cf9-8811-2d256c56cddb",
+            "stringValue": null,
+            "numberValue": 1,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "da1f8386-7d5b-4ceb-83e4-7640ccd6c5b5",
+            "factFieldTypeId": "43dc655d-cd25-4859-a11e-610317f4baf3",
+            "stringValue": "Option",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "245c6ab0-6d62-4311-b34f-f34027553750",
+            "factFieldTypeId": "c8208db9-e328-454d-b6c6-c940856f825d",
+            "stringValue": null,
+            "numberValue": 15,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "9c0fe87b-ab29-4ada-8bf9-503385fd037a",
+            "factFieldTypeId": "b5bf4453-bfea-476f-9a9e-f16e93b17693",
+            "stringValue": "Start with Term",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
+      },
+      {
+        "id": "eacd969e-a454-4e6a-b3e3-b8c4f9c77f7d",
+        "factTypeId": "fe02f206-d720-47ea-9462-180b440b953e",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "efc5f44a-60c0-4177-a2d1-c109414f1faa",
+            "factFieldTypeId": "17f6d36a-0a16-45c6-876d-9d8def5decf5",
+            "stringValue": "OPT-PUR",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
+      },
+      {
+        "id": "44e6bfa3-da84-4a5f-8b3a-b3e821ee2234",
+        "factTypeId": "97dd7b97-9980-42bd-915d-d26b13decbc1",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "c5ef90ec-75ea-4c9e-84be-26947743f1b8",
+            "factFieldTypeId": "86f356a7-72b4-410b-8652-67cc63c6b00d",
+            "stringValue": "All notices, demands, or other communications given under this Agreement, unless otherwise stated herein, shall be in writing and sent by: (a)personal delivery, (b) nationally recognized overnight courier service, (c) registered or certified mail, or (d) email, provided notice is also sent on the following business day by one of the other permitted notice methods. Any notice under 30(a-c) shall be deemed to have been delivered when received or upon refusal to accept delivery. Any notice shall be addressed as follows:\n\nIf to Buyer: Occasio Power Management LLC c/o Jupiter Power LLC 1108 Lavaca St ., Ste. 110-349 Austin, Texas 78701 Attn: Legal Email: gc@jupiterpower.io\n\nIf to Seller: JOHN SULLIVAN 13361 S DIXIE Highway LaSalle, MI 48145 With a copy to: Conly K. Crossley Petrangelo Bondy & Crossley, P.C.",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
+      }
+    ],
+    "pageCount": 19,
+    "pages": null,
+    "highlightedText": null,
+    "highlightedName": null,
+    "sourceDocumentId": "70606a39-b4ca-42e4-ac1a-659d3327ce90",
+    "sourceDocumentName": "OPT-PUR John Sullivan Trust, and Jean Sullivan Trust 20230824.pdf",
+    "securityLabelId": null,
+    "lastModifiedBy": "0c4ad3a7-78d1-44e1-dc08-08db401b7f0b",
+    "lastModifiedOn": "2023-08-25T17:11:57.1331639+00:00",
+    "score": 100
+  },
+  {
     "id": "09142aaf-e975-4105-9448-0df79cc27c29",
     "name": "OPT-PUR 501 Coldwater LLC 20230821.pdf",
     "documentTypeId": "a2063704-ad09-43c5-a773-914ea269d48e",
@@ -116,17 +1180,6 @@
             "numberValue": null,
             "dateValue": null,
             "booleanValue": false,
-            "annotations": null
-          },
-          {
-            "score": null,
-            "highlightedText": null,
-            "id": "56571f49-13ce-4fd5-80e6-ac36610e6147",
-            "factFieldTypeId": "f9faf261-09e6-4316-9cf4-fa87ded6a14c",
-            "stringValue": null,
-            "numberValue": 5000,
-            "dateValue": null,
-            "booleanValue": null,
             "annotations": null
           },
           {
@@ -258,6 +1311,57 @@
             "annotations": null
           }
         ]
+      },
+      {
+        "id": "53c6dfce-00d2-4dd2-b75a-902385cd5344",
+        "factTypeId": "429fc170-2a94-4cc6-901f-2743897ed6c3",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "78f8c543-cd9f-4fda-bece-7955f85b664a",
+            "factFieldTypeId": "09272207-6ba1-4a2a-bcac-35ac0ec7cded",
+            "stringValue": "JP0085",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
+      },
+      {
+        "id": "b1f86be1-37b8-48fb-abde-c53a0003a2c6",
+        "factTypeId": "cf7fc28f-823e-4af1-a3be-09b756c3952a",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "efb6a9a5-e9dd-4ab5-b7c1-7cf8f7749947",
+            "factFieldTypeId": "a7fdf688-839d-49f8-8e07-a55dc19cb521",
+            "stringValue": "501 Coldwater",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
+      },
+      {
+        "id": "f63bd170-81f6-405e-940d-9347a4f7436e",
+        "factTypeId": "bbf9acb0-7897-4421-b6e2-faf3928b85ca",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "0ef97af6-b344-4619-87c9-767aac03b827",
+            "factFieldTypeId": "614a8c7a-019d-4d94-ab2e-147bc511b537",
+            "stringValue": "OPT-PUR - 501 Coldwater - 501 Coldwater - JP0085",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
       }
     ],
     "pageCount": 20,
@@ -267,8 +1371,8 @@
     "sourceDocumentId": "09142aaf-e975-4105-9448-0df79cc27c29",
     "sourceDocumentName": "OPT-PUR 501 Coldwater LLC 20230821.pdf",
     "securityLabelId": null,
-    "lastModifiedBy": "f00c1746-8935-473c-4a94-08dac7d3ca42",
-    "lastModifiedOn": "2023-08-22T22:19:58.7080598+00:00",
+    "lastModifiedBy": "0c4ad3a7-78d1-44e1-dc08-08db401b7f0b",
+    "lastModifiedOn": "2023-08-24T16:45:57.2369327+00:00",
     "score": 100
   },
   {
@@ -571,17 +1675,6 @@
             "numberValue": null,
             "dateValue": null,
             "booleanValue": null,
-            "annotations": null
-          },
-          {
-            "score": null,
-            "highlightedText": null,
-            "id": "41653146-c620-4239-853a-13154f7226f8",
-            "factFieldTypeId": "cba28aa6-29dd-4f30-806b-db13887d050c",
-            "stringValue": null,
-            "numberValue": null,
-            "dateValue": null,
-            "booleanValue": true,
             "annotations": null
           }
         ]
@@ -985,7 +2078,7 @@
             "highlightedText": null,
             "id": "2c2cfec1-6f22-4e54-a719-968d5b9ba340",
             "factFieldTypeId": "f04c837a-a3fe-475c-b819-d8f974915fb7",
-            "stringValue": "Extension",
+            "stringValue": "Option",
             "numberValue": null,
             "dateValue": null,
             "booleanValue": null,
@@ -1011,17 +2104,6 @@
             "numberValue": null,
             "dateValue": null,
             "booleanValue": true,
-            "annotations": null
-          },
-          {
-            "score": null,
-            "highlightedText": null,
-            "id": "61c59642-22e3-47ce-864e-1e8d3887714b",
-            "factFieldTypeId": "3fbbc152-6e5a-4b2e-9710-f17c1b63f8b0",
-            "stringValue": null,
-            "numberValue": 10000,
-            "dateValue": null,
-            "booleanValue": null,
             "annotations": null
           },
           {
@@ -1057,7 +2139,7 @@
             "highlightedText": null,
             "id": "cc274ae1-515f-4392-b38e-fbf1fdaf283f",
             "factFieldTypeId": "f04c837a-a3fe-475c-b819-d8f974915fb7",
-            "stringValue": "Custom 1",
+            "stringValue": "Option",
             "numberValue": null,
             "dateValue": null,
             "booleanValue": null,
@@ -1110,17 +2192,6 @@
           {
             "score": null,
             "highlightedText": null,
-            "id": "23a190bd-c715-46ce-b1d2-61aa3ca2c913",
-            "factFieldTypeId": "3fbbc152-6e5a-4b2e-9710-f17c1b63f8b0",
-            "stringValue": null,
-            "numberValue": 10000,
-            "dateValue": null,
-            "booleanValue": null,
-            "annotations": null
-          },
-          {
-            "score": null,
-            "highlightedText": null,
             "id": "e9b1ccc6-0ae2-4f13-b25a-0f8d97e1eba4",
             "factFieldTypeId": "a056c2a7-1297-4b8a-ab7d-11b73e18b3d6",
             "stringValue": null,
@@ -1151,7 +2222,7 @@
             "highlightedText": null,
             "id": "d53cf9e7-c083-4d29-86d1-300fc65171ea",
             "factFieldTypeId": "f04c837a-a3fe-475c-b819-d8f974915fb7",
-            "stringValue": "Custom 2",
+            "stringValue": "Option",
             "numberValue": null,
             "dateValue": null,
             "booleanValue": null,
@@ -1199,17 +2270,6 @@
             "numberValue": null,
             "dateValue": null,
             "booleanValue": true,
-            "annotations": null
-          },
-          {
-            "score": null,
-            "highlightedText": null,
-            "id": "821523bd-449d-4676-9d0c-9c70bfa8f72f",
-            "factFieldTypeId": "3fbbc152-6e5a-4b2e-9710-f17c1b63f8b0",
-            "stringValue": null,
-            "numberValue": 10000,
-            "dateValue": null,
-            "booleanValue": null,
             "annotations": null
           },
           {
@@ -1321,189 +2381,6 @@
         ]
       },
       {
-        "id": "24d4c7a0-4b63-40e8-b969-ab5677738d91",
-        "factTypeId": "e31c3090-21b0-4afd-877d-cf7eeed20673",
-        "fields": [
-          {
-            "score": null,
-            "highlightedText": null,
-            "id": "78a7f774-ffec-46e2-a3c7-7b09791ad206",
-            "factFieldTypeId": "4113ec1c-007a-4f0d-9c2c-4f1aaebf452b",
-            "stringValue": "Extension",
-            "numberValue": null,
-            "dateValue": null,
-            "booleanValue": null,
-            "annotations": null
-          },
-          {
-            "score": null,
-            "highlightedText": null,
-            "id": "213e7a30-e268-4d12-8c51-b6833996cdc6",
-            "factFieldTypeId": "6c43a922-acf9-4afe-9fb6-dc97e14d9099",
-            "stringValue": "Once per Term",
-            "numberValue": null,
-            "dateValue": null,
-            "booleanValue": null,
-            "annotations": null
-          },
-          {
-            "score": null,
-            "highlightedText": null,
-            "id": "20c91d53-33c4-44fb-bf54-ccb8ac8a1c34",
-            "factFieldTypeId": "8e851c65-6b4b-43cf-937f-c7b9611f15a1",
-            "stringValue": null,
-            "numberValue": null,
-            "dateValue": null,
-            "booleanValue": false,
-            "annotations": null
-          },
-          {
-            "score": null,
-            "highlightedText": null,
-            "id": "c2e5082e-5134-44a0-b18a-70dbd123a79b",
-            "factFieldTypeId": "8799ed1e-a858-4d08-ba17-52549d69ea3f",
-            "stringValue": null,
-            "numberValue": null,
-            "dateValue": null,
-            "booleanValue": true,
-            "annotations": null
-          },
-          {
-            "score": null,
-            "highlightedText": null,
-            "id": "90756165-7a73-4498-ae19-f1ca59263466",
-            "factFieldTypeId": "43986a11-a08f-4365-ae0b-6e1673f85daf",
-            "stringValue": null,
-            "numberValue": 145000,
-            "dateValue": null,
-            "booleanValue": null,
-            "annotations": null
-          }
-        ]
-      },
-      {
-        "id": "4d246a21-d5b4-4504-b62a-a71e6f1c490b",
-        "factTypeId": "e31c3090-21b0-4afd-877d-cf7eeed20673",
-        "fields": [
-          {
-            "score": null,
-            "highlightedText": null,
-            "id": "ae33742b-6cd4-4bf7-9197-3414d186a3be",
-            "factFieldTypeId": "4113ec1c-007a-4f0d-9c2c-4f1aaebf452b",
-            "stringValue": "Custom 1",
-            "numberValue": null,
-            "dateValue": null,
-            "booleanValue": null,
-            "annotations": null
-          },
-          {
-            "score": null,
-            "highlightedText": null,
-            "id": "432d14dd-615a-4a80-a954-fedc89c01edd",
-            "factFieldTypeId": "8799ed1e-a858-4d08-ba17-52549d69ea3f",
-            "stringValue": null,
-            "numberValue": null,
-            "dateValue": null,
-            "booleanValue": true,
-            "annotations": null
-          },
-          {
-            "score": null,
-            "highlightedText": null,
-            "id": "966c73d8-2f61-422e-84a1-1cb1f475ee18",
-            "factFieldTypeId": "8e851c65-6b4b-43cf-937f-c7b9611f15a1",
-            "stringValue": null,
-            "numberValue": null,
-            "dateValue": null,
-            "booleanValue": false,
-            "annotations": null
-          },
-          {
-            "score": null,
-            "highlightedText": null,
-            "id": "9439483f-4a52-4cef-a227-4a019014bad2",
-            "factFieldTypeId": "6c43a922-acf9-4afe-9fb6-dc97e14d9099",
-            "stringValue": "Once per Term",
-            "numberValue": null,
-            "dateValue": null,
-            "booleanValue": null,
-            "annotations": null
-          },
-          {
-            "score": null,
-            "highlightedText": null,
-            "id": "3e47d143-4d90-441e-9754-588582f094ed",
-            "factFieldTypeId": "43986a11-a08f-4365-ae0b-6e1673f85daf",
-            "stringValue": null,
-            "numberValue": 155000,
-            "dateValue": null,
-            "booleanValue": null,
-            "annotations": null
-          }
-        ]
-      },
-      {
-        "id": "78b0ec8d-b401-4a58-b0e8-329fbd979c01",
-        "factTypeId": "e31c3090-21b0-4afd-877d-cf7eeed20673",
-        "fields": [
-          {
-            "score": null,
-            "highlightedText": null,
-            "id": "0e245b74-db09-4c0a-aa35-468b695a13ca",
-            "factFieldTypeId": "4113ec1c-007a-4f0d-9c2c-4f1aaebf452b",
-            "stringValue": "Custom 2",
-            "numberValue": null,
-            "dateValue": null,
-            "booleanValue": null,
-            "annotations": null
-          },
-          {
-            "score": null,
-            "highlightedText": null,
-            "id": "60c7187e-1672-45f9-9e26-668cd47f440c",
-            "factFieldTypeId": "8799ed1e-a858-4d08-ba17-52549d69ea3f",
-            "stringValue": null,
-            "numberValue": null,
-            "dateValue": null,
-            "booleanValue": true,
-            "annotations": null
-          },
-          {
-            "score": null,
-            "highlightedText": null,
-            "id": "4c1b3cfc-7379-4801-99c1-3f028d173af9",
-            "factFieldTypeId": "8e851c65-6b4b-43cf-937f-c7b9611f15a1",
-            "stringValue": null,
-            "numberValue": null,
-            "dateValue": null,
-            "booleanValue": false,
-            "annotations": null
-          },
-          {
-            "score": null,
-            "highlightedText": null,
-            "id": "3b6c34a6-3383-4e42-97bc-def2edc12f0e",
-            "factFieldTypeId": "6c43a922-acf9-4afe-9fb6-dc97e14d9099",
-            "stringValue": "Once per Term",
-            "numberValue": null,
-            "dateValue": null,
-            "booleanValue": null,
-            "annotations": null
-          },
-          {
-            "score": null,
-            "highlightedText": null,
-            "id": "bd3b957c-d05f-4356-ad2c-989218f92a6a",
-            "factFieldTypeId": "43986a11-a08f-4365-ae0b-6e1673f85daf",
-            "stringValue": null,
-            "numberValue": 165000,
-            "dateValue": null,
-            "booleanValue": null,
-            "annotations": null
-          }
-        ]
-      },
-      {
         "id": "f239b3c2-ca90-4e1a-812a-5e9f1b2b0765",
         "factTypeId": "07fd8b4c-3daf-4b41-940b-09fcf4da5d87",
         "fields": [
@@ -1557,7 +2434,7 @@
     "sourceDocumentName": "JP0067 Hidalgo OPT-PUR CRA Investments, LLC 20230804.pdf",
     "securityLabelId": null,
     "lastModifiedBy": "f00c1746-8935-473c-4a94-08dac7d3ca42",
-    "lastModifiedOn": "2023-08-22T22:04:54.0972148+00:00",
+    "lastModifiedOn": "2023-09-01T15:57:04.0113504+00:00",
     "score": 100
   },
   {
@@ -2612,7 +3489,7 @@
             "id": "d0f0ebeb-f615-4f93-9d6b-61246cb7741d",
             "factFieldTypeId": "ced1155e-6ce4-4528-b7e9-a8461d17c89d",
             "stringValue": null,
-            "numberValue": 2.751,
+            "numberValue": 2.5,
             "dateValue": null,
             "booleanValue": null,
             "annotations": null
@@ -2669,6 +3546,67 @@
             "annotations": null
           }
         ]
+      },
+      {
+        "id": "c5848c1c-b71e-4ca1-bbbf-b2375b7bb01a",
+        "factTypeId": "7601840f-8d47-4c0b-a2a1-2ad2a692bfb8",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "a092d79e-72d1-4aa1-98e8-062187e1eedd",
+            "factFieldTypeId": "f401c9de-d1c2-4102-907c-adeb3915745c",
+            "stringValue": null,
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": true,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "85902bc9-52e3-48ca-91f8-db32a0d057ff",
+            "factFieldTypeId": "ced1155e-6ce4-4528-b7e9-a8461d17c89d",
+            "stringValue": null,
+            "numberValue": 0.257,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "5ace9cf6-e358-47d3-a62f-f17ab6ca0e74",
+            "factFieldTypeId": "7a9ddbe6-3c1e-4cf9-8811-2d256c56cddb",
+            "stringValue": null,
+            "numberValue": 2,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "a79cb163-02a8-42d6-8bbd-ef1571741e74",
+            "factFieldTypeId": "43dc655d-cd25-4859-a11e-610317f4baf3",
+            "stringValue": "Option",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "abd976e9-3226-413e-b93f-5e927a13f5dc",
+            "factFieldTypeId": "f04c837a-a3fe-475c-b819-d8f974915fb7",
+            "stringValue": "Custom 1",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
       }
     ],
     "pageCount": 4,
@@ -2679,7 +3617,7 @@
     "sourceDocumentName": "JP0053 Singleton OPT-AMD 15 Commercial Investors LLC 20230731.pdf",
     "securityLabelId": null,
     "lastModifiedBy": "f00c1746-8935-473c-4a94-08dac7d3ca42",
-    "lastModifiedOn": "2023-08-15T18:34:11.684631+00:00",
+    "lastModifiedOn": "2023-08-30T15:37:09.1989405+00:00",
     "score": 100
   },
   {
@@ -2791,6 +3729,34 @@
             "annotations": null
           }
         ]
+      },
+      {
+        "id": "b5b6bbe5-5641-468f-b546-a99b0b9fb1cc",
+        "factTypeId": "9d00a14b-aad3-45ee-8ed6-572cba6fbbb1",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "18dd8ec1-09ac-44d7-b81e-43c7468862b4",
+            "factFieldTypeId": "22aec2e0-055c-44f3-b8a7-7a267d91c2c2",
+            "stringValue": "Hale",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "e9ec48fc-0521-4e1d-8d00-ea0e0042f0e7",
+            "factFieldTypeId": "dcbf5a14-e261-4519-b599-2892564e57f6",
+            "stringValue": "Texas",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
       }
     ],
     "pageCount": 14,
@@ -2801,7 +3767,7 @@
     "sourceDocumentName": "Record of Easement Harkey Transmission Line Easement - Recorded Hale County_.pdf",
     "securityLabelId": null,
     "lastModifiedBy": "0c4ad3a7-78d1-44e1-dc08-08db401b7f0b",
-    "lastModifiedOn": "2023-08-22T21:58:43.3410789+00:00",
+    "lastModifiedOn": "2023-08-23T18:01:01.8136798+00:00",
     "score": 100
   },
   {
@@ -3104,6 +4070,34 @@
             "annotations": null
           }
         ]
+      },
+      {
+        "id": "c5ad52d4-8a2e-4bdd-ae2b-81bd1253dc30",
+        "factTypeId": "9d00a14b-aad3-45ee-8ed6-572cba6fbbb1",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "20c7c74a-68e8-410e-8e94-5ff772512edf",
+            "factFieldTypeId": "22aec2e0-055c-44f3-b8a7-7a267d91c2c2",
+            "stringValue": "Hale",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "42a47cc8-fd31-4a85-b0a9-8d23b6a88002",
+            "factFieldTypeId": "dcbf5a14-e261-4519-b599-2892564e57f6",
+            "stringValue": "Texas",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
       }
     ],
     "pageCount": 14,
@@ -3114,7 +4108,7 @@
     "sourceDocumentName": "Easement Agreement Old Aqueduct Recorded Easement Myers Old Aqueduct.pdf",
     "securityLabelId": null,
     "lastModifiedBy": "0c4ad3a7-78d1-44e1-dc08-08db401b7f0b",
-    "lastModifiedOn": "2023-08-22T21:23:51.6416685+00:00",
+    "lastModifiedOn": "2023-08-23T18:00:19.8795008+00:00",
     "score": 100
   },
   {
@@ -3182,6 +4176,34 @@
             "annotations": null
           }
         ]
+      },
+      {
+        "id": "540d0bf5-d2bc-43e2-aced-2d57ecbbdda3",
+        "factTypeId": "9d00a14b-aad3-45ee-8ed6-572cba6fbbb1",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "6e78a660-296f-46f7-ad66-b40a051b1460",
+            "factFieldTypeId": "22aec2e0-055c-44f3-b8a7-7a267d91c2c2",
+            "stringValue": "Hale",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "ad0af55e-2ec7-4d35-9ed5-7c63e517cb89",
+            "factFieldTypeId": "dcbf5a14-e261-4519-b599-2892564e57f6",
+            "stringValue": "Texas",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
       }
     ],
     "pageCount": 19,
@@ -3192,7 +4214,7 @@
     "sourceDocumentName": "Memo of Agreement Recorded Old Aqueduct Easement Agreement Goodwin 06212022 Old Aqueduct .pdf",
     "securityLabelId": null,
     "lastModifiedBy": "0c4ad3a7-78d1-44e1-dc08-08db401b7f0b",
-    "lastModifiedOn": "2023-08-22T21:59:41.9660178+00:00",
+    "lastModifiedOn": "2023-08-23T17:59:28.269206+00:00",
     "score": 100
   },
   {
@@ -3243,6 +4265,34 @@
             "annotations": null
           }
         ]
+      },
+      {
+        "id": "8d6777fa-fcd5-45a4-87c3-88c4795d80e9",
+        "factTypeId": "9d00a14b-aad3-45ee-8ed6-572cba6fbbb1",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "72e457cc-9109-4f63-bae5-e8534d9efba0",
+            "factFieldTypeId": "22aec2e0-055c-44f3-b8a7-7a267d91c2c2",
+            "stringValue": "Hale",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "1597713b-2380-4a1c-bd94-f3dabbe5a2ac",
+            "factFieldTypeId": "dcbf5a14-e261-4519-b599-2892564e57f6",
+            "stringValue": "Texas",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
       }
     ],
     "pageCount": 20,
@@ -3253,7 +4303,7 @@
     "sourceDocumentName": "JP0044 Old Aqueduct BESS ESMNT-REC 11302022 2022-00358 Halbrooks, Johnnie 12022022.pdf",
     "securityLabelId": null,
     "lastModifiedBy": "0c4ad3a7-78d1-44e1-dc08-08db401b7f0b",
-    "lastModifiedOn": "2023-08-22T19:37:22.5474663+00:00",
+    "lastModifiedOn": "2023-08-23T17:56:30.6219488+00:00",
     "score": 100
   },
   {
@@ -3304,6 +4354,34 @@
             "annotations": null
           }
         ]
+      },
+      {
+        "id": "cbc4c40f-ddce-4a32-ba89-24808f117838",
+        "factTypeId": "9d00a14b-aad3-45ee-8ed6-572cba6fbbb1",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "4cec19cd-ead7-46bc-9b8f-32060e7278d1",
+            "factFieldTypeId": "22aec2e0-055c-44f3-b8a7-7a267d91c2c2",
+            "stringValue": "Hale",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "145021de-152e-4de1-b413-39850d2d025e",
+            "factFieldTypeId": "dcbf5a14-e261-4519-b599-2892564e57f6",
+            "stringValue": "Texas",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
       }
     ],
     "pageCount": 19,
@@ -3314,7 +4392,7 @@
     "sourceDocumentName": "JP0044 Old Aqueduct BESS ESMNT Colwell, Kim K. 03232023.pdf",
     "securityLabelId": null,
     "lastModifiedBy": "0c4ad3a7-78d1-44e1-dc08-08db401b7f0b",
-    "lastModifiedOn": "2023-08-22T19:37:59.489637+00:00",
+    "lastModifiedOn": "2023-08-23T17:55:18.3371134+00:00",
     "score": 100
   },
   {
@@ -3703,17 +4781,6 @@
         "id": "2259ac26-89dd-4c1b-9c9f-0a717dfedf91",
         "factTypeId": "e31c3090-21b0-4afd-877d-cf7eeed20673",
         "fields": [
-          {
-            "score": null,
-            "highlightedText": null,
-            "id": "52ff955a-df0b-4d47-80bf-b3928286cafd",
-            "factFieldTypeId": "cba28aa6-29dd-4f30-806b-db13887d050c",
-            "stringValue": null,
-            "numberValue": null,
-            "dateValue": null,
-            "booleanValue": true,
-            "annotations": null
-          },
           {
             "score": null,
             "highlightedText": null,
@@ -4128,6 +5195,34 @@
             "annotations": null
           }
         ]
+      },
+      {
+        "id": "a7c9dd92-c1a1-46be-b761-7fbdfec130c9",
+        "factTypeId": "9d00a14b-aad3-45ee-8ed6-572cba6fbbb1",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "92fff715-8266-4d2c-80c2-39228502c9e7",
+            "factFieldTypeId": "22aec2e0-055c-44f3-b8a7-7a267d91c2c2",
+            "stringValue": "Reeves",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "1910f057-e3ee-4527-8179-a48deb142af0",
+            "factFieldTypeId": "dcbf5a14-e261-4519-b599-2892564e57f6",
+            "stringValue": "Texas",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
       }
     ],
     "pageCount": 6,
@@ -4138,7 +5233,7 @@
     "sourceDocumentName": "JP0028.2 Flower Valley II ESMNT and ROW Texas New Mexico Power Company 20230627.pdf",
     "securityLabelId": null,
     "lastModifiedBy": "0c4ad3a7-78d1-44e1-dc08-08db401b7f0b",
-    "lastModifiedOn": "2023-08-22T22:00:53.9201403+00:00",
+    "lastModifiedOn": "2023-08-23T17:43:23.1084935+00:00",
     "score": 100
   },
   {
@@ -4222,17 +5317,6 @@
         "id": "65e4ad4f-c16f-4f0b-8d54-3dd83ed48c85",
         "factTypeId": "e31c3090-21b0-4afd-877d-cf7eeed20673",
         "fields": [
-          {
-            "score": null,
-            "highlightedText": null,
-            "id": "4559f093-d129-42b9-b4c2-d63dd9386108",
-            "factFieldTypeId": "cba28aa6-29dd-4f30-806b-db13887d050c",
-            "stringValue": null,
-            "numberValue": null,
-            "dateValue": null,
-            "booleanValue": true,
-            "annotations": null
-          },
           {
             "score": null,
             "highlightedText": null,
@@ -11104,67 +12188,6 @@
     "score": 100
   },
   {
-    "id": "05e2120f-8acd-4f31-9004-9aa349bbd375",
-    "name": "JP0010.1 Callisto I DEED Parent Company Guarantee  SMA Solar Technology America, LLC 03212023.pdf",
-    "documentTypeId": null,
-    "processingStatus": "Processed",
-    "pageManipulationStatus": null,
-    "createdBy": "0a089276-00f5-444f-e407-08dac8de685f",
-    "createdOn": "2023-06-27T19:11:08.909189+00:00",
-    "archivedBy": null,
-    "archivedOn": null,
-    "tagIds": [],
-    "userIds": [],
-    "documentStatusId": null,
-    "thoughts": [],
-    "facts": [
-      {
-        "id": "5facb496-f02d-4a8d-862d-4bee6fe178e8",
-        "factTypeId": "429fc170-2a94-4cc6-901f-2743897ed6c3",
-        "fields": [
-          {
-            "score": null,
-            "highlightedText": null,
-            "id": "e215f97d-912d-4ee7-9656-7f4a36205a65",
-            "factFieldTypeId": "09272207-6ba1-4a2a-bcac-35ac0ec7cded",
-            "stringValue": "JP0050.1",
-            "numberValue": null,
-            "dateValue": null,
-            "booleanValue": null,
-            "annotations": null
-          }
-        ]
-      },
-      {
-        "id": "265d9d16-4fff-47bd-aee1-a1e22286f351",
-        "factTypeId": "cf7fc28f-823e-4af1-a3be-09b756c3952a",
-        "fields": [
-          {
-            "score": null,
-            "highlightedText": null,
-            "id": "1124fada-1809-4573-b978-0b4c4b1322c4",
-            "factFieldTypeId": "a7fdf688-839d-49f8-8e07-a55dc19cb521",
-            "stringValue": "Callisto I",
-            "numberValue": null,
-            "dateValue": null,
-            "booleanValue": null,
-            "annotations": null
-          }
-        ]
-      }
-    ],
-    "pageCount": 2,
-    "pages": null,
-    "highlightedText": null,
-    "highlightedName": null,
-    "sourceDocumentId": "05e2120f-8acd-4f31-9004-9aa349bbd375",
-    "sourceDocumentName": "JP0010.1 Callisto I DEED Parent Company Guarantee  SMA Solar Technology America, LLC 03212023.pdf",
-    "securityLabelId": null,
-    "lastModifiedBy": "0c4ad3a7-78d1-44e1-dc08-08db401b7f0b",
-    "lastModifiedOn": "2023-08-22T22:01:34.4821546+00:00",
-    "score": 100
-  },
-  {
     "id": "306f3dfb-c9d6-4942-b712-5e095e2336e3",
     "name": "JP0012.3 St. Gall Solar DEED-REC Release of Deed Restrictions Griffin Triple G Ltd. 03012023.pdf",
     "documentTypeId": null,
@@ -11212,6 +12235,23 @@
             "annotations": null
           }
         ]
+      },
+      {
+        "id": "f65b5867-f151-49f1-a65a-1bb05092e5b0",
+        "factTypeId": "fe02f206-d720-47ea-9462-180b440b953e",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "af5a1742-3525-472f-bd60-ede776509d2c",
+            "factFieldTypeId": "17f6d36a-0a16-45c6-876d-9d8def5decf5",
+            "stringValue": "DEED-REC",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
       }
     ],
     "pageCount": 9,
@@ -11222,7 +12262,7 @@
     "sourceDocumentName": "JP0012.3 St. Gall Solar DEED-REC Release of Deed Restrictions Griffin Triple G Ltd. 03012023.pdf",
     "securityLabelId": null,
     "lastModifiedBy": "0c4ad3a7-78d1-44e1-dc08-08db401b7f0b",
-    "lastModifiedOn": "2023-08-22T19:35:27.7899071+00:00",
+    "lastModifiedOn": "2023-08-23T21:40:46.3840617+00:00",
     "score": 100
   },
   {
@@ -11465,6 +12505,23 @@
             "annotations": null
           }
         ]
+      },
+      {
+        "id": "b3972564-c5b5-4500-889d-790c965f794e",
+        "factTypeId": "fe02f206-d720-47ea-9462-180b440b953e",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "c58d0cba-7608-4b75-8355-7234c5d7d256",
+            "factFieldTypeId": "17f6d36a-0a16-45c6-876d-9d8def5decf5",
+            "stringValue": "DEED",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
       }
     ],
     "pageCount": 3,
@@ -11475,7 +12532,7 @@
     "sourceDocumentName": "Deed JP0039 CrossingPoint DEED MTG NaugatuckAveLLC 09142022 Crossing Point I.pdf",
     "securityLabelId": null,
     "lastModifiedBy": "0c4ad3a7-78d1-44e1-dc08-08db401b7f0b",
-    "lastModifiedOn": "2023-08-22T19:34:26.3004817+00:00",
+    "lastModifiedOn": "2023-08-23T21:40:26.5266797+00:00",
     "score": 100
   },
   {
@@ -12344,6 +13401,23 @@
             "annotations": null
           }
         ]
+      },
+      {
+        "id": "c621f0b6-b4d2-4b3b-8319-0844b3419214",
+        "factTypeId": "fe02f206-d720-47ea-9462-180b440b953e",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "95df5f88-aa7a-4e79-9a93-64d32d436757",
+            "factFieldTypeId": "17f6d36a-0a16-45c6-876d-9d8def5decf5",
+            "stringValue": "OPT-MEMO",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
       }
     ],
     "pageCount": 3,
@@ -12354,7 +13428,7 @@
     "sourceDocumentName": "JP0063 Valetudo OPT-MEMO Gil, Luis 20230530.pdf",
     "securityLabelId": null,
     "lastModifiedBy": "0c4ad3a7-78d1-44e1-dc08-08db401b7f0b",
-    "lastModifiedOn": "2023-08-22T22:17:00.7693648+00:00",
+    "lastModifiedOn": "2023-08-23T21:38:45.6069418+00:00",
     "score": 100
   },
   {
@@ -17894,6 +18968,23 @@
             "annotations": null
           }
         ]
+      },
+      {
+        "id": "bc8ce123-a810-4010-a4be-c25b53ad288d",
+        "factTypeId": "fe02f206-d720-47ea-9462-180b440b953e",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "8032ed10-9228-4cdc-8e77-cc65a0fa7e19",
+            "factFieldTypeId": "17f6d36a-0a16-45c6-876d-9d8def5decf5",
+            "stringValue": "ESMNT",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
       }
     ],
     "pageCount": 23,
@@ -17903,8 +18994,8 @@
     "sourceDocumentId": "0867215d-ab38-4ad1-8bf6-b291364ce408",
     "sourceDocumentName": "Easement Agreement Callisto I Easement and Easement Amendment Biofuels Callisto I Energy Center.pdf",
     "securityLabelId": null,
-    "lastModifiedBy": "f00c1746-8935-473c-4a94-08dac7d3ca42",
-    "lastModifiedOn": "2023-08-01T21:06:08.6313867+00:00",
+    "lastModifiedBy": "0c4ad3a7-78d1-44e1-dc08-08db401b7f0b",
+    "lastModifiedOn": "2023-08-23T21:39:39.3910276+00:00",
     "score": 100
   },
   {
@@ -18116,6 +19207,28 @@
             "dateValue": null,
             "booleanValue": null,
             "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "7ab89f44-6388-4327-801e-46b3bcc7ab26",
+            "factFieldTypeId": "dcbf5a14-e261-4519-b599-2892564e57f6",
+            "stringValue": "Texas",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "335c2bb2-bcc7-428e-b0a0-f6f6d01c5df9",
+            "factFieldTypeId": "22aec2e0-055c-44f3-b8a7-7a267d91c2c2",
+            "stringValue": "Crane",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
           }
         ]
       },
@@ -18144,8 +19257,8 @@
     "sourceDocumentId": "d3f2369f-0e08-4bc6-8bd8-d612ece035d0",
     "sourceDocumentName": "Recorded Crossett Transmission and Access Easement Arrington.pdf",
     "securityLabelId": null,
-    "lastModifiedBy": "f00c1746-8935-473c-4a94-08dac7d3ca42",
-    "lastModifiedOn": "2023-08-01T21:06:08.6022224+00:00",
+    "lastModifiedBy": "0c4ad3a7-78d1-44e1-dc08-08db401b7f0b",
+    "lastModifiedOn": "2023-08-23T22:03:21.3790125+00:00",
     "score": 100
   },
   {
@@ -22672,6 +23785,23 @@
             "annotations": null
           }
         ]
+      },
+      {
+        "id": "c8d3d556-bf3d-4103-adff-2bd3e9f240e1",
+        "factTypeId": "cc05d0b7-005b-4775-a84d-e7cc98a7241f",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "13f72998-3edf-4472-ad36-ba8f877c0335",
+            "factFieldTypeId": "cb93b25d-8bed-4865-8402-b2b3ded62af5",
+            "stringValue": null,
+            "numberValue": null,
+            "dateValue": "2021-01-12",
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
       }
     ],
     "pageCount": 21,
@@ -22681,8 +23811,8 @@
     "sourceDocumentId": "2872b1aa-2a32-4a70-9733-1202fbec396c",
     "sourceDocumentName": "Tax Abatement Crossett II Tax Abatement Agreement Crane County Crossett Power.pdf",
     "securityLabelId": null,
-    "lastModifiedBy": "f00c1746-8935-473c-4a94-08dac7d3ca42",
-    "lastModifiedOn": "2023-08-03T14:19:35.8908155+00:00",
+    "lastModifiedBy": "0c4ad3a7-78d1-44e1-dc08-08db401b7f0b",
+    "lastModifiedOn": "2023-08-23T21:59:05.5309702+00:00",
     "score": 100
   },
   {
@@ -25247,7 +26377,7 @@
             "id": "8984818b-9286-4b57-8be4-bbfe822f5edd",
             "factFieldTypeId": "ced1155e-6ce4-4528-b7e9-a8461d17c89d",
             "stringValue": null,
-            "numberValue": 2.731506849,
+            "numberValue": 2.6741,
             "dateValue": null,
             "booleanValue": null,
             "annotations": null
@@ -25342,28 +26472,6 @@
             "factFieldTypeId": "f04c837a-a3fe-475c-b819-d8f974915fb7",
             "stringValue": "Operations",
             "numberValue": null,
-            "dateValue": null,
-            "booleanValue": null,
-            "annotations": null
-          },
-          {
-            "score": null,
-            "highlightedText": null,
-            "id": "a578dcf9-c4dd-46b8-acc8-03d12d8b2820",
-            "factFieldTypeId": "b5e0b70c-a194-4b9a-b9d9-6671a06ebf26",
-            "stringValue": null,
-            "numberValue": null,
-            "dateValue": null,
-            "booleanValue": true,
-            "annotations": null
-          },
-          {
-            "score": null,
-            "highlightedText": null,
-            "id": "8ce45973-d1ff-4a56-bd15-057b7c5c31bd",
-            "factFieldTypeId": "c4a9c0f2-ee0e-447f-a101-49e49e226dfc",
-            "stringValue": null,
-            "numberValue": 2.5,
             "dateValue": null,
             "booleanValue": null,
             "annotations": null
@@ -25511,6 +26619,28 @@
             "dateValue": null,
             "booleanValue": null,
             "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "567cf94f-2f75-4552-ad68-7ad9233ee598",
+            "factFieldTypeId": "7cc2322c-7b01-4d98-bd80-b13420187c92",
+            "stringValue": null,
+            "numberValue": 2.5,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "80058aef-e2bd-4837-9780-39c11ee8b0f4",
+            "factFieldTypeId": "acc55af2-36e3-4455-aa30-71d4b3e87824",
+            "stringValue": "Annually",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
           }
         ]
       },
@@ -25606,8 +26736,8 @@
     "sourceDocumentId": "240c72a5-45aa-4f8f-9bf7-e1832913cfa9",
     "sourceDocumentName": "JP0063 Valetudo LEASE Salter, Cheryl 03232023.pdf",
     "securityLabelId": null,
-    "lastModifiedBy": "db7d2cb5-2e7f-4644-4a95-08dac7d3ca42",
-    "lastModifiedOn": "2023-08-03T22:26:11.6441777+00:00",
+    "lastModifiedBy": "f00c1746-8935-473c-4a94-08dac7d3ca42",
+    "lastModifiedOn": "2023-09-01T20:39:29.9781448+00:00",
     "score": 100
   },
   {
@@ -27153,17 +28283,6 @@
           {
             "score": null,
             "highlightedText": null,
-            "id": "5e5d8196-7c44-4a0a-abfd-d56b8ae7187a",
-            "factFieldTypeId": "cba28aa6-29dd-4f30-806b-db13887d050c",
-            "stringValue": null,
-            "numberValue": null,
-            "dateValue": null,
-            "booleanValue": true,
-            "annotations": null
-          },
-          {
-            "score": null,
-            "highlightedText": null,
             "id": "a0973a8e-59f4-4881-bbd4-79a216a75740",
             "factFieldTypeId": "acc55af2-36e3-4455-aa30-71d4b3e87824",
             "stringValue": "Annually",
@@ -28634,6 +29753,23 @@
             "annotations": null
           }
         ]
+      },
+      {
+        "id": "ff77cbc0-1217-4fd6-8d57-198d6df755e6",
+        "factTypeId": "8a874127-1425-457c-af96-d311f09034d6",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "d3b721a3-8316-4194-9e76-78cddfc9dc0c",
+            "factFieldTypeId": "2e45d6a2-8eb3-435e-a6a8-ce90f93181e7",
+            "stringValue": null,
+            "numberValue": null,
+            "dateValue": "2021-09-22",
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
       }
     ],
     "pageCount": 9,
@@ -28643,8 +29779,8 @@
     "sourceDocumentId": "53de6375-8156-4581-aa28-81a26f5798bf",
     "sourceDocumentName": "JP0056.2_2021-09-22 Assignment of Lease Agreement (Thornton).pdf",
     "securityLabelId": null,
-    "lastModifiedBy": "f00c1746-8935-473c-4a94-08dac7d3ca42",
-    "lastModifiedOn": "2023-08-01T21:06:07.6895577+00:00",
+    "lastModifiedBy": "0c4ad3a7-78d1-44e1-dc08-08db401b7f0b",
+    "lastModifiedOn": "2023-08-23T21:56:48.903178+00:00",
     "score": 100
   },
   {
@@ -28813,6 +29949,23 @@
             "annotations": null
           }
         ]
+      },
+      {
+        "id": "ae107cbf-37c5-425a-ab97-6d5b2b50934f",
+        "factTypeId": "8a874127-1425-457c-af96-d311f09034d6",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "188d8448-fc40-427c-9147-8b0a8f36f97f",
+            "factFieldTypeId": "2e45d6a2-8eb3-435e-a6a8-ce90f93181e7",
+            "stringValue": null,
+            "numberValue": null,
+            "dateValue": "2021-09-22",
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
       }
     ],
     "pageCount": 18,
@@ -28822,8 +29975,8 @@
     "sourceDocumentId": "6bbe6a46-df2c-4b5a-81de-97530f52e742",
     "sourceDocumentName": "Swoose Amended and Restated Assignment of Lease Agreement 20220304.pdf",
     "securityLabelId": null,
-    "lastModifiedBy": "f00c1746-8935-473c-4a94-08dac7d3ca42",
-    "lastModifiedOn": "2023-08-01T21:06:07.6735549+00:00",
+    "lastModifiedBy": "0c4ad3a7-78d1-44e1-dc08-08db401b7f0b",
+    "lastModifiedOn": "2023-08-23T21:58:10.6282696+00:00",
     "score": 100
   },
   {
@@ -30885,6 +32038,28 @@
             "dateValue": null,
             "booleanValue": null,
             "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "01e2e1a7-273a-46d1-b964-6cd0130af0ab",
+            "factFieldTypeId": "dcbf5a14-e261-4519-b599-2892564e57f6",
+            "stringValue": "Texas",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "3c6b6adf-9c0d-4b6f-b05d-43968c374435",
+            "factFieldTypeId": "22aec2e0-055c-44f3-b8a7-7a267d91c2c2",
+            "stringValue": "Hale",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
           }
         ]
       },
@@ -30913,8 +32088,8 @@
     "sourceDocumentId": "96bfee84-2d50-415b-a2a4-71ee12f848f3",
     "sourceDocumentName": "Land Lease Agreement Old Aqueduct Solar Amendment to Lease Jim Byrd Farms Old Aqueduct Solar.pdf",
     "securityLabelId": null,
-    "lastModifiedBy": "f00c1746-8935-473c-4a94-08dac7d3ca42",
-    "lastModifiedOn": "2023-08-01T21:06:07.4575602+00:00",
+    "lastModifiedBy": "0c4ad3a7-78d1-44e1-dc08-08db401b7f0b",
+    "lastModifiedOn": "2023-08-23T22:04:16.410127+00:00",
     "score": 100
   },
   {
@@ -36640,6 +37815,34 @@
             "annotations": null
           }
         ]
+      },
+      {
+        "id": "f9e30c38-f4b7-4c29-bb04-36b5afc49b13",
+        "factTypeId": "9d00a14b-aad3-45ee-8ed6-572cba6fbbb1",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "aa349a46-9aba-4c62-ade1-7a506a3f2a73",
+            "factFieldTypeId": "22aec2e0-055c-44f3-b8a7-7a267d91c2c2",
+            "stringValue": "Brewster",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "ddc60f6e-58f4-4d1c-ae74-c87ede41a5d4",
+            "factFieldTypeId": "dcbf5a14-e261-4519-b599-2892564e57f6",
+            "stringValue": "Texas",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
       }
     ],
     "pageCount": 9,
@@ -36649,8 +37852,8 @@
     "sourceDocumentId": "16666ab5-b815-4c97-86d3-3eb651ab0f91",
     "sourceDocumentName": "JP0034 House Mountain ESMNT-REC AEP Texas Inc. 12072022.pdf",
     "securityLabelId": null,
-    "lastModifiedBy": "f00c1746-8935-473c-4a94-08dac7d3ca42",
-    "lastModifiedOn": "2023-08-01T21:06:06.9310268+00:00",
+    "lastModifiedBy": "0c4ad3a7-78d1-44e1-dc08-08db401b7f0b",
+    "lastModifiedOn": "2023-08-23T17:37:24.0270318+00:00",
     "score": 100
   },
   {
@@ -36934,6 +38137,28 @@
             "dateValue": null,
             "booleanValue": null,
             "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "cbe901b2-ff4f-47d2-b155-6381023947e9",
+            "factFieldTypeId": "22aec2e0-055c-44f3-b8a7-7a267d91c2c2",
+            "stringValue": "Grimes",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "0f5ae771-015f-45ec-85ee-620ac310d19d",
+            "factFieldTypeId": "dcbf5a14-e261-4519-b599-2892564e57f6",
+            "stringValue": "Texas",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
           }
         ]
       },
@@ -36980,7 +38205,7 @@
     "sourceDocumentName": "JP0027 Flagtail OPT Bay, Bill 12022022.pdf",
     "securityLabelId": null,
     "lastModifiedBy": "0c4ad3a7-78d1-44e1-dc08-08db401b7f0b",
-    "lastModifiedOn": "2023-08-22T19:33:03.9481029+00:00",
+    "lastModifiedOn": "2023-08-23T22:05:52.619425+00:00",
     "score": 100
   },
   {
@@ -37300,6 +38525,34 @@
             "annotations": null
           }
         ]
+      },
+      {
+        "id": "3487e47b-672a-430a-a795-bc9308b5c919",
+        "factTypeId": "9d00a14b-aad3-45ee-8ed6-572cba6fbbb1",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "ac1d5afb-265f-470c-a856-21b0ae36b35d",
+            "factFieldTypeId": "22aec2e0-055c-44f3-b8a7-7a267d91c2c2",
+            "stringValue": "Grimes",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "cbcea16a-78a3-43b1-b318-efdac0c56a6e",
+            "factFieldTypeId": "dcbf5a14-e261-4519-b599-2892564e57f6",
+            "stringValue": "Texas",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
       }
     ],
     "pageCount": 33,
@@ -37310,7 +38563,7 @@
     "sourceDocumentName": "JP0027 Flagtail OPT Access Road, Drainage and Communications Easement Bay, Bill 01182023.pdf",
     "securityLabelId": null,
     "lastModifiedBy": "0c4ad3a7-78d1-44e1-dc08-08db401b7f0b",
-    "lastModifiedOn": "2023-08-22T19:33:41.2736792+00:00",
+    "lastModifiedOn": "2023-08-23T22:11:50.5796339+00:00",
     "score": 100
   },
   {
@@ -38323,6 +39576,28 @@
             "dateValue": null,
             "booleanValue": null,
             "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "d806969a-a527-42a9-a31d-b758335f7ceb",
+            "factFieldTypeId": "22aec2e0-055c-44f3-b8a7-7a267d91c2c2",
+            "stringValue": "Pecos",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "2a3a0400-b943-4d82-8303-7492427d5690",
+            "factFieldTypeId": "dcbf5a14-e261-4519-b599-2892564e57f6",
+            "stringValue": "Texas",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
           }
         ]
       },
@@ -38385,8 +39660,8 @@
     "sourceDocumentId": "65135407-58fa-465d-8893-dc8d9d67417c",
     "sourceDocumentName": "JP0012.1 St. Gall I ESMNT-REC AMD 1 Griffin Triple G Ltd. 12092022.pdf",
     "securityLabelId": null,
-    "lastModifiedBy": "f00c1746-8935-473c-4a94-08dac7d3ca42",
-    "lastModifiedOn": "2023-08-01T21:06:06.7764817+00:00",
+    "lastModifiedBy": "0c4ad3a7-78d1-44e1-dc08-08db401b7f0b",
+    "lastModifiedOn": "2023-08-23T22:07:35.3469449+00:00",
     "score": 100
   },
   {
@@ -46716,17 +47991,6 @@
           {
             "score": null,
             "highlightedText": null,
-            "id": "bebad4d2-82ae-4a5c-96a0-5a912faf977a",
-            "factFieldTypeId": "cba28aa6-29dd-4f30-806b-db13887d050c",
-            "stringValue": null,
-            "numberValue": null,
-            "dateValue": null,
-            "booleanValue": true,
-            "annotations": null
-          },
-          {
-            "score": null,
-            "highlightedText": null,
             "id": "b03c79be-fd8c-4f6f-831d-edeab0caa32d",
             "factFieldTypeId": "4113ec1c-007a-4f0d-9c2c-4f1aaebf452b",
             "stringValue": "Operations",
@@ -47925,6 +49189,28 @@
             "dateValue": null,
             "booleanValue": null,
             "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "7a4946c5-8cc8-4c15-9285-7abc31a19592",
+            "factFieldTypeId": "22aec2e0-055c-44f3-b8a7-7a267d91c2c2",
+            "stringValue": "Kleburg",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "e7935828-c493-484a-9593-f5ac4ce7a66c",
+            "factFieldTypeId": "dcbf5a14-e261-4519-b599-2892564e57f6",
+            "stringValue": "Texas",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
           }
         ]
       },
@@ -47986,8 +49272,8 @@
     "sourceDocumentId": "4d657dd0-edf5-40c8-8717-6855b2681bf6",
     "sourceDocumentName": "Arana Creek I AOS Brown, Randy 20200604.pdf",
     "securityLabelId": null,
-    "lastModifiedBy": "f00c1746-8935-473c-4a94-08dac7d3ca42",
-    "lastModifiedOn": "2023-08-01T21:06:04.9072368+00:00",
+    "lastModifiedBy": "0c4ad3a7-78d1-44e1-dc08-08db401b7f0b",
+    "lastModifiedOn": "2023-08-23T22:08:59.2488296+00:00",
     "score": 100
   },
   {
@@ -48232,17 +49518,6 @@
             "numberValue": null,
             "dateValue": null,
             "booleanValue": null,
-            "annotations": null
-          },
-          {
-            "score": null,
-            "highlightedText": null,
-            "id": "554fd9e2-89ef-4ed6-be61-bba0106721e5",
-            "factFieldTypeId": "cba28aa6-29dd-4f30-806b-db13887d050c",
-            "stringValue": null,
-            "numberValue": null,
-            "dateValue": null,
-            "booleanValue": true,
             "annotations": null
           },
           {
@@ -49511,17 +50786,6 @@
             "numberValue": null,
             "dateValue": null,
             "booleanValue": null,
-            "annotations": null
-          },
-          {
-            "score": null,
-            "highlightedText": null,
-            "id": "9dd2069f-3ac3-4bc7-8e00-f888c6d43ace",
-            "factFieldTypeId": "cba28aa6-29dd-4f30-806b-db13887d050c",
-            "stringValue": null,
-            "numberValue": null,
-            "dateValue": null,
-            "booleanValue": true,
             "annotations": null
           },
           {
@@ -51005,17 +52269,6 @@
           {
             "score": null,
             "highlightedText": null,
-            "id": "1adc44cf-5502-4327-9a0a-438a8151c5fa",
-            "factFieldTypeId": "cba28aa6-29dd-4f30-806b-db13887d050c",
-            "stringValue": null,
-            "numberValue": null,
-            "dateValue": null,
-            "booleanValue": true,
-            "annotations": null
-          },
-          {
-            "score": null,
-            "highlightedText": null,
             "id": "4a1167f5-b985-48fe-80e7-c4474387f5e2",
             "factFieldTypeId": "63fe352e-59e5-4e8d-93aa-a1f0a16846b9",
             "stringValue": null,
@@ -52317,17 +53570,6 @@
             "numberValue": 2,
             "dateValue": null,
             "booleanValue": null,
-            "annotations": null
-          },
-          {
-            "score": null,
-            "highlightedText": null,
-            "id": "6f969257-8a4b-43bf-aabd-1d008337d694",
-            "factFieldTypeId": "f4a36fba-c248-4088-b09c-f0b6d15c0b01",
-            "stringValue": null,
-            "numberValue": null,
-            "dateValue": null,
-            "booleanValue": true,
             "annotations": null
           },
           {
@@ -57066,17 +58308,6 @@
             "dateValue": null,
             "booleanValue": null,
             "annotations": null
-          },
-          {
-            "score": null,
-            "highlightedText": null,
-            "id": "a365ddf4-2d89-4cf7-a928-483b772fdedb",
-            "factFieldTypeId": "cba28aa6-29dd-4f30-806b-db13887d050c",
-            "stringValue": null,
-            "numberValue": null,
-            "dateValue": null,
-            "booleanValue": true,
-            "annotations": null
           }
         ]
       },
@@ -57126,17 +58357,6 @@
             "numberValue": null,
             "dateValue": null,
             "booleanValue": null,
-            "annotations": null
-          },
-          {
-            "score": null,
-            "highlightedText": null,
-            "id": "26cf55ad-e941-47ba-a482-282f0f399d69",
-            "factFieldTypeId": "cba28aa6-29dd-4f30-806b-db13887d050c",
-            "stringValue": null,
-            "numberValue": null,
-            "dateValue": null,
-            "booleanValue": true,
             "annotations": null
           }
         ]
@@ -57293,6 +58513,56 @@
             "annotations": null
           }
         ]
+      },
+      {
+        "id": "37f1f6ec-0fca-4bfe-ac43-4fa161fe6eaa",
+        "factTypeId": "9d00a14b-aad3-45ee-8ed6-572cba6fbbb1",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "c4a09532-2984-47c4-9a2a-385179ff121a",
+            "factFieldTypeId": "22aec2e0-055c-44f3-b8a7-7a267d91c2c2",
+            "stringValue": "San Bernardino",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "6fa0bd78-4553-40e2-a795-57343d668a12",
+            "factFieldTypeId": "dcbf5a14-e261-4519-b599-2892564e57f6",
+            "stringValue": "California",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "43cc5c66-a4a5-4101-b3c6-759792d4b8a9",
+            "factFieldTypeId": "06572f89-ffb7-423f-831b-60f7e68f8938",
+            "stringValue": "3128-021-03-0-000",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "57e6ea5f-3533-4f71-b62a-43541711a1cb",
+            "factFieldTypeId": "047a79ae-3e0a-4867-a644-87f5b9be6368",
+            "stringValue": "The West 1/2 of the East 1/2 of the South 1/2 of the Northwest 1/4 of Section 6, Township 5 North, Range 5 West, San Bernardino Meridian, according to the Official Plat thereof, records of said County.",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
       }
     ],
     "pageCount": 10,
@@ -57302,8 +58572,8 @@
     "sourceDocumentId": "51290455-b56a-4cdf-a720-b3943b935fdb",
     "sourceDocumentName": "Hidalgo I Occasio PM Lease Twelve Street Associates 20210317.pdf",
     "securityLabelId": null,
-    "lastModifiedBy": "f00c1746-8935-473c-4a94-08dac7d3ca42",
-    "lastModifiedOn": "2023-08-01T21:06:03.7607613+00:00",
+    "lastModifiedBy": "0c4ad3a7-78d1-44e1-dc08-08db401b7f0b",
+    "lastModifiedOn": "2023-08-23T17:28:22.9335782+00:00",
     "score": 100
   },
   {
@@ -57451,17 +58721,6 @@
             "numberValue": 1,
             "dateValue": null,
             "booleanValue": null,
-            "annotations": null
-          },
-          {
-            "score": null,
-            "highlightedText": null,
-            "id": "ca8ff97f-218c-4afe-bdbe-80ad7b7c7ed1",
-            "factFieldTypeId": "cba28aa6-29dd-4f30-806b-db13887d050c",
-            "stringValue": null,
-            "numberValue": null,
-            "dateValue": null,
-            "booleanValue": true,
             "annotations": null
           },
           {
@@ -69087,6 +70346,17 @@
             "dateValue": null,
             "booleanValue": null,
             "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "2c04e126-87c4-42a3-a3a8-cad07fb18a53",
+            "factFieldTypeId": "6ddcf646-d657-4a59-a238-78b6e481186d",
+            "stringValue": null,
+            "numberValue": null,
+            "dateValue": "2020-10-30",
+            "booleanValue": null,
+            "annotations": null
           }
         ]
       },
@@ -69979,8 +71249,8 @@
     "sourceDocumentId": "af08218f-53ed-4fd6-97e1-cdecc6872548",
     "sourceDocumentName": "River Bend I Juno PM Lease Reith, Dwayne 20201030.pdf",
     "securityLabelId": null,
-    "lastModifiedBy": "f00c1746-8935-473c-4a94-08dac7d3ca42",
-    "lastModifiedOn": "2023-08-01T21:06:02.5833247+00:00",
+    "lastModifiedBy": "0c4ad3a7-78d1-44e1-dc08-08db401b7f0b",
+    "lastModifiedOn": "2023-08-23T21:53:24.090017+00:00",
     "score": 100
   },
   {
@@ -70557,6 +71827,45 @@
             "annotations": null
           }
         ]
+      },
+      {
+        "id": "48574442-259b-447b-8c84-342c8d7477c5",
+        "factTypeId": "9d00a14b-aad3-45ee-8ed6-572cba6fbbb1",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "7480ee29-9393-431b-a92f-5e7fecd6aee4",
+            "factFieldTypeId": "8b7bea34-5d6a-42be-89cd-7bf6b330f20d",
+            "stringValue": null,
+            "numberValue": 5,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "16313b09-74b6-4398-8a06-67b2951943b9",
+            "factFieldTypeId": "22aec2e0-055c-44f3-b8a7-7a267d91c2c2",
+            "stringValue": "Harris",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "084683d6-56c6-44e7-8f99-6dc6d5a211df",
+            "factFieldTypeId": "dcbf5a14-e261-4519-b599-2892564e57f6",
+            "stringValue": "Texas",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
       }
     ],
     "pageCount": 19,
@@ -70566,8 +71875,8 @@
     "sourceDocumentId": "84a6e680-0fe7-42a9-8f4e-904802667155",
     "sourceDocumentName": "Saracen I Gemini I Energy Storage AOS Biofuels Power Corp. 20201231.pdf",
     "securityLabelId": null,
-    "lastModifiedBy": "f00c1746-8935-473c-4a94-08dac7d3ca42",
-    "lastModifiedOn": "2023-08-01T21:06:02.442486+00:00",
+    "lastModifiedBy": "0c4ad3a7-78d1-44e1-dc08-08db401b7f0b",
+    "lastModifiedOn": "2023-08-23T16:51:20.5491716+00:00",
     "score": 100
   },
   {
@@ -70740,6 +72049,45 @@
             "annotations": null
           }
         ]
+      },
+      {
+        "id": "38c35d86-1832-483b-a3f5-9dbac735af22",
+        "factTypeId": "9d00a14b-aad3-45ee-8ed6-572cba6fbbb1",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "a0591e0d-4db1-4f6b-85b5-6c497b9cf0aa",
+            "factFieldTypeId": "22aec2e0-055c-44f3-b8a7-7a267d91c2c2",
+            "stringValue": "Nassau",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "af2d5390-b33b-49cb-9439-be09dfeb2729",
+            "factFieldTypeId": "dcbf5a14-e261-4519-b599-2892564e57f6",
+            "stringValue": "New York",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "4bf9d1fb-c794-44d1-86a5-9b76f8fd603a",
+            "factFieldTypeId": "047a79ae-3e0a-4867-a644-87f5b9be6368",
+            "stringValue": "Metes and Bounds",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
       }
     ],
     "pageCount": 14,
@@ -70749,8 +72097,8 @@
     "sourceDocumentId": "0d437e99-b7d0-4768-a10f-b44cd34dd435",
     "sourceDocumentName": "Shore Rd Nike Equities AOS Global Companies 20210729.pdf",
     "securityLabelId": null,
-    "lastModifiedBy": "f00c1746-8935-473c-4a94-08dac7d3ca42",
-    "lastModifiedOn": "2023-07-28T21:50:37.8013273+00:00",
+    "lastModifiedBy": "0c4ad3a7-78d1-44e1-dc08-08db401b7f0b",
+    "lastModifiedOn": "2023-08-23T16:43:24.5770204+00:00",
     "score": 100
   },
   {
@@ -73593,17 +74941,6 @@
           {
             "score": null,
             "highlightedText": null,
-            "id": "36f722c1-1ddd-48c7-8bf9-db81bc1d6bfb",
-            "factFieldTypeId": "cba28aa6-29dd-4f30-806b-db13887d050c",
-            "stringValue": null,
-            "numberValue": null,
-            "dateValue": null,
-            "booleanValue": true,
-            "annotations": null
-          },
-          {
-            "score": null,
-            "highlightedText": null,
             "id": "0500f61a-f4d7-44ea-a1d5-19a7d8cf9823",
             "factFieldTypeId": "acc55af2-36e3-4455-aa30-71d4b3e87824",
             "stringValue": "Annually",
@@ -75036,17 +76373,6 @@
           {
             "score": null,
             "highlightedText": null,
-            "id": "077ca41e-da26-42f3-87a1-75ceae3b8daa",
-            "factFieldTypeId": "cba28aa6-29dd-4f30-806b-db13887d050c",
-            "stringValue": null,
-            "numberValue": null,
-            "dateValue": null,
-            "booleanValue": true,
-            "annotations": null
-          },
-          {
-            "score": null,
-            "highlightedText": null,
             "id": "3d3683b2-b47d-47d4-a1fd-8a54d2da418d",
             "factFieldTypeId": "6c43a922-acf9-4afe-9fb6-dc97e14d9099",
             "stringValue": "Monthly",
@@ -75119,17 +76445,6 @@
           {
             "score": null,
             "highlightedText": null,
-            "id": "b9deace7-6132-495a-9071-9b28520d0cab",
-            "factFieldTypeId": "cba28aa6-29dd-4f30-806b-db13887d050c",
-            "stringValue": null,
-            "numberValue": null,
-            "dateValue": null,
-            "booleanValue": true,
-            "annotations": null
-          },
-          {
-            "score": null,
-            "highlightedText": null,
             "id": "24c8033f-5812-49c6-a759-4285a3fc3fc5",
             "factFieldTypeId": "6c43a922-acf9-4afe-9fb6-dc97e14d9099",
             "stringValue": "Monthly",
@@ -75197,17 +76512,6 @@
             "numberValue": null,
             "dateValue": null,
             "booleanValue": null,
-            "annotations": null
-          },
-          {
-            "score": null,
-            "highlightedText": null,
-            "id": "b1b68017-e178-49e6-b2de-ce45ee04aeca",
-            "factFieldTypeId": "cba28aa6-29dd-4f30-806b-db13887d050c",
-            "stringValue": null,
-            "numberValue": null,
-            "dateValue": null,
-            "booleanValue": true,
             "annotations": null
           },
           {
@@ -80897,6 +82201,45 @@
             "annotations": null
           }
         ]
+      },
+      {
+        "id": "795a6775-bb40-4908-b4a1-abe036db1fc0",
+        "factTypeId": "9d00a14b-aad3-45ee-8ed6-572cba6fbbb1",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "b9c455c6-6aa8-455d-8f95-bbe5a4d8141b",
+            "factFieldTypeId": "8b7bea34-5d6a-42be-89cd-7bf6b330f20d",
+            "stringValue": null,
+            "numberValue": 10,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "d649f7db-73c0-4f6f-ac14-ef109ef87fd1",
+            "factFieldTypeId": "22aec2e0-055c-44f3-b8a7-7a267d91c2c2",
+            "stringValue": "Grimes",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "8f18d551-afd7-4527-aecd-f7955338f221",
+            "factFieldTypeId": "dcbf5a14-e261-4519-b599-2892564e57f6",
+            "stringValue": "Texas",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
       }
     ],
     "pageCount": 29,
@@ -80906,8 +82249,8 @@
     "sourceDocumentId": "87ec316a-7f91-4c13-8df8-2bf5e3251b23",
     "sourceDocumentName": "Land Lease Agreement Flagtail Thomas Lease Flagtail I.pdf",
     "securityLabelId": null,
-    "lastModifiedBy": "f00c1746-8935-473c-4a94-08dac7d3ca42",
-    "lastModifiedOn": "2023-08-01T21:06:00.801022+00:00",
+    "lastModifiedBy": "0c4ad3a7-78d1-44e1-dc08-08db401b7f0b",
+    "lastModifiedOn": "2023-08-23T16:38:33.8825492+00:00",
     "score": 100
   },
   {
@@ -81435,17 +82778,6 @@
             "highlightedText": null,
             "id": "8bc30786-4a0d-4118-a34d-dcfc9d882708",
             "factFieldTypeId": "63fe352e-59e5-4e8d-93aa-a1f0a16846b9",
-            "stringValue": null,
-            "numberValue": null,
-            "dateValue": null,
-            "booleanValue": true,
-            "annotations": null
-          },
-          {
-            "score": null,
-            "highlightedText": null,
-            "id": "eac93fe0-d61f-4ebc-a8c9-7543f240ac73",
-            "factFieldTypeId": "cba28aa6-29dd-4f30-806b-db13887d050c",
             "stringValue": null,
             "numberValue": null,
             "dateValue": null,
@@ -83561,17 +84893,6 @@
             "dateValue": null,
             "booleanValue": false,
             "annotations": null
-          },
-          {
-            "score": null,
-            "highlightedText": null,
-            "id": "3e64a38a-6f38-481b-94ef-d805da0df8aa",
-            "factFieldTypeId": "cba28aa6-29dd-4f30-806b-db13887d050c",
-            "stringValue": null,
-            "numberValue": null,
-            "dateValue": null,
-            "booleanValue": true,
-            "annotations": null
           }
         ]
       },
@@ -83903,6 +85224,56 @@
             "annotations": null
           }
         ]
+      },
+      {
+        "id": "61053457-341a-4f69-88eb-a82f4e99b222",
+        "factTypeId": "9d00a14b-aad3-45ee-8ed6-572cba6fbbb1",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "8cbe8009-8fb7-4599-8d09-0937975fddc2",
+            "factFieldTypeId": "8b7bea34-5d6a-42be-89cd-7bf6b330f20d",
+            "stringValue": null,
+            "numberValue": 41.17,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "24ed8493-aab9-4350-8e46-9ec37cf72ae1",
+            "factFieldTypeId": "22aec2e0-055c-44f3-b8a7-7a267d91c2c2",
+            "stringValue": "Robertson",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "3e5b266d-91a1-4168-bb76-620c0677465d",
+            "factFieldTypeId": "dcbf5a14-e261-4519-b599-2892564e57f6",
+            "stringValue": "Texas",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "9f7a1626-d0af-4968-a3ad-000a6a1ba29b",
+            "factFieldTypeId": "047a79ae-3e0a-4867-a644-87f5b9be6368",
+            "stringValue": "Metes and Bounds",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
       }
     ],
     "pageCount": 18,
@@ -83912,8 +85283,8 @@
     "sourceDocumentId": "c48fa81b-c80b-4f49-81fb-a81944be51bf",
     "sourceDocumentName": "Land Purchase Agreement Tidwell Prairie - TREC Contract Tidwell Prairie.pdf",
     "securityLabelId": null,
-    "lastModifiedBy": "f00c1746-8935-473c-4a94-08dac7d3ca42",
-    "lastModifiedOn": "2023-08-01T21:06:00.3002648+00:00",
+    "lastModifiedBy": "0c4ad3a7-78d1-44e1-dc08-08db401b7f0b",
+    "lastModifiedOn": "2023-08-23T16:36:21.8999067+00:00",
     "score": 100
   },
   {
@@ -89490,6 +90861,45 @@
             "annotations": null
           }
         ]
+      },
+      {
+        "id": "6183a6fa-861c-451d-b64d-1f76d2d38c0b",
+        "factTypeId": "9d00a14b-aad3-45ee-8ed6-572cba6fbbb1",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "b4f2855e-029a-4dfa-a35b-7ab14eaabcbd",
+            "factFieldTypeId": "22aec2e0-055c-44f3-b8a7-7a267d91c2c2",
+            "stringValue": "Accomack",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "a8f70271-c4c5-459a-892b-4f845c669f07",
+            "factFieldTypeId": "dcbf5a14-e261-4519-b599-2892564e57f6",
+            "stringValue": "Virginia",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "3d024388-0495-42dd-b196-6bcafd5959dd",
+            "factFieldTypeId": "8b7bea34-5d6a-42be-89cd-7bf6b330f20d",
+            "stringValue": null,
+            "numberValue": 5.361,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
       }
     ],
     "pageCount": 10,
@@ -89499,8 +90909,8 @@
     "sourceDocumentId": "b91f4835-2c5d-4d66-8af5-bf1c9ffd21f4",
     "sourceDocumentName": "JP0038 Merry Branch AOS A&N Electric Cooperative.pdf",
     "securityLabelId": null,
-    "lastModifiedBy": "f00c1746-8935-473c-4a94-08dac7d3ca42",
-    "lastModifiedOn": "2023-08-01T21:05:59.3439774+00:00",
+    "lastModifiedBy": "0c4ad3a7-78d1-44e1-dc08-08db401b7f0b",
+    "lastModifiedOn": "2023-08-23T16:33:13.9100978+00:00",
     "score": 100
   },
   {

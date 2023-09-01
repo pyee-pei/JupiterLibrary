@@ -130,7 +130,7 @@ console.log(factArray.slice(0, 30));
 
 */
 
-console.log(jupiterDocs.find((x) => x.id === "09142aaf-e975-4105-9448-0df79cc27c29").agreement_terms[0].periodic_payments);
+console.log(jupiterDocs.find((x) => x.id === "240c72a5-45aa-4f8f-9bf7-e1832913cfa9"));
 
 const termModelIncreaseAmount = jupiterDocs.filter((doc) => {
   if (doc.term_payment_models.length > 0) {

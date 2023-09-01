@@ -482,22 +482,6 @@
         "selectListValuesTotalCount": 0
       },
       {
-        "id": "1854d694-9301-41cf-beb3-cde419cc6943",
-        "name": "Periodic Escalation Amount",
-        "dataType": "Number",
-        "measurementType": "Dollars",
-        "selectListValues": null,
-        "selectListValuesTotalCount": 0
-      },
-      {
-        "id": "f4a36fba-c248-4088-b09c-f0b6d15c0b01",
-        "name": "Compounding Escalation",
-        "dataType": "Boolean",
-        "measurementType": null,
-        "selectListValues": null,
-        "selectListValuesTotalCount": 0
-      },
-      {
         "id": "1f8f276c-1461-4d7a-9115-c0628a729033",
         "name": "Payment Type",
         "dataType": "SelectList",
@@ -606,14 +590,6 @@
         "selectListValuesTotalCount": 0
       },
       {
-        "id": "f9faf261-09e6-4316-9cf4-fa87ded6a14c",
-        "name": "Periodic Escalation Amount",
-        "dataType": "Number",
-        "measurementType": "Dollars",
-        "selectListValues": null,
-        "selectListValuesTotalCount": 0
-      },
-      {
         "id": "6c43a922-acf9-4afe-9fb6-dc97e14d9099",
         "name": "Payment frequency",
         "dataType": "SelectList",
@@ -640,14 +616,6 @@
         "name": "Payment per MW",
         "dataType": "Number",
         "measurementType": "None",
-        "selectListValues": null,
-        "selectListValuesTotalCount": 0
-      },
-      {
-        "id": "cba28aa6-29dd-4f30-806b-db13887d050c",
-        "name": "Compounding Escalation",
-        "dataType": "Boolean",
-        "measurementType": null,
         "selectListValues": null,
         "selectListValuesTotalCount": 0
       },
