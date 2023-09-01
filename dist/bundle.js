@@ -622,12 +622,22 @@ class JupiterDoc {
 
         // calculate previous periods on same payment model for periodic escalation
         // NOTE: this will not continue periodic escalations across payment models
-        term.previous_escalation_periods = agreementTerms
-          .filter((x) => x.term_ordinal < term.term_ordinal && x.payment_model === term.payment_model)
-          .reduce((accumulator, t) => accumulator + t.term_length_years, 0);
+        // term.previous_escalation_periods = agreementTerms
+        //   .filter((x) => x.term_ordinal < term.term_ordinal && x.payment_model === term.payment_model)
+        //   .reduce((accumulator, t) => accumulator + t.term_length_years, 0);
 
         // calculate perevious terms for term escalation
-        term.previous_terms = agreementTerms.filter((x) => x.term_ordinal < term.term_ordinal && x.payment_model === term.payment_model).length;
+        //term.previous_terms = agreementTerms.filter((x) => x.term_ordinal < term.term_ordinal && x.payment_model === term.payment_model).length;
+
+        // calculate cumulative increase amount from all prior terms of same payment model
+        term.cumulative_increase_amount = agreementTerms
+          .filter((x) => x.term_ordinal < term.term_ordinal && x.payment_model === term.payment_model)
+          .reduce((accumulator, t) => accumulator + (t.increase_amount ?? 0), 0);
+
+        // calculate cumulative escalation rate from all prior terms of same payment model
+        term.cumulative_escalation_rate = agreementTerms
+          .filter((x) => x.term_ordinal < term.term_ordinal && x.payment_model === term.payment_model)
+          .reduce((accumulator, t) => accumulator * (1 + (t.escalation_rate ?? 0) / 100), 1);
       });
 
     // calculate final term end date
@@ -638,7 +648,7 @@ class JupiterDoc {
    * calculates base periodic payment for a given model
    * largest of all possible ways to calculate payment
    */
-  periodicBasePayment(model, op_details, term_escalation_rate, term_increase_amount, previous_terms, agreement_acres) {
+  periodicBasePayment(model, op_details, cumulative_escalation_rate, cumulative_increase_amount, /*previous_terms ,*/ agreement_acres) {
     if (!model) {
       return 0;
     }
@@ -661,11 +671,16 @@ class JupiterDoc {
       (model.payment_per_acre ?? 0) * (agreement_acres ?? 0)
     );
 
+    // deprecated 2023-09-01
     // apply amount escalation
-    base = base + ((term_increase_amount ?? 0) * previous_terms ?? 0);
+    // base = base + ((term_increase_amount ?? 0) * previous_terms ?? 0);
 
+    // deprecated 2023-09-01
     // apply rate escalation
-    base = utils.calculateCompoundingGrowth(base, (term_escalation_rate ?? 0) / 100, previous_terms ?? 0);
+    // base = utils.calculateCompoundingGrowth(base, (term_escalation_rate ?? 0) / 100, previous_terms ?? 0);
+
+    // apply cumulative increase and escalation
+    base = (base + cumulative_increase_amount) * cumulative_escalation_rate;
 
     return base;
   }
@@ -738,9 +753,9 @@ class JupiterDoc {
     const periodic_payment = this.periodicBasePayment(
       model,
       op_details,
-      term.escalation_rate,
-      term.increase_amount,
-      term.previous_terms,
+      term.cumulative_escalation_rate,
+      term.cumulative_increase_amount,
+      //term.previous_terms,
       agreement_acres
     );
 
