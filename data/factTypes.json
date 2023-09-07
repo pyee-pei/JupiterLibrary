@@ -770,10 +770,11 @@
         "measurementType": null,
         "selectListValues": [
           "Not Reviewed",
+          "Developer Draft",
           "In Progress",
           "Complete"
         ],
-        "selectListValuesTotalCount": 3
+        "selectListValuesTotalCount": 4
       },
       {
         "id": "ce717681-a47f-4b34-af1b-835e4acc2ba3",

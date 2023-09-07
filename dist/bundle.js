@@ -583,9 +583,7 @@ class JupiterDoc {
         term.start_date_text = term.start_date.toFormat("MM/dd/yyyy");
 
         // determine appropriate duration to add
-        if (this.id === "240c72a5-45aa-4f8f-9bf7-e1832913cfa9") {
-          console.log(term.term_length_years);
-        }
+
         if (!term.term_length_years) {
           var addDuration = { days: 0 };
         } /* else if (parseInt(term.term_length_years) === term.term_length_years) {
@@ -916,7 +914,11 @@ class JupiterDoc {
       // loop until end date is reached
       while (payment_date <= payment_date_end) {
         // apply escalation as needed
-        payment_amount = utils.calculateCompoundingGrowth(model.payment_amount, (model.periodic_escalation_rate ?? 0) / 100, period);
+        payment_amount = utils.calculateCompoundingGrowth(
+          model.payment_amount + (model.increase_amount ?? 0) * (period - 1),
+          (model.periodic_escalation_rate ?? 0) / 100,
+          period
+        );
 
         // create a payment object for each grantor on the agreement
         this.grantor.forEach((g) => {

@@ -130,7 +130,7 @@ console.log(factArray.slice(0, 30));
 
 */
 
-console.log(jupiterDocs.find((x) => x.id === "240c72a5-45aa-4f8f-9bf7-e1832913cfa9"));
+console.log(jupiterDocs.find((x) => x.id === "d81235e6-444b-46dc-be04-d07d55db2fdc"));
 
 const termModelIncreaseAmount = jupiterDocs.filter((doc) => {
   if (doc.term_payment_models.length > 0) {
@@ -138,7 +138,7 @@ const termModelIncreaseAmount = jupiterDocs.filter((doc) => {
   }
 });
 
-console.log(termModelIncreaseAmount);
+console.log("Term Model Increase Amount", termModelIncreaseAmount);
 
 const termIncreaseAmount = jupiterDocs.filter((doc) => {
   if (doc.agreement_terms.length > 0) {
@@ -146,7 +146,15 @@ const termIncreaseAmount = jupiterDocs.filter((doc) => {
   }
 });
 
-console.log(termIncreaseAmount);
+console.log("Term Increase Amount", termIncreaseAmount);
+
+const nonIntTermLengths = jupiterDocs.filter((doc) => {
+  if (doc.agreement_terms.length > 0) {
+    return doc.agreement_terms.some((term) => (term.term_length_years * 100) % 1 !== 0);
+  }
+});
+
+console.log("Non-Integer Term Lengths", nonIntTermLengths);
 
 console.log("%cAll docs with term payment models:", consoleHeaderFormat);
 console.log(jupiterDocs.filter((x) => x.term_payment_models.length > 0));
