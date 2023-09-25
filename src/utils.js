@@ -115,6 +115,23 @@ const extractFactInstanceId = (doc, factType) => {
 };
 
 /***
+ * extract fact field instance id
+ */
+const extractFactFieldInstanceId = (doc, factType, factTypeField) => {
+  const fact = doc.facts ? doc.facts.find((x) => x.factTypeId == factType) : null;
+
+  if (fact) {
+    const field = fact.fields.find((x) => x.factFieldTypeId == factTypeField);
+
+    if (field) {
+      return field.id;
+    }
+  }
+
+  return null;
+};
+
+/***
  * extract multiple fact instances from a fact type, with all fields
  */
 const extractMultiFactValues = (doc, factType) => {
@@ -294,6 +311,7 @@ export default {
   addFactandFieldNames,
   extractFactValue,
   extractFactInstanceId,
+  extractFactFieldInstanceId,
   extractMultiFactValues,
   extractFactMultiFields,
   getEarliestDateTime,
