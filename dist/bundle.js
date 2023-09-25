@@ -554,7 +554,7 @@ class JupiterDoc {
     this.qc_flags = [];
 
     // flag a version number
-    this.libraryVersion = "1.1.11";
+    this.libraryVersion = "1.1.12";
 
     // deprecated - these should all be in agreement terms
     //this.calcOptionTermDates(this.option_terms, this.effective_date);
@@ -1180,6 +1180,14 @@ class JupiterDoc {
         amendment.date_payment_models.forEach((model) => {
           this.date_payment_models.push(model);
         });
+
+        // replace review status with newest status fields & ids
+        if (amendment.review_status) {
+          this.review_status = amendment.review_status;
+          this.review_status_instance_id = amendment.review_status_instance_id;
+          this.review_status_value_instance_id = amendment.review_status_value_instance_id;
+          this.review_status_notes = amendment.review_status_notes;
+        }
       });
 
       // re-calculate payments based on amended values
