@@ -104,6 +104,19 @@ const extractFactValue = (doc, factType, factTypeField, valueType) => {
 };
 
 /***
+ * extract single fact instance id
+ */
+const extractFactInstanceId = (doc, factType) => {
+  const fact = doc.facts ? doc.facts.find((x) => x.factTypeId == factType) : null;
+
+  if (fact) {
+    return fact.id;
+  }
+
+  return null;
+};
+
+/***
  * extract multiple fact instances from a fact type, with all fields
  */
 const extractMultiFactValues = (doc, factType) => {
@@ -282,6 +295,7 @@ var utils = {
   getTagName,
   addFactandFieldNames,
   extractFactValue,
+  extractFactInstanceId,
   extractMultiFactValues,
   extractFactMultiFields,
   getEarliestDateTime,
@@ -499,6 +513,9 @@ class JupiterDoc {
       "string"
     );
 
+    // Review Status Fact ID
+    this.review_status_instance_id = utils.extractFactInstanceId(doc, utils.getFactTypeId("Review Status", factTypes));
+
     // Agreement Group
     this.agreement_group = utils.extractFactValue(
       doc,
@@ -513,7 +530,7 @@ class JupiterDoc {
     this.qc_flags = [];
 
     // flag a version number
-    this.libraryVersion = "1.1.08";
+    this.libraryVersion = "1.1.09";
 
     // deprecated - these should all be in agreement terms
     //this.calcOptionTermDates(this.option_terms, this.effective_date);

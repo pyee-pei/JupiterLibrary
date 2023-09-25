@@ -197,6 +197,9 @@ class JupiterDoc {
       "string"
     );
 
+    // Review Status Fact ID
+    this.review_status_instance_id = utils.extractFactInstanceId(doc, utils.getFactTypeId("Review Status", factTypes));
+
     // Agreement Group
     this.agreement_group = utils.extractFactValue(
       doc,
@@ -211,7 +214,7 @@ class JupiterDoc {
     this.qc_flags = [];
 
     // flag a version number
-    this.libraryVersion = "1.1.08";
+    this.libraryVersion = "1.1.09";
 
     // deprecated - these should all be in agreement terms
     //this.calcOptionTermDates(this.option_terms, this.effective_date);

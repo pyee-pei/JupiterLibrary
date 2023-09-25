@@ -915,8 +915,8 @@
     "sourceDocumentId": "d81235e6-444b-46dc-be04-d07d55db2fdc",
     "sourceDocumentName": "LEASE Goode, Michael D 20230821.pdf",
     "securityLabelId": null,
-    "lastModifiedBy": "0c4ad3a7-78d1-44e1-dc08-08db401b7f0b",
-    "lastModifiedOn": "2023-09-07T12:44:09.847242+00:00",
+    "lastModifiedBy": "f00c1746-8935-473c-4a94-08dac7d3ca42",
+    "lastModifiedOn": "2023-09-07T18:15:42.7471598+00:00",
     "score": 100
   },
   {
@@ -1309,6 +1309,167 @@
             "annotations": null
           }
         ]
+      },
+      {
+        "id": "9dc0ec8f-70bb-4e2b-b5e7-5ac24702b072",
+        "factTypeId": "7601840f-8d47-4c0b-a2a1-2ad2a692bfb8",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "d66f51ee-db89-4dee-9dd4-4a2feb04254c",
+            "factFieldTypeId": "43dc655d-cd25-4859-a11e-610317f4baf3",
+            "stringValue": "Option",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "396c5ea2-6702-471a-8662-31629045f88d",
+            "factFieldTypeId": "7a9ddbe6-3c1e-4cf9-8811-2d256c56cddb",
+            "stringValue": null,
+            "numberValue": 1,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "f3c411a6-6bfe-47a3-875e-9ced642ce298",
+            "factFieldTypeId": "ced1155e-6ce4-4528-b7e9-a8461d17c89d",
+            "stringValue": null,
+            "numberValue": 5,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "c0e84309-768a-4245-a810-99821040b599",
+            "factFieldTypeId": "f401c9de-d1c2-4102-907c-adeb3915745c",
+            "stringValue": null,
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": false,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "6624b20b-6d63-484c-8d98-e6d10a357303",
+            "factFieldTypeId": "f04c837a-a3fe-475c-b819-d8f974915fb7",
+            "stringValue": "Option",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "6cb4d9ff-5018-4ae0-8e74-c27d3792570c",
+            "factFieldTypeId": "b5bf4453-bfea-476f-9a9e-f16e93b17693",
+            "stringValue": "Start with Term",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
+      },
+      {
+        "id": "eb79c3fa-0f64-4dee-8e4a-338409c83d53",
+        "factTypeId": "07fd8b4c-3daf-4b41-940b-09fcf4da5d87",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "2e6e20e2-834f-48ea-9b83-ab728b3cd1be",
+            "factFieldTypeId": "6d8ea1c2-2e91-41a1-b463-58c3e10c6a6a",
+            "stringValue": "Developer Draft",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
+      },
+      {
+        "id": "ed56955a-7add-4c9f-9135-818d46d7da6e",
+        "factTypeId": "e31c3090-21b0-4afd-877d-cf7eeed20673",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "fd034cbf-45ad-4096-8c2b-68711c93b72f",
+            "factFieldTypeId": "4113ec1c-007a-4f0d-9c2c-4f1aaebf452b",
+            "stringValue": "Option",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "95e34a6e-57b7-4f69-9aad-94cce1ee2131",
+            "factFieldTypeId": "63fe352e-59e5-4e8d-93aa-a1f0a16846b9",
+            "stringValue": null,
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": false,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "a9c743ec-c72d-439c-96f5-cac0ade32ee3",
+            "factFieldTypeId": "6c43a922-acf9-4afe-9fb6-dc97e14d9099",
+            "stringValue": "Annually",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "1124826b-b490-4294-b304-c9dec7d6d40a",
+            "factFieldTypeId": "43986a11-a08f-4365-ae0b-6e1673f85daf",
+            "stringValue": null,
+            "numberValue": 16500,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "13e0ee1d-8c91-4dc3-8ff7-744005f682d6",
+            "factFieldTypeId": "8799ed1e-a858-4d08-ba17-52549d69ea3f",
+            "stringValue": null,
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": true,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "d90d6d38-1c51-4260-b31c-bc65c246bd8d",
+            "factFieldTypeId": "8e851c65-6b4b-43cf-937f-c7b9611f15a1",
+            "stringValue": null,
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": false,
+            "annotations": null
+          }
+        ]
       }
     ],
     "pageCount": 31,
@@ -1318,8 +1479,8 @@
     "sourceDocumentId": "9d87752a-b467-42e6-a604-f16e2f84dbfb",
     "sourceDocumentName": "JP0067 Hidalgo OPT-PUR Rafael & Carmen Santos Revocable Trust, July 26, 2007 20230829.pdf",
     "securityLabelId": null,
-    "lastModifiedBy": "0c4ad3a7-78d1-44e1-dc08-08db401b7f0b",
-    "lastModifiedOn": "2023-08-29T23:20:57.222903+00:00",
+    "lastModifiedBy": "0a089276-00f5-444f-e407-08dac8de685f",
+    "lastModifiedOn": "2023-09-07T18:10:55.400126+00:00",
     "score": 100
   },
   {
