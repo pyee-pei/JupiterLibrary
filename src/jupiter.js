@@ -220,7 +220,7 @@ class JupiterDoc {
     this.qc_flags = [];
 
     // flag a version number
-    this.libraryVersion = "1.1.12";
+    this.libraryVersion = "1.1.13";
 
     // deprecated - these should all be in agreement terms
     //this.calcOptionTermDates(this.option_terms, this.effective_date);
@@ -343,7 +343,7 @@ class JupiterDoc {
 
         // calculate cumulative increase amount from all prior terms of same payment model
         term.cumulative_increase_amount = agreementTerms
-          .filter((x) => x.term_ordinal < term.term_ordinal && x.payment_model === term.payment_model)
+          .filter((x) => x.term_ordinal <= term.term_ordinal && x.payment_model === term.payment_model)
           .reduce((accumulator, t) => accumulator + (t.increase_amount ?? 0), 0);
 
         // calculate cumulative escalation rate from all prior terms of same payment model
