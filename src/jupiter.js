@@ -220,7 +220,7 @@ class JupiterDoc {
     this.qc_flags = [];
 
     // flag a version number
-    this.libraryVersion = "1.1.14";
+    this.libraryVersion = "1.1.15";
 
     // deprecated - these should all be in agreement terms
     //this.calcOptionTermDates(this.option_terms, this.effective_date);

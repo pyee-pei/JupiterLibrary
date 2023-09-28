@@ -277,8 +277,13 @@ const calculateGrowth = (initial, rate, periods) => {
 };
 
 const plusDuration = (length_years) => {
+  // less than a year, even # months, return months only
   if ((length_years * 12) % 1 === 0 && length_years < 1) {
     return { months: length_years * 12 };
+  }
+  // more than a year, even months, return years and months
+  else if (length_years % 1 != 0 && (length_years * 12) % 1 === 0 && length_years > 1) {
+    return { years: Math.floor(length_years), months: (length_years * 12) % 12 };
   } else {
     return { years: length_years };
   }
@@ -534,7 +539,7 @@ class JupiterDoc {
     this.qc_flags = [];
 
     // flag a version number
-    this.libraryVersion = "1.1.14";
+    this.libraryVersion = "1.1.15";
 
     // deprecated - these should all be in agreement terms
     //this.calcOptionTermDates(this.option_terms, this.effective_date);

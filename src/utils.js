@@ -275,8 +275,13 @@ const calculateGrowth = (initial, rate, periods) => {
 };
 
 const plusDuration = (length_years) => {
+  // less than a year, even # months, return months only
   if ((length_years * 12) % 1 === 0 && length_years < 1) {
     return { months: length_years * 12 };
+  }
+  // more than a year, even months, return years and months
+  else if (length_years % 1 != 0 && (length_years * 12) % 1 === 0 && length_years > 1) {
+    return { years: Math.floor(length_years), months: (length_years * 12) % 12 };
   } else {
     return { years: length_years };
   }
