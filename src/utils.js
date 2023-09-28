@@ -274,34 +274,13 @@ const calculateGrowth = (initial, rate, periods) => {
   return round(initial + initial * rate * periods, 4);
 };
 
-// /***
-//  * API - GET Auth Token
-//  */
-// const apiGetAuthToken = async (clienet_id, secret) => {
-//     const url = `https://cors-anywhere.herokuapp.com/https://identity.thoughttrace.com/connect/token`;
-//     const response = await fetch(url, {
-//         method: 'POST',
-//         querytype: 'x-www-form-urlencoded',
-//         body: `grant_type=client_credentials&client_id=${clienet_id}&client_secret=${secret}`,
-//     });
-
-//     return response;
-// };
-
-// /***
-//  * API - GET Tags
-//  */
-// const apiGetTags = async (token) => {
-//     const url = `https://api.thoughttrace.com/tags`;
-//     const response = await fetch(url, {
-//         method: 'GET',
-//         headers: {
-//             Authorization: `Bearer ${token}`,
-//         },
-//     });
-
-//     return response;
-// };
+const plusDuration = (length_years) => {
+  if ((length_years * 12) % 1 === 0 && length_years < 1) {
+    return { months: length_years * 12 };
+  } else {
+    return { years: length_years };
+  }
+};
 
 export default {
   round,
@@ -318,6 +297,7 @@ export default {
   cleanFieldNames,
   calculateCompoundingGrowth,
   calculateGrowth,
+  plusDuration,
   // apiGetAuthToken,
   // apiGetTags,
 };

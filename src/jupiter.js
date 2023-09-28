@@ -220,7 +220,7 @@ class JupiterDoc {
     this.qc_flags = [];
 
     // flag a version number
-    this.libraryVersion = "1.1.13";
+    this.libraryVersion = "1.1.14";
 
     // deprecated - these should all be in agreement terms
     //this.calcOptionTermDates(this.option_terms, this.effective_date);
@@ -298,7 +298,7 @@ class JupiterDoc {
         } else if (parseInt(term.term_length_years * 12) === term.term_length_years * 12) {
           var addDuration = { months: term.term_length_years * 12 };
         } */ else {
-          var addDuration = { years: term.term_length_years };
+          var addDuration = utils.plusDuration(term.term_length_years);
         }
 
         // calculate end date from what will be a rounded year decimal approximation

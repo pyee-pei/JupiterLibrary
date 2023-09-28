@@ -1,5 +1,5 @@
 import JupiterDoc from "./jupiter.js";
-// import utils from './utils.js';
+import utils from "./utils.js";
 
 var docs = [];
 var factTypes = [];
@@ -130,7 +130,7 @@ console.log(factArray.slice(0, 30));
 
 */
 
-console.log(jupiterDocs.find((x) => x.id === "33669780-ca99-433e-863e-6054d761c54c"));
+console.log(jupiterDocs.find((x) => x.id === "f97b403c-90b4-4d28-8f2c-01ee963e1168"));
 
 const termModelIncreaseAmount = jupiterDocs.filter((doc) => {
   if (doc.term_payment_models.length > 0) {
