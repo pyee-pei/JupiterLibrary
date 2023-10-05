@@ -772,10 +772,11 @@
           "Not Reviewed",
           "In Progress",
           "Developer Draft",
+          "Release for Markup",
           "Legal Review",
           "Complete"
         ],
-        "selectListValuesTotalCount": 5
+        "selectListValuesTotalCount": 6
       },
       {
         "id": "ce717681-a47f-4b34-af1b-835e4acc2ba3",

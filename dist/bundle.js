@@ -539,7 +539,7 @@ class JupiterDoc {
     this.qc_flags = [];
 
     // flag a version number
-    this.libraryVersion = "1.1.15";
+    this.libraryVersion = "1.1.16";
 
     // deprecated - these should all be in agreement terms
     //this.calcOptionTermDates(this.option_terms, this.effective_date);
@@ -1169,6 +1169,7 @@ class JupiterDoc {
         // replace review status with newest status fields & ids
         if (amendment.review_status) {
           this.review_status = amendment.review_status;
+          this.review_status_doc_id = amendment.id;
           this.review_status_instance_id = amendment.review_status_instance_id;
           this.review_status_value_instance_id = amendment.review_status_value_instance_id;
           this.review_status_notes = amendment.review_status_notes;
