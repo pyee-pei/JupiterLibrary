@@ -249,6 +249,22 @@ const getEarliestDateTime = (date1, date2) => {
   return null;
 };
 
+const getEarliestDateTimeFromArray = (dates) => {
+  if (dates.length === 0) {
+    return null;
+  }
+
+  var earliest = dates[0];
+
+  dates.forEach((date) => {
+    if (date?.ts < earliest?.ts) {
+      earliest = date;
+    }
+  });
+
+  return earliest;
+};
+
 /***
  * convert fact field names to be more javascript friendly
  */
@@ -301,6 +317,7 @@ var utils = {
   extractMultiFactValues,
   extractFactMultiFields,
   getEarliestDateTime,
+  getEarliestDateTimeFromArray,
   cleanFieldNames,
   calculateCompoundingGrowth,
   calculateGrowth,
@@ -539,10 +556,7 @@ class JupiterDoc {
     this.qc_flags = [];
 
     // flag a version number
-    this.libraryVersion = "1.1.16";
-
-    // deprecated - these should all be in agreement terms
-    //this.calcOptionTermDates(this.option_terms, this.effective_date);
+    this.libraryVersion = "1.1.17";
   }
 
   /**
@@ -932,7 +946,7 @@ class JupiterDoc {
 
       // iterating variables
       var payment_date = model.date_one_time ?? model.date_begin;
-      var payment_date_end = this.operational_details?.termination_date ?? model.date_end ?? model.date_one_time;
+      var payment_date_end = utils.getEarliestDateTimeFromArray([this.operational_details?.termination_date, model.date_end, model.date_one_time]);
       var period = 1;
       var payment_amount = 0;
       var payment_source = model.date_one_time ? "Date Model (One Time)" : "Date Model";

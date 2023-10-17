@@ -247,6 +247,22 @@ const getEarliestDateTime = (date1, date2) => {
   return null;
 };
 
+const getEarliestDateTimeFromArray = (dates) => {
+  if (dates.length === 0) {
+    return null;
+  }
+
+  var earliest = dates[0];
+
+  dates.forEach((date) => {
+    if (date?.ts < earliest?.ts) {
+      earliest = date;
+    }
+  });
+
+  return earliest;
+};
+
 /***
  * convert fact field names to be more javascript friendly
  */
@@ -299,6 +315,7 @@ export default {
   extractMultiFactValues,
   extractFactMultiFields,
   getEarliestDateTime,
+  getEarliestDateTimeFromArray,
   cleanFieldNames,
   calculateCompoundingGrowth,
   calculateGrowth,
