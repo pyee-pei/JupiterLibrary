@@ -220,7 +220,7 @@ class JupiterDoc {
     this.qc_flags = [];
 
     // flag a version number
-    this.libraryVersion = "1.1.17";
+    this.libraryVersion = "1.1.18";
   }
 
   /**
@@ -733,21 +733,23 @@ class JupiterDoc {
     }
 
     // only run purchase price if there is a closing date and a purchase price
-
-    this.grantor.forEach((g) => {
-      // create payment object for purchase price
-      this.date_payments.push({
-        payment_source: "Purchase Price Calculation",
-        model_id: null,
-        payment_date: this.closing_date.toLocaleString(),
-        payment_type: "Purchase Price",
-        payee: this.nicknameGrantor(g["grantor/lessor_name"]),
-        // purchase payment will subtract all payments applicable to purchase price
-        payment_amount: (this.full_purchase_price - previous_applicable_payments) * ((g.payment_split ?? 100) / 100),
-        applicable_to_purchase: true,
-        refundable: false,
+    // and it is not terminated (added 2023-10-23)
+    if (this.closing_date && this.full_purchase_price && !this.operational_details?.termination_date) {
+      this.grantor.forEach((g) => {
+        // create payment object for purchase price
+        this.date_payments.push({
+          payment_source: "Purchase Price Calculation",
+          model_id: null,
+          payment_date: this.closing_date.toLocaleString(),
+          payment_type: "Purchase Price",
+          payee: this.nicknameGrantor(g["grantor/lessor_name"]),
+          // purchase payment will subtract all payments applicable to purchase price
+          payment_amount: (this.full_purchase_price - previous_applicable_payments) * ((g.payment_split ?? 100) / 100),
+          applicable_to_purchase: true,
+          refundable: false,
+        });
       });
-    });
+    }
   }
 
   /**

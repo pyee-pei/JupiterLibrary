@@ -1,5 +1,888 @@
 [
   {
+    "id": "ddba6885-b617-4849-a660-1c476218520e",
+    "name": "JP0012.1 St. Gall I AGMT Surface Waiver Durango Resources Corp. 20231020.pdf",
+    "documentTypeId": null,
+    "processingStatus": "Processed",
+    "pageManipulationStatus": null,
+    "aiReviewPreprocessingStatus": "NotProcessed",
+    "createdBy": "0a089276-00f5-444f-e407-08dac8de685f",
+    "createdOn": "2023-10-20T21:26:46.7199045+00:00",
+    "archivedBy": null,
+    "archivedOn": null,
+    "tagIds": [],
+    "userIds": [],
+    "documentStatusId": null,
+    "thoughts": [],
+    "facts": [
+      {
+        "id": "354f46f3-f07c-4322-890b-1698358e8a2f",
+        "factTypeId": "bbf9acb0-7897-4421-b6e2-faf3928b85ca",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "97b684e9-c618-49df-8c95-ae181ab341c0",
+            "factFieldTypeId": "614a8c7a-019d-4d94-ab2e-147bc511b537",
+            "stringValue": "LEASE - St. Gall I - BESS Riggs - George E. Riggs - JP0012.1",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
+      }
+    ],
+    "pageCount": 20,
+    "pages": null,
+    "highlightedText": null,
+    "highlightedName": null,
+    "sourceDocumentId": "ddba6885-b617-4849-a660-1c476218520e",
+    "sourceDocumentName": "JP0012.1 St. Gall I AGMT Surface Waiver Durango Resources Corp. 20231020.pdf",
+    "securityLabelId": null,
+    "lastModifiedBy": "0c4ad3a7-78d1-44e1-dc08-08db401b7f0b",
+    "lastModifiedOn": "2023-10-23T17:03:50.2371218+00:00",
+    "score": 100
+  },
+  {
+    "id": "b8f32785-4d3e-4850-bac5-2e4a4071d7aa",
+    "name": "JP0050.1 Callisto I Energy Center ESMNT Release 2022-486648 Biofuels Power Corporation 20231018.pdf",
+    "documentTypeId": null,
+    "processingStatus": "Processed",
+    "pageManipulationStatus": null,
+    "aiReviewPreprocessingStatus": "NotProcessed",
+    "createdBy": "0a089276-00f5-444f-e407-08dac8de685f",
+    "createdOn": "2023-10-20T21:26:44.5140735+00:00",
+    "archivedBy": null,
+    "archivedOn": null,
+    "tagIds": [],
+    "userIds": [],
+    "documentStatusId": null,
+    "thoughts": [],
+    "facts": [
+      {
+        "id": "c4aec49c-fea8-4794-89fa-52cc6379563f",
+        "factTypeId": "bbf9acb0-7897-4421-b6e2-faf3928b85ca",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "f508d4a2-e8b3-4cf5-8f5f-9d5df27ba446",
+            "factFieldTypeId": "614a8c7a-019d-4d94-ab2e-147bc511b537",
+            "stringValue": "ESMT Release - Callisto I - Biofuels Power Corp - JP0050.1",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
+      },
+      {
+        "id": "0625e306-b133-4855-8114-42b036d966b7",
+        "factTypeId": "8a874127-1425-457c-af96-d311f09034d6",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "f00bc2f4-6f46-476e-881a-a4e9443b2099",
+            "factFieldTypeId": "2e45d6a2-8eb3-435e-a6a8-ce90f93181e7",
+            "stringValue": null,
+            "numberValue": null,
+            "dateValue": "2023-10-18",
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
+      },
+      {
+        "id": "4ed06975-90ce-4dd7-9d2e-55895eb9b223",
+        "factTypeId": "08060c37-a8a5-4852-9977-eccb9fc204f3",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "8cac6326-437e-4967-821d-1be38606af94",
+            "factFieldTypeId": "779a1262-4c53-4c4f-9021-5422c8e682d9",
+            "stringValue": "Callisto I Energy Center LLC",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
+      },
+      {
+        "id": "03f67e72-02b4-4ff1-9dbd-3e38f618f456",
+        "factTypeId": "429fc170-2a94-4cc6-901f-2743897ed6c3",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "b072813e-117f-4840-83cf-07f5e89522c9",
+            "factFieldTypeId": "09272207-6ba1-4a2a-bcac-35ac0ec7cded",
+            "stringValue": "JP0050.1",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
+      },
+      {
+        "id": "f696ea3c-6597-45ad-bdfe-85ed4c0add7f",
+        "factTypeId": "cf7fc28f-823e-4af1-a3be-09b756c3952a",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "59b7f542-aea2-4a14-a745-70918a12d9e3",
+            "factFieldTypeId": "a7fdf688-839d-49f8-8e07-a55dc19cb521",
+            "stringValue": "Callisto I Energy Center",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
+      },
+      {
+        "id": "69f4bcf5-6450-4652-bb64-d0392b55a10a",
+        "factTypeId": "842a3d35-19c1-4bd6-a222-a451231533f3",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "1a27c2d7-a8a0-49e6-a294-d79081a78418",
+            "factFieldTypeId": "77036264-5de9-41a4-be1d-0be12f245bc1",
+            "stringValue": null,
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": true,
+            "annotations": null
+          }
+        ]
+      },
+      {
+        "id": "545cdba2-3214-4c1c-bea9-8337b1170d94",
+        "factTypeId": "b4f52442-1b7d-4b04-8a37-eb114aec2210",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "75acbf85-a98b-4bca-b60c-d196735efda8",
+            "factFieldTypeId": "77d6673d-5a8c-4d7e-bffe-04e8123e21b1",
+            "stringValue": null,
+            "numberValue": null,
+            "dateValue": "2023-10-18",
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
+      }
+    ],
+    "pageCount": 17,
+    "pages": null,
+    "highlightedText": null,
+    "highlightedName": null,
+    "sourceDocumentId": "b8f32785-4d3e-4850-bac5-2e4a4071d7aa",
+    "sourceDocumentName": "JP0050.1 Callisto I Energy Center ESMNT Release 2022-486648 Biofuels Power Corporation 20231018.pdf",
+    "securityLabelId": null,
+    "lastModifiedBy": "0c4ad3a7-78d1-44e1-dc08-08db401b7f0b",
+    "lastModifiedOn": "2023-10-23T16:55:58.0616217+00:00",
+    "score": 100
+  },
+  {
+    "id": "c00cdb26-4a9f-458d-8b08-23bdd797639a",
+    "name": "JP0050.1 Callisto I Energy Center ESMNT Partial Release 2023-114079 Biofuels Power Corporation 20231020.pdf",
+    "documentTypeId": null,
+    "processingStatus": "Processed",
+    "pageManipulationStatus": null,
+    "aiReviewPreprocessingStatus": "NotProcessed",
+    "createdBy": "0a089276-00f5-444f-e407-08dac8de685f",
+    "createdOn": "2023-10-20T21:26:42.3827093+00:00",
+    "archivedBy": null,
+    "archivedOn": null,
+    "tagIds": [],
+    "userIds": [],
+    "documentStatusId": null,
+    "thoughts": [],
+    "facts": [
+      {
+        "id": "cd735065-575a-48b0-9306-48a71ae39ef3",
+        "factTypeId": "bbf9acb0-7897-4421-b6e2-faf3928b85ca",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "5a92937a-ce57-423d-8e68-5e7211f702cb",
+            "factFieldTypeId": "614a8c7a-019d-4d94-ab2e-147bc511b537",
+            "stringValue": "ESMT - Callisto II - Biofuels Power Corp - JP0010.2",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
+      },
+      {
+        "id": "4f4d377c-6812-4283-b199-7db07f1dbf2f",
+        "factTypeId": "8a874127-1425-457c-af96-d311f09034d6",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "6d79ebe4-0b64-4c4b-8373-ba1b13f42065",
+            "factFieldTypeId": "2e45d6a2-8eb3-435e-a6a8-ce90f93181e7",
+            "stringValue": null,
+            "numberValue": null,
+            "dateValue": "2023-10-20",
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
+      },
+      {
+        "id": "81b5849e-3854-4ba3-bea2-8a5723d2640b",
+        "factTypeId": "07fd8b4c-3daf-4b41-940b-09fcf4da5d87",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "03e09284-514f-4a19-9bd0-3d20dde99768",
+            "factFieldTypeId": "ce717681-a47f-4b34-af1b-835e4acc2ba3",
+            "stringValue": "Didn't mark as terminated because it's a partial release.",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
+      }
+    ],
+    "pageCount": 8,
+    "pages": null,
+    "highlightedText": null,
+    "highlightedName": null,
+    "sourceDocumentId": "c00cdb26-4a9f-458d-8b08-23bdd797639a",
+    "sourceDocumentName": "JP0050.1 Callisto I Energy Center ESMNT Partial Release 2023-114079 Biofuels Power Corporation 20231020.pdf",
+    "securityLabelId": null,
+    "lastModifiedBy": "0c4ad3a7-78d1-44e1-dc08-08db401b7f0b",
+    "lastModifiedOn": "2023-10-23T16:34:58.2859635+00:00",
+    "score": 100
+  },
+  {
+    "id": "c1186db1-538b-455f-97c3-040dd0dcc7a3",
+    "name": "JP0050.1 Callisto I Energy Center ESMNT Release 2021-0582282 Biofuels Power Corporation 20231020.pdf",
+    "documentTypeId": null,
+    "processingStatus": "Processed",
+    "pageManipulationStatus": null,
+    "aiReviewPreprocessingStatus": "NotProcessed",
+    "createdBy": "0a089276-00f5-444f-e407-08dac8de685f",
+    "createdOn": "2023-10-20T21:26:40.7354037+00:00",
+    "archivedBy": null,
+    "archivedOn": null,
+    "tagIds": [],
+    "userIds": [],
+    "documentStatusId": null,
+    "thoughts": [],
+    "facts": [
+      {
+        "id": "9c5d50e6-8b94-4dcf-a130-111f050e2394",
+        "factTypeId": "bbf9acb0-7897-4421-b6e2-faf3928b85ca",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "0de6bdbe-cb31-4e7f-8660-9ec39a270ff8",
+            "factFieldTypeId": "614a8c7a-019d-4d94-ab2e-147bc511b537",
+            "stringValue": "ESMT - Callisto I - Biofuels Power Corp - JP0050.1",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
+      },
+      {
+        "id": "a7ec51a8-6362-466c-818f-a5fe363a3393",
+        "factTypeId": "8a874127-1425-457c-af96-d311f09034d6",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "2db5cb27-200b-465d-b7bd-e87094e08811",
+            "factFieldTypeId": "2e45d6a2-8eb3-435e-a6a8-ce90f93181e7",
+            "stringValue": null,
+            "numberValue": null,
+            "dateValue": "2023-10-20",
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
+      },
+      {
+        "id": "99b409df-be69-4ea9-92ee-94989b2a6d0b",
+        "factTypeId": "842a3d35-19c1-4bd6-a222-a451231533f3",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "bc1ae754-ef31-4e06-933d-fa33411e64ce",
+            "factFieldTypeId": "77036264-5de9-41a4-be1d-0be12f245bc1",
+            "stringValue": null,
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": true,
+            "annotations": null
+          }
+        ]
+      },
+      {
+        "id": "55c41fa7-341c-43dc-96a8-5663b133bd41",
+        "factTypeId": "07fd8b4c-3daf-4b41-940b-09fcf4da5d87",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "a5586838-6c0d-4915-8552-089a5f6af28d",
+            "factFieldTypeId": "6d8ea1c2-2e91-41a1-b463-58c3e10c6a6a",
+            "stringValue": "Complete",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
+      },
+      {
+        "id": "7865f1bb-0322-4845-b375-cec960e108d5",
+        "factTypeId": "b4f52442-1b7d-4b04-8a37-eb114aec2210",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "a6ab0c65-41a0-4248-84ac-9a9fbc961c19",
+            "factFieldTypeId": "77d6673d-5a8c-4d7e-bffe-04e8123e21b1",
+            "stringValue": null,
+            "numberValue": null,
+            "dateValue": "2023-10-20",
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
+      }
+    ],
+    "pageCount": 6,
+    "pages": null,
+    "highlightedText": null,
+    "highlightedName": null,
+    "sourceDocumentId": "c1186db1-538b-455f-97c3-040dd0dcc7a3",
+    "sourceDocumentName": "JP0050.1 Callisto I Energy Center ESMNT Release 2021-0582282 Biofuels Power Corporation 20231020.pdf",
+    "securityLabelId": null,
+    "lastModifiedBy": "0c4ad3a7-78d1-44e1-dc08-08db401b7f0b",
+    "lastModifiedOn": "2023-10-23T16:29:25.5155487+00:00",
+    "score": 100
+  },
+  {
+    "id": "567d9ce5-d376-4fe9-9056-e086db2f1b42",
+    "name": "OPT-PUR Michael J Rapanos Trust 20231020.pdf",
+    "documentTypeId": "a2063704-ad09-43c5-a773-914ea269d48e",
+    "processingStatus": "Processed",
+    "pageManipulationStatus": null,
+    "aiReviewPreprocessingStatus": "NotProcessed",
+    "createdBy": "0a089276-00f5-444f-e407-08dac8de685f",
+    "createdOn": "2023-10-20T19:42:28.6792036+00:00",
+    "archivedBy": null,
+    "archivedOn": null,
+    "tagIds": [],
+    "userIds": [],
+    "documentStatusId": null,
+    "thoughts": [],
+    "facts": [
+      {
+        "id": "14a8d787-b5b0-4e7c-b08b-62e05ee3eefe",
+        "factTypeId": "bbf9acb0-7897-4421-b6e2-faf3928b85ca",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "cdebfbcd-ecd8-482d-8c16-3d6c2f4efb51",
+            "factFieldTypeId": "614a8c7a-019d-4d94-ab2e-147bc511b537",
+            "stringValue": "POPT - NO PROJECT - Michael J Rapanos Trust - JP ID NEEDED",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
+      },
+      {
+        "id": "83d5deec-eec1-45da-91e6-904139421d2f",
+        "factTypeId": "cc05d0b7-005b-4775-a84d-e7cc98a7241f",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "be5c690b-123a-476b-a808-d1d50d4625fa",
+            "factFieldTypeId": "cb93b25d-8bed-4865-8402-b2b3ded62af5",
+            "stringValue": null,
+            "numberValue": null,
+            "dateValue": "2023-09-26",
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
+      },
+      {
+        "id": "25bc4b53-6ea9-4122-ae22-efdf883f60c8",
+        "factTypeId": "3e9cf52f-c9d8-4f43-9f28-92ec8e4615b0",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "2a409102-5de1-4e69-8411-6679797b34bf",
+            "factFieldTypeId": "d136291d-429e-46f3-9efe-e889b977ed47",
+            "stringValue": "Occasio Power Management LLC",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
+      },
+      {
+        "id": "7251c7e1-dc33-4b8f-ac9e-7a58719f3b16",
+        "factTypeId": "68bfe50d-25ad-42cf-b026-78db2d066f1b",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "b008cf08-3006-4d8c-bded-157b87aea315",
+            "factFieldTypeId": "56c59cf7-9fcd-4598-ae86-6c226db77b53",
+            "stringValue": "Michael J Rapanos Trust",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
+      },
+      {
+        "id": "dcbf175c-8b88-449e-946d-be0466e6bec3",
+        "factTypeId": "08060c37-a8a5-4852-9977-eccb9fc204f3",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "45b88a67-f37f-4df8-9a00-281cf4412893",
+            "factFieldTypeId": "779a1262-4c53-4c4f-9021-5422c8e682d9",
+            "stringValue": "Occasio Power Management LLC",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
+      },
+      {
+        "id": "382d0ab0-7c73-46bf-8d77-2f129680cfac",
+        "factTypeId": "97dd7b97-9980-42bd-915d-d26b13decbc1",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "7da1fae8-d594-4de7-a187-c82d24b20aa9",
+            "factFieldTypeId": "86f356a7-72b4-410b-8652-67cc63c6b00d",
+            "stringValue": "All notices, demands, or other communications given under this Agreement, unless otherwise stated herein, shall be in writing and sent by: (a)personal delivery, (b) nationally recognized overnight courier service, (c) registered or certified mail, or (d) email, provided notice is also sent on the following business day by one of the other permitted notice methods. Any notice under 30(a-c) shall be deemed to have been delivered when received or upon refusal to accept delivery. Any notice shall be addressed as follows:\n\nIf to Buyer: Occasio Power Management LLC c/o Jupiter Power LLC 1108 Lavaca St ., Ste. 110-349 Austin, Texas 78701 Attn: Legal Email: gc@jupiterpower.io\n\nIf to Seller: Michael J Rapanos 3736 E Julie Ann Dr Midland, MI 48642\n\nEither Party may change its notice address by providing notice to the other Party in accordance with the notice procedures in this Section 30",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
+      },
+      {
+        "id": "d7af1a55-4496-46ae-8e2b-d032fd6b8276",
+        "factTypeId": "9d00a14b-aad3-45ee-8ed6-572cba6fbbb1",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "fd9fe30a-414e-4b4e-957f-b73cb9c21931",
+            "factFieldTypeId": "22aec2e0-055c-44f3-b8a7-7a267d91c2c2",
+            "stringValue": "Saginaw",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "601b9355-0f79-42f9-83b5-293b693aba4e",
+            "factFieldTypeId": "dcbf5a14-e261-4519-b599-2892564e57f6",
+            "stringValue": "Michigan",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "f69088e5-1858-4d5a-a979-6b70c9acf9f2",
+            "factFieldTypeId": "8b7bea34-5d6a-42be-89cd-7bf6b330f20d",
+            "stringValue": null,
+            "numberValue": 67,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
+      },
+      {
+        "id": "7cd5a073-ec5e-4bdc-bc6f-a65384b02625",
+        "factTypeId": "07fd8b4c-3daf-4b41-940b-09fcf4da5d87",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "e80ced67-f18c-4bdf-a23c-b4ffc2b14884",
+            "factFieldTypeId": "6d8ea1c2-2e91-41a1-b463-58c3e10c6a6a",
+            "stringValue": "Developer Draft",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "f426d55b-ebc9-460b-b8d6-c49255874a1b",
+            "factFieldTypeId": "ce717681-a47f-4b34-af1b-835e4acc2ba3",
+            "stringValue": "No Project name or Project ID associated with the agreement. County is not listed but the city and county are of the same name. Legal description, and Parcel ID are missing from the document.",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
+      },
+      {
+        "id": "40c1c3ed-c352-49f9-a28f-f0b08a7dfaac",
+        "factTypeId": "fe02f206-d720-47ea-9462-180b440b953e",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "07ffb7c9-a1e1-4a9f-863b-0f8871fcac2f",
+            "factFieldTypeId": "17f6d36a-0a16-45c6-876d-9d8def5decf5",
+            "stringValue": "OPT-PUR",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
+      },
+      {
+        "id": "2028af01-058c-42c9-ba76-d376e97713b5",
+        "factTypeId": "7601840f-8d47-4c0b-a2a1-2ad2a692bfb8",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "d751afba-dda5-48f2-a522-9202edd3be78",
+            "factFieldTypeId": "43dc655d-cd25-4859-a11e-610317f4baf3",
+            "stringValue": "Option",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "8e5ce2c3-6a6b-40d6-9ecd-6db85502af2f",
+            "factFieldTypeId": "7a9ddbe6-3c1e-4cf9-8811-2d256c56cddb",
+            "stringValue": null,
+            "numberValue": 1,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "267e536d-cfc8-40c0-9ec6-5fe39586e585",
+            "factFieldTypeId": "ced1155e-6ce4-4528-b7e9-a8461d17c89d",
+            "stringValue": null,
+            "numberValue": 3,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "2ffda810-651a-4adf-8e8c-61828566033e",
+            "factFieldTypeId": "f401c9de-d1c2-4102-907c-adeb3915745c",
+            "stringValue": null,
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": false,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "8c7d683a-222b-45b0-85b7-fc118adddafc",
+            "factFieldTypeId": "f04c837a-a3fe-475c-b819-d8f974915fb7",
+            "stringValue": "Option",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "eb5fa7ca-166f-45fa-9fd2-f5521bd97d2f",
+            "factFieldTypeId": "b5bf4453-bfea-476f-9a9e-f16e93b17693",
+            "stringValue": "Start with Term",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
+      },
+      {
+        "id": "1626977a-d349-45fe-b0bb-cc07dec865f0",
+        "factTypeId": "e31c3090-21b0-4afd-877d-cf7eeed20673",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "5aed5abf-5bc4-4bb8-a3f4-2a36e55d8e3e",
+            "factFieldTypeId": "4113ec1c-007a-4f0d-9c2c-4f1aaebf452b",
+            "stringValue": "Option",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "48f5badb-c8f9-44d1-9864-8a6617732154",
+            "factFieldTypeId": "63fe352e-59e5-4e8d-93aa-a1f0a16846b9",
+            "stringValue": null,
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": false,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "1eab39ed-8d33-447c-a6c0-f3a9d4085439",
+            "factFieldTypeId": "6c43a922-acf9-4afe-9fb6-dc97e14d9099",
+            "stringValue": "Annually",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "a273f3b2-373e-4f84-9f9a-0458e9bf7cc2",
+            "factFieldTypeId": "43986a11-a08f-4365-ae0b-6e1673f85daf",
+            "stringValue": null,
+            "numberValue": 22512,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "55586471-f3dd-49c1-85d9-d28e04710e76",
+            "factFieldTypeId": "8799ed1e-a858-4d08-ba17-52549d69ea3f",
+            "stringValue": null,
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": false,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "7b36530f-863f-4e9d-99d7-84ad797c21ac",
+            "factFieldTypeId": "8e851c65-6b4b-43cf-937f-c7b9611f15a1",
+            "stringValue": null,
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": false,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "9f729449-704f-4911-a074-e66cca95553b",
+            "factFieldTypeId": "33ceb1ac-e694-4f2f-af41-751c3f13c952",
+            "stringValue": null,
+            "numberValue": 5000,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
+      },
+      {
+        "id": "17fa74cd-bb3a-4715-8895-6b8bb3cd91fb",
+        "factTypeId": "470c0504-9386-4ba5-a9a8-ecc3fd42f592",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "15f56e77-35ef-4bed-9a90-b3c438d52e0f",
+            "factFieldTypeId": "4f1b1956-1751-43fa-9f97-ec44ff2a499d",
+            "stringValue": null,
+            "numberValue": 2010000,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
+      }
+    ],
+    "pageCount": 19,
+    "pages": null,
+    "highlightedText": null,
+    "highlightedName": null,
+    "sourceDocumentId": "567d9ce5-d376-4fe9-9056-e086db2f1b42",
+    "sourceDocumentName": "OPT-PUR Michael J Rapanos Trust 20231020.pdf",
+    "securityLabelId": null,
+    "lastModifiedBy": "269c9ff7-12f2-4738-e540-08dbd096639c",
+    "lastModifiedOn": "2023-10-23T19:45:34.8352252+00:00",
+    "score": 100
+  },
+  {
+    "id": "09c6c9d9-07ef-4ed7-b5b7-d17da772462f",
+    "name": "JP0062 Two Rivers LTR-TER LDR Equities LLC 20231019.pdf",
+    "documentTypeId": "f0f66551-db69-41ce-9a4f-ddb61034aacd",
+    "processingStatus": "Processed",
+    "pageManipulationStatus": null,
+    "aiReviewPreprocessingStatus": "NotProcessed",
+    "createdBy": "0a089276-00f5-444f-e407-08dac8de685f",
+    "createdOn": "2023-10-19T15:40:49.2905998+00:00",
+    "archivedBy": null,
+    "archivedOn": null,
+    "tagIds": [],
+    "userIds": [],
+    "documentStatusId": null,
+    "thoughts": [],
+    "facts": [
+      {
+        "id": "59f59507-13f6-457a-af9e-ed0ef92dbb97",
+        "factTypeId": "bbf9acb0-7897-4421-b6e2-faf3928b85ca",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "25aea046-ccf6-4dcc-a324-fd03743073e8",
+            "factFieldTypeId": "614a8c7a-019d-4d94-ab2e-147bc511b537",
+            "stringValue": "LEASE - Two Rivers Storage I - LDR EQUITIES LLC - JP0062",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
+      },
+      {
+        "id": "b8d2f652-5b44-4a1e-b766-b4df421254da",
+        "factTypeId": "8a874127-1425-457c-af96-d311f09034d6",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "59090d5b-694f-46dc-b677-0e87b14ed796",
+            "factFieldTypeId": "2e45d6a2-8eb3-435e-a6a8-ce90f93181e7",
+            "stringValue": null,
+            "numberValue": null,
+            "dateValue": "2023-10-18",
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
+      },
+      {
+        "id": "e2685a58-ddd3-429b-a494-502c91a017b3",
+        "factTypeId": "b4f52442-1b7d-4b04-8a37-eb114aec2210",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "16ab0c96-f0b5-4c58-a861-b311f8cd6ae5",
+            "factFieldTypeId": "77d6673d-5a8c-4d7e-bffe-04e8123e21b1",
+            "stringValue": null,
+            "numberValue": null,
+            "dateValue": "2023-11-17",
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
+      },
+      {
+        "id": "812d92c7-eb69-4365-a8f1-10f9e2f421d2",
+        "factTypeId": "842a3d35-19c1-4bd6-a222-a451231533f3",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "361dfc1d-3dab-458d-85dd-844e6904365d",
+            "factFieldTypeId": "77036264-5de9-41a4-be1d-0be12f245bc1",
+            "stringValue": null,
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": true,
+            "annotations": null
+          }
+        ]
+      },
+      {
+        "id": "7b9062a3-b773-455f-a7f7-18410c4ea606",
+        "factTypeId": "07fd8b4c-3daf-4b41-940b-09fcf4da5d87",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "39c61267-1133-4e31-8c7c-248d1ff522a0",
+            "factFieldTypeId": "6d8ea1c2-2e91-41a1-b463-58c3e10c6a6a",
+            "stringValue": "Complete",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
+      }
+    ],
+    "pageCount": 1,
+    "pages": null,
+    "highlightedText": null,
+    "highlightedName": null,
+    "sourceDocumentId": "09c6c9d9-07ef-4ed7-b5b7-d17da772462f",
+    "sourceDocumentName": "JP0062 Two Rivers LTR-TER LDR Equities LLC 20231019.pdf",
+    "securityLabelId": null,
+    "lastModifiedBy": "0c4ad3a7-78d1-44e1-dc08-08db401b7f0b",
+    "lastModifiedOn": "2023-10-19T15:54:43.1511396+00:00",
+    "score": 100
+  },
+  {
     "id": "5cd5bea4-520b-4673-999a-24f95e542559",
     "name": "JP0053.1 Singleton I LTR-TER DIV Beacham, LLC 20230929.pdf",
     "documentTypeId": null,
@@ -1569,7 +2452,7 @@
             "id": "5fc5cf35-4e18-441f-b14a-363d40c04201",
             "factFieldTypeId": "ced1155e-6ce4-4528-b7e9-a8461d17c89d",
             "stringValue": null,
-            "numberValue": 3,
+            "numberValue": 5,
             "dateValue": null,
             "booleanValue": null,
             "annotations": null
@@ -2158,7 +3041,24 @@
             "highlightedText": null,
             "id": "cadfc646-817f-43e7-af74-cd4b282a4be8",
             "factFieldTypeId": "6d8ea1c2-2e91-41a1-b463-58c3e10c6a6a",
-            "stringValue": "In Progress",
+            "stringValue": "Complete",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
+      },
+      {
+        "id": "5622d7c9-8a62-420f-8e54-ff959575c504",
+        "factTypeId": "fe02f206-d720-47ea-9462-180b440b953e",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "42caf8c0-6377-47d2-9c48-b229ab0c9c6d",
+            "factFieldTypeId": "17f6d36a-0a16-45c6-876d-9d8def5decf5",
+            "stringValue": "LEASE",
             "numberValue": null,
             "dateValue": null,
             "booleanValue": null,
@@ -2175,7 +3075,7 @@
     "sourceDocumentName": "JP0012.3 St. Gall Solar LEASE Star of Texas 2019 LLC 20231003.pdf",
     "securityLabelId": null,
     "lastModifiedBy": "0c4ad3a7-78d1-44e1-dc08-08db401b7f0b",
-    "lastModifiedOn": "2023-10-03T21:43:31.638145+00:00",
+    "lastModifiedOn": "2023-10-19T17:15:23.7832456+00:00",
     "score": 100
   },
   {
@@ -7962,8 +8862,8 @@
     "sourceDocumentId": "9d87752a-b467-42e6-a604-f16e2f84dbfb",
     "sourceDocumentName": "JP0067 Hidalgo OPT-PUR Rafael & Carmen Santos Revocable Trust, July 26, 2007 20230829.pdf",
     "securityLabelId": null,
-    "lastModifiedBy": "0c4ad3a7-78d1-44e1-dc08-08db401b7f0b",
-    "lastModifiedOn": "2023-09-07T19:48:15.9604027+00:00",
+    "lastModifiedBy": "f00c1746-8935-473c-4a94-08dac7d3ca42",
+    "lastModifiedOn": "2023-10-23T14:29:48.0770439+00:00",
     "score": 100
   },
   {
@@ -47114,9 +48014,7 @@
     "createdOn": "2023-03-06T14:46:49.1454793+00:00",
     "archivedBy": null,
     "archivedOn": null,
-    "tagIds": [
-      "dd218121-8d4f-4485-be08-afb3b162ca81"
-    ],
+    "tagIds": [],
     "userIds": [],
     "documentStatusId": null,
     "thoughts": [],
@@ -47700,7 +48598,7 @@
     "sourceDocumentName": "JP0010.2 Callisto II OPT-PUR Hewitson Farms 12082020.pdf",
     "securityLabelId": null,
     "lastModifiedBy": "f00c1746-8935-473c-4a94-08dac7d3ca42",
-    "lastModifiedOn": "2023-08-01T21:06:06.7512225+00:00",
+    "lastModifiedOn": "2023-10-23T22:23:41.7380015+00:00",
     "score": 100
   },
   {
