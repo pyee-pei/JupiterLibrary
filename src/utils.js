@@ -255,7 +255,7 @@ const getEarliestDateTimeFromArray = (dates) => {
   var earliest = dates[0];
 
   dates.forEach((date) => {
-    if (date?.ts < earliest?.ts) {
+    if (!earliest || date?.ts < earliest?.ts) {
       earliest = date;
     }
   });

@@ -1,8 +1,272 @@
 [
   {
+    "id": "27aa2f3a-1552-49fe-b283-f9fe2a9ab6e3",
+    "name": "OPT-PUR Bobosky, Steve & Kelli 20231024.pdf",
+    "documentTypeId": "a2063704-ad09-43c5-a773-914ea269d48e",
+    "processingStatus": "Processed",
+    "pageManipulationStatus": null,
+    "aiReviewPreprocessingStatus": "NotProcessed",
+    "createdBy": "0a089276-00f5-444f-e407-08dac8de685f",
+    "createdOn": "2023-10-24T21:19:00.0539903+00:00",
+    "archivedBy": null,
+    "archivedOn": null,
+    "tagIds": [],
+    "userIds": [],
+    "documentStatusId": null,
+    "thoughts": [],
+    "facts": [],
+    "pageCount": 25,
+    "pages": null,
+    "highlightedText": null,
+    "highlightedName": null,
+    "sourceDocumentId": "27aa2f3a-1552-49fe-b283-f9fe2a9ab6e3",
+    "sourceDocumentName": "OPT-PUR Bobosky, Steve & Kelli 20231024.pdf",
+    "securityLabelId": null,
+    "lastModifiedBy": "thoughttrace-system",
+    "lastModifiedOn": "2023-10-24T21:32:18.1583681+00:00",
+    "score": 100
+  },
+  {
+    "id": "d602c9db-911f-45a8-a8a5-2da956a2fa17",
+    "name": "JP0059 Tidwell Prairie AOS Okonski Living Trust et al. 20231024.pdf",
+    "documentTypeId": "10287c20-f1d7-4302-8843-4606b352104d",
+    "processingStatus": "Processed",
+    "pageManipulationStatus": null,
+    "aiReviewPreprocessingStatus": "NotProcessed",
+    "createdBy": "0a089276-00f5-444f-e407-08dac8de685f",
+    "createdOn": "2023-10-24T20:49:28.5238738+00:00",
+    "archivedBy": null,
+    "archivedOn": null,
+    "tagIds": [],
+    "userIds": [],
+    "documentStatusId": null,
+    "thoughts": [],
+    "facts": [
+      {
+        "id": "7bbc002f-f3d5-4843-9c0b-1035550f00ee",
+        "factTypeId": "bbf9acb0-7897-4421-b6e2-faf3928b85ca",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "e9647dc4-f525-4a23-9c52-e7cb3112dcd9",
+            "factFieldTypeId": "614a8c7a-019d-4d94-ab2e-147bc511b537",
+            "stringValue": "FRC - Tidwell Prairie - Okonski Living Trust - JP0059",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
+      },
+      {
+        "id": "b5dfcca0-2111-4bf7-bc7f-0ca32353cb50",
+        "factTypeId": "429fc170-2a94-4cc6-901f-2743897ed6c3",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "16f3b4f7-5f12-4cf3-94e6-1596345abced",
+            "factFieldTypeId": "09272207-6ba1-4a2a-bcac-35ac0ec7cded",
+            "stringValue": "JP0059",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
+      },
+      {
+        "id": "796caf97-b0c8-40af-bb03-bdab1cbdf7b7",
+        "factTypeId": "cf7fc28f-823e-4af1-a3be-09b756c3952a",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "e7f723c2-c475-4d5b-908e-8d69a352d441",
+            "factFieldTypeId": "a7fdf688-839d-49f8-8e07-a55dc19cb521",
+            "stringValue": "Tidwell Prairie",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
+      },
+      {
+        "id": "32112d7e-f29a-4852-b9dc-a3edfa44abda",
+        "factTypeId": "cc05d0b7-005b-4775-a84d-e7cc98a7241f",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "ae413cf6-ac73-4c72-ab09-af759397812a",
+            "factFieldTypeId": "cb93b25d-8bed-4865-8402-b2b3ded62af5",
+            "stringValue": null,
+            "numberValue": null,
+            "dateValue": "2023-10-23",
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
+      },
+      {
+        "id": "4760620a-03a3-4f3b-9911-f97366a44454",
+        "factTypeId": "68bfe50d-25ad-42cf-b026-78db2d066f1b",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "01686059-a7ad-4ba7-a73e-1945d3080e0d",
+            "factFieldTypeId": "56c59cf7-9fcd-4598-ae86-6c226db77b53",
+            "stringValue": "Okonski Living Trust et al",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
+      }
+    ],
+    "pageCount": 36,
+    "pages": null,
+    "highlightedText": null,
+    "highlightedName": null,
+    "sourceDocumentId": "d602c9db-911f-45a8-a8a5-2da956a2fa17",
+    "sourceDocumentName": "JP0059 Tidwell Prairie AOS Okonski Living Trust et al. 20231024.pdf",
+    "securityLabelId": null,
+    "lastModifiedBy": "269c9ff7-12f2-4738-e540-08dbd096639c",
+    "lastModifiedOn": "2023-10-25T16:08:06.1853136+00:00",
+    "score": 100
+  },
+  {
+    "id": "383d6315-b7b5-4324-9a17-e8c1d4c3c559",
+    "name": "JP0053 Singleton OPT-AMD 16 Commercial Investors LLC 20231023.pdf",
+    "documentTypeId": "96cf03e0-2634-461d-98fc-3dc1f79e7aa7",
+    "processingStatus": "Processed",
+    "pageManipulationStatus": null,
+    "aiReviewPreprocessingStatus": "NotProcessed",
+    "createdBy": "0a089276-00f5-444f-e407-08dac8de685f",
+    "createdOn": "2023-10-24T16:53:18.3407173+00:00",
+    "archivedBy": null,
+    "archivedOn": null,
+    "tagIds": [],
+    "userIds": [],
+    "documentStatusId": null,
+    "thoughts": [],
+    "facts": [
+      {
+        "id": "cfb0846d-dbcc-4252-9cd8-19a2e6264a68",
+        "factTypeId": "bbf9acb0-7897-4421-b6e2-faf3928b85ca",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "fb05c49d-e4f7-4c5d-b0e7-d1ed82e4cb18",
+            "factFieldTypeId": "614a8c7a-019d-4d94-ab2e-147bc511b537",
+            "stringValue": "LEASE - Singleton I - Commercial Investors - JP0053.1",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
+      },
+      {
+        "id": "7bdcce66-9454-4853-a3b8-aa9bbdf4c988",
+        "factTypeId": "429fc170-2a94-4cc6-901f-2743897ed6c3",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "fc884084-79d8-4e18-9fd9-3fe7e6af6fbb",
+            "factFieldTypeId": "09272207-6ba1-4a2a-bcac-35ac0ec7cded",
+            "stringValue": "JP0053.1",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
+      },
+      {
+        "id": "c48a68d9-b983-4525-abc8-68105454bff9",
+        "factTypeId": "cf7fc28f-823e-4af1-a3be-09b756c3952a",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "cae520ce-fe2b-4add-8a10-8f3ff369ed18",
+            "factFieldTypeId": "a7fdf688-839d-49f8-8e07-a55dc19cb521",
+            "stringValue": "Singleton I",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
+      },
+      {
+        "id": "67307e21-e96c-48cc-a9fe-2dbcf2846a16",
+        "factTypeId": "8a874127-1425-457c-af96-d311f09034d6",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "809fd4b3-aca7-46d0-af00-9ea5357c29ae",
+            "factFieldTypeId": "2e45d6a2-8eb3-435e-a6a8-ce90f93181e7",
+            "stringValue": null,
+            "numberValue": null,
+            "dateValue": "2023-10-20",
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
+      },
+      {
+        "id": "08b9cc2e-6de6-4e4e-8997-e5ea7c903bcc",
+        "factTypeId": "07fd8b4c-3daf-4b41-940b-09fcf4da5d87",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "942337ed-c53c-407c-bf40-08d53c458ae1",
+            "factFieldTypeId": "6d8ea1c2-2e91-41a1-b463-58c3e10c6a6a",
+            "stringValue": "Developer Draft",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "a6fc25c7-da83-4f4b-bb1c-dd36d171c1c3",
+            "factFieldTypeId": "ce717681-a47f-4b34-af1b-835e4acc2ba3",
+            "stringValue": "We need to re-create the terms that extend the term-based Option model, and also create all the date-based 60k payments that go with each extension...",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
+      }
+    ],
+    "pageCount": 6,
+    "pages": null,
+    "highlightedText": null,
+    "highlightedName": null,
+    "sourceDocumentId": "383d6315-b7b5-4324-9a17-e8c1d4c3c559",
+    "sourceDocumentName": "JP0053 Singleton OPT-AMD 16 Commercial Investors LLC 20231023.pdf",
+    "securityLabelId": null,
+    "lastModifiedBy": "f00c1746-8935-473c-4a94-08dac7d3ca42",
+    "lastModifiedOn": "2023-10-24T20:46:37.6082222+00:00",
+    "score": 100
+  },
+  {
     "id": "ddba6885-b617-4849-a660-1c476218520e",
     "name": "JP0012.1 St. Gall I AGMT Surface Waiver Durango Resources Corp. 20231020.pdf",
-    "documentTypeId": null,
+    "documentTypeId": "f9ae7647-97f7-43c4-846a-88a2dedfce91",
     "processingStatus": "Processed",
     "pageManipulationStatus": null,
     "aiReviewPreprocessingStatus": "NotProcessed",
@@ -11,7 +275,9 @@
     "archivedBy": null,
     "archivedOn": null,
     "tagIds": [],
-    "userIds": [],
+    "userIds": [
+      "269c9ff7-12f2-4738-e540-08dbd096639c"
+    ],
     "documentStatusId": null,
     "thoughts": [],
     "facts": [
@@ -24,10 +290,201 @@
             "highlightedText": null,
             "id": "97b684e9-c618-49df-8c95-ae181ab341c0",
             "factFieldTypeId": "614a8c7a-019d-4d94-ab2e-147bc511b537",
-            "stringValue": "LEASE - St. Gall I - BESS Riggs - George E. Riggs - JP0012.1",
+            "stringValue": "SUR-ESMT - St. Gall I BESS - Durango Resources - JP0012.1",
             "numberValue": null,
             "dateValue": null,
             "booleanValue": null,
+            "annotations": null
+          }
+        ]
+      },
+      {
+        "id": "47203abd-e07d-4fcb-94c9-4448dbec0cf8",
+        "factTypeId": "429fc170-2a94-4cc6-901f-2743897ed6c3",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "b689d0f6-e379-4704-b2c8-45e3ca52f234",
+            "factFieldTypeId": "09272207-6ba1-4a2a-bcac-35ac0ec7cded",
+            "stringValue": "JP0012.1",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
+      },
+      {
+        "id": "99e020c7-b705-4206-b0fe-2d6dd784a378",
+        "factTypeId": "cf7fc28f-823e-4af1-a3be-09b756c3952a",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "e04837b3-371f-4f9a-ad39-82713b26dd4e",
+            "factFieldTypeId": "a7fdf688-839d-49f8-8e07-a55dc19cb521",
+            "stringValue": "St. Gall l BESS",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
+      },
+      {
+        "id": "f795b237-dd78-4cd6-a5fc-effc9fd2d8ef",
+        "factTypeId": "cc05d0b7-005b-4775-a84d-e7cc98a7241f",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "485491f9-c017-4688-86c0-982efd6ab8c7",
+            "factFieldTypeId": "cb93b25d-8bed-4865-8402-b2b3ded62af5",
+            "stringValue": null,
+            "numberValue": null,
+            "dateValue": "2023-10-18",
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
+      },
+      {
+        "id": "670319a6-42af-4fcd-91bd-1396d711124d",
+        "factTypeId": "68bfe50d-25ad-42cf-b026-78db2d066f1b",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "44d5ef98-7daf-42a8-ae8e-62c97adb9f91",
+            "factFieldTypeId": "56c59cf7-9fcd-4598-ae86-6c226db77b53",
+            "stringValue": "Durango Resources Corp",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
+      },
+      {
+        "id": "a7fb3f9a-ffb2-45b4-b20e-f791e8e8c7c0",
+        "factTypeId": "3e9cf52f-c9d8-4f43-9f28-92ec8e4615b0",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "3f0cf3af-7cf8-4b36-85a2-3d1ad26d96da",
+            "factFieldTypeId": "d136291d-429e-46f3-9efe-e889b977ed47",
+            "stringValue": "St. Gall Energy Storage I LLC",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
+      },
+      {
+        "id": "13f973cb-f8c7-4ea5-b342-3d122f54e92e",
+        "factTypeId": "9d00a14b-aad3-45ee-8ed6-572cba6fbbb1",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "da022059-96f8-4bdd-a5af-83760fd57d9c",
+            "factFieldTypeId": "22aec2e0-055c-44f3-b8a7-7a267d91c2c2",
+            "stringValue": "Pecos",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "d0358452-a39c-4f0b-9bff-cc44a6f7eb25",
+            "factFieldTypeId": "047a79ae-3e0a-4867-a644-87f5b9be6368",
+            "stringValue": "Description of Surface Acreage\n\nTract 1: BEING a 15.005 acre tract out of a called 247.61 acre tract of land as described in Volume 465, Page 397, Deed Records of Pecos County, Texas, and being located in the Northwest quarter of Section 21 and the Northeast quarter of Section 22, all in Block 146, T. & St. L. RR. Co. Survey, Pecos County, Texas and being more particularly described by metes and bounds as follows:\n\nAll Bearings, Distances, and Coordinates shown hereon are Lambert Grid and Conform to the \"Texas Coordinate System\", Texas Central Zone, North American Datum of 1983, unless otherwise noted. To obtain surface values use a grid to ground scale factor of 1.000254336.\n\nBEGINNING at a fence corner post in the North line of said Section 21, found for the Northeast corner of this tract and the Northeast corner of said 247.61 acre tract, from which a concrete post found for the Northwest corner of said Section 21 and the Northeast corner of said Section 22 bears N 88º35'17\" W, a distance of 0.57 feet; THENCE S 01º44'29\" W, generally along a fence, at a distance of 99.03 feet pass the West line of said Section 21 and the East line of said Section 22, continuing on for a total distance of 747.46 feet to a 1/2-inch iron with red plastic cap stamped \"West Co. Midland\" set for the Southeast corner of this tract; THENCE N 88º34'45\" W, a distance of 510.11 feet to a 1/2-inch iron with red plastic cap stamped \"West Co. Midland\" set for the most Southerly Southwest corner of this tract; THENCE N 01º24'37\" E, a distance of 236.41 feet to a 1/2-inch iron with red plastic cap stamped \"West Co. Midland\" set for an interior corner of this tract; THENCE N 88º35'17\" W, a distance of 509.50 feet to a 1/2-inch iron with red plastic cap stamped \"West Co. Midland\" set for the most Westerly Southwest corner of this tract; THENCE N 10001'30\" W, a distance of 121.30 feet to a 1/2-inch iron with red plastic cap stamped \"West Co. Midland\" set for an exterior corner of this tract; THENCE N 01º44'49\" E, a distance of 392.07 feet to a 1/2-inch iron with red plastic cap stamped \"West Co. Midland\" set for the Northwest corner of this tract in the North line of said Section 22; THENCE S 88º35'17\" E, at a distance of 1045.11 feet pass said concrete monument found for the Northeast corner of said Section 22 and the Northwest corner of said Section 21, continuing on for a total distance of 1045.68 feet to the POINT OF BEGINNING. Subject tract contains a total of",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "f03d2473-022c-4a1b-b041-57e17538376c",
+            "factFieldTypeId": "8b7bea34-5d6a-42be-89cd-7bf6b330f20d",
+            "stringValue": null,
+            "numberValue": 15.005,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
+      },
+      {
+        "id": "ccaa7f6a-29b2-4514-b2e3-80f034effd5b",
+        "factTypeId": "08060c37-a8a5-4852-9977-eccb9fc204f3",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "ae98bb21-6684-452e-ad2d-3f2551b487fc",
+            "factFieldTypeId": "779a1262-4c53-4c4f-9021-5422c8e682d9",
+            "stringValue": "St. Gall Energy Storage l LLC",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
+      },
+      {
+        "id": "fff55958-d232-4840-b0dd-a8da0cf5e3df",
+        "factTypeId": "917e938f-af4a-4005-8dfb-84201fd0e5d4",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "3a83ac4e-7147-49ea-9028-ce694ccd4782",
+            "factFieldTypeId": "aa088d35-1cc9-4abb-a2f3-818ac55027bd",
+            "stringValue": null,
+            "numberValue": null,
+            "dateValue": "2023-10-18",
+            "booleanValue": null,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "f6c93dec-ccb3-45fa-81a9-8b99a244ad15",
+            "factFieldTypeId": "abe0c4df-224d-4651-8fd9-99f8d8d157f8",
+            "stringValue": null,
+            "numberValue": 97000,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "d7c9ed9c-008f-454b-9d9b-a2e09d47eeab",
+            "factFieldTypeId": "1f8f276c-1461-4d7a-9115-c0628a729033",
+            "stringValue": "Payment",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "086eda40-ec03-42cb-ad17-920b02072096",
+            "factFieldTypeId": "aaea03f6-94f7-488e-8013-677c57eabdb8",
+            "stringValue": null,
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": false,
             "annotations": null
           }
         ]
@@ -40,8 +497,8 @@
     "sourceDocumentId": "ddba6885-b617-4849-a660-1c476218520e",
     "sourceDocumentName": "JP0012.1 St. Gall I AGMT Surface Waiver Durango Resources Corp. 20231020.pdf",
     "securityLabelId": null,
-    "lastModifiedBy": "0c4ad3a7-78d1-44e1-dc08-08db401b7f0b",
-    "lastModifiedOn": "2023-10-23T17:03:50.2371218+00:00",
+    "lastModifiedBy": "269c9ff7-12f2-4738-e540-08dbd096639c",
+    "lastModifiedOn": "2023-10-25T15:49:00.8137973+00:00",
     "score": 100
   },
   {
@@ -11887,7 +12344,7 @@
             "highlightedText": null,
             "id": "abd976e9-3226-413e-b93f-5e927a13f5dc",
             "factFieldTypeId": "f04c837a-a3fe-475c-b819-d8f974915fb7",
-            "stringValue": "Custom 1",
+            "stringValue": "Option",
             "numberValue": null,
             "dateValue": null,
             "booleanValue": null,
@@ -11904,7 +12361,7 @@
     "sourceDocumentName": "JP0053 Singleton OPT-AMD 15 Commercial Investors LLC 20230731.pdf",
     "securityLabelId": null,
     "lastModifiedBy": "f00c1746-8935-473c-4a94-08dac7d3ca42",
-    "lastModifiedOn": "2023-09-28T18:43:59.9985021+00:00",
+    "lastModifiedOn": "2023-10-24T20:39:42.5801571+00:00",
     "score": 100
   },
   {
@@ -12981,67 +13438,6 @@
         ]
       },
       {
-        "id": "2259ac26-89dd-4c1b-9c9f-0a717dfedf91",
-        "factTypeId": "e31c3090-21b0-4afd-877d-cf7eeed20673",
-        "fields": [
-          {
-            "score": null,
-            "highlightedText": null,
-            "id": "7ee287cb-f267-40d7-a93e-c2f10fa98ad1",
-            "factFieldTypeId": "43986a11-a08f-4365-ae0b-6e1673f85daf",
-            "stringValue": null,
-            "numberValue": 48000,
-            "dateValue": null,
-            "booleanValue": null,
-            "annotations": null
-          },
-          {
-            "score": null,
-            "highlightedText": null,
-            "id": "9ec888f0-b18c-4d32-b06c-aea8c2d87dbc",
-            "factFieldTypeId": "4113ec1c-007a-4f0d-9c2c-4f1aaebf452b",
-            "stringValue": "Operations",
-            "numberValue": null,
-            "dateValue": null,
-            "booleanValue": null,
-            "annotations": null
-          },
-          {
-            "score": null,
-            "highlightedText": null,
-            "id": "92d02665-7b09-49e4-9f8b-e7583245e616",
-            "factFieldTypeId": "6c43a922-acf9-4afe-9fb6-dc97e14d9099",
-            "stringValue": "Annually",
-            "numberValue": null,
-            "dateValue": null,
-            "booleanValue": null,
-            "annotations": null
-          },
-          {
-            "score": null,
-            "highlightedText": null,
-            "id": "214206f9-b89f-49a2-aca7-3d43676a524a",
-            "factFieldTypeId": "7cc2322c-7b01-4d98-bd80-b13420187c92",
-            "stringValue": null,
-            "numberValue": 2,
-            "dateValue": null,
-            "booleanValue": null,
-            "annotations": null
-          },
-          {
-            "score": null,
-            "highlightedText": null,
-            "id": "8693a667-35d8-4a86-ac40-f84208bfa65e",
-            "factFieldTypeId": "63fe352e-59e5-4e8d-93aa-a1f0a16846b9",
-            "stringValue": null,
-            "numberValue": null,
-            "dateValue": null,
-            "booleanValue": true,
-            "annotations": null
-          }
-        ]
-      },
-      {
         "id": "6f89906b-8698-4398-8f18-8e3d2e916be1",
         "factTypeId": "07fd8b4c-3daf-4b41-940b-09fcf4da5d87",
         "fields": [
@@ -13066,8 +13462,8 @@
     "sourceDocumentId": "98938ee1-4fa3-486b-bba0-9f924c3da829",
     "sourceDocumentName": "JP0048.1 Painter I LEASE-AMD Johannes F. Persoon, Jr. and Wilbert Q. Persoon 20230713.pdf",
     "securityLabelId": null,
-    "lastModifiedBy": "thoughttrace-system",
-    "lastModifiedOn": "2023-07-24T12:16:50.3546501+00:00",
+    "lastModifiedBy": "f00c1746-8935-473c-4a94-08dac7d3ca42",
+    "lastModifiedOn": "2023-10-24T19:49:59.1938212+00:00",
     "score": 100
   },
   {
@@ -13690,7 +14086,7 @@
   {
     "id": "1624d2a6-a437-413e-a580-f507b3bb76b9",
     "name": "JP0012.1 St. Gall I Surface Use Consent Apache Corporation 20230702.pdf",
-    "documentTypeId": "a012c867-6cd8-4639-830f-5ad3a6ed29c3",
+    "documentTypeId": "f9ae7647-97f7-43c4-846a-88a2dedfce91",
     "processingStatus": "Processed",
     "pageManipulationStatus": null,
     "aiReviewPreprocessingStatus": "NotProcessed",
@@ -14240,8 +14636,8 @@
     "sourceDocumentId": "1624d2a6-a437-413e-a580-f507b3bb76b9",
     "sourceDocumentName": "JP0012.1 St. Gall I Surface Use Consent Apache Corporation 20230702.pdf",
     "securityLabelId": null,
-    "lastModifiedBy": "thoughttrace-system",
-    "lastModifiedOn": "2023-07-24T12:16:55.6612146+00:00",
+    "lastModifiedBy": "f00c1746-8935-473c-4a94-08dac7d3ca42",
+    "lastModifiedOn": "2023-10-24T17:07:55.0629964+00:00",
     "score": 100
   },
   {
@@ -78274,7 +78670,7 @@
             "stringValue": null,
             "numberValue": null,
             "dateValue": null,
-            "booleanValue": true,
+            "booleanValue": false,
             "annotations": null
           }
         ]
@@ -78324,7 +78720,7 @@
             "stringValue": null,
             "numberValue": null,
             "dateValue": null,
-            "booleanValue": true,
+            "booleanValue": false,
             "annotations": null
           }
         ]
@@ -78336,8 +78732,8 @@
           {
             "score": null,
             "highlightedText": null,
-            "id": "35fba480-944f-4ed6-aa12-cf93cf6d5af3",
-            "factFieldTypeId": "013f483d-e9e3-48e5-a6f7-ac6977a4f947",
+            "id": "41b9795e-5dab-46d0-85e9-6b9efbbc3439",
+            "factFieldTypeId": "7bd5a6c1-13e5-4d92-a4f8-c52b1fd2791e",
             "stringValue": null,
             "numberValue": null,
             "dateValue": "2021-09-22",
@@ -78347,11 +78743,11 @@
           {
             "score": null,
             "highlightedText": null,
-            "id": "41b9795e-5dab-46d0-85e9-6b9efbbc3439",
-            "factFieldTypeId": "7bd5a6c1-13e5-4d92-a4f8-c52b1fd2791e",
+            "id": "c3cac096-f44a-40e3-a4a9-8fb3a03e5393",
+            "factFieldTypeId": "013f483d-e9e3-48e5-a6f7-ac6977a4f947",
             "stringValue": null,
             "numberValue": null,
-            "dateValue": "2021-09-22",
+            "dateValue": "2021-09-24",
             "booleanValue": null,
             "annotations": null
           }
@@ -78367,6 +78763,17 @@
             "id": "9fd6fa75-6a90-4f43-8e79-d2b42d7b3068",
             "factFieldTypeId": "6d8ea1c2-2e91-41a1-b463-58c3e10c6a6a",
             "stringValue": "Complete",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "bbda8b77-e24c-4694-af93-8f650b8cb778",
+            "factFieldTypeId": "ce717681-a47f-4b34-af1b-835e4acc2ba3",
+            "stringValue": "This agreement has \"commenced operations\" early in order to take advantage of lower prices.... PY",
             "numberValue": null,
             "dateValue": null,
             "booleanValue": null,
@@ -78439,7 +78846,7 @@
     "sourceDocumentName": "Painter I EC&R Solar Development Lease Persoon, Johannes 20180924.pdf",
     "securityLabelId": null,
     "lastModifiedBy": "f00c1746-8935-473c-4a94-08dac7d3ca42",
-    "lastModifiedOn": "2023-08-01T21:06:02.6819061+00:00",
+    "lastModifiedOn": "2023-10-24T19:44:39.0543063+00:00",
     "score": 100
   },
   {

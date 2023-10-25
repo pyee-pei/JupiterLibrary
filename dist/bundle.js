@@ -257,7 +257,7 @@ const getEarliestDateTimeFromArray = (dates) => {
   var earliest = dates[0];
 
   dates.forEach((date) => {
-    if (date?.ts < earliest?.ts) {
+    if (!earliest || date?.ts < earliest?.ts) {
       earliest = date;
     }
   });
@@ -556,7 +556,7 @@ class JupiterDoc {
     this.qc_flags = [];
 
     // flag a version number
-    this.libraryVersion = "1.1.18";
+    this.libraryVersion = "1.1.19";
   }
 
   /**
@@ -946,7 +946,7 @@ class JupiterDoc {
 
       // iterating variables
       var payment_date = model.date_one_time ?? model.date_begin;
-      var payment_date_end = utils.getEarliestDateTimeFromArray([this.operational_details?.termination_date, model.date_end, model.date_one_time]);
+      var payment_date_end = utils.getEarliestDateTimeFromArray([this.operational_details?.termination_date, model.date_one_time, model.date_end]);
       var period = 1;
       var payment_amount = 0;
       var payment_source = model.date_one_time ? "Date Model (One Time)" : "Date Model";
