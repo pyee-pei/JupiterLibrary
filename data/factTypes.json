@@ -753,6 +753,14 @@
         "measurementType": null,
         "selectListValues": null,
         "selectListValuesTotalCount": 0
+      },
+      {
+        "id": "24f74239-ce32-463c-bee7-d8c4a75a164a",
+        "name": "Exclude Acres from Controlled Acres",
+        "dataType": "Boolean",
+        "measurementType": null,
+        "selectListValues": null,
+        "selectListValuesTotalCount": 0
       }
     ],
     "allowMultiple": true,

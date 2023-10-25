@@ -970,7 +970,7 @@ class JupiterDoc {
             payment_index: period - 1,
             payment_date: payment_date.toLocaleString(),
             payment_type: model.payment_type,
-            payment_amount: payment_amount * ((g.payment_split ?? 100) / 100),
+            payment_amount: payment_amount * ((g.payment_split ?? 100 / this.grantor.length) / 100),
             payee: model.payee ?? this.nicknameGrantor(g["grantor/lessor_name"]),
             applicable_to_purchase: model.applicable_to_purchase,
             refundable: model.refundable,
@@ -1080,7 +1080,7 @@ class JupiterDoc {
           payment_type: "Purchase Price",
           payee: this.nicknameGrantor(g["grantor/lessor_name"]),
           // purchase payment will subtract all payments applicable to purchase price
-          payment_amount: (this.full_purchase_price - previous_applicable_payments) * ((g.payment_split ?? 100) / 100),
+          payment_amount: (this.full_purchase_price - previous_applicable_payments) * ((g.payment_split ?? 100 / this.grantor.length) / 100),
           applicable_to_purchase: true,
           refundable: false,
         });

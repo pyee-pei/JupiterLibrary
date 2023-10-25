@@ -126,6 +126,337 @@
             "annotations": null
           }
         ]
+      },
+      {
+        "id": "762be425-73f2-4002-ba3b-0dfb9c78aab9",
+        "factTypeId": "9d00a14b-aad3-45ee-8ed6-572cba6fbbb1",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "6130e468-de40-4fbb-b41e-5a693acfe1e3",
+            "factFieldTypeId": "22aec2e0-055c-44f3-b8a7-7a267d91c2c2",
+            "stringValue": "Robertson County",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "2db52381-8dd4-4d83-a033-27b1eeff9938",
+            "factFieldTypeId": "06572f89-ffb7-423f-831b-60f7e68f8938",
+            "stringValue": "8290 and 8289 000338-000170",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "bc3d4c91-c36b-44fb-ada5-8209f1e90f05",
+            "factFieldTypeId": "8b7bea34-5d6a-42be-89cd-7bf6b330f20d",
+            "stringValue": null,
+            "numberValue": 50,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "3881a4d0-d963-419e-bada-c96b00cca01b",
+            "factFieldTypeId": "047a79ae-3e0a-4867-a644-87f5b9be6368",
+            "stringValue": "Being 50 acres of land out of the L. H. Simmons Survey situated in Robertson County, Texas, beginning at Roy Michalecki's Southwest corner in Bremond and Tidwell Prairie Road, set a stake from which a dead B J 16 in. diameter bears North 63 East 5 varas; THENCE North 60 East 794 varas with Michalecki's South line to his Southwest corner in ravine a P.O. 12 in diameter bears South 12 West 24 varas. Another P.O. 14 in diameter (bending) bears North 26-1/2 East 18 varas; THENCE South 30 East with road 360 varas to a stone in road 6-2/5 varas from the South end of bridge THENCE South 60 West 784 varas to a stone in Bremond and Tidwell Prairie Public Road; THENCE North 30 West 360 varas to the Place of Beginning, containing 50 acres of land.\nTax Parcel ID No: 8289 and 8290 000338-000170",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "f618a912-7947-4c50-99e5-f4a047b38be8",
+            "factFieldTypeId": "dcbf5a14-e261-4519-b599-2892564e57f6",
+            "stringValue": "Texas",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
+      },
+      {
+        "id": "42d2a90e-9623-4039-8f0b-1d714cc1fa2c",
+        "factTypeId": "3e9cf52f-c9d8-4f43-9f28-92ec8e4615b0",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "832072fa-f7e0-468a-ab5b-24cc99a6385d",
+            "factFieldTypeId": "d136291d-429e-46f3-9efe-e889b977ed47",
+            "stringValue": "Tidwell Prairie LLC",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
+      },
+      {
+        "id": "d8592206-3592-4f7e-be48-77646ae01497",
+        "factTypeId": "08060c37-a8a5-4852-9977-eccb9fc204f3",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "ac525ee5-0b7f-469f-abfd-f067f0ec46e3",
+            "factFieldTypeId": "779a1262-4c53-4c4f-9021-5422c8e682d9",
+            "stringValue": "Tidwell Prairie LLC",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
+      },
+      {
+        "id": "5d3be1e5-d06f-4edc-af97-e129de493efc",
+        "factTypeId": "07fd8b4c-3daf-4b41-940b-09fcf4da5d87",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "c7899d42-833a-4bf7-9c77-5b0629504dad",
+            "factFieldTypeId": "6d8ea1c2-2e91-41a1-b463-58c3e10c6a6a",
+            "stringValue": "In Progress",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
+      },
+      {
+        "id": "26f7db74-7177-478c-b709-4733455fdff3",
+        "factTypeId": "470c0504-9386-4ba5-a9a8-ecc3fd42f592",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "fcfc98c2-83e3-4f02-a4f2-f1748ff2de14",
+            "factFieldTypeId": "4f1b1956-1751-43fa-9f97-ec44ff2a499d",
+            "stringValue": null,
+            "numberValue": 734645.5,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
+      },
+      {
+        "id": "9def34c4-6063-4c40-94e5-a532f55c4a93",
+        "factTypeId": "97dd7b97-9980-42bd-915d-d26b13decbc1",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "59b9f9f0-378e-4dfb-a18e-4a4d1bf1ac0d",
+            "factFieldTypeId": "86f356a7-72b4-410b-8652-67cc63c6b00d",
+            "stringValue": "NOTICES: All notices from one party to the other must be in writing and are effective when mailed to, hand-delivered at, or transmitted by fax or electronic transmission as follows:\nTo Buyer at: Tidwell Prairie LLC 1108 Lavaca St. Suite 110-349, Austin, TX 78701 Phone: ( 512 ) 375-4052\nE-mail/Fax: gc@jupiterpower.io\nE-mail/Fax:\nTo Seller at: Patricia (Pattie) Okonski Duck 21503 Fones Rd, Tomball, Tx 77377 Phone: ( 832) 492-9269\nE-mail/Fax: mypvd828@yahoo.com\nE-mail/Fax:",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
+      },
+      {
+        "id": "581fad2f-78c3-4cf8-b0b8-e748e8daa7af",
+        "factTypeId": "4691579c-8ad3-42f1-9d63-4ba695c46b19",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "0f04bed0-9287-4b3b-aa90-8b49aedeea93",
+            "factFieldTypeId": "8a8b77ff-6439-4d38-8fa8-fb6d5ee332b9",
+            "stringValue": null,
+            "numberValue": null,
+            "dateValue": "2024-02-16",
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
+      },
+      {
+        "id": "c3295a35-3671-45f2-b7a9-c608d6edc004",
+        "factTypeId": "68bfe50d-25ad-42cf-b026-78db2d066f1b",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "5f338bda-67bb-41df-bf68-1bd176db7c70",
+            "factFieldTypeId": "56c59cf7-9fcd-4598-ae86-6c226db77b53",
+            "stringValue": "Janet Rose Golightly",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "de6e0505-55a8-4255-ad94-df413e9a5d3c",
+            "factFieldTypeId": "b64fa47b-8280-4870-969e-fba35c7d2871",
+            "stringValue": null,
+            "numberValue": 16.66,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
+      },
+      {
+        "id": "701f0ecb-9d50-4e5b-bcab-30f3aa61564f",
+        "factTypeId": "68bfe50d-25ad-42cf-b026-78db2d066f1b",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "5ed12db1-be40-4ff6-bcdb-c88401363f85",
+            "factFieldTypeId": "56c59cf7-9fcd-4598-ae86-6c226db77b53",
+            "stringValue": "Lisa Loraine McKenzie",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "62417a30-494a-4b44-964e-54d1c302d466",
+            "factFieldTypeId": "b64fa47b-8280-4870-969e-fba35c7d2871",
+            "stringValue": null,
+            "numberValue": 16.66,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
+      },
+      {
+        "id": "662cc992-5f1c-41e1-add7-13c5da242526",
+        "factTypeId": "68bfe50d-25ad-42cf-b026-78db2d066f1b",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "a6d8bde0-3336-462d-9568-8e8bd105ca9c",
+            "factFieldTypeId": "56c59cf7-9fcd-4598-ae86-6c226db77b53",
+            "stringValue": "Richard Mushinski",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "eceda348-d259-4018-93cb-b106010095c7",
+            "factFieldTypeId": "b64fa47b-8280-4870-969e-fba35c7d2871",
+            "stringValue": null,
+            "numberValue": 16.66,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
+      },
+      {
+        "id": "4f452db1-6bd3-4c15-97de-4da5012b2712",
+        "factTypeId": "68bfe50d-25ad-42cf-b026-78db2d066f1b",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "c079b472-1b52-4551-97cf-969306de203e",
+            "factFieldTypeId": "56c59cf7-9fcd-4598-ae86-6c226db77b53",
+            "stringValue": "Thomas Mushinski",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "eef0c5dc-ae82-4f62-88eb-c0aafac7e7fa",
+            "factFieldTypeId": "b64fa47b-8280-4870-969e-fba35c7d2871",
+            "stringValue": null,
+            "numberValue": 16.66,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
+      },
+      {
+        "id": "2517f064-28f4-4198-8f8b-706976f7610e",
+        "factTypeId": "68bfe50d-25ad-42cf-b026-78db2d066f1b",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "78fefba4-8689-4b63-8f94-2a0f77b1d972",
+            "factFieldTypeId": "56c59cf7-9fcd-4598-ae86-6c226db77b53",
+            "stringValue": "Timothy Brian Okonski",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "9f5d3ba1-6857-4de5-b1a7-84c268376bd3",
+            "factFieldTypeId": "b64fa47b-8280-4870-969e-fba35c7d2871",
+            "stringValue": null,
+            "numberValue": 16.66,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
+      },
+      {
+        "id": "35fd1649-5ed9-4cf5-b6a2-eff8335d6d6b",
+        "factTypeId": "68bfe50d-25ad-42cf-b026-78db2d066f1b",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "996eaaed-539b-4dc8-b22d-933fc1aeda41",
+            "factFieldTypeId": "56c59cf7-9fcd-4598-ae86-6c226db77b53",
+            "stringValue": "Jeffery Jason Okonski",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "3373a397-7c1d-40c0-b12c-954a0907d6b6",
+            "factFieldTypeId": "b64fa47b-8280-4870-969e-fba35c7d2871",
+            "stringValue": null,
+            "numberValue": 16.66,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
       }
     ],
     "pageCount": 36,
@@ -136,7 +467,7 @@
     "sourceDocumentName": "JP0059 Tidwell Prairie AOS Okonski Living Trust et al. 20231024.pdf",
     "securityLabelId": null,
     "lastModifiedBy": "269c9ff7-12f2-4738-e540-08dbd096639c",
-    "lastModifiedOn": "2023-10-25T16:08:06.1853136+00:00",
+    "lastModifiedOn": "2023-10-25T17:58:02.9620473+00:00",
     "score": 100
   },
   {
