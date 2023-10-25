@@ -146,6 +146,11 @@ class JupiterDoc {
       return acc + desc.agreement_acres || 0;
     }, 0);
 
+    // calc controlled acres for all proprerty descriptions
+    this.total_controlled_acres = this.property_description.reduce((acc, desc) => {
+      return acc + (!desc.exclude_acres_from_controlled_acres ? desc.agreement_acres : 0) || 0;
+    }, 0);
+
     // Notice Details
     this.notice_details = utils.extractFactValue(
       doc,
@@ -345,7 +350,7 @@ class JupiterDoc {
 
         // calculate cumulative escalation rate from all prior terms of same payment model
         term.cumulative_escalation_rate = agreementTerms
-          .filter((x) => x.term_ordinal < term.term_ordinal && x.payment_model === term.payment_model)
+          .filter((x) => x.term_ordinal <= term.term_ordinal && x.payment_model === term.payment_model)
           .reduce((accumulator, t) => accumulator * (1 + (t.escalation_rate ?? 0) / 100), 1);
       });
 

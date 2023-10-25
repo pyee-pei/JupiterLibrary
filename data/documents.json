@@ -14,7 +14,188 @@
     "userIds": [],
     "documentStatusId": null,
     "thoughts": [],
-    "facts": [],
+    "facts": [
+      {
+        "id": "b88923f8-a455-4b36-9301-82c7992dbc08",
+        "factTypeId": "bbf9acb0-7897-4421-b6e2-faf3928b85ca",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "df67c79f-f383-405a-861f-f4e770b31c3a",
+            "factFieldTypeId": "614a8c7a-019d-4d94-ab2e-147bc511b537",
+            "stringValue": "OPT - Bobosky - Steve & Kelli Bobosky - No Project ID",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
+      },
+      {
+        "id": "6ce0c75f-6808-4207-9256-a0ffc60d30d6",
+        "factTypeId": "cf7fc28f-823e-4af1-a3be-09b756c3952a",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "4ebb555b-060a-45d9-b041-67dd527d1db2",
+            "factFieldTypeId": "a7fdf688-839d-49f8-8e07-a55dc19cb521",
+            "stringValue": "Bobosky",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
+      },
+      {
+        "id": "b51ba145-a738-478c-b669-f9a18e618bb0",
+        "factTypeId": "cc05d0b7-005b-4775-a84d-e7cc98a7241f",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "c9794d42-eb73-4647-99fe-b16ed5769c32",
+            "factFieldTypeId": "cb93b25d-8bed-4865-8402-b2b3ded62af5",
+            "stringValue": null,
+            "numberValue": null,
+            "dateValue": "2023-10-14",
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
+      },
+      {
+        "id": "482cc566-0489-4ea3-8489-6f5698babacd",
+        "factTypeId": "68bfe50d-25ad-42cf-b026-78db2d066f1b",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "b2e4929c-c8ad-427a-ae60-9066e5260343",
+            "factFieldTypeId": "56c59cf7-9fcd-4598-ae86-6c226db77b53",
+            "stringValue": "Steve Bobosky & Kelli Bobosky",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
+      },
+      {
+        "id": "9a46678d-3cda-4ba2-85d5-776c0e9db09e",
+        "factTypeId": "3e9cf52f-c9d8-4f43-9f28-92ec8e4615b0",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "0b72b852-2a0b-42fc-83db-f2e1d83655e5",
+            "factFieldTypeId": "d136291d-429e-46f3-9efe-e889b977ed47",
+            "stringValue": "Occasio Power Management LLC",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
+      },
+      {
+        "id": "10b63b83-69d1-4e9f-ad40-71c94796c44c",
+        "factTypeId": "08060c37-a8a5-4852-9977-eccb9fc204f3",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "b88d8d00-8047-43e3-b266-8c0783166774",
+            "factFieldTypeId": "779a1262-4c53-4c4f-9021-5422c8e682d9",
+            "stringValue": "Occasio Power Management LLC",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
+      },
+      {
+        "id": "4f0969c1-cba2-4646-91c7-0c49159b495f",
+        "factTypeId": "9d00a14b-aad3-45ee-8ed6-572cba6fbbb1",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "71c1b958-f2a5-41a0-afaf-4d582836c6b5",
+            "factFieldTypeId": "8b7bea34-5d6a-42be-89cd-7bf6b330f20d",
+            "stringValue": null,
+            "numberValue": 9.52,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "414eecfa-b443-49d0-a159-b89581bcf19d",
+            "factFieldTypeId": "22aec2e0-055c-44f3-b8a7-7a267d91c2c2",
+            "stringValue": "Washington County",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "e0996b6c-696a-430b-ac14-5a1a8f539c4f",
+            "factFieldTypeId": "047a79ae-3e0a-4867-a644-87f5b9be6368",
+            "stringValue": "The following described land located in Washington County, State of Oregon, containing 9.52 acres, more or less: 2016-048 PARTITION PLAT, LOT 1, ACRES 4.00 2016-048 PARTITION PLAT, LOT 2, ACRES 5.52 Property IDs: R2198643 & R2198644",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "c14042ea-e765-465b-9535-c5535279399b",
+            "factFieldTypeId": "06572f89-ffb7-423f-831b-60f7e68f8938",
+            "stringValue": "R2198643 & R2198644",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "25318f3c-4974-43bd-9113-d5018b1c003e",
+            "factFieldTypeId": "dcbf5a14-e261-4519-b599-2892564e57f6",
+            "stringValue": "Washington County,",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
+      },
+      {
+        "id": "bd9ec1e9-c624-425a-8498-ccf046079c8a",
+        "factTypeId": "97dd7b97-9980-42bd-915d-d26b13decbc1",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "ec5e4405-d115-4898-924c-ecf6a5fa31d2",
+            "factFieldTypeId": "86f356a7-72b4-410b-8652-67cc63c6b00d",
+            "stringValue": "Notice. All notices, demands, or other communications given under this Agreement, unless otherwise stated herein, shall be in writing and sent by: (a)personal delivery, (b) nationally recognized overnight courier service, (c) registered or certified mail, or (d) email, provided notice is also sent on the following business day by one of the other permitted notice methods. Any notice under 33(a-c) shall be deemed to have been delivered when received or upon refusal to accept delivery. Any notice shall be addressed as follows:\nIf to Buyer: Occasio Power Management LLC c/o Jupiter Power LLC 1108 Lavaca St ., Ste. 110-349 Austin, Texas 78701 Attn: Legal Email: gc@jupiterpower.io\nIf to Seller: Steve and Kelli Bobosky 7325 NW Imbrie DR. Suite #187 Hillsboro, Oregon 97124\nEither Party may change its notice address by providing notice to the other Party in accordance with the notice procedures in this Section 33.",
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          }
+        ]
+      }
+    ],
     "pageCount": 25,
     "pages": null,
     "highlightedText": null,
@@ -22,8 +203,8 @@
     "sourceDocumentId": "27aa2f3a-1552-49fe-b283-f9fe2a9ab6e3",
     "sourceDocumentName": "OPT-PUR Bobosky, Steve & Kelli 20231024.pdf",
     "securityLabelId": null,
-    "lastModifiedBy": "thoughttrace-system",
-    "lastModifiedOn": "2023-10-24T21:32:18.1583681+00:00",
+    "lastModifiedBy": "269c9ff7-12f2-4738-e540-08dbd096639c",
+    "lastModifiedOn": "2023-10-25T19:08:12.3807004+00:00",
     "score": 100
   },
   {
@@ -105,23 +286,6 @@
             "stringValue": null,
             "numberValue": null,
             "dateValue": "2023-10-23",
-            "booleanValue": null,
-            "annotations": null
-          }
-        ]
-      },
-      {
-        "id": "4760620a-03a3-4f3b-9911-f97366a44454",
-        "factTypeId": "68bfe50d-25ad-42cf-b026-78db2d066f1b",
-        "fields": [
-          {
-            "score": null,
-            "highlightedText": null,
-            "id": "01686059-a7ad-4ba7-a73e-1945d3080e0d",
-            "factFieldTypeId": "56c59cf7-9fcd-4598-ae86-6c226db77b53",
-            "stringValue": "Okonski Living Trust et al",
-            "numberValue": null,
-            "dateValue": null,
             "booleanValue": null,
             "annotations": null
           }
@@ -304,17 +468,6 @@
             "dateValue": null,
             "booleanValue": null,
             "annotations": null
-          },
-          {
-            "score": null,
-            "highlightedText": null,
-            "id": "de6e0505-55a8-4255-ad94-df413e9a5d3c",
-            "factFieldTypeId": "b64fa47b-8280-4870-969e-fba35c7d2871",
-            "stringValue": null,
-            "numberValue": 16.66,
-            "dateValue": null,
-            "booleanValue": null,
-            "annotations": null
           }
         ]
       },
@@ -329,17 +482,6 @@
             "factFieldTypeId": "56c59cf7-9fcd-4598-ae86-6c226db77b53",
             "stringValue": "Lisa Loraine McKenzie",
             "numberValue": null,
-            "dateValue": null,
-            "booleanValue": null,
-            "annotations": null
-          },
-          {
-            "score": null,
-            "highlightedText": null,
-            "id": "62417a30-494a-4b44-964e-54d1c302d466",
-            "factFieldTypeId": "b64fa47b-8280-4870-969e-fba35c7d2871",
-            "stringValue": null,
-            "numberValue": 16.66,
             "dateValue": null,
             "booleanValue": null,
             "annotations": null
@@ -360,17 +502,6 @@
             "dateValue": null,
             "booleanValue": null,
             "annotations": null
-          },
-          {
-            "score": null,
-            "highlightedText": null,
-            "id": "eceda348-d259-4018-93cb-b106010095c7",
-            "factFieldTypeId": "b64fa47b-8280-4870-969e-fba35c7d2871",
-            "stringValue": null,
-            "numberValue": 16.66,
-            "dateValue": null,
-            "booleanValue": null,
-            "annotations": null
           }
         ]
       },
@@ -385,17 +516,6 @@
             "factFieldTypeId": "56c59cf7-9fcd-4598-ae86-6c226db77b53",
             "stringValue": "Thomas Mushinski",
             "numberValue": null,
-            "dateValue": null,
-            "booleanValue": null,
-            "annotations": null
-          },
-          {
-            "score": null,
-            "highlightedText": null,
-            "id": "eef0c5dc-ae82-4f62-88eb-c0aafac7e7fa",
-            "factFieldTypeId": "b64fa47b-8280-4870-969e-fba35c7d2871",
-            "stringValue": null,
-            "numberValue": 16.66,
             "dateValue": null,
             "booleanValue": null,
             "annotations": null
@@ -416,17 +536,6 @@
             "dateValue": null,
             "booleanValue": null,
             "annotations": null
-          },
-          {
-            "score": null,
-            "highlightedText": null,
-            "id": "9f5d3ba1-6857-4de5-b1a7-84c268376bd3",
-            "factFieldTypeId": "b64fa47b-8280-4870-969e-fba35c7d2871",
-            "stringValue": null,
-            "numberValue": 16.66,
-            "dateValue": null,
-            "booleanValue": null,
-            "annotations": null
           }
         ]
       },
@@ -444,14 +553,64 @@
             "dateValue": null,
             "booleanValue": null,
             "annotations": null
+          }
+        ]
+      },
+      {
+        "id": "08a2fa79-3467-431e-aee3-16160971b69d",
+        "factTypeId": "917e938f-af4a-4005-8dfb-84201fd0e5d4",
+        "fields": [
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "50282f74-f2f9-482c-be2b-13a0f2f57e53",
+            "factFieldTypeId": "aa088d35-1cc9-4abb-a2f3-818ac55027bd",
+            "stringValue": null,
+            "numberValue": null,
+            "dateValue": "2023-10-23",
+            "booleanValue": null,
+            "annotations": null
           },
           {
             "score": null,
             "highlightedText": null,
-            "id": "3373a397-7c1d-40c0-b12c-954a0907d6b6",
-            "factFieldTypeId": "b64fa47b-8280-4870-969e-fba35c7d2871",
+            "id": "628e13bd-bd34-42b9-a7da-c28b2632e44e",
+            "factFieldTypeId": "abe0c4df-224d-4651-8fd9-99f8d8d157f8",
             "stringValue": null,
-            "numberValue": 16.66,
+            "numberValue": 60000,
+            "dateValue": null,
+            "booleanValue": null,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "c0c6e34a-2d58-4e2b-9dbb-6214fbe124be",
+            "factFieldTypeId": "d1f89e49-acdf-4558-a3ba-fa03b305cbf0",
+            "stringValue": null,
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": true,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "f8ad3112-d9a3-480d-8aad-e9768112f12f",
+            "factFieldTypeId": "aaea03f6-94f7-488e-8013-677c57eabdb8",
+            "stringValue": null,
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": false,
+            "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "1ac66226-b21a-4a14-a06b-132afc84d49f",
+            "factFieldTypeId": "1f8f276c-1461-4d7a-9115-c0628a729033",
+            "stringValue": "Option Fee",
+            "numberValue": null,
             "dateValue": null,
             "booleanValue": null,
             "annotations": null
@@ -467,7 +626,7 @@
     "sourceDocumentName": "JP0059 Tidwell Prairie AOS Okonski Living Trust et al. 20231024.pdf",
     "securityLabelId": null,
     "lastModifiedBy": "269c9ff7-12f2-4738-e540-08dbd096639c",
-    "lastModifiedOn": "2023-10-25T17:58:02.9620473+00:00",
+    "lastModifiedOn": "2023-10-25T18:18:06.7824208+00:00",
     "score": 100
   },
   {
@@ -14579,6 +14738,17 @@
             "dateValue": null,
             "booleanValue": null,
             "annotations": null
+          },
+          {
+            "score": null,
+            "highlightedText": null,
+            "id": "11fb61dc-59f3-4e6c-a0dd-389336932c23",
+            "factFieldTypeId": "24f74239-ce32-463c-bee7-d8c4a75a164a",
+            "stringValue": null,
+            "numberValue": null,
+            "dateValue": null,
+            "booleanValue": true,
+            "annotations": null
           }
         ]
       },
@@ -14968,7 +15138,7 @@
     "sourceDocumentName": "JP0012.1 St. Gall I Surface Use Consent Apache Corporation 20230702.pdf",
     "securityLabelId": null,
     "lastModifiedBy": "f00c1746-8935-473c-4a94-08dac7d3ca42",
-    "lastModifiedOn": "2023-10-24T17:07:55.0629964+00:00",
+    "lastModifiedOn": "2023-10-25T19:08:44.5985781+00:00",
     "score": 100
   },
   {
