@@ -561,7 +561,7 @@ class JupiterDoc {
     this.qc_flags = [];
 
     // flag a version number
-    this.libraryVersion = "1.1.21";
+    this.libraryVersion = "1.1.22";
   }
 
   /**
@@ -1013,35 +1013,35 @@ class JupiterDoc {
   /**
    * calc one-time payments
    */
-  calcOneTimePayments() {
-    // exit if no one-time models
-    if (!this.one_time_payment_models.length > 0) return;
+  // calcOneTimePayments() {
+  //   // exit if no one-time models
+  //   if (!this.one_time_payment_models.length > 0) return;
 
-    var one_time_payments = [];
+  //   var one_time_payments = [];
 
-    // create payment object for all models
-    this.one_time_payment_models.forEach((model) => {
-      // return null if missing required fields
-      if (!model.payment_due && !this.effective_date) return;
+  //   // create payment object for all models
+  //   this.one_time_payment_models.forEach((model) => {
+  //     // return null if missing required fields
+  //     if (!model.payment_due && !this.effective_date) return;
 
-      // if payment date is not specified, use effective date
-      var payment_date = model.payment_due ?? this.effective_date;
+  //     // if payment date is not specified, use effective date
+  //     var payment_date = model.payment_due ?? this.effective_date;
 
-      one_time_payments.push({
-        // payment is due on fixed date, or on the effective date
-        payment_date: payment_date.toLocaleString(),
-        payment_type: model.payment_type,
-        payee: model.payee ?? this.nicknameGrantor(this.grantor[0]["grantor/lessor_name"]),
-        payment_amount: model.payment_amount,
-        applicable_to_purchase: model.applicable_to_purchase,
-        refundable: model.refundable,
-        after_outside_date: this.outside_date ? payment_date.ts > this.outside_date.ts : false,
-      });
-    });
+  //     one_time_payments.push({
+  //       // payment is due on fixed date, or on the effective date
+  //       payment_date: payment_date.toLocaleString(),
+  //       payment_type: model.payment_type,
+  //       payee: model.payee ?? this.nicknameGrantor(this.grantor[0]["grantor/lessor_name"]),
+  //       payment_amount: model.payment_amount,
+  //       applicable_to_purchase: model.applicable_to_purchase,
+  //       refundable: model.refundable,
+  //       after_outside_date: this.outside_date ? payment_date.ts > this.outside_date.ts : false,
+  //     });
+  //   });
 
-    // mutate doc object to store one time payment array
-    this.one_time_payments = one_time_payments;
-  }
+  //   // mutate doc object to store one time payment array
+  //   this.one_time_payments = one_time_payments;
+  // }
 
   /**
    * calc final purchase price
@@ -1053,9 +1053,9 @@ class JupiterDoc {
     // calculate how mcuh of the purchase price has already been paid
     var previous_applicable_payments = 0;
 
-    if (this.one_time_payments) {
-      previous_applicable_payments += this.one_time_payments.filter((x) => x.applicable_to_purchase).reduce((a, b) => a + b.payment_amount, 0);
-    }
+    // if (this.one_time_payments) {
+    //   previous_applicable_payments += this.one_time_payments.filter((x) => x.applicable_to_purchase).reduce((a, b) => a + b.payment_amount, 0);
+    // }
 
     // loop through agreement terms and find all payments applicable to purchase price
     if (this.agreement_terms.length > 0) {
@@ -1202,7 +1202,8 @@ class JupiterDoc {
         this.calcAgreementTermDates(this.agreement_terms, this.effective_date, this.operational_details);
         this.calcAllTermPayments();
         this.calcDatePayments();
-        this.calcOneTimePayments();
+        //this.calcOneTimePayments();
+        this.calcEstimatedPurchasePrice();
       }
 
       this.amendments = amendments;

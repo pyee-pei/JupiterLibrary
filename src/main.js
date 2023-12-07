@@ -67,7 +67,7 @@ docs.forEach((doc) => {
   var jdoc = new JupiterDoc(doc, factTypes, docTypes, tags);
   jdoc.calcAllTermPayments();
   jdoc.calcDatePayments();
-  jdoc.calcOneTimePayments();
+  //jdoc.calcOneTimePayments();
   jdoc.calcEstimatedPurchasePrice();
   jupiterDocs.push(jdoc);
 });
@@ -130,7 +130,7 @@ console.log(factArray.slice(0, 30));
 
 */
 
-console.log(jupiterDocs.find((x) => x.id === "1624d2a6-a437-413e-a580-f507b3bb76b9"));
+console.log(jupiterDocs.find((x) => x.id === "d602c9db-911f-45a8-a8a5-2da956a2fa17"));
 
 const termModelIncreaseAmount = jupiterDocs.filter((doc) => {
   if (doc.term_payment_models.length > 0) {

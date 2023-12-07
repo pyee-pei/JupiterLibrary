@@ -59,14 +59,6 @@
         "selectListValuesTotalCount": 0
       },
       {
-        "id": "3fbbc152-6e5a-4b2e-9710-f17c1b63f8b0",
-        "name": "Escalation Amount",
-        "dataType": "Number",
-        "measurementType": "Dollars",
-        "selectListValues": null,
-        "selectListValuesTotalCount": 0
-      },
-      {
         "id": "f04c837a-a3fe-475c-b819-d8f974915fb7",
         "name": "Payment Model",
         "dataType": "SelectList",
@@ -435,7 +427,7 @@
         "measurementType": null,
         "selectListValues": [
           "Annually",
-          "Semi Annually",
+          "Semiannually",
           "Quarterly",
           "Monthly"
         ],
@@ -493,9 +485,11 @@
           "Payment",
           "Commission",
           "Maintenance Fee",
-          "Signing Bonus"
+          "Signing Bonus",
+          "Termination Fee",
+          "Contingent Payment"
         ],
-        "selectListValuesTotalCount": 7
+        "selectListValuesTotalCount": 9
       },
       {
         "id": "15a5f624-d693-4ec0-9711-8544a001ca36",
@@ -779,17 +773,32 @@
         "selectListValues": [
           "Not Reviewed",
           "In Progress",
-          "Developer Draft",
-          "Release for Markup",
+          "Developer Review",
           "Legal Review",
           "Complete"
         ],
-        "selectListValuesTotalCount": 6
+        "selectListValuesTotalCount": 5
       },
       {
         "id": "ce717681-a47f-4b34-af1b-835e4acc2ba3",
         "name": "Notes",
         "dataType": "String",
+        "measurementType": null,
+        "selectListValues": null,
+        "selectListValuesTotalCount": 0
+      },
+      {
+        "id": "c55f4e1b-a9e3-4fb0-8b7b-6141443d72b2",
+        "name": "Developer Review Date",
+        "dataType": "Date",
+        "measurementType": null,
+        "selectListValues": null,
+        "selectListValuesTotalCount": 0
+      },
+      {
+        "id": "4c923903-96b5-47e4-bb5f-e0c2aec243f1",
+        "name": "Legal Review Date",
+        "dataType": "Date",
         "measurementType": null,
         "selectListValues": null,
         "selectListValuesTotalCount": 0
