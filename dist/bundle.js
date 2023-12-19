@@ -561,7 +561,7 @@ class JupiterDoc {
     this.qc_flags = [];
 
     // flag a version number
-    this.libraryVersion = "1.1.22";
+    this.libraryVersion = "1.1.23";
   }
 
   /**
@@ -1311,6 +1311,11 @@ class JupiterDoc {
       this.qc_flags.push("Closed tag but no Closing Date");
     }
 
+    // document has puchase price, but no closing date
+    if (this.full_purchase_price && !this.closing_date) {
+      this.qc_flags.push("Purchase Price but no Closing Date");
+    }
+
     // agreement term QC
     if (this.agreement_terms) {
       this.agreement_terms.forEach((term, termIndex) => {
@@ -1380,6 +1385,8 @@ class JupiterDoc {
         }
       });
     }
+
+    // end of qc function
   }
 
   /**
