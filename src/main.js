@@ -83,7 +83,7 @@ const documentsDiv = document.querySelector(".documents");
 
 // filter jupiter docs and iterate to display data
 jupiterDocs
-  .filter((x) => x.agreement_terms.length > 0 || x.term_payment_models.length > 0 || x.one_time_payment_models.length > 0)
+  .filter((x) => x.agreement_terms.length > 0 || x.term_payment_models.length > 0)
   .forEach((doc, index) => {
     let p = document.createElement("p");
     p.setAttribute("class", "document");
@@ -130,7 +130,7 @@ console.log(factArray.slice(0, 30));
 
 */
 
-console.log(jupiterDocs.find((x) => x.id === "d602c9db-911f-45a8-a8a5-2da956a2fa17"));
+console.log(jupiterDocs.find((x) => x.id === "4bfbb963-496f-43fb-b51b-37cc6789061b"));
 console.log(jupiterDocs.filter((x) => x.qc_flags.includes("Purchase Price but no Closing Date")));
 
 const termModelIncreaseAmount = jupiterDocs.filter((doc) => {

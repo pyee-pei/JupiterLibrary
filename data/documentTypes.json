@@ -5,6 +5,14 @@
     "description": "",
     "ontologyId": "WL",
     "classificationIds": [],
+    "archived": true
+  },
+  {
+    "id": "31022132-1b81-402f-9b06-f9bee7fc9364",
+    "name": "Unrecorded Memorandum",
+    "description": "",
+    "ontologyId": "WL",
+    "classificationIds": [],
     "archived": false
   },
   {
@@ -15,6 +23,14 @@
     "classificationIds": [
       "ed1ea42f-bd2b-4af6-b6a7-dff8a56948f5"
     ],
+    "archived": false
+  },
+  {
+    "id": "3e706811-c808-4efa-b165-07f16dc69d11",
+    "name": "Tax Abatement",
+    "description": "",
+    "ontologyId": "WL",
+    "classificationIds": [],
     "archived": false
   },
   {
@@ -43,6 +59,14 @@
     "classificationIds": [
       "427c4e50-ee3e-4ee5-8a3b-2170513d5a9c"
     ],
+    "archived": false
+  },
+  {
+    "id": "65e0dfeb-f644-41f3-935b-c968a9448124",
+    "name": "Recorded Memorandum",
+    "description": "",
+    "ontologyId": "WL",
+    "classificationIds": [],
     "archived": false
   },
   {
@@ -144,6 +168,14 @@
     "archived": false
   },
   {
+    "id": "cec7357e-08bc-4c7f-ac9f-f6f2dec2e905",
+    "name": "Tax Abatement Extension",
+    "description": "",
+    "ontologyId": null,
+    "classificationIds": [],
+    "archived": false
+  },
+  {
     "id": "e82be5ad-205e-4380-93d0-049e9d01fb88",
     "name": "Interconnection Agreement",
     "description": "",
@@ -161,6 +193,14 @@
     "classificationIds": [
       "91c8d246-0791-4516-b9a9-a8b51ee43856"
     ],
+    "archived": false
+  },
+  {
+    "id": "f41710b8-1e9a-4ad3-a4e2-82eca773a4a9",
+    "name": "Recorded Easement",
+    "description": "",
+    "ontologyId": null,
+    "classificationIds": [],
     "archived": false
   },
   {

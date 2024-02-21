@@ -514,6 +514,30 @@
         "measurementType": "Dollars",
         "selectListValues": null,
         "selectListValuesTotalCount": 0
+      },
+      {
+        "id": "14fde5e3-36c7-4534-a0fb-11aca85a3eae",
+        "name": "First Payment Lag",
+        "dataType": "Number",
+        "measurementType": "Days",
+        "selectListValues": null,
+        "selectListValuesTotalCount": 0
+      },
+      {
+        "id": "9b427291-5a8e-4acd-a959-4d11490bc9b3",
+        "name": "Subsequent Payment Lag",
+        "dataType": "Number",
+        "measurementType": "Days",
+        "selectListValues": null,
+        "selectListValuesTotalCount": 0
+      },
+      {
+        "id": "6a13d18a-1066-4373-8909-7abd46993047",
+        "name": "Apply Payment Lag to Extensions",
+        "dataType": "Boolean",
+        "measurementType": null,
+        "selectListValues": null,
+        "selectListValuesTotalCount": 0
       }
     ],
     "allowMultiple": true,
@@ -662,6 +686,30 @@
         "name": "Increase Amount",
         "dataType": "Number",
         "measurementType": "Dollars",
+        "selectListValues": null,
+        "selectListValuesTotalCount": 0
+      },
+      {
+        "id": "3e4fea70-2490-433a-a69c-3a48d5a755c3",
+        "name": "First Payment Lag",
+        "dataType": "Number",
+        "measurementType": "Days",
+        "selectListValues": null,
+        "selectListValuesTotalCount": 0
+      },
+      {
+        "id": "9ae34c33-7daa-4c5a-a947-57c27d8e163d",
+        "name": "Subsequent Payment Lag",
+        "dataType": "Number",
+        "measurementType": "Days",
+        "selectListValues": null,
+        "selectListValuesTotalCount": 0
+      },
+      {
+        "id": "efcbcabc-800c-4a64-9320-a354b9b08b3c",
+        "name": "Apply Payment Lag to Extensions",
+        "dataType": "Boolean",
+        "measurementType": null,
         "selectListValues": null,
         "selectListValuesTotalCount": 0
       }
