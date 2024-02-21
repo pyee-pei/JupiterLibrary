@@ -1083,14 +1083,14 @@ class JupiterDoc {
         if (term.periodic_payments) {
           // add any payments applicable to purchase price
           previous_applicable_payments +=
-            term.periodic_payments.filter((x) => x.applicable_to_purchase).reduce((a, b) => a + b.total_payment_amount, 0) ?? 0;
+            term.periodic_payments.filter((x) => x.applicable_to_purchase)?.reduce((a, b) => a + b.payment_amount, 0) ?? 0;
         }
       });
     }
 
     // filter dated payments and find all payments applicable to purchase price
     if (this.date_payments) {
-      previous_applicable_payments += this.date_payments.filter((x) => x.applicable_to_purchase).reduce((a, b) => a + b.payment_amount, 0) ?? 0;
+      previous_applicable_payments += this.date_payments.filter((x) => x.applicable_to_purchase)?.reduce((a, b) => a + b.payment_amount, 0) ?? 0;
     }
 
     // only run purchase price if there is a closing date and a purchase price

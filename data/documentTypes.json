@@ -52,6 +52,14 @@
     "archived": false
   },
   {
+    "id": "617bb743-cbfb-4d0f-8131-290fbf138664",
+    "name": "Payment Directive",
+    "description": "",
+    "ontologyId": "WL",
+    "classificationIds": [],
+    "archived": false
+  },
+  {
     "id": "632c8d78-e6cb-4420-b721-104cfad6a769",
     "name": "Power Purchase Agreement",
     "description": "",
