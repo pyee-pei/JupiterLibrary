@@ -130,7 +130,7 @@ console.log(factArray.slice(0, 30));
 
 */
 
-console.log(jupiterDocs.find((x) => x.id === "f97b403c-90b4-4d28-8f2c-01ee963e1168"));
+console.log(jupiterDocs.find((x) => x.id === "d9321b72-66f4-416f-a192-f93f9f444c59"));
 console.log(jupiterDocs.filter((x) => x.qc_flags.includes("Purchase Price but no Closing Date")));
 
 const termModelIncreaseAmount = jupiterDocs.filter((doc) => {

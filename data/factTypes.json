@@ -377,6 +377,14 @@
         "measurementType": "None",
         "selectListValues": null,
         "selectListValuesTotalCount": 0
+      },
+      {
+        "id": "d798fb1a-addc-4cc3-a345-12a36455a7cd",
+        "name": "Commencement Date",
+        "dataType": "Date",
+        "measurementType": null,
+        "selectListValues": null,
+        "selectListValuesTotalCount": 0
       }
     ],
     "allowMultiple": false,

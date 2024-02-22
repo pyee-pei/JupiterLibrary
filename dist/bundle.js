@@ -561,7 +561,7 @@ class JupiterDoc {
     this.qc_flags = [];
 
     // flag a version number
-    this.libraryVersion = "1.1.24";
+    this.libraryVersion = "1.1.25";
   }
 
   /**
@@ -605,7 +605,7 @@ class JupiterDoc {
    */
   calcAgreementTermDates(agreementTerms, effectiveDate, opDetails) {
     // exit if no effectiveDate
-    if (!effectiveDate) {
+    if (!effectiveDate && !opDetails.commencement_date) {
       return;
     }
 
@@ -622,7 +622,7 @@ class JupiterDoc {
           term.start_date = opDetails.operations_commencement;
         } else {
           // start day after previous term end, or if no previous term, use effective date
-          term.start_date = agreementTerms[index - 1] ? agreementTerms[index - 1].end_date.plus({ days: 1 }) : effectiveDate;
+          term.start_date = agreementTerms[index - 1]?.end_date.plus({ days: 1 }) || opDetails.commencement_date || effectiveDate;
         }
         // add a text version pre-formatted
         term.start_date_text = term.start_date.toFormat("MM/dd/yyyy");
