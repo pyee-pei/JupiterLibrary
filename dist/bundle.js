@@ -519,6 +519,8 @@ class JupiterDoc {
     // Tags
     this.tags = this.getTags(tags);
 
+    this.termination = utils.extractFactMultiFields(doc, utils.getFactTypeId("Termination", factTypes)) ?? {};
+
     // Associated Agreements
     this.associated_agreements = utils.extractMultiFactValues(doc, utils.getFactTypeId("Associated Agreements", factTypes));
 
@@ -1197,6 +1199,11 @@ class JupiterDoc {
         // termination date
         if (amendment.operational_details?.termination_date) {
           this.operational_details.termination_date = amendment.operational_details.termination_date;
+        }
+
+        // termination
+        if (amendment.termination) {
+          this.termination = amendment.termination;
         }
 
         // these facts are additive, not replacement facts

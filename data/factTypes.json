@@ -538,14 +538,6 @@
         "measurementType": "Days",
         "selectListValues": null,
         "selectListValuesTotalCount": 0
-      },
-      {
-        "id": "6a13d18a-1066-4373-8909-7abd46993047",
-        "name": "Apply Payment Lag to Extensions",
-        "dataType": "Boolean",
-        "measurementType": null,
-        "selectListValues": null,
-        "selectListValuesTotalCount": 0
       }
     ],
     "allowMultiple": true,
@@ -888,6 +880,55 @@
       {
         "id": "77036264-5de9-41a4-be1d-0be12f245bc1",
         "name": "Terminated",
+        "dataType": "Boolean",
+        "measurementType": null,
+        "selectListValues": null,
+        "selectListValuesTotalCount": 0
+      }
+    ],
+    "allowMultiple": false,
+    "archived": false
+  },
+  {
+    "id": "9d5b0a1b-9cc5-4f7f-959e-9c26ea185431",
+    "name": "Termination",
+    "description": null,
+    "fieldTypes": [
+      {
+        "id": "3e614109-5905-4dd3-9d7e-a2da0ba2f283",
+        "name": "Pending Termination Date",
+        "dataType": "Date",
+        "measurementType": null,
+        "selectListValues": null,
+        "selectListValuesTotalCount": 0
+      },
+      {
+        "id": "720427e8-40cc-4ebf-93e6-a817c22ac5af",
+        "name": "Standard Termination Language",
+        "dataType": "Boolean",
+        "measurementType": null,
+        "selectListValues": null,
+        "selectListValuesTotalCount": 0
+      },
+      {
+        "id": "99e6eea6-4ddc-47b5-8b16-8bec2cd7f77e",
+        "name": "Advance Notice Required",
+        "dataType": "Number",
+        "measurementType": "Days",
+        "selectListValues": null,
+        "selectListValuesTotalCount": 0
+      },
+      {
+        "id": "c55b250a-d482-43b2-89c4-91bd967021ab",
+        "name": "Termination Date",
+        "dataType": "Date",
+        "measurementType": null,
+        "selectListValues": null,
+        "selectListValuesTotalCount": 0
+      },
+      {
+        "id": "816b815d-d38f-4913-8b2e-646485cdedfb",
+        "name": "Includes Termination Fee",
         "dataType": "Boolean",
         "measurementType": null,
         "selectListValues": null,

@@ -1,4 +1,5 @@
 import JupiterDoc from "./jupiter.js";
+import { allDocs, devDecisions } from "./reports.js";
 import utils from "./utils.js";
 
 var docs = [];
@@ -63,21 +64,25 @@ const getAllLookups = async () => {
 // wait until arrays are filled
 await getAllLookups();
 
-docs.forEach((doc) => {
-  var jdoc = new JupiterDoc(doc, factTypes, docTypes, tags);
-  jdoc.calcAllTermPayments();
-  jdoc.calcDatePayments();
-  //jdoc.calcOneTimePayments();
-  jdoc.calcEstimatedPurchasePrice();
-  jupiterDocs.push(jdoc);
-});
+const calcDocs = async () => {
+  docs.forEach((doc) => {
+    var jdoc = new JupiterDoc(doc, factTypes, docTypes, tags);
+    jdoc.calcAllTermPayments();
+    jdoc.calcDatePayments();
+    //jdoc.calcOneTimePayments();
+    jdoc.calcEstimatedPurchasePrice();
+    jupiterDocs.push(jdoc);
+  });
 
-// run a pass to associate amendments with parent docs
-jupiterDocs.forEach((doc, index) => {
-  doc.processAmendments(jupiterDocs);
-  doc.findDeeds(jupiterDocs);
-  doc.qc();
-});
+  // run a pass to associate amendments with parent docs
+  jupiterDocs.forEach((doc, index) => {
+    doc.processAmendments(jupiterDocs);
+    doc.findDeeds(jupiterDocs);
+    doc.qc();
+  });
+};
+
+await calcDocs();
 
 const documentsDiv = document.querySelector(".documents");
 
@@ -130,7 +135,18 @@ console.log(factArray.slice(0, 30));
 
 */
 
-console.log(jupiterDocs.find((x) => x.id === "d9321b72-66f4-416f-a192-f93f9f444c59"));
+console.log("%cDEV REPORTS:", consoleHeaderFormat);
+
+console.log(allDocs(jupiterDocs));
+console.log(devDecisions(jupiterDocs, 90));
+
+console.log("%c~~~~~~~", consoleHeaderFormat);
+
+console.log(jupiterDocs.filter((x) => x.termination?.pending_termination_date));
+
+console.log("%c~~~~~~~", consoleHeaderFormat);
+
+console.log(jupiterDocs.find((x) => x.id === "c1243c5f-531c-4cd9-9500-ca177b7ec884"));
 console.log(jupiterDocs.filter((x) => x.qc_flags.includes("Purchase Price but no Closing Date")));
 
 const termModelIncreaseAmount = jupiterDocs.filter((doc) => {
