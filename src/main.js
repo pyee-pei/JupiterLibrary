@@ -142,7 +142,7 @@ console.log(devDecisions(jupiterDocs, 90));
 
 console.log("%c~~~~~~~", consoleHeaderFormat);
 
-console.log(jupiterDocs.filter((x) => x.termination?.pending_termination_date));
+console.log(jupiterDocs.filter((x) => x.termination?.termination_date));
 
 console.log("%c~~~~~~~", consoleHeaderFormat);
 

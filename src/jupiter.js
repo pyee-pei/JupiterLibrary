@@ -105,15 +105,6 @@ class JupiterDoc {
       "date"
     );
 
-    // Agreement Acres
-    // deprecated 2023-05-02 - moved this field to Property Description
-    // this.agreeement_acres = utils.extractFactValue(
-    //     doc,
-    //     utils.getFactTypeId('Agreement Acres', factTypes),
-    //     utils.getFactFieldId('Agreement Acres', 'Agreement Acres', factTypes),
-    //     'number'
-    // );
-
     // Purchase Price
     this.full_purchase_price = utils.extractFactValue(
       doc,
@@ -165,9 +156,6 @@ class JupiterDoc {
     // Agreement Terms
     this.agreement_terms = utils.extractMultiFactValues(doc, utils.getFactTypeId("Agreement Term", factTypes));
 
-    // Option Terms
-    //this.option_terms = utils.extractMultiFactValues(doc, utils.getFactTypeId('Option Term', factTypes));
-
     // Periodic Payment Models (term based)
     this.term_payment_models = utils.extractMultiFactValues(doc, utils.getFactTypeId("Payment Model - Term Based", factTypes));
 
@@ -176,9 +164,6 @@ class JupiterDoc {
 
     // Periodic Payments (date based)
     this.date_payments = [];
-
-    // One Time Payment Models
-    //this.one_time_payment_models = utils.extractMultiFactValues(doc, utils.getFactTypeId("Payment Model - One Time", factTypes));
 
     // Tags
     this.tags = this.getTags(tags);
@@ -227,7 +212,7 @@ class JupiterDoc {
     this.qc_flags = [];
 
     // flag a version number
-    this.libraryVersion = "1.1.25";
+    this.libraryVersion = "1.1.26";
   }
 
   /**
@@ -269,12 +254,13 @@ class JupiterDoc {
    * calculates the term dates from the given facts
    * This function mutates lease term objects and creates calculated properties
    */
-  calcAgreementTermDates(agreementTerms, effectiveDate, opDetails) {
+  calcAgreementTermDates(agreementTerms, effectiveDate, opDetails, termination) {
     // exit if no effectiveDate
     if (!effectiveDate && !opDetails.commencement_date) {
       return;
     }
 
+    termination = termination || {};
     opDetails = opDetails || {};
 
     agreementTerms
@@ -311,7 +297,7 @@ class JupiterDoc {
 
         // calculated end-date, will be tested against opDates later
         // end one day prior to the Nth anniversary, or on operationalDetails termination date, whichever is sooner
-        term.end_date = utils.getEarliestDateTime(opDetails?.termination_date, endCalc.plus({ days: -1 }));
+        term.end_date = utils.getEarliestDateTime(termination?.termination_date, endCalc.plus({ days: -1 }));
 
         // on non-construction and non-operational terms, check to see if they are cut short, or totally removed by operational dates
         if (term.term_type !== "Construction" && term.term_type !== "Operations") {
@@ -387,14 +373,6 @@ class JupiterDoc {
       (model.payment_per_acre ?? 0) * (agreement_acres ?? 0)
     );
 
-    // deprecated 2023-09-01
-    // apply amount escalation
-    // base = base + ((term_increase_amount ?? 0) * previous_terms ?? 0);
-
-    // deprecated 2023-09-01
-    // apply rate escalation
-    // base = utils.calculateCompoundingGrowth(base, (term_escalation_rate ?? 0) / 100, previous_terms ?? 0);
-
     // apply cumulative increase and escalation
     base = (base + cumulative_increase_amount) * cumulative_escalation_rate;
 
@@ -428,10 +406,8 @@ class JupiterDoc {
         payment_period_end = new luxon.DateTime.local(start_date.year, 12, 31);
       } else if (frequency === "Quarterly") {
         payment_period_end = start_date.plus({ months: 3 }).minus({ days: 1 });
-        //payment_period_end = new luxon.DateTime.local(start_date.year, start_date.month + 3, 1).minus({ days: 1 });
       } else if (frequency === "Monthly") {
         payment_period_end = start_date.plus({ months: 1 }).minus({ days: 1 });
-        //payment_period_end = new luxon.DateTime.local(start_date.year, start_date.month, 1).plus({ months: 1 }).minus({ days: 1 });
       }
     } else {
       // anniversary payment dates
@@ -591,9 +567,6 @@ class JupiterDoc {
     payments.sort((a, b) => a.payment_date - b.payment_date);
 
     return payments;
-
-    // calc total payments for whole term
-    //term.cumulative_payment_amount = payments.reduce((a, b) => a + b.total_payment_amount, 0);
   }
 
   /***
@@ -628,7 +601,7 @@ class JupiterDoc {
 
       // iterating variables
       var payment_date = model.date_one_time ?? model.date_begin;
-      var payment_date_end = utils.getEarliestDateTimeFromArray([this.operational_details?.termination_date, model.date_one_time, model.date_end]);
+      var payment_date_end = utils.getEarliestDateTimeFromArray([this.termination?.termination_date, model.date_one_time, model.date_end]);
       var period = 1;
       var payment_amount = 0;
       var payment_source = model.date_one_time ? "Date Model (One Time)" : "Date Model";
@@ -697,39 +670,6 @@ class JupiterDoc {
   }
 
   /**
-   * calc one-time payments
-   */
-  // calcOneTimePayments() {
-  //   // exit if no one-time models
-  //   if (!this.one_time_payment_models.length > 0) return;
-
-  //   var one_time_payments = [];
-
-  //   // create payment object for all models
-  //   this.one_time_payment_models.forEach((model) => {
-  //     // return null if missing required fields
-  //     if (!model.payment_due && !this.effective_date) return;
-
-  //     // if payment date is not specified, use effective date
-  //     var payment_date = model.payment_due ?? this.effective_date;
-
-  //     one_time_payments.push({
-  //       // payment is due on fixed date, or on the effective date
-  //       payment_date: payment_date.toLocaleString(),
-  //       payment_type: model.payment_type,
-  //       payee: model.payee ?? this.nicknameGrantor(this.grantor[0]["grantor/lessor_name"]),
-  //       payment_amount: model.payment_amount,
-  //       applicable_to_purchase: model.applicable_to_purchase,
-  //       refundable: model.refundable,
-  //       after_outside_date: this.outside_date ? payment_date.ts > this.outside_date.ts : false,
-  //     });
-  //   });
-
-  //   // mutate doc object to store one time payment array
-  //   this.one_time_payments = one_time_payments;
-  // }
-
-  /**
    * calc final purchase price
    */
   calcEstimatedPurchasePrice() {
@@ -738,10 +678,6 @@ class JupiterDoc {
     }
     // calculate how mcuh of the purchase price has already been paid
     var previous_applicable_payments = 0;
-
-    // if (this.one_time_payments) {
-    //   previous_applicable_payments += this.one_time_payments.filter((x) => x.applicable_to_purchase).reduce((a, b) => a + b.payment_amount, 0);
-    // }
 
     // loop through agreement terms and find all payments applicable to purchase price
     if (this.agreement_terms.length > 0) {
@@ -761,7 +697,7 @@ class JupiterDoc {
 
     // only run purchase price if there is a closing date and a purchase price
     // and it is not terminated (added 2023-10-23)
-    if (this.closing_date && this.full_purchase_price && !this.operational_details?.termination_date) {
+    if (this.closing_date && this.full_purchase_price && !this.termination?.termination_date) {
       this.grantor.forEach((g) => {
         // create payment object for purchase price
         this.date_payments.push({
@@ -804,16 +740,6 @@ class JupiterDoc {
       // newer amendments overwrite older values
       amendments.forEach((amendment) => {
         // these facts get overwritten by the amendment
-
-        // agreement acres
-        // only write if different from parent doc
-        // *** deprecated 2023-05-02 for property_description facts ***
-        // if (
-        //     amendment.property_description.agreeement_acres &&
-        //     amendment.property_description.agreeement_acres !== this.property_description.agreeement_acres
-        // ) {
-        //     this.amended_agreeement_acres = amendment.property_description.agreeement_acres;
-        // }
 
         // effective date
         if (amendment.effective_date) {
@@ -860,11 +786,6 @@ class JupiterDoc {
           this.term_payment_models = amendment.term_payment_models;
         }
 
-        // termination date
-        if (amendment.operational_details?.termination_date) {
-          this.operational_details.termination_date = amendment.operational_details.termination_date;
-        }
-
         // termination
         if (amendment.termination) {
           this.termination = amendment.termination;
@@ -907,10 +828,6 @@ class JupiterDoc {
 
   findDeeds(allDocs) {
     var deeds = allDocs.filter((x) => x.document_type === "Deed" && x.agreement_group && x.agreement_group === this.agreement_group);
-
-    // if (this.id === "27173908-621a-4f09-bb91-bc9ee195d84c") {
-    //   console.log(deeds);
-    // }
 
     if (this.document_type !== "Deed" && deeds.length > 0) {
       this.processDeedAmendments(deeds);
@@ -955,7 +872,7 @@ class JupiterDoc {
    */
   qc() {
     // exit on out-of-scope documents
-    if (this.document_type === "Master Service Agreement" || this.operational_details?.termination_date) {
+    if (this.document_type === "Master Service Agreement" || this.termination?.termination_date) {
       return;
     }
 
@@ -993,7 +910,7 @@ class JupiterDoc {
     }
 
     // document has termiation tag, but no termination date
-    if (this.tags.includes("Terminated") && !this.operational_details?.termination_date) {
+    if (this.tags.includes("Terminated") && !this.termination?.termination_date) {
       this.qc_flags.push("Termination tag but no Termination Date");
     }
 
