@@ -347,14 +347,6 @@
         "selectListValuesTotalCount": 0
       },
       {
-        "id": "77d6673d-5a8c-4d7e-bffe-04e8123e21b1",
-        "name": "Termination Date",
-        "dataType": "Date",
-        "measurementType": null,
-        "selectListValues": null,
-        "selectListValuesTotalCount": 0
-      },
-      {
         "id": "d9dc745e-cbb0-4a1d-ba00-c789548c3cc7",
         "name": "Inverter Count",
         "dataType": "Number",

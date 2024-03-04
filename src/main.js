@@ -146,7 +146,7 @@ console.log(jupiterDocs.filter((x) => x.termination?.termination_date));
 
 console.log("%c~~~~~~~", consoleHeaderFormat);
 
-console.log(jupiterDocs.find((x) => x.id === "c1243c5f-531c-4cd9-9500-ca177b7ec884"));
+console.log(jupiterDocs.find((x) => x.id === "6e2d593a-9633-4b65-88ca-1ee6f215a83c"));
 console.log(jupiterDocs.filter((x) => x.qc_flags.includes("Purchase Price but no Closing Date")));
 
 const termModelIncreaseAmount = jupiterDocs.filter((doc) => {
