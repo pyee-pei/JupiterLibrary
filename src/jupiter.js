@@ -207,12 +207,12 @@ class JupiterDoc {
     );
 
     // calculate lease term dates
-    this.calcAgreementTermDates(this.agreement_terms, this.effective_date, this.operational_details);
+    this.calcAgreementTermDates(this.agreement_terms, this.effective_date, this.operational_details, this.termination);
 
     this.qc_flags = [];
 
     // flag a version number
-    this.libraryVersion = "1.1.26";
+    this.libraryVersion = "1.1.27";
   }
 
   /**
@@ -811,7 +811,7 @@ class JupiterDoc {
 
       // re-calculate payments based on amended values
       if (this.agreement_terms) {
-        this.calcAgreementTermDates(this.agreement_terms, this.effective_date, this.operational_details);
+        this.calcAgreementTermDates(this.agreement_terms, this.effective_date, this.operational_details, this.termination);
         this.calcAllTermPayments();
         this.calcDatePayments();
         //this.calcOneTimePayments();
