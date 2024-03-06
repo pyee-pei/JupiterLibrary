@@ -459,10 +459,13 @@ class JupiterDoc {
     var term_escalation_rate = term.escalation_rate ?? 0;
     var periodic_escalation_rate = model.periodic_escalation_rate ?? 0;
 
+    var previous_terms = 0;
+    var previous_periods = 0;
+
     // calculate previous periods for periodic escalation
     if (model.periodic_escalation_frequency === "Annually") {
-      var previous_terms = this.agreement_terms.filter((x) => x.term_ordinal < term.term_ordinal && x.payment_model === term.payment_model);
-      var previous_periods = previous_terms.reduce((acc, t) => acc + t.term_length_years, 0);
+      previous_terms = this.agreement_terms.filter((x) => x.term_ordinal < term.term_ordinal && x.payment_model === term.payment_model);
+      previous_periods = previous_terms?.reduce((acc, t) => acc + t.term_length_years, 0);
     }
 
     // calc first payment date for term
@@ -530,6 +533,9 @@ class JupiterDoc {
 
       // loop through grantors and add payments per payee according to their split
       grantor.forEach((g) => {
+        if (this.id === "cf043a46-e73e-457b-8050-5ab9291cad85" && term.term_type === "Construction") {
+          console.log(previous_terms, i);
+        }
         payments.push({
           payment_source: "Term Model",
           model_id: model.id,
@@ -541,7 +547,7 @@ class JupiterDoc {
           payment_amount:
             utils.calculateCompoundingGrowth(
               (periodic_payment + (model.increase_amount ?? 0) * i) * ((g.payment_split ?? 100 / grantor.length) / 100),
-              periodic_escalation_rate / 100,
+              (periodic_escalation_rate ?? 0) / 100,
               Math.floor((previous_periods + i) / periodic_escalation_frequency_index)
             ) * prorata_factor,
           payee: model.payee ?? this.nicknameGrantor(g["grantor/lessor_name"]),
