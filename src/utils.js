@@ -303,6 +303,91 @@ const plusDuration = (length_years) => {
   }
 };
 
+const blendedEscalation = (startDate, endDate, escalationStart, rate, baseAmount, paymentStart) => {
+  // this function calculates a daily rate based on escalation anniversary, and then calculates each Jan-Dec payment on blended cost
+
+  // create array of all dates between start and end
+  var results = [];
+  // format dates to luxon objects
+  // startDate = new luxon.DateTime.fromISO(startDate);
+  // endDate = new luxon.DateTime.fromISO(endDate);
+  // escalationStart = new luxon.DateTime.fromISO(escalationStart);
+
+  // first payment date is either the first Jan 1 after the startDate, or the startDate, based on delay_first_payment
+  if (paymentStart === "Start next Jan 1 after Term commencement") {
+    var firstPayment = startDate.set({ year: startDate.year + 1, month: 1, day: 1 });
+  } else if (paymentStart === "Start 1st of month after commencement") {
+    var firstPayment = startDate.set({ year: startDate.year, month: startDate.month + 1, day: 1 });
+  } else {
+    var firstPayment = startDate;
+  }
+
+  // initialize loop over dates
+  var currentDate = startDate;
+  while (currentDate <= endDate) {
+    // calc factors
+    var days_in_year = currentDate.daysInYear;
+    var escalation_periods = Math.floor(currentDate.diff(escalationStart, "years").years);
+    var escalated_cost = baseAmount * Math.pow(1 + rate, escalation_periods);
+
+    // calculate payment index
+    var payment_index = Math.floor(currentDate.diff(firstPayment, "years").years);
+    if (payment_index < 0) {
+      payment_index = 0;
+    }
+
+    var obj = {};
+
+    // create object
+    obj.date = currentDate.toFormat("yyyy-MM-dd");
+    obj.annual_cost = escalated_cost;
+    obj.daily_cost = escalated_cost / days_in_year;
+    obj.payment_index = payment_index;
+
+    // push to results
+    results.push(obj);
+
+    // increment date
+    currentDate = currentDate.plus({ days: 1 });
+  }
+
+  // create array of payments by index and sum daily costs
+  const payments = Object.values(
+    results.reduce((acc, obj) => {
+      const { payment_index, daily_cost, date } = obj;
+      acc[payment_index] = acc[payment_index] || { payment_index, total_payment: 0, min_date: date, max_date: date, date_count: 0 };
+      acc[payment_index].total_payment += daily_cost;
+
+      // set min date
+      if (date < acc[payment_index].min_date) {
+        acc[payment_index].min_date = date;
+      }
+
+      // set max date
+      if (date > acc[payment_index].max_date) {
+        acc[payment_index].max_date = date;
+      }
+
+      // increment date count
+      acc[payment_index].date_count += 1;
+
+      return acc;
+    }, {})
+  );
+
+  // return a final rounded amount for each payment index
+  return payments.map((p) => {
+    return {
+      payment_index: p.payment_index,
+      payment_date: firstPayment.plus({ years: p.payment_index }),
+      total_payment: round(p.total_payment, 2),
+      min_date: p.min_date,
+      max_date: p.max_date,
+      date_count: p.date_count,
+    };
+  });
+};
+
 export default {
   round,
   getFactTypeId,
@@ -320,6 +405,7 @@ export default {
   calculateCompoundingGrowth,
   calculateGrowth,
   plusDuration,
+  blendedEscalation,
   // apiGetAuthToken,
   // apiGetTags,
 };

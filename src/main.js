@@ -134,6 +134,10 @@ a.click();
 console.log(factArray.slice(0, 30));
 
 */
+console.log("%cBlended Escalation Testing:", consoleHeaderFormat);
+// console.log(utils.blendedEscalation("2029-08-08", "2049-08-07", "2029-08-08", 0.025, 250000, true));
+
+console.log("%c~~~~~~~~~~~~~~~~:", consoleHeaderFormat);
 
 console.log("%cDEV REPORTS:", consoleHeaderFormat);
 

@@ -305,6 +305,91 @@ const plusDuration = (length_years) => {
   }
 };
 
+const blendedEscalation = (startDate, endDate, escalationStart, rate, baseAmount, paymentStart) => {
+  // this function calculates a daily rate based on escalation anniversary, and then calculates each Jan-Dec payment on blended cost
+
+  // create array of all dates between start and end
+  var results = [];
+  // format dates to luxon objects
+  // startDate = new luxon.DateTime.fromISO(startDate);
+  // endDate = new luxon.DateTime.fromISO(endDate);
+  // escalationStart = new luxon.DateTime.fromISO(escalationStart);
+
+  // first payment date is either the first Jan 1 after the startDate, or the startDate, based on delay_first_payment
+  if (paymentStart === "Start next Jan 1 after Term commencement") {
+    var firstPayment = startDate.set({ year: startDate.year + 1, month: 1, day: 1 });
+  } else if (paymentStart === "Start 1st of month after commencement") {
+    var firstPayment = startDate.set({ year: startDate.year, month: startDate.month + 1, day: 1 });
+  } else {
+    var firstPayment = startDate;
+  }
+
+  // initialize loop over dates
+  var currentDate = startDate;
+  while (currentDate <= endDate) {
+    // calc factors
+    var days_in_year = currentDate.daysInYear;
+    var escalation_periods = Math.floor(currentDate.diff(escalationStart, "years").years);
+    var escalated_cost = baseAmount * Math.pow(1 + rate, escalation_periods);
+
+    // calculate payment index
+    var payment_index = Math.floor(currentDate.diff(firstPayment, "years").years);
+    if (payment_index < 0) {
+      payment_index = 0;
+    }
+
+    var obj = {};
+
+    // create object
+    obj.date = currentDate.toFormat("yyyy-MM-dd");
+    obj.annual_cost = escalated_cost;
+    obj.daily_cost = escalated_cost / days_in_year;
+    obj.payment_index = payment_index;
+
+    // push to results
+    results.push(obj);
+
+    // increment date
+    currentDate = currentDate.plus({ days: 1 });
+  }
+
+  // create array of payments by index and sum daily costs
+  const payments = Object.values(
+    results.reduce((acc, obj) => {
+      const { payment_index, daily_cost, date } = obj;
+      acc[payment_index] = acc[payment_index] || { payment_index, total_payment: 0, min_date: date, max_date: date, date_count: 0 };
+      acc[payment_index].total_payment += daily_cost;
+
+      // set min date
+      if (date < acc[payment_index].min_date) {
+        acc[payment_index].min_date = date;
+      }
+
+      // set max date
+      if (date > acc[payment_index].max_date) {
+        acc[payment_index].max_date = date;
+      }
+
+      // increment date count
+      acc[payment_index].date_count += 1;
+
+      return acc;
+    }, {})
+  );
+
+  // return a final rounded amount for each payment index
+  return payments.map((p) => {
+    return {
+      payment_index: p.payment_index,
+      payment_date: firstPayment.plus({ years: p.payment_index }),
+      total_payment: round(p.total_payment, 2),
+      min_date: p.min_date,
+      max_date: p.max_date,
+      date_count: p.date_count,
+    };
+  });
+};
+
 var utils = {
   round,
   getFactTypeId,
@@ -322,6 +407,7 @@ var utils = {
   calculateCompoundingGrowth,
   calculateGrowth,
   plusDuration,
+  blendedEscalation,
   // apiGetAuthToken,
   // apiGetTags,
 };
@@ -548,7 +634,7 @@ class JupiterDoc {
     this.qc_flags = [];
 
     // flag a version number
-    this.libraryVersion = "1.1.27";
+    this.libraryVersion = "1.1.28";
   }
 
   /**
@@ -619,11 +705,7 @@ class JupiterDoc {
 
         if (!term.term_length_years) {
           var addDuration = { days: 0 };
-        } /* else if (parseInt(term.term_length_years) === term.term_length_years) {
-          var addDuration = { years: term.term_length_years };
-        } else if (parseInt(term.term_length_years * 12) === term.term_length_years * 12) {
-          var addDuration = { months: term.term_length_years * 12 };
-        } */ else {
+        } else {
           var addDuration = utils.plusDuration(term.term_length_years);
         }
 
@@ -759,6 +841,80 @@ class JupiterDoc {
    * calculate periodic payments for a given term
    */
 
+  calcBlendedPeriodicPaymentsForTerm(term, op_details, paymentModels, agreement_acres, grantor, project_id) {
+    // version 2 of the function, using the blended escalation function
+
+    // exit if term is cancelled by operations starting, or there are no grantors listed
+    if (term.cancelled_by_ops || grantor.length === 0) {
+      return null;
+    }
+
+    // get payment model for this term
+    const model = this.termPaymentModel(term, paymentModels);
+
+    // exit if no model, or start/end dates
+    if (!model || !term.start_date || !term.end_date) {
+      return null;
+    }
+
+    // get basePayment
+    const basePayment = this.periodicBasePayment(
+      model,
+      op_details,
+      term.cumulative_escalation_rate,
+      term.cumulative_increase_amount,
+      agreement_acres
+    );
+
+    // get first date of escalation
+    const previousEscalationTerms = this.agreement_terms.filter((x) => x.term_ordinal < term.term_ordinal && x.payment_model === term.payment_model);
+    // sort by term_ordinal
+    const escalationStart = previousEscalationTerms?.sort((a, b) => a.term_ordinal - b.term_ordinal)[0]?.start_date ?? term.start_date;
+
+    const blendedPayments = utils.blendedEscalation(
+      term.start_date,
+      term.end_date,
+      escalationStart,
+      model.periodic_escalation_rate / 100,
+      basePayment,
+      term.first_payment_start
+    );
+
+    const payments = blendedPayments.map((p) => {
+      // calc payment lag
+      var late_payment_date = null;
+      if (p.index === 0 && model.first_payment_lag && (!term.extension || model.apply_payment_lag_to_extension)) {
+        late_payment_date = p.payment_date.plus({ days: model.first_payment_lag });
+      } else if (p.index > 0 && model.subsequent_payment_lag && (!term.extension || model.apply_payment_lag_to_extension)) {
+        late_payment_date = payment_date.plus({ days: model.subsequent_payment_lag });
+      } else {
+        late_payment_date = null;
+      }
+
+      return grantor.map((g) => {
+        return {
+          payment_source: "Term Model",
+          model_id: model.id,
+          project_id: project_id,
+          payment_date: p.payment_date.toLocaleString(),
+          late_payment_date: late_payment_date?.toLocaleString() || null,
+          payment_type: `${term.term_type}${term.extension ? " (ext)" : ""} Term Payment`,
+          payment_amount: p.total_payment * ((g.payment_split ?? 100) / grantor.length / 100),
+          payee: model.payee ?? this.nicknameGrantor(g["grantor/lessor_name"]),
+          payment_period_start: p.min_date,
+          payment_period_end: p.max_date,
+          prorata_factor: p.date_count / p.payment_date.daysInYear, // pro-rata factor not actually used, but is displayed for consistency
+          applicable_to_purchase: model.applicable_to_purchase,
+          refundable: false, // defaults to false on term payments
+          after_outside_date: this.outside_date ? p.payment_date.ts > this.outside_date.ts : false,
+          previous_periods: null,
+        };
+      });
+    });
+
+    return payments.flat();
+  }
+
   calcPeriodicPaymentsForTerm(term, op_details, paymentModels, agreement_acres, grantor, project_id) {
     // exit if term is cancelled by operations starting, or there are no grantors listed
     if (term.cancelled_by_ops || grantor.length === 0) {
@@ -869,9 +1025,6 @@ class JupiterDoc {
 
       // loop through grantors and add payments per payee according to their split
       grantor.forEach((g) => {
-        if (this.id === "cf043a46-e73e-457b-8050-5ab9291cad85" && term.term_type === "Construction") {
-          console.log(previous_terms, i);
-        }
         payments.push({
           payment_source: "Term Model",
           model_id: model.id,
@@ -915,16 +1068,29 @@ class JupiterDoc {
     // calc payments in each term
     // and mutate the term object to set value of periodic_payments array
 
+    // TODO: determine if the model has escalation prior to choosing the method
+
     this.agreement_terms.forEach((term) => {
       if (this.term_payment_models) {
-        term.periodic_payments = this.calcPeriodicPaymentsForTerm(
-          term,
-          this.operational_details,
-          this.term_payment_models,
-          this.amended_agreement_acres ?? this.total_agreement_acres,
-          this.grantor,
-          this.project_id
-        );
+        if (term.first_payment_start === "Start with Term") {
+          term.periodic_payments = this.calcPeriodicPaymentsForTerm(
+            term,
+            this.operational_details,
+            this.term_payment_models,
+            this.amended_agreement_acres ?? this.total_agreement_acres,
+            this.grantor,
+            this.project_id
+          );
+        } else if (term.first_payment_start === "Start next Jan 1 after Term commencement") {
+          term.periodic_payments = this.calcBlendedPeriodicPaymentsForTerm(
+            term,
+            this.operational_details,
+            this.term_payment_models,
+            this.amended_agreement_acres ?? this.total_agreement_acres,
+            this.grantor,
+            this.project_id
+          );
+        }
       }
     });
   }
