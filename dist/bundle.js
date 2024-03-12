@@ -1068,28 +1068,32 @@ class JupiterDoc {
     // calc payments in each term
     // and mutate the term object to set value of periodic_payments array
 
-    // TODO: determine if the model has escalation prior to choosing the method
-
     this.agreement_terms.forEach((term) => {
       if (this.term_payment_models) {
-        if (term.first_payment_start === "Start with Term") {
-          term.periodic_payments = this.calcPeriodicPaymentsForTerm(
-            term,
-            this.operational_details,
-            this.term_payment_models,
-            this.amended_agreement_acres ?? this.total_agreement_acres,
-            this.grantor,
-            this.project_id
-          );
-        } else if (term.first_payment_start === "Start next Jan 1 after Term commencement") {
-          term.periodic_payments = this.calcBlendedPeriodicPaymentsForTerm(
-            term,
-            this.operational_details,
-            this.term_payment_models,
-            this.amended_agreement_acres ?? this.total_agreement_acres,
-            this.grantor,
-            this.project_id
-          );
+        // if term uses term based payment model
+        var model = this.termPaymentModel(term, this.term_payment_models);
+        if (model) {
+          // use blended for prorated escalations
+          if (model.prorated_first_period && model.periodic_escalation_rate > 0) {
+            term.periodic_payments = this.calcBlendedPeriodicPaymentsForTerm(
+              term,
+              this.operational_details,
+              this.term_payment_models,
+              this.amended_agreement_acres ?? this.total_agreement_acres,
+              this.grantor,
+              this.project_id
+            );
+            // otherwise, use standard calculation
+          } else {
+            term.periodic_payments = this.calcPeriodicPaymentsForTerm(
+              term,
+              this.operational_details,
+              this.term_payment_models,
+              this.amended_agreement_acres ?? this.total_agreement_acres,
+              this.grantor,
+              this.project_id
+            );
+          }
         }
       }
     });
