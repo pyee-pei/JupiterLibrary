@@ -812,7 +812,7 @@
         "measurementType": null,
         "selectListValues": [
           "Not Reviewed",
-          "In Progress",
+          "Initial Review",
           "Developer Review",
           "Legal Review",
           "Complete"
@@ -838,6 +838,14 @@
       {
         "id": "4c923903-96b5-47e4-bb5f-e0c2aec243f1",
         "name": "Legal Review Date",
+        "dataType": "Date",
+        "measurementType": null,
+        "selectListValues": null,
+        "selectListValuesTotalCount": 0
+      },
+      {
+        "id": "e429600b-e145-4179-9446-e31e2b31df7d",
+        "name": "Initial Review Date",
         "dataType": "Date",
         "measurementType": null,
         "selectListValues": null,

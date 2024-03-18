@@ -212,7 +212,7 @@ class JupiterDoc {
     this.qc_flags = [];
 
     // flag a version number
-    this.libraryVersion = "1.1.28";
+    this.libraryVersion = "1.1.29";
   }
 
   /**
@@ -461,9 +461,9 @@ class JupiterDoc {
     const payments = blendedPayments.map((p) => {
       // calc payment lag
       var late_payment_date = null;
-      if (p.index === 0 && model.first_payment_lag && (!term.extension || model.apply_payment_lag_to_extension)) {
+      if (p.payment_index === 0 && model.first_payment_lag && (!term.extension || model.apply_payment_lag_to_extension)) {
         late_payment_date = p.payment_date.plus({ days: model.first_payment_lag });
-      } else if (p.index > 0 && model.subsequent_payment_lag && (!term.extension || model.apply_payment_lag_to_extension)) {
+      } else if (p._payment_index > 0 && model.subsequent_payment_lag && (!term.extension || model.apply_payment_lag_to_extension)) {
         late_payment_date = payment_date.plus({ days: model.subsequent_payment_lag });
       } else {
         late_payment_date = null;
@@ -474,6 +474,7 @@ class JupiterDoc {
           payment_source: "Term Model",
           model_id: model.id,
           project_id: project_id,
+          payment_index: p.payment_index,
           payment_date: p.payment_date.toLocaleString(),
           late_payment_date: late_payment_date?.toLocaleString() || null,
           payment_type: `${term.term_type}${term.extension ? " (ext)" : ""} Term Payment`,
