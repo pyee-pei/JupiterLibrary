@@ -134,8 +134,9 @@ a.click();
 console.log(factArray.slice(0, 30));
 
 */
-console.log("%cNaN Troubleshooting", consoleHeaderFormat);
-console.log(jupiterDocs.find((x) => x.id === "2507682f-4566-4f11-b474-5d49e16bf702"));
+console.log("%cQC Flags Exist", consoleHeaderFormat);
+console.log(jupiterDocs.filter((x) => x.qc_flags.length > 0));
+console.log(jupiterDocs.filter((x) => x.qc_flags.some((flag) => flag.includes("Missing Payment Model on Agreement Term"))));
 
 console.log("%cDEV REPORTS:", consoleHeaderFormat);
 

@@ -1448,6 +1448,11 @@ class JupiterDoc {
         if (term.payment_model && !term.first_payment_start) {
           this.qc_flags.push(`Missing First Payment Start on Agreement Term ${termIndex + 1}`);
         }
+
+        // if payment_start is specified, make sure there's a model
+        if (term.first_payment_start && !term.payment_model) {
+          this.qc_flags.push(`Missing Payment Model on Agreement Term ${termIndex + 1}`);
+        }
       });
     }
 
