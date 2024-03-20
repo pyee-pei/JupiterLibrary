@@ -519,6 +519,30 @@ class JupiterDoc {
       "date"
     );
 
+    // Payment Directive Date
+    this.payment_directive_date = utils.extractFactValue(
+      doc,
+      utils.getFactTypeId("Payment Directive Date", factTypes),
+      utils.getFactFieldId("Payment Directive Date", "Payment Directive Date", factTypes),
+      "date"
+    );
+
+    // Recorded Date
+    this.recorded_date = utils.extractFactValue(
+      doc,
+      utils.getFactTypeId("Recorded Date", factTypes),
+      utils.getFactFieldId("Recorded Date", "Recorded Date", factTypes),
+      "date"
+    );
+
+    // Letter Date
+    this.letter_date = utils.extractFactValue(
+      doc,
+      utils.getFactTypeId("Letter Date", factTypes),
+      utils.getFactFieldId("Letter Date", "Letter Date", factTypes),
+      "date"
+    );
+
     // Outside Date
     this.outside_date = utils.extractFactValue(
       doc,
@@ -634,7 +658,7 @@ class JupiterDoc {
     this.qc_flags = [];
 
     // flag a version number
-    this.libraryVersion = "1.1.29";
+    this.libraryVersion = "1.1.30";
   }
 
   /**
@@ -1230,8 +1254,8 @@ class JupiterDoc {
    */
 
   processAmendments(allDocs) {
-    // don't process amendments of amendments
-    if (this.amendment_date) {
+    // don't process amendments unless it's an orginal document
+    if (!this.effective_date) {
       return;
     }
 
@@ -1330,6 +1354,20 @@ class JupiterDoc {
 
       this.amendments = amendments;
     }
+  }
+
+  /**
+   * find associated documents a given master document
+   */
+
+  findOtherDocs(allDocs) {
+    if (!this.effective_date) {
+      return;
+    }
+
+    this.payment_directives = allDocs.filter((x) => x.agreement_group === this.agreement_group && x.payment_directive_date);
+    this.recorded_docs = allDocs.filter((x) => x.agreement_group === this.agreement_group && x.recorded_date);
+    this.letters = allDocs.filter((x) => x.agreement_group === this.agreement_group && x.letter_date);
   }
 
   /**

@@ -309,6 +309,23 @@
     "archived": false
   },
   {
+    "id": "8e60015d-222b-423d-8445-e87f79f99c77",
+    "name": "Letter Date",
+    "description": null,
+    "fieldTypes": [
+      {
+        "id": "03c82473-3d1d-471b-a852-6eac2933daa0",
+        "name": "Letter Date",
+        "dataType": "Date",
+        "measurementType": null,
+        "selectListValues": null,
+        "selectListValuesTotalCount": 0
+      }
+    ],
+    "allowMultiple": false,
+    "archived": false
+  },
+  {
     "id": "97dd7b97-9980-42bd-915d-d26b13decbc1",
     "name": "Notice Details",
     "description": null,
@@ -390,6 +407,23 @@
       {
         "id": "95615c11-e592-4fed-bbde-52a259aabbb9",
         "name": "Outside Date",
+        "dataType": "Date",
+        "measurementType": null,
+        "selectListValues": null,
+        "selectListValuesTotalCount": 0
+      }
+    ],
+    "allowMultiple": false,
+    "archived": false
+  },
+  {
+    "id": "3391ad7f-b46a-4425-bbc7-bc8d3f78d1b7",
+    "name": "Payment Directive Date",
+    "description": null,
+    "fieldTypes": [
+      {
+        "id": "efb71a01-3888-4b99-9c72-422e77dd5023",
+        "name": "Payment Directive Date",
         "dataType": "Date",
         "measurementType": null,
         "selectListValues": null,
@@ -798,6 +832,23 @@
       }
     ],
     "allowMultiple": true,
+    "archived": false
+  },
+  {
+    "id": "7e3feb39-366c-454e-8d64-f6570300d4f5",
+    "name": "Recorded Date",
+    "description": null,
+    "fieldTypes": [
+      {
+        "id": "37de1379-c60d-4671-b3d6-08b07633200d",
+        "name": "Recorded Date",
+        "dataType": "Date",
+        "measurementType": null,
+        "selectListValues": null,
+        "selectListValuesTotalCount": 0
+      }
+    ],
+    "allowMultiple": false,
     "archived": false
   },
   {

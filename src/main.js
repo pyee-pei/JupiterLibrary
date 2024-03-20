@@ -77,6 +77,7 @@ const calcDocs = async () => {
   // run a pass to associate amendments with parent docs
   jupiterDocs.forEach((doc, index) => {
     doc.processAmendments(jupiterDocs);
+    doc.findOtherDocs(jupiterDocs);
     doc.findDeeds(jupiterDocs);
     doc.qc();
   });
@@ -134,6 +135,16 @@ a.click();
 console.log(factArray.slice(0, 30));
 
 */
+
+console.log("%cHas Payment Directives", consoleHeaderFormat);
+console.log(jupiterDocs.filter((x) => x.payment_directives?.length > 0));
+
+console.log("%cHas Letters", consoleHeaderFormat);
+console.log(jupiterDocs.filter((x) => x.letters?.length > 0));
+
+console.log("%cHas Recorded Docs", consoleHeaderFormat);
+console.log(jupiterDocs.filter((x) => x.recorded_docs?.length > 0));
+
 console.log("%cQC Flags Exist", consoleHeaderFormat);
 console.log(jupiterDocs.filter((x) => x.qc_flags.length > 0));
 console.log(jupiterDocs.filter((x) => x.qc_flags.some((flag) => flag.includes("Missing Payment Model on Agreement Term"))));
